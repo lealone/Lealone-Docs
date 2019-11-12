@@ -7,5 +7,5 @@
 
 ### 2. Lealone设计文档
 
-  * 2.1. [开发文档](https://github.com/lealone/Lealone/blob/master/docs/%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3.md)
-  * 2.2. [设计文档](https://github.com/lealone/Lealone/blob/master/docs/%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3.md)
+  * 2.1. [开发文档](https://github.com/lealone/Lealone-Docs/blob/master/%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3.md)
+  * 2.2. [设计文档](https://github.com/lealone/Lealone-Docs/blob/master/%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3.md)
