@@ -9,5 +9,5 @@
 
   * 2.1. [开发文档](https://github.com/lealone/Lealone-Docs/blob/master/%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3.md)
   * 2.2. [架构图](https://github.com/lealone/Lealone-Docs/blob/master/%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3.md)
-  * 2.3. [早期的分布式事务模型](https://github.com/lealone/Lealone-Docs/blob/master/%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/%E4%BA%8B%E5%8A%A1/%E5%85%A8%E5%B1%80%E5%BF%AB%E7%85%A7%E9%9A%94%E7%A6%BB.md)
+  * 2.3. [早期的分布式事务模型](https://github.com/lealone/Lealone-Docs/blob/master/%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/%E4%BA%8B%E5%8A%A1/%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1%E6%A8%A1%E5%9E%8B.md)
   * 2.4. [全局快照隔离](https://github.com/lealone/Lealone-Docs/blob/master/%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/%E4%BA%8B%E5%8A%A1/%E5%85%A8%E5%B1%80%E5%BF%AB%E7%85%A7%E9%9A%94%E7%A6%BB.md)
