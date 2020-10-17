@@ -3,8 +3,9 @@
 ### 1. Lealone应用文档
 
   * 1.1. [用户文档](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E7%94%A8%E6%88%B7%E6%96%87%E6%A1%A3.md)
-  * 1.2. [运行模式快速入门](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.md)
-  * 1.3. [可配置的参数](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E5%8F%AF%E9%85%8D%E7%BD%AE%E7%9A%84%E5%8F%82%E6%95%B0.txt)
+  * 1.2. [使用RPC框架来开发web应用](https://github.com/lealone/Lealone-Examples/blob/main/docs/%E4%BD%BF%E7%94%A8RPC%E6%A1%86%E6%9E%B6%E6%9D%A5%E5%BC%80%E5%8F%91web%E5%BA%94%E7%94%A8.md)
+  * 1.3. [运行模式快速入门](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.md)
+  * 1.4. [可配置的参数](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E5%8F%AF%E9%85%8D%E7%BD%AE%E7%9A%84%E5%8F%82%E6%95%B0.txt)
 
 ### 2. Lealone设计文档
 
