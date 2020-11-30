@@ -9,7 +9,7 @@ Lealone 既可以作为一个独立的数据库来使用，也可以当成一个
 
 ### Lealone 数据库
 
-#### Lealone 入门
+#### 用户文档
 
   * [快速入门](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E7%94%A8%E6%88%B7%E6%96%87%E6%A1%A3.md)
   
@@ -17,7 +17,7 @@ Lealone 既可以作为一个独立的数据库来使用，也可以当成一个
   
   * [可配置的参数](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E5%8F%AF%E9%85%8D%E7%BD%AE%E7%9A%84%E5%8F%82%E6%95%B0.txt)
 
-#### Lealone SQL Reference
+#### SQL Reference
 
   * 因为 Lealone 的 SQL 引擎从 [H2 数据库](http://www.h2database.com/html/main.html) 的 SQL 引擎发展而来， 所以 Lealone 的 SQL 用法与 H2 数据库一样。
 
