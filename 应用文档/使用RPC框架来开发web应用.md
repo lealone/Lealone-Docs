@@ -124,12 +124,11 @@ http://localhost:8080/hello.html
 
 ### 6. 可能出现的问题
 
-如果执行build -p找不到lealone的依赖包，
-需要下载以下两个项目的代码: 
+如果执行 build -p 找不到 Lealone 的依赖包，
+需要下载以下项目的代码: 
 
 [lealone-database](https://github.com/lealone/Lealone)
 
-[lealone-plugins](https://github.com/lealone/Lealone-Plugins)
 
 执行 build -i 把它们安装到本地的maven仓库即可。
 
