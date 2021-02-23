@@ -19,7 +19,7 @@ Lealone 既可以作为一个独立的数据库来使用，也可以当成一个
 
 #### SQL Reference
 
-  * 因为 Lealone 的 SQL 引擎从 [H2 数据库](http://www.h2database.com/html/main.html) 的 SQL 引擎发展而来， 所以 Lealone 的 SQL 用法与 H2 数据库一样。
+  * 因为 Lealone 的 SQL 引擎从 [H2 数据库](http://www.h2database.com/html/main.html) 的 SQL 引擎发展而来， 所以 Lealone 的 SQL 用法与 H2 数据库一样
 
   * [SQL Grammar](http://www.h2database.com/html/grammar.html)
 
@@ -31,6 +31,8 @@ Lealone 既可以作为一个独立的数据库来使用，也可以当成一个
 ### Lealone 微服务框架
 
   * [使用 RPC 框架来开发 web 应用](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E4%BD%BF%E7%94%A8RPC%E6%A1%86%E6%9E%B6%E6%9D%A5%E5%BC%80%E5%8F%91web%E5%BA%94%E7%94%A8.md)
+  
+  * [使用 Lealone 脚手架创建微服务应用](https://github.com/lealone/Lealone-CreateApp)
 
 
 ### Lealone ORM 框架
