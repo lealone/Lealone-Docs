@@ -104,7 +104,7 @@ sqlshell -url jdbc:lealone:tcp://localhost:9210/lealone -user root
 
 然后在 SQL Shell 中执行 "create database if not exists hello;" 创建 hello 数据库
 
-接着按 quit 退出 SQL Shell。
+接着输入 quit 退出 SQL Shell。
 
 最后再运行 runSqlScript 即可创建 hello 微服务
 
@@ -144,7 +144,7 @@ sqlshell -url jdbc:lealone:tcp://localhost:9210/lealone -user root
 
 这里的 run mode replication 是关键，默认是 3 副本的，表示在 hello 数据库创建的微服务会部署在 3 个节点上。
 
-接着按 quit 退出 SQL Shell。
+接着输入 quit 退出 SQL Shell。
 
 最后再运行 runSqlScript 即可创建 hello 微服务
 
@@ -191,7 +191,7 @@ http {
 }
 ```
 
-最后在浏览器中就可以通一用 http://localhost/service/hello_service/hello?name=zhh 来调用后端的微服务了
+最后在浏览器中就可以统一用 http://localhost/service/hello_service/hello?name=zhh 来调用后端的微服务了
 
 nginx 的负载均衡策略默认是轮询的方式，每刷新一次会看到后端三个 lealone 节点的窗口中轮流产生新的调用日志。
 
