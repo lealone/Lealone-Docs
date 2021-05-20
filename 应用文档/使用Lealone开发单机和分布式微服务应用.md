@@ -85,9 +85,10 @@ create service if not exists hello_service (
 打开一个命令行窗口，切换到 hello 应用的根目录，执行 build -p 就能对应用进行打包了。
 
 打包的结果放在 target 目录中，有以下三种打包格式:
-hello-1.0.0 (可以直接运行)<\br>
-hello-1.0.0.tar.gz <\br>
-hello-1.0.0.zip <\br>
+
+hello-1.0.0 (可以直接运行)</br>
+hello-1.0.0.tar.gz </br>
+hello-1.0.0.zip </br>
 
 
 
@@ -188,7 +189,7 @@ http {
     #……省略nginx的其他默认配置……
 
 }
-```java
+```
 
 最后在浏览器中就可以通一用 http://localhost/service/hello_service/hello?name=zhh 来调用后端的微服务了
 
