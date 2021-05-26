@@ -27,7 +27,7 @@ create table if not exists customer (
 ) package @packageName generate code @srcPath;
 
 -- 创建order表，会生成一个名为Order的模型类
--- order是关键字，所以要用特殊方式表式
+-- order是关键字，所以要用特殊方式表示
 create table if not exists `order` (
   customer_id long,
   order_id int primary key,
