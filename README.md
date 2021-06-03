@@ -13,9 +13,8 @@ Lealone 既可以作为一个独立的数据库来使用，也可以当成一个
 
   * [快速入门](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E7%94%A8%E6%88%B7%E6%96%87%E6%A1%A3.md)
   
-  * [运行模式](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.md)
+  * [单机模式、复制集群模式、Sharding 集群模式](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.md)
     
-  * [通过 jar 包使用 Lealone 数据库无须安装 Lealone](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E9%80%9A%E8%BF%87jar%E5%8C%85%E4%BD%BF%E7%94%A8Lealone%E6%95%B0%E6%8D%AE%E5%BA%93%E6%97%A0%E9%A1%BB%E5%AE%89%E8%A3%85Lealone.md)
 
 #### SQL Reference
 
