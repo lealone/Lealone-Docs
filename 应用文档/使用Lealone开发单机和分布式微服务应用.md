@@ -17,11 +17,11 @@
 
 打开一个命令行窗口，输入以下命令下载脚手架:
 
-git clone https://github.com/lealone/Lealone-CreateApp.git lealone-create-app
+`git clone https://github.com/lealone/Lealone-CreateApp.git lealone-create-app`
 
 然后在当前目录下创建一个 hello 应用：
 
-java -jar lealone-create-app/bin/lealone-create-app-1.0.0.jar -groupId my.app.hello -artifactId hello
+`java -jar lealone-create-app/bin/lealone-create-app-1.0.0.jar -groupId my.app.hello -artifactId hello`
 
 应用脚手架的参数用法可以阅读 lealone-create-app/README 文件
 
@@ -33,7 +33,7 @@ java -jar lealone-create-app/bin/lealone-create-app-1.0.0.jar -groupId my.app.he
 
 当 hello 应用依赖的 jar 包自动下载完成后，用 debug 的方式运行以下 java 文件:
 
-hello-test/src/test/java/my/app/hello/test/HelloTest.java
+`hello-test/src/test/java/my/app/hello/test/HelloTest.java`
 
 启动过程中，如果看到包含 "Total time" 的日志，就说明 hello 应用启动成功了。
 
@@ -100,7 +100,7 @@ hello-1.0.0.zip </br>
 
 在第二个窗口中执行以下命令打开一个 SQL Shell：
 
-sqlshell -url jdbc:lealone:tcp://localhost:9210/lealone -user root
+`sqlshell -url jdbc:lealone:tcp://localhost:9210/lealone -user root`
 
 然后在 SQL Shell 中执行 "create database if not exists hello;" 创建 hello 数据库
 
@@ -122,15 +122,15 @@ runSqlScript 用来执行 target\hello-1.0.0\sql 目录中的所有 sql 脚本�
 
 如果是 windows 操作系统，可以在第一个窗口中执行以下命令启动一个带有 3 个节点的集群:
 
-lealone -nodes 3
+`lealone -nodes 3`
 
 非 windows 操作系统，可以打开三个新的命令行窗口，都切换到 target\hello-1.0.0\bin 目录，然后在每个窗口中分别运行如下三条命令:
 
-java -Dlealone.logdir=../logs/cluster/node1 -cp ../conf:../lib/* org.lealone.main.Lealone -cluster 1
+`java -Dlealone.logdir=../logs/cluster/node1 -cp ../conf:../lib/* org.lealone.main.Lealone -cluster 1`
 
-java -Dlealone.logdir=../logs/cluster/node2 -cp ../conf:../lib/* org.lealone.main.Lealone -cluster 2
+`java -Dlealone.logdir=../logs/cluster/node2 -cp ../conf:../lib/* org.lealone.main.Lealone -cluster 2`
 
-java -Dlealone.logdir=../logs/cluster/node3 -cp ../conf:../lib/* org.lealone.main.Lealone -cluster 3
+`java -Dlealone.logdir=../logs/cluster/node3 -cp ../conf:../lib/* org.lealone.main.Lealone -cluster 3`
 
 
 
@@ -138,7 +138,7 @@ java -Dlealone.logdir=../logs/cluster/node3 -cp ../conf:../lib/* org.lealone.mai
 
 打开一个命令行窗口，切换到 target\hello-1.0.0\bin 目录，执行以下命令打开一个 SQL Shell：
 
-sqlshell -url jdbc:lealone:tcp://localhost:9210/lealone -user root
+`sqlshell -url jdbc:lealone:tcp://localhost:9210/lealone -user root`
 
 然后在 SQL Shell 中执行 "create database if not exists hello run mode replication;" 创建 hello 数据库
 
