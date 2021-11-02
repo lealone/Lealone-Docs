@@ -3,6 +3,8 @@
 <b>Lealone 的学习成本极低，下文只有启动 HttpServer 的代码需要引入 Lealone 的类，</br>
 其他应用开发人员负责编写的代码无需导入 Lealone 的任何东西(比如类、接口、注解)。</b>
 
+文章最后有完整的项目代码，可直接下载到本机上尝试。
+
 ### 1. 启动 http server
 
 ```java
@@ -25,18 +27,18 @@
 ### 2. 建表
 
 ```sql
--- 创建表: user，会生成一个名为User的模型类
+-- 创建表: user，会生成一个名为 User 的模型类
 create table if not exists user (
   id long auto_increment primary key,
   name varchar,
   age int
 )
-package 'org.lealone.examples.fullstack.generated.model' -- User类所在的包名
-generate code './src/main/java' -- User类的源文件所在的根目录
+package 'org.lealone.examples.fullstack.generated.model' -- User 类所在的包名
+generate code './src/main/java' -- User 类的源文件所在的根目录
 ```
 
-这一步用于创建user表，加了新的扩展语法，
-如果指定generate code，会生成一个名为User的模型类：
+这一步用于创建 user 表，加了新的扩展语法，
+如果指定 generate code，会生成一个名为 User 的模型类：
 
 ```java
 /**
@@ -59,26 +61,26 @@ public class User extends Model<User> {
     }
 ```
 
-User模型类生成的代码是不用修改的，采用的是一种简化的充血模型，
-可以基于模型类的字段来构建出跟普通SQL极其相似的类型安全的DSL，下文会有用法演示。
+User 模型类生成的代码是不用修改的，采用的是一种简化的充血模型，
+可以基于模型类的字段来构建出跟普通 SQL 极其相似的类型安全的 DSL，下文会有用法演示。
 
 
 ### 3. 创建后端服务
 
 ```sql
--- 创建服务: user_service，会生成一个对应的UserService接口
+-- 创建服务: user_service，会生成一个对应的 UserService 接口
 create service if not exists user_service (
-  add_user(name varchar, age int) long, -- 定义UserService接口方法 add_user
-  find_by_name(name varchar) user -- 定义UserService接口方法 find_by_name
+  add_user(name varchar, age int) long, -- 定义 UserService 接口方法 add_user
+  find_by_name(name varchar) user -- 定义 UserService 接口方法 find_by_name
 )
-package 'org.lealone.examples.fullstack.generated.service' -- UserService接口所在的包名
-implement by 'org.lealone.examples.fullstack.UserServiceImpl' -- UserService接口的默认实现类
-generate code './src/main/java' -- UserService接口源文件的根目录
+package 'org.lealone.examples.fullstack.generated.service' -- UserService 接口所在的包名
+implement by 'org.lealone.examples.fullstack.UserServiceImpl' -- UserService 接口的默认实现类
+generate code './src/main/java' -- UserService 接口源文件的根目录
 ```
 
 这一步用于描述一个服务的相关信息，比如它有哪些可调用的方法，
 会为每个服务生成一个对应的Java接口，并指定服务接口的默认实现类。
-通过create service语句创建的服务在内部会被托管，
+通过 create service 语句创建的服务在内部会被托管，
 服务的注册与发现功能已经内置在框架当中，不需要再依赖其他第三方组件。
 
 
@@ -95,13 +97,13 @@ public class UserServiceImpl implements UserService {
     public Long addUser(String name, Integer age) {
         // 如果 name = 'zhh', age = 18
         // 对应的sql是: insert into user(name, age) values('zhh', 18);
-        return new User().name.set(name).age.set(age).insert(); // 链式调用，insert()返回新增记录的rowId
+        return new User().name.set(name).age.set(age).insert(); // 链式调用，insert()返回新增记录的 rowId
     }
 
     @Override
     public User findByName(String name) {
         // 如果 name = 'zhh'
-        // 对应的sql是: select * from user where name = 'zhh' limit 1
+        // 对应的 sql 是: select * from user where name = 'zhh' limit 1
         return User.dao.where().name.eq(name).findOne();
     }
 }
@@ -109,9 +111,9 @@ public class UserServiceImpl implements UserService {
 
 服务实现类就是一个最普通的接口实现类，服务框架对服务实现类是无侵入的。
 
-这里也演示了Lealone ORM框架的基本用法，ORM框架对应用代码也是无侵入的。
+这里也演示了 Lealone ORM 框架的基本用法，ORM 框架对应用代码也是无侵入的。
 
-Lealone ORM框架的更多用法演示可以尝试一下这个
+Lealone ORM 框架的更多用法演示可以尝试一下这个
 [lealone-orm-demo](https://github.com/lealone/Lealone-Examples/tree/main/orm-demo)
 
 [Lealone ORM 框架快速入门](https://github.com/lealone/Lealone-Examples/blob/main/docs/Lealone%20ORM%E6%A1%86%E6%9E%B6%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.md)
@@ -187,8 +189,8 @@ Lealone ORM框架的更多用法演示可以尝试一下这个
 </html>
 ```
 
-lealone-5.0.0.js 相当于一个RPC框架的客户端，通过sockjs与后端RPC框架通信，
-通过lealone.getService()方法获得一个服务代理后就可以直接调用后端服务了。
+lealone-5.0.0.js 相当于一个 RPC 框架的客户端，通过 sockjs 与后端 RPC 框架通信，
+通过 lealone.getService() 方法获得一个服务代理后就可以直接调用后端服务了。
 
 
 
@@ -200,7 +202,7 @@ lealone-5.0.0.js 相当于一个RPC框架的客户端，通过sockjs与后端RPC
 
 运行执行 build -r
 
-启动成功后，在浏览器中打开下面这个URL进行测试:
+启动成功后，在浏览器中打开下面这个 URL 进行测试:
 http://localhost:8080/fullStack.html
 
 
@@ -212,5 +214,5 @@ http://localhost:8080/fullStack.html
 [lealone-database](https://github.com/lealone/Lealone)
 
 
-执行 build -i 把它们安装到本地的maven仓库即可。
+执行 build -i 把它们安装到本地的 maven 仓库即可。
 

@@ -1,20 +1,22 @@
-使用RPC框架来开发web应用，这是什么鬼？RPC框架能开发web应用？
+使用 RPC 框架来开发 web 应用，这是什么鬼？RPC 框架能开发 web 应用？
 
-没错，你真的没看错，就是用RPC框架来开发web应用。
+没错，你真的没看错，就是用 RPC 框架来开发 web 应用。
 
 解释不清楚的，上车吧，跟着体验一下。
+
+文章最后有完整的项目代码，可直接下载到本机上尝试。
 
 ### 1. 启动 http server
 
 ```java
     public static void startHttpServer() {
-        // 通过JDBC访问的数据库的URL
+        // 通过 JDBC 访问的数据库的 URL
         String jdbcUrl = "jdbc:lealone:embed:test";
 
         // 静态资源文件的根目录，如果有多个可以用逗号分隔
         String webRoot = "./web";
 
-        // 启动HttpServer，请在浏览器中打开下面这个URL进行测试:
+        // 启动 HttpServer，请在浏览器中打开下面这个 URL 进行测试:
         // http://localhost:8080/hello.html
         HttpServer server = new HttpServer();
         server.setJdbcUrl(jdbcUrl);
@@ -26,18 +28,18 @@
 ### 2. 创建后端服务
 
 ```sql
--- 创建服务: hello_service，会生成一个对应的HelloService接口
+-- 创建服务: hello_service，会生成一个对应的 HelloService 接口
 create service if not exists hello_service (
-  say_hello(name varchar) varchar -- HelloService接口方法定义
+  say_hello(name varchar) varchar -- HelloService 接口方法定义
 )
-package 'org.lealone.examples.rpc.generated' -- HelloService接口所在的包名
-implement by 'org.lealone.examples.rpc.HelloServiceImpl' -- HelloService接口的默认实现类
-generate code './src/main/java' -- HelloService接口源文件的根目录
+package 'org.lealone.examples.rpc.generated' -- HelloService 接口所在的包名
+implement by 'org.lealone.examples.rpc.HelloServiceImpl' -- HelloService 接口的默认实现类
+generate code './src/main/java' -- HelloService 接口源文件的根目录
 ```
 
 这一步用于描述一个服务的相关信息，比如它有哪些可调用的方法，
 会为每个服务生成一个对应的Java接口，并指定服务接口的默认实现类。
-通过create service语句创建的服务在内部会被托管，
+通过 create service 语句创建的服务在内部会被托管，
 服务的注册与发现功能已经内置在框架当中，不需要再依赖其他第三方组件。
 
 
@@ -104,8 +106,8 @@ public class HelloServiceImpl implements HelloService {
 </html>
 ```
 
-lealone-5.0.0.js 相当于一个RPC框架的客户端，通过sockjs与后端RPC框架通信，
-通过lealone.getService()方法获得一个服务代理后就可以直接调用后端服务了。
+lealone-5.0.0.js 相当于一个 RPC 框架的客户端，通过 sockjs 与后端 RPC 框架通信，
+通过 lealone.getService() 方法获得一个服务代理后就可以直接调用后端服务了。
 
 
 
@@ -117,7 +119,7 @@ lealone-5.0.0.js 相当于一个RPC框架的客户端，通过sockjs与后端RPC
 
 运行执行 build -r
 
-启动成功后，在浏览器中打开下面这个URL进行测试:
+启动成功后，在浏览器中打开下面这个 URL 进行测试:
 http://localhost:8080/hello.html
 
 
@@ -130,5 +132,5 @@ http://localhost:8080/hello.html
 [lealone-database](https://github.com/lealone/Lealone)
 
 
-执行 build -i 把它们安装到本地的maven仓库即可。
+执行 build -i 把它们安装到本地的 maven 仓库即可。
 
