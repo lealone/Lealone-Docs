@@ -98,7 +98,7 @@ public class Customer extends Model<Customer> {
         new Customer().id.set(1001).name.set("rob").phone.set(12345678).insert();
 ```
 
-自动生成的 Customer 类不是 POJO，所以并没用使用常规的 setter/getter 方法，
+自动生成的 Customer 类不是 POJO，所以并没有使用常规的 setter/getter 方法，
 而是用 c.name.set("rob") 替换 c.setName("rob")，这样的设计是有特别考量的。
 
 Customer 类继承自 org.lealone.orm.Model，因为继承有先天的缺陷，
