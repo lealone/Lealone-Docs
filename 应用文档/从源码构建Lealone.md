@@ -17,5 +17,5 @@
 进入 E:\lealone 目录，运行: `mvn clean package assembly:assembly -Dmaven.test.skip=true`
 
 生成的文件放在 E:\lealone\target 目录中，
-默认生成 lealone-x.y.z.tar.gz 和 lealone-x.y.z.zip 两个压缩文件，d
+默认生成 lealone-x.y.z.tar.gz 和 lealone-x.y.z.zip 两个压缩文件，
 其中 x.y.z 代表实际的版本号
