@@ -75,7 +75,7 @@ sql> select * from information_schema.databases;
 
 ```
 
-#### 1.5. 访问使用 Sharding 模式运行的数据库
+### 1.5. 访问使用 Sharding 模式运行的数据库
 
 打开一个新的命令行窗口，进入 `D:\lealone-5.0.0\bin` 目录，
 
