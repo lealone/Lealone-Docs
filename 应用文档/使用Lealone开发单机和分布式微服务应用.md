@@ -6,7 +6,6 @@
 
 ## 0. 编译运行需要
 
-* Git 2.x
 * JDK 1.8+
 * Maven 3.3+
 * Eclipse 2018-09 (4.9.0) 或其他支持 Java 1.8 的 IDE
@@ -15,15 +14,13 @@
 
 ## 1. 使用 Lealone 的微服务应用脚手架创建应用
 
-打开一个命令行窗口，输入以下命令下载脚手架:
-
-`git clone https://github.com/lealone/Lealone-CreateApp.git lealone-create-app`
+下载脚手架 [create-lealone-app-1.0.0.jar](https://github.com/lealone/Lealone-CreateApp/releases/download/lealone-create-app-1.0.0/create-lealone-app-1.0.0.jar)
 
 然后在当前目录下创建一个 hello 应用：
 
-`java -jar lealone-create-app/bin/lealone-create-app-1.0.0.jar -groupId my.app.hello -artifactId hello`
+`java -jar create-lealone-app-1.0.0.jar -groupId my.app.hello -artifactId hello`
 
-应用脚手架的参数用法可以阅读 lealone-create-app/README 文件
+应用脚手架的参数用法可以阅读 [README](https://github.com/lealone/Lealone-CreateApp/blob/main/README.md) 文件
 
 
 
