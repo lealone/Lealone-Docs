@@ -1,10 +1,10 @@
-Lealone 既能在一台服务器上搭建 Sharding 集群，也可以在多台服务器上搭建。
+# Lealone 既能在一台服务器上搭建 Sharding 集群，也可以在多台服务器上搭建。
 
 
-# 1. 在一台服务器上搭建 Lealone Sharding 集群
+## 1. 在一台服务器上搭建 Lealone Sharding 集群
 
 
-## 1.1. 运行需要
+### 1.1. 运行需要
 
 * JDK 1.8+
 
@@ -112,7 +112,7 @@ sql>
 ```
 
 
-# 2. 在多台服务器上搭建 Lealone Sharding 集群
+## 2. 在多台服务器上搭建 Lealone Sharding 集群
 
 TODO
 
