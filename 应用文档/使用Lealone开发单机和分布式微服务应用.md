@@ -52,7 +52,7 @@ create service if not exists hello_service (
 
 接着刷新一下 hello-service 子项目，会看到在 hello-service/src/main/java/my/app/hello/service 包中多了一些 java 源文件
 
-此时，如果在浏览器中找开 http://localhost:9000/service/hello_service/hello?name=zhh 会发现返回 null，
+此时，如果在浏览器中打开 http://localhost:9000/service/hello_service/hello?name=zhh 会发现返回 null，
 因为 create service 语句只是定义了一个服务接口，需要实现它。
 
 在 IDE 中打开文件: hello-service/src/main/java/my/app/hello/service/HelloServiceImpl.java
