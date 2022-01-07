@@ -1,4 +1,4 @@
-# Lealone 既能在一台服务器上搭建 Sharding 集群，也可以在多台服务器上搭建。
+## Lealone 既能在一台服务器上搭建 Sharding 集群，也可以在多台服务器上搭建。
 
 
 ## 1. 在一台服务器上搭建 Lealone Sharding 集群
