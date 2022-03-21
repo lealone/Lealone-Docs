@@ -51,6 +51,11 @@ Lealone 既可以作为一个独立的数据库来使用，也可以当成一个
   * [使用 Lealone RPC 和 ORM 框架开发一个全栈微服务应用](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E4%BD%BF%E7%94%A8Lealone%20RPC%E5%92%8CORM%E6%A1%86%E6%9E%B6%E5%BC%80%E5%8F%91%E4%B8%80%E4%B8%AA%E5%85%A8%E6%A0%88%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BA%94%E7%94%A8.md)
 
 
+### Lealone 存储引擎
+
+  * [存储引擎快速入门](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.md)
+
+
 
 # Lealone 设计文档
 
