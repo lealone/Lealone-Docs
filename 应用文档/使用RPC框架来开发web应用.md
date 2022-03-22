@@ -28,17 +28,14 @@
 ### 2. 创建后端服务
 
 ```sql
--- 创建服务: hello_service，会生成一个对应的 HelloService 接口
+-- 创建服务: hello_service
 create service if not exists hello_service (
-  say_hello(name varchar) varchar -- HelloService 接口方法定义
+  say_hello(name varchar) varchar -- HelloService 方法定义
 )
-package 'org.lealone.examples.rpc.generated' -- HelloService 接口所在的包名
-implement by 'org.lealone.examples.rpc.HelloServiceImpl' -- HelloService 接口的默认实现类
-generate code './src/main/java' -- HelloService 接口源文件的根目录
+implement by 'org.lealone.examples.rpc.HelloService' -- HelloService 默认实现类
 ```
 
-这一步用于描述一个服务的相关信息，比如它有哪些可调用的方法，
-会为每个服务生成一个对应的 Java 接口，并指定服务接口的默认实现类。
+这一步用于描述一个服务的相关信息，比如它有哪些可调用的方法。
 通过 create service 语句创建的服务在内部会被托管，
 服务的注册与发现功能已经内置在框架当中，不需要再依赖其他第三方组件。
 
@@ -46,19 +43,16 @@ generate code './src/main/java' -- HelloService 接口源文件的根目录
 ### 3. 实现后端服务
 
 ```java
-package org.lealone.demo;
+package org.lealone.examples.rpc;
 
-import org.lealone.demo.generated.HelloService;
-
-public class HelloServiceImpl implements HelloService {
-    @Override
+public class HelloService {
     public String sayHello(String name) {
         return "Hello " + name;
     }
 }
 ```
 
-服务实现类就是一个最普通的接口实现类，框架对服务实现类是无侵入的。
+服务实现类就是一个最普通的类，框架对服务实现类是无侵入的。
 
 
 ### 4. 在前端使用后端服务
