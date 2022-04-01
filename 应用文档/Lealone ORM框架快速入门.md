@@ -162,6 +162,19 @@ where() 是可选的，加上去能让代码更易读，一看跟在它后面的
 注意，offset 是从0开始的。
 
 
+#### 2.6 JSON
+
+```java
+        Customer c = new Customer();
+        c.name.set("rob");
+        c.phone.set(12345678);
+
+        String json = c.encode(); //编码为 JSON 字符串
+	c = Customer.decode(json); //从 JSON 字符串解码出 Customer 对象
+```
+
+
+
 ### 3. 关联查询
 
 #### 3.1 批量增加有关联的记录
