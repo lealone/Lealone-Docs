@@ -46,8 +46,6 @@ generate code './src/main/java' -- User 类的源文件所在的根目录
  *
  * THIS IS A GENERATED OBJECT, DO NOT MODIFY THIS CLASS.
  */
-@JsonSerialize(using = ModelSerializer.class)
-@JsonDeserialize(using = UserDeserializer.class)
 public class User extends Model<User> {
 
     public static final User dao = new User(null, ROOT_DAO);
