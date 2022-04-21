@@ -21,7 +21,7 @@ Lealone 既可以作为一个独立的数据库来使用，也可以当成一个
  
   * [单机模式、复制集群模式、Sharding 集群模式](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.md)
   
-  * [使用 MySQL 或 PostgreSQL 的客户端和 SQL 语法访问 Lealone 数据库](https://github.com/lealone/Lealone-xSQL)
+  * [使用 MySQL 或 PostgreSQL 的客户端和 SQL 语法访问 Lealone 数据库](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E4%BD%BF%E7%94%A8MySQL%E6%88%96PostgreSQL%E7%9A%84%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%92%8CSQL%E8%AF%AD%E6%B3%95%E8%AE%BF%E9%97%AELealone%E6%95%B0%E6%8D%AE%E5%BA%93.md)
 
 
 #### SQL Reference
