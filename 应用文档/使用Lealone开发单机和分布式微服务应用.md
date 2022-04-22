@@ -164,15 +164,18 @@ http {
 
     upstream lealone {
         server 127.0.0.1:9000;
-	server 127.0.0.2:9000;
-	server 127.0.0.3:9000;
+        server 127.0.0.2:9000;
+        server 127.0.0.3:9000;
     }
 
-    #……省略nginx的其他默认配置……
-
-    server { 
+    server {
         #……省略nginx的其他默认配置……
 
+        location / {
+            root   html;
+            index  index.html index.htm;
+        }
+    
         location /service {
             proxy_pass http://lealone;
         }
