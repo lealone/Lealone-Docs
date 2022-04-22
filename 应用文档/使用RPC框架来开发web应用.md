@@ -55,7 +55,12 @@ public class HelloService {
 服务实现类就是一个最普通的类，框架对服务实现类是无侵入的。
 
 
-### 4. 在前端使用后端服务
+### 4. 在前端浏览器中打开下面的 URL 调用后端服务:
+
+http://localhost:8080/service/hello_service/say_hello?name=zhh
+
+
+### 5. 在前端结合 Vue 框架调用后端服务
 
 ```html
 <!doctype html>
@@ -105,7 +110,7 @@ lealone-5.0.0.js 相当于一个 RPC 框架的客户端，通过 sockjs 与后�
 
 
 
-### 5. 完整例子
+### 6. 完整例子
 
 下载项目 [lealone-rpc-demo](https://github.com/lealone/Lealone-Examples/tree/main/rpc-demo)
 
@@ -118,7 +123,7 @@ http://localhost:8080/hello.html
 
 
 
-### 6. 可能出现的问题
+### 7. 可能出现的问题
 
 如果执行 build -p 找不到 Lealone 的依赖包，
 需要下载以下项目的代码: 
