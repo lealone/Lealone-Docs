@@ -112,5 +112,19 @@ lealone_data\cluster\node_127_0_0_3
 
 ## 2. 在多台服务器上搭建 Lealone Sharding 集群
 
-TODO
+在多台服务器上搭建 Lealone Sharding 集群需要多加一个 -seeds 参数，指定种子节点。
+
+因为 lealone 是对等架构，所以启动阶段需要指定一到多个种子节点，运行时种子节点就没什么用了。
+
+假设有三台服务器，IP 分别是 192.168.0.101、192.168.0.102、192.168.0.103
+
+把 192.168.0.101 当成种子节点，只需要在三台服务器上分别执行以下命令之一即可:
+
+`java -jar lealone-5.0.0.jar -cluster -host 192.168.0.101 -seeds 192.168.0.101`
+
+`java -jar lealone-5.0.0.jar -cluster -host 192.168.0.102 -seeds 192.168.0.101`
+
+`java -jar lealone-5.0.0.jar -cluster -host 192.168.0.103 -seeds 192.168.0.101`
+
+在多台服务器上启动 Lealone Sharding 集群后，创建 mydb_sharding 数据库的操作跟1.4、1.5小节一样。
 
