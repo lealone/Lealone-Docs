@@ -14,11 +14,11 @@
 
 ## 1. 使用 Lealone 的微服务应用脚手架创建应用
 
-下载脚手架 [create-lealone-app-1.0.0.jar](https://github.com/lealone/Lealone-CreateApp/releases/download/lealone-create-app-1.0.0/create-lealone-app-1.0.0.jar)
+下载脚手架 [create-lealone-app-5.0.0.jar](https://github.com/lealone/Lealone-CreateApp/releases/download/lealone-create-app-5.0.0/create-lealone-app-5.0.0.jar)
 
 然后在当前目录下创建一个 hello 应用：
 
-`java -jar create-lealone-app-1.0.0.jar -groupId my.app.hello -artifactId hello`
+`java -jar create-lealone-app-5.0.0.jar -groupId my.app.hello -artifactId hello`
 
 应用脚手架的参数用法可以阅读 [README](https://github.com/lealone/Lealone-CreateApp/blob/main/README.md) 文件
 
@@ -79,7 +79,7 @@ create service if not exists hello_service (
 
 ## 4. 打包 hello 微服务应用
 
-打开一个命令行窗口，切换到 hello 应用的根目录，执行 build -p 就能对应用进行打包了。
+打开一个命令行窗口，切换到 hello 应用的根目录，执行 `build -p` 就能对应用进行打包了。
 
 打包的结果放在 target 目录中，有以下三种打包格式:
 
@@ -93,17 +93,17 @@ hello-1.0.0.zip </br>
 
 打开两个命令行窗口，都切换到 target\hello-1.0.0\bin 目录
 
-在第一个窗口中执行 lealone 命令启动 hello 应用
+在第一个窗口中执行 `lealone` 命令启动 hello 应用
 
 在第二个窗口中执行以下命令打开一个 SQL Shell：
 
 `sqlshell -url jdbc:lealone:tcp://localhost:9210/lealone -user root`
 
-然后在 SQL Shell 中执行 "create database if not exists hello;" 创建 hello 数据库
+然后在 SQL Shell 中执行 `create database if not exists hello;` 创建 hello 数据库
 
-接着输入 quit 退出 SQL Shell。
+接着输入 `quit` 退出 SQL Shell。
 
-最后再运行 runSqlScript 即可创建 hello 微服务
+最后再运行 `runSqlScript` 即可创建 hello 微服务
 
 runSqlScript 用来执行 target\hello-1.0.0\sql 目录中的所有 sql 脚本。
 
@@ -117,18 +117,15 @@ runSqlScript 用来执行 target\hello-1.0.0\sql 目录中的所有 sql 脚本�
 
 先按 Ctrl+C 关掉第 5 小节的 hello 应用
 
-如果是 windows 操作系统，可以在第一个窗口中执行以下命令启动一个带有 3 个节点的集群:
+打开3个新的命令行窗口，都切换到 target\hello-1.0.0\bin 目录
 
-`lealone -nodes 3`
+在每个窗口分别执行以下命令之一，启动一个带有3个节点的本地集群:
 
-非 windows 操作系统，可以打开三个新的命令行窗口，都切换到 target\hello-1.0.0\bin 目录，然后在每个窗口中分别运行如下三条命令:
+`lealone -cluster -host 127.0.0.1`
 
-`java -Dlealone.logdir=../logs/cluster/node1 -cp ../conf:../lib/* org.lealone.main.Lealone -cluster 1`
+`lealone -cluster -host 127.0.0.2`
 
-`java -Dlealone.logdir=../logs/cluster/node2 -cp ../conf:../lib/* org.lealone.main.Lealone -cluster 2`
-
-`java -Dlealone.logdir=../logs/cluster/node3 -cp ../conf:../lib/* org.lealone.main.Lealone -cluster 3`
-
+`lealone -cluster -host 127.0.0.3`
 
 
 #### 6.2 创建数据库和微服务
@@ -137,11 +134,11 @@ runSqlScript 用来执行 target\hello-1.0.0\sql 目录中的所有 sql 脚本�
 
 `sqlshell -url jdbc:lealone:tcp://localhost:9210/lealone -user root`
 
-然后在 SQL Shell 中执行 "create database if not exists hello run mode replication;" 创建 hello 数据库
+然后在 SQL Shell 中执行 `create database if not exists hello run mode replication;` 创建 hello 数据库
 
 这里的 run mode replication 是关键，默认是 3 副本的，表示在 hello 数据库创建的微服务会部署在 3 个节点上。
 
-接着输入 quit 退出 SQL Shell。
+接着输入 `quit` 退出 SQL Shell。
 
 最后再运行 runSqlScript 即可创建 hello 微服务
 
