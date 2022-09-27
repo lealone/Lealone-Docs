@@ -11,7 +11,7 @@
 
 ### 1.2. 下载 Lealone
 
-[lealone-5.0.0.jar](https://github.com/lealone/Lealone-Docs/releases/download/lealone-docs-1.0.0/lealone-5.0.0.jar)
+[lealone-5.0.0.jar](https://github.com/lealone/Lealone/releases/download/lealone-5.0.0-rc-14/lealone-5.0.0.jar)
 
 Lealone 只有一个 jar 包，下载下来之后随意放到一个目录即可
 
