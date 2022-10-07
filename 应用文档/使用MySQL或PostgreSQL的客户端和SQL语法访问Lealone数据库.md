@@ -46,7 +46,7 @@ Exit with Ctrl+C
 
 执行以下命令启动 MySQL 客户端:
 
-`mysql --no-beep -h localhost -P 9310 -u root -pzhh`
+`mysql --no-beep -h localhost -P 9310 -u root`
 
 ```sql
 Welcome to the MySQL monitor.  Commands end with ; or \g.
