@@ -14,7 +14,7 @@
 
 ## 1. 使用 Lealone 的微服务应用脚手架创建应用
 
-下载脚手架 [create-lealone-app-5.0.0.jar](https://github.com/lealone/Lealone-Plugins/releases/download/lealone-plugins-5.0.0-rc-01/lealone-xsql-5.0.0.jar)
+下载脚手架 [create-lealone-app-5.0.0.jar](https://github.com/lealone/Lealone-Plugins/releases/download/lealone-plugins-5.0.0-rc-01/create-lealone-app-5.0.0.jar)
 
 然后在当前目录下创建一个 hello 应用：
 
