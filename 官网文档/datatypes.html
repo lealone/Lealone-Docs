@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Copyright 2004-2013 H2 Group. Multiple-Licensed under the H2 License, Version 1.0,
+and under the Eclipse Public License, Version 1.0
+(http://h2database.com/html/license.html).
+Initial Developer: H2 Group
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><title>
+Data Types
+</title><link rel="stylesheet" type="text/css" href="stylesheet.css" />
+
+<script type="text/javascript" src="navigation.js"></script>
+</head><body onload="frameMe();">
+<table class="content"><tr class="content"><td class="content"><div class="contentDiv">
+
+
+<h1>Data Types</h1>
+<h2>Index</h2>
+<!-- syntax-start
+<p class="notranslate">
+
+    <a href="#int_type" >INT Type</a><br />
+
+    <a href="#boolean_type" >BOOLEAN Type</a><br />
+
+    <a href="#tinyint_type" >TINYINT Type</a><br />
+
+    <a href="#smallint_type" >SMALLINT Type</a><br />
+
+    <a href="#bigint_type" >BIGINT Type</a><br />
+
+    <a href="#identity_type" >IDENTITY Type</a><br />
+
+    <a href="#decimal_type" >DECIMAL Type</a><br />
+
+    <a href="#double_type" >DOUBLE Type</a><br />
+
+    <a href="#real_type" >REAL Type</a><br />
+
+    <a href="#time_type" >TIME Type</a><br />
+
+    <a href="#date_type" >DATE Type</a><br />
+
+    <a href="#timestamp_type" >TIMESTAMP Type</a><br />
+
+    <a href="#binary_type" >BINARY Type</a><br />
+
+    <a href="#other_type" >OTHER Type</a><br />
+
+    <a href="#varchar_type" >VARCHAR Type</a><br />
+
+    <a href="#varchar_ignorecase_type" >VARCHAR_IGNORECASE Type</a><br />
+
+    <a href="#char_type" >CHAR Type</a><br />
+
+    <a href="#blob_type" >BLOB Type</a><br />
+
+    <a href="#clob_type" >CLOB Type</a><br />
+
+    <a href="#uuid_type" >UUID Type</a><br />
+
+    <a href="#array_type" >ARRAY Type</a><br />
+</p>
+syntax-end -->
+<!-- railroad-start -->
+<table class="notranslate index">
+    <tr>
+        <td class="index">
+            
+                <a href="#int_type" >INT Type</a><br />
+            
+                <a href="#boolean_type" >BOOLEAN Type</a><br />
+            
+                <a href="#tinyint_type" >TINYINT Type</a><br />
+            
+                <a href="#smallint_type" >SMALLINT Type</a><br />
+            
+                <a href="#bigint_type" >BIGINT Type</a><br />
+            
+                <a href="#identity_type" >IDENTITY Type</a><br />
+            
+                <a href="#decimal_type" >DECIMAL Type</a><br />
+                    </td><td class="index">
+            
+                <a href="#double_type" >DOUBLE Type</a><br />
+            
+                <a href="#real_type" >REAL Type</a><br />
+            
+                <a href="#time_type" >TIME Type</a><br />
+            
+                <a href="#date_type" >DATE Type</a><br />
+            
+                <a href="#timestamp_type" >TIMESTAMP Type</a><br />
+            
+                <a href="#binary_type" >BINARY Type</a><br />
+            
+                <a href="#other_type" >OTHER Type</a><br />
+                    </td><td class="index">
+            
+                <a href="#varchar_type" >VARCHAR Type</a><br />
+            
+                <a href="#varchar_ignorecase_type" >VARCHAR_IGNORECASE Type</a><br />
+            
+                <a href="#char_type" >CHAR Type</a><br />
+            
+                <a href="#blob_type" >BLOB Type</a><br />
+            
+                <a href="#clob_type" >CLOB Type</a><br />
+            
+                <a href="#uuid_type" >UUID Type</a><br />
+            
+                <a href="#array_type" >ARRAY Type</a><br />
+                    </td>
+    </tr>
+</table>
+<!-- railroad-end -->
+
+<!-- railroad-start -->
+<h2>Details</h2>
+<p>Click on the header to switch between railroad diagram and BNF.</p>
+<!-- railroad-end -->
+
+
+<h3 id="int_type" class="notranslate" onclick="switchBnf(this)">INT Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+INT | INTEGER | MEDIUMINT | INT4 | SIGNED
+</pre>
+<div name="railroad">
+<table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d"><code class="c">INT</code></td><td class="te"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">INTEGER</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">MEDIUMINT</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">INT4</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><code class="c">SIGNED</code></td><td class="le"></td></tr></table>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+INT | INTEGER | MEDIUMINT | INT4 | SIGNED
+</pre>
+syntax-end -->
+<p>Possible values: -2147483648 to 2147483647.</p><p>Mapped to <code class="notranslate">java.lang.Integer</code>.</p>
+<p>Example:</p>
+<p class="notranslate">INT</p>
+
+<h3 id="boolean_type" class="notranslate" onclick="switchBnf(this)">BOOLEAN Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+BOOLEAN | BIT | BOOL
+</pre>
+<div name="railroad">
+<table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d"><code class="c">BOOLEAN</code></td><td class="te"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">BIT</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><code class="c">BOOL</code></td><td class="le"></td></tr></table>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+BOOLEAN | BIT | BOOL
+</pre>
+syntax-end -->
+<p>Possible values: <code class="notranslate">TRUE</code> and <code class="notranslate">FALSE</code>.</p><p>Mapped to <code class="notranslate">java.lang.Boolean</code>.</p>
+<p>Example:</p>
+<p class="notranslate">BOOLEAN</p>
+
+<h3 id="tinyint_type" class="notranslate" onclick="switchBnf(this)">TINYINT Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+TINYINT
+</pre>
+<div name="railroad">
+<code class="c">TINYINT</code>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+TINYINT
+</pre>
+syntax-end -->
+<p>Possible values are: -128 to 127.</p><p>Mapped to <code class="notranslate">java.lang.Byte</code>.</p>
+<p>Example:</p>
+<p class="notranslate">TINYINT</p>
+
+<h3 id="smallint_type" class="notranslate" onclick="switchBnf(this)">SMALLINT Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+SMALLINT | INT2 | YEAR
+</pre>
+<div name="railroad">
+<table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d"><code class="c">SMALLINT</code></td><td class="te"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">INT2</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><code class="c">YEAR</code></td><td class="le"></td></tr></table>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+SMALLINT | INT2 | YEAR
+</pre>
+syntax-end -->
+<p>Possible values: -32768 to 32767.</p><p>Mapped to <code class="notranslate">java.lang.Short</code>.</p>
+<p>Example:</p>
+<p class="notranslate">SMALLINT</p>
+
+<h3 id="bigint_type" class="notranslate" onclick="switchBnf(this)">BIGINT Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+BIGINT | INT8
+</pre>
+<div name="railroad">
+<table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d"><code class="c">BIGINT</code></td><td class="te"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><code class="c">INT8</code></td><td class="le"></td></tr></table>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+BIGINT | INT8
+</pre>
+syntax-end -->
+<p>Possible values: -9223372036854775808 to 9223372036854775807.</p><p>Mapped to <code class="notranslate">java.lang.Long</code>.</p>
+<p>Example:</p>
+<p class="notranslate">BIGINT</p>
+
+<h3 id="identity_type" class="notranslate" onclick="switchBnf(this)">IDENTITY Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+IDENTITY
+</pre>
+<div name="railroad">
+<code class="c">IDENTITY</code>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+IDENTITY
+</pre>
+syntax-end -->
+<p>Auto-Increment value. Possible values: -9223372036854775808 to 9223372036854775807. Used values are never re-used, even when the transaction is rolled back.</p><p>Mapped to <code class="notranslate">java.lang.Long</code>.</p>
+<p>Example:</p>
+<p class="notranslate">IDENTITY</p>
+
+<h3 id="decimal_type" class="notranslate" onclick="switchBnf(this)">DECIMAL Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+{ DECIMAL | NUMBER | DEC | NUMERIC } ( <a href="grammar.html#int">precisionInt</a> [ , <a href="grammar.html#int">scaleInt</a> ] )
+</pre>
+<div name="railroad">
+<table class="railroad"><tr class="railroad"><td class="d"><table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d"><code class="c">DECIMAL</code></td><td class="te"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">NUMBER</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">DEC</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><code class="c">NUMERIC</code></td><td class="le"></td></tr></table></td><td class="d"><code class="c">( <a href="grammar.html#int">precisionInt</a></code></td><td class="d"><table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d">&nbsp;</td><td class="te"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><table class="railroad"><tr class="railroad"><td class="d"><code class="c">, <a href="grammar.html#int">scaleInt</a></code></td></tr></table></td><td class="le"></td></tr></table></td><td class="d"><code class="c">)</code></td></tr></table>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+{ DECIMAL | NUMBER | DEC | NUMERIC } ( <a href="grammar.html#int">precisionInt</a> [ , <a href="grammar.html#int">scaleInt</a> ] )
+</pre>
+syntax-end -->
+<p>Data type with fixed precision and scale. This data type is recommended for storing currency values.</p><p>Mapped to <code class="notranslate">java.math.BigDecimal</code>.</p>
+<p>Example:</p>
+<p class="notranslate">DECIMAL(20, 2)</p>
+
+<h3 id="double_type" class="notranslate" onclick="switchBnf(this)">DOUBLE Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+{ DOUBLE [ PRECISION ] | FLOAT | FLOAT8 }
+</pre>
+<div name="railroad">
+<table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d"><table class="railroad"><tr class="railroad"><td class="d"><code class="c">DOUBLE</code></td><td class="d"><table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d">&nbsp;</td><td class="te"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><code class="c">PRECISION</code></td><td class="le"></td></tr></table></td></tr></table></td><td class="te"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">FLOAT</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><code class="c">FLOAT8</code></td><td class="le"></td></tr></table>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+{ DOUBLE [ PRECISION ] | FLOAT | FLOAT8 }
+</pre>
+syntax-end -->
+<p>A floating point number. Should not be used to represent currency values, because of rounding problems.</p><p>Mapped to <code class="notranslate">java.lang.Double</code>.</p>
+<p>Example:</p>
+<p class="notranslate">DOUBLE</p>
+
+<h3 id="real_type" class="notranslate" onclick="switchBnf(this)">REAL Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+{ REAL | FLOAT4 }
+</pre>
+<div name="railroad">
+<table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d"><code class="c">REAL</code></td><td class="te"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><code class="c">FLOAT4</code></td><td class="le"></td></tr></table>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+{ REAL | FLOAT4 }
+</pre>
+syntax-end -->
+<p>A single precision floating point number. Should not be used to represent currency values, because of rounding problems.</p><p>Mapped to <code class="notranslate">java.lang.Float</code>.</p>
+<p>Example:</p>
+<p class="notranslate">REAL</p>
+
+<h3 id="time_type" class="notranslate" onclick="switchBnf(this)">TIME Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+TIME
+</pre>
+<div name="railroad">
+<code class="c">TIME</code>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+TIME
+</pre>
+syntax-end -->
+<p>The time data type. The format is hh:mm:ss.</p><p>Mapped to <code class="notranslate">java.sql.Time</code>. When converted to a <code class="notranslate">java.sql.Date</code>, the date is set to <code class="notranslate">1970-01-01</code>.</p>
+<p>Example:</p>
+<p class="notranslate">TIME</p>
+
+<h3 id="date_type" class="notranslate" onclick="switchBnf(this)">DATE Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+DATE
+</pre>
+<div name="railroad">
+<code class="c">DATE</code>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+DATE
+</pre>
+syntax-end -->
+<p>The date data type. The format is yyyy-<code class="notranslate">MM</code>-dd.</p><p>Mapped to <code class="notranslate">java.sql.Date</code>, with the time set to <code class="notranslate">00:00:00</code> (or to the next possible time if midnight doesn&#39;t exist for the given date and timezone due to a daylight saving change).</p>
+<p>Example:</p>
+<p class="notranslate">DATE</p>
+
+<h3 id="timestamp_type" class="notranslate" onclick="switchBnf(this)">TIMESTAMP Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+{ TIMESTAMP | DATETIME | SMALLDATETIME }
+</pre>
+<div name="railroad">
+<table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d"><code class="c">TIMESTAMP</code></td><td class="te"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">DATETIME</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><code class="c">SMALLDATETIME</code></td><td class="le"></td></tr></table>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+{ TIMESTAMP | DATETIME | SMALLDATETIME }
+</pre>
+syntax-end -->
+<p>The timestamp data type. The format is yyyy-<code class="notranslate">MM</code>-dd hh:mm:ss[.nnnnnnnnn].</p><p>Mapped to <code class="notranslate">java.sql.Timestamp</code> (<code class="notranslate">java.util.Date</code> is also supported).</p>
+<p>Example:</p>
+<p class="notranslate">TIMESTAMP</p>
+
+<h3 id="binary_type" class="notranslate" onclick="switchBnf(this)">BINARY Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+{ BINARY | VARBINARY | LONGVARBINARY | RAW | BYTEA } [ ( <a href="grammar.html#int">precisionInt</a> ) ]
+</pre>
+<div name="railroad">
+<table class="railroad"><tr class="railroad"><td class="d"><table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d"><code class="c">BINARY</code></td><td class="te"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">VARBINARY</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">LONGVARBINARY</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">RAW</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><code class="c">BYTEA</code></td><td class="le"></td></tr></table></td><td class="d"><table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d">&nbsp;</td><td class="te"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><table class="railroad"><tr class="railroad"><td class="d"><code class="c">( <a href="grammar.html#int">precisionInt</a> )</code></td></tr></table></td><td class="le"></td></tr></table></td></tr></table>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+{ BINARY | VARBINARY | LONGVARBINARY | RAW | BYTEA } [ ( <a href="grammar.html#int">precisionInt</a> ) ]
+</pre>
+syntax-end -->
+<p>Represents a byte array. For very long arrays, use <code class="notranslate">BLOB</code>. The maximum size is 2 GB, but the whole object is kept in memory when using this data type. The precision is a size constraint; only the actual data is persisted. For large text data <code class="notranslate">BLOB</code> or <code class="notranslate">CLOB</code> should be used.</p><p>Mapped to byte[].</p>
+<p>Example:</p>
+<p class="notranslate">BINARY(1000)</p>
+
+<h3 id="other_type" class="notranslate" onclick="switchBnf(this)">OTHER Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+OTHER
+</pre>
+<div name="railroad">
+<code class="c">OTHER</code>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+OTHER
+</pre>
+syntax-end -->
+<p>This type allows storing serialized Java objects. Internally, a byte array is used. Serialization and deserialization is done on the client side only. Deserialization is only done when <code class="notranslate">getObject</code> is called. Java operations cannot be executed inside the database engine for security reasons. Use <code class="notranslate">PreparedStatement.setObject</code> to store values.</p><p>Mapped to <code class="notranslate">java.lang.Object</code> (or any subclass).</p>
+<p>Example:</p>
+<p class="notranslate">OTHER</p>
+
+<h3 id="varchar_type" class="notranslate" onclick="switchBnf(this)">VARCHAR Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+{ VARCHAR | LONGVARCHAR | VARCHAR2 | NVARCHAR
+| NVARCHAR2 | VARCHAR_CASESENSITIVE}  [ ( <a href="grammar.html#int">precisionInt</a> ) ]
+</pre>
+<div name="railroad">
+<table class="railroad"><tr class="railroad"><td class="d"><table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d"><code class="c">VARCHAR</code></td><td class="te"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">LONGVARCHAR</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">VARCHAR2</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">NVARCHAR</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">NVARCHAR2</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><code class="c">VARCHAR_CASESENSITIVE</code></td><td class="le"></td></tr></table></td><td class="d"><table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d">&nbsp;</td><td class="te"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><table class="railroad"><tr class="railroad"><td class="d"><code class="c">( <a href="grammar.html#int">precisionInt</a> )</code></td></tr></table></td><td class="le"></td></tr></table></td></tr></table>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+{ VARCHAR | LONGVARCHAR | VARCHAR2 | NVARCHAR
+| NVARCHAR2 | VARCHAR_CASESENSITIVE}  [ ( <a href="grammar.html#int">precisionInt</a> ) ]
+</pre>
+syntax-end -->
+<p>A Unicode String. Use two single quotes (&#39;&#39;) to create a quote.</p><p>The maximum precision is <code class="notranslate">Integer.MAX_VALUE</code>. The precision is a size constraint; only the actual data is persisted.</p><p>The whole text is loaded into memory when using this data type. For large text data <code class="notranslate">CLOB</code> should be used; see there for details.</p><p>Mapped to <code class="notranslate">java.lang.String</code>.</p>
+<p>Example:</p>
+<p class="notranslate">VARCHAR(255)</p>
+
+<h3 id="varchar_ignorecase_type" class="notranslate" onclick="switchBnf(this)">VARCHAR_IGNORECASE Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+VARCHAR_IGNORECASE [ ( <a href="grammar.html#int">precisionInt</a> ) ]
+</pre>
+<div name="railroad">
+<table class="railroad"><tr class="railroad"><td class="d"><code class="c">VARCHAR_IGNORECASE</code></td><td class="d"><table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d">&nbsp;</td><td class="te"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><table class="railroad"><tr class="railroad"><td class="d"><code class="c">( <a href="grammar.html#int">precisionInt</a> )</code></td></tr></table></td><td class="le"></td></tr></table></td></tr></table>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+VARCHAR_IGNORECASE [ ( <a href="grammar.html#int">precisionInt</a> ) ]
+</pre>
+syntax-end -->
+<p>Same as <code class="notranslate">VARCHAR</code>, but not case sensitive when comparing. Stored in mixed case.</p><p>The maximum precision is <code class="notranslate">Integer.MAX_VALUE</code>. The precision is a size constraint; only the actual data is persisted.</p><p>The whole text is loaded into memory when using this data type. For large text data <code class="notranslate">CLOB</code> should be used; see there for details.</p><p>Mapped to <code class="notranslate">java.lang.String</code>.</p>
+<p>Example:</p>
+<p class="notranslate">VARCHAR_IGNORECASE</p>
+
+<h3 id="char_type" class="notranslate" onclick="switchBnf(this)">CHAR Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+{ CHAR | CHARACTER | NCHAR } [ ( <a href="grammar.html#int">precisionInt</a> ) ]
+</pre>
+<div name="railroad">
+<table class="railroad"><tr class="railroad"><td class="d"><table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d"><code class="c">CHAR</code></td><td class="te"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">CHARACTER</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><code class="c">NCHAR</code></td><td class="le"></td></tr></table></td><td class="d"><table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d">&nbsp;</td><td class="te"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><table class="railroad"><tr class="railroad"><td class="d"><code class="c">( <a href="grammar.html#int">precisionInt</a> )</code></td></tr></table></td><td class="le"></td></tr></table></td></tr></table>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+{ CHAR | CHARACTER | NCHAR } [ ( <a href="grammar.html#int">precisionInt</a> ) ]
+</pre>
+syntax-end -->
+<p>A Unicode String. This type is supported for compatibility with other databases and older applications. The difference to <code class="notranslate">VARCHAR</code> is that trailing spaces are ignored and not persisted.</p><p>The maximum precision is <code class="notranslate">Integer.MAX_VALUE</code>. The precision is a size constraint; only the actual data is persisted.</p><p>The whole text is kept in memory when using this data type. For large text data <code class="notranslate">CLOB</code> should be used; see there for details.</p><p>Mapped to <code class="notranslate">java.lang.String</code>.</p>
+<p>Example:</p>
+<p class="notranslate">CHAR(10)</p>
+
+<h3 id="blob_type" class="notranslate" onclick="switchBnf(this)">BLOB Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+{ BLOB | TINYBLOB | MEDIUMBLOB | LONGBLOB | IMAGE | OID } [ ( <a href="grammar.html#int">precisionInt</a> ) ]
+</pre>
+<div name="railroad">
+<table class="railroad"><tr class="railroad"><td class="d"><table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d"><code class="c">BLOB</code></td><td class="te"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">TINYBLOB</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">MEDIUMBLOB</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">LONGBLOB</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">IMAGE</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><code class="c">OID</code></td><td class="le"></td></tr></table></td><td class="d"><table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d">&nbsp;</td><td class="te"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><table class="railroad"><tr class="railroad"><td class="d"><code class="c">( <a href="grammar.html#int">precisionInt</a> )</code></td></tr></table></td><td class="le"></td></tr></table></td></tr></table>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+{ BLOB | TINYBLOB | MEDIUMBLOB | LONGBLOB | IMAGE | OID } [ ( <a href="grammar.html#int">precisionInt</a> ) ]
+</pre>
+syntax-end -->
+<p>Like <code class="notranslate">BINARY</code>, but intended for very large values such as files or images. Unlike when using <code class="notranslate">BINARY</code>, large objects are not kept fully in-memory. Use <code class="notranslate">PreparedStatement.setBinaryStream</code> to store values. See also <code class="notranslate">CLOB</code> and Advanced / Large Objects.</p><p>Mapped to <code class="notranslate">java.sql.Blob</code> (<code class="notranslate">java.io.InputStream</code> is also supported).</p>
+<p>Example:</p>
+<p class="notranslate">BLOB</p>
+
+<h3 id="clob_type" class="notranslate" onclick="switchBnf(this)">CLOB Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+{ CLOB | TINYTEXT | TEXT | MEDIUMTEXT | LONGTEXT | NTEXT | NCLOB } [ ( <a href="grammar.html#int">precisionInt</a> ) ]
+</pre>
+<div name="railroad">
+<table class="railroad"><tr class="railroad"><td class="d"><table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d"><code class="c">CLOB</code></td><td class="te"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">TINYTEXT</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">TEXT</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">MEDIUMTEXT</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">LONGTEXT</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">NTEXT</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><code class="c">NCLOB</code></td><td class="le"></td></tr></table></td><td class="d"><table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d">&nbsp;</td><td class="te"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><table class="railroad"><tr class="railroad"><td class="d"><code class="c">( <a href="grammar.html#int">precisionInt</a> )</code></td></tr></table></td><td class="le"></td></tr></table></td></tr></table>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+{ CLOB | TINYTEXT | TEXT | MEDIUMTEXT | LONGTEXT | NTEXT | NCLOB } [ ( <a href="grammar.html#int">precisionInt</a> ) ]
+</pre>
+syntax-end -->
+<p><code class="notranslate">CLOB</code> is like <code class="notranslate">VARCHAR</code>, but intended for very large values. Unlike when using <code class="notranslate">VARCHAR</code>, large <code class="notranslate">CLOB</code> objects are not kept fully in-memory; instead, they are streamed. <code class="notranslate">CLOB</code> should be used for documents and texts with arbitrary size such as XML or HTML documents, text files, or memo fields of unlimited size. Use <code class="notranslate">PreparedStatement.setCharacterStream</code> to store values. See also Advanced / Large Objects.</p><p><code class="notranslate">VARCHAR</code> should be used for text with relatively short average size (for example shorter than 200 characters). Short <code class="notranslate">CLOB</code> values are stored inline, but there is an overhead compared to <code class="notranslate">VARCHAR</code>.</p><p>Mapped to <code class="notranslate">java.sql.Clob</code> (<code class="notranslate">java.io.Reader</code> is also supported).</p>
+<p>Example:</p>
+<p class="notranslate">CLOB</p>
+
+<h3 id="uuid_type" class="notranslate" onclick="switchBnf(this)">UUID Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+UUID
+</pre>
+<div name="railroad">
+<code class="c">UUID</code>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+UUID
+</pre>
+syntax-end -->
+<p>Universally unique identifier. This is a 128 bit value. To store values, use <code class="notranslate">PreparedStatement.setBytes, setString</code>, or <code class="notranslate">setObject(uuid)</code> (where <code class="notranslate">uuid</code> is a <code class="notranslate">java.util.UUID</code>). <code class="notranslate">ResultSet.getObject</code> will return a <code class="notranslate">java.util.UUID</code>.</p><p>Please note that using an index on randomly generated data will result on poor performance once there are millions of rows in a table. The reason is that the cache behavior is very bad with randomly distributed data. This is a problem for any database system.</p><p>For details, see the documentation of <code class="notranslate">java.util.UUID</code>.</p>
+<p>Example:</p>
+<p class="notranslate">UUID</p>
+
+<h3 id="array_type" class="notranslate" onclick="switchBnf(this)">ARRAY Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+ARRAY
+</pre>
+<div name="railroad">
+<code class="c">ARRAY</code>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+ARRAY
+</pre>
+syntax-end -->
+<p>An array of values. Mapped to <code class="notranslate">java.lang.Object[]</code> (arrays of any non-primitive type are also supported).</p><p> Use a value list (1, 2) or <code class="notranslate">PreparedStatement.setObject(.., new Object[] {..})</code> to store values, and <code class="notranslate">ResultSet.getObject(..)</code> or <code class="notranslate">ResultSet.getArray(..)</code> to retrieve the values.</p>
+<p>Example:</p>
+<p class="notranslate">ARRAY</p>
+
+<!--[if lte IE 7]><script language="javascript">switchBnf(null);</script><![endif]-->
+
+<!-- [close] { -->
+</div></td></tr></table>
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="search.js"></script>
+<script type="text/javascript">
+function startTranslate() {
+    document.getElementById('translate').style.display='';
+    var script=document.createElement('script');
+    script.setAttribute("type","text/javascript");
+    script.setAttribute("src", "http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit");
+    document.getElementsByTagName("head")[0].appendChild(script);
+}
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<!-- } --><script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>
+<script type="text/javascript">var pageTracker=_gat._getTracker("UA-2351060-1");pageTracker._initData();pageTracker._trackPageview();</script></body></html>
+
