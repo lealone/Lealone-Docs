@@ -15,8 +15,8 @@
             <version>5.0.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>org.lealone</groupId>
-            <artifactId>lealone-js</artifactId>
+            <groupId>org.lealone.plugins</groupId>
+            <artifactId>lealone-javascript</artifactId>
             <version>5.0.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
