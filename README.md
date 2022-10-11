@@ -52,7 +52,7 @@ Lealone 既可以作为一个独立的数据库来使用，也可以当成一个
   * [存储引擎快速入门](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.md)
 
 
-### Lealone 企业版
+# Lealone 企业版
 
   * [复制集群搭建](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E5%A4%8D%E5%88%B6%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA.md)
 
