@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>快速入门 | Lealone-Docs</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="快速入门" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="与 Lealone 相关的所有文档" />
+<meta property="og:description" content="与 Lealone 相关的所有文档" />
+<link rel="canonical" href="https://lealone.github.io/Lealone-Docs/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E7%94%A8%E6%88%B7%E6%96%87%E6%A1%A3.html" />
+<meta property="og:url" content="https://lealone.github.io/Lealone-Docs/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E7%94%A8%E6%88%B7%E6%96%87%E6%A1%A3.html" />
+<meta property="og:site_name" content="Lealone-Docs" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="快速入门" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"与 Lealone 相关的所有文档","headline":"快速入门","url":"https://lealone.github.io/Lealone-Docs/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E7%94%A8%E6%88%B7%E6%96%87%E6%A1%A3.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="../style.css?v=5ab46cda7f9d318b03cc735d3d5826e390e7c60f">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/Lealone-Docs/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://lealone.github.io/Lealone-Docs/">Lealone-Docs</a></h1>
+      
+
+      <h1 id="1-快速入门">1. 快速入门</h1>
+
+<h2 id="11-运行需要">1.1. 运行需要</h2>
+
+<ul>
+  <li>JDK 1.8+</li>
+</ul>
+
+<h3 id="12-下载-lealone">1.2. 下载 Lealone</h3>
+
+<p><a href="https://github.com/lealone/Lealone/releases/download/lealone-5.0.0-rc-14/lealone-5.0.0.jar">lealone-5.0.0.jar</a></p>
+
+<p>Lealone 只有一个 jar 包，下载下来之后随意放到一个目录即可</p>
+
+<p>也可以从源代码构建最新版本，请阅读文档: <a href="https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E4%BB%8E%E6%BA%90%E7%A0%81%E6%9E%84%E5%BB%BALealone.md">从源码构建 Lealone</a></p>
+
+<h3 id="13-启动-lealone-数据库">1.3. 启动 Lealone 数据库</h3>
+
+<p>打开一个新的命令行窗口，运行: <code class="language-plaintext highlighter-rouge">java -jar lealone-5.0.0.jar</code></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Lealone</span> <span class="nl">version:</span> <span class="mf">5.0</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="no">SNAPSHOT</span>
+<span class="nc">Use</span> <span class="k">default</span> <span class="n">config</span>
+<span class="nc">Base</span> <span class="nl">dir:</span> <span class="o">.</span><span class="err">\</span><span class="n">lealone_data</span>
+<span class="nc">Init</span> <span class="n">storage</span> <span class="nl">engines:</span> <span class="mi">5</span> <span class="n">ms</span>
+<span class="nc">Init</span> <span class="n">transaction</span> <span class="nl">engines:</span> <span class="mi">67</span> <span class="n">ms</span>
+<span class="nc">Init</span> <span class="n">sql</span> <span class="nl">engines:</span> <span class="mi">3</span> <span class="n">ms</span>
+<span class="nc">Init</span> <span class="n">protocol</span> <span class="n">server</span> <span class="nl">engines:</span> <span class="mi">105</span> <span class="n">ms</span>
+<span class="nc">Init</span> <span class="n">lealone</span> <span class="nl">database:</span> <span class="mi">71</span> <span class="n">ms</span>
+<span class="nc">Starting</span> <span class="n">tcp</span> <span class="n">server</span> <span class="n">accepter</span>
+<span class="nc">TcpServer</span> <span class="n">started</span><span class="o">,</span> <span class="nl">host:</span> <span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="o">,</span> <span class="nl">port:</span> <span class="mi">9210</span>
+<span class="nc">Total</span> <span class="nl">time:</span> <span class="mi">269</span> <span class="n">ms</span> <span class="o">(</span><span class="nc">Load</span> <span class="nl">config:</span> <span class="mi">8</span> <span class="n">ms</span><span class="o">,</span> <span class="nl">Init:</span> <span class="mi">256</span> <span class="n">ms</span><span class="o">,</span> <span class="nl">Start:</span> <span class="mi">5</span> <span class="n">ms</span><span class="o">)</span>
+<span class="nc">Exit</span> <span class="n">with</span> <span class="nc">Ctrl</span><span class="o">+</span><span class="no">C</span>
+</code></pre></div></div>
+
+<p>要停止 Lealone，直接按 Ctrl + C</p>
+
+<h3 id="14-使用-lealone-客户端执行-sql-语句">1.4. 使用 Lealone 客户端执行 SQL 语句</h3>
+
+<p>打开一个新的命令行窗口，运行: <code class="language-plaintext highlighter-rouge">java -jar lealone-5.0.0.jar -client</code></p>
+
+<p>默认用 <code class="language-plaintext highlighter-rouge">root</code> 用户连到 127.0.0.1:9210，密码为空</p>
+
+<p>默认数据库是 <code class="language-plaintext highlighter-rouge">lealone</code>，可以通过 <code class="language-plaintext highlighter-rouge">-database</code> 参数指定其他数据库</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Welcome</span> <span class="n">to</span> <span class="nc">Lealone</span> <span class="nc">Shell</span> <span class="mf">5.0</span><span class="o">.</span><span class="mi">0</span>
+<span class="nc">Connect</span> <span class="n">to</span> <span class="nl">jdbc:lealone:tcp:</span><span class="c1">//localhost:9210/lealone</span>
+<span class="nc">Commands</span> <span class="n">are</span> <span class="k">case</span> <span class="n">insensitive</span><span class="o">;</span> <span class="no">SQL</span> <span class="n">statements</span> <span class="n">end</span> <span class="n">with</span> <span class="sc">';'</span>
+<span class="n">help</span> <span class="n">or</span> <span class="o">?</span>          <span class="nc">Display</span> <span class="k">this</span> <span class="n">help</span>
+<span class="n">list</span>               <span class="nc">Toggle</span> <span class="n">result</span> <span class="n">list</span> <span class="o">/</span> <span class="n">stack</span> <span class="n">trace</span> <span class="n">mode</span>
+<span class="n">maxwidth</span> <span class="n">or</span> <span class="n">md</span>     <span class="nc">Set</span> <span class="n">maximum</span> <span class="n">column</span> <span class="nf">width</span> <span class="o">(</span><span class="k">default</span> <span class="n">is</span> <span class="mi">100</span><span class="o">)</span>
+<span class="n">autocommit</span> <span class="n">or</span> <span class="n">ac</span>   <span class="nc">Enable</span> <span class="n">or</span> <span class="n">disable</span> <span class="n">autocommit</span>
+<span class="n">history</span> <span class="n">or</span> <span class="n">h</span>       <span class="nc">Show</span> <span class="n">the</span> <span class="n">last</span> <span class="mi">20</span> <span class="n">statements</span>
+<span class="n">reconnect</span> <span class="n">or</span> <span class="n">rc</span>    <span class="nc">Reconnect</span> <span class="n">the</span> <span class="n">database</span>
+<span class="n">quit</span> <span class="n">or</span> <span class="n">exit</span>       <span class="nc">Close</span> <span class="n">the</span> <span class="n">connection</span> <span class="n">and</span> <span class="n">exit</span>
+
+<span class="n">sql</span><span class="o">&gt;</span> <span class="no">CREATE</span> <span class="no">TABLE</span> <span class="no">IF</span> <span class="no">NOT</span> <span class="no">EXISTS</span> <span class="nf">test</span> <span class="o">(</span><span class="n">f1</span> <span class="kt">int</span> <span class="n">primary</span> <span class="n">key</span><span class="o">,</span> <span class="n">f2</span> <span class="kt">long</span><span class="o">);</span>
+<span class="o">(</span><span class="nc">Update</span> <span class="nl">count:</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">7</span> <span class="n">ms</span><span class="o">)</span>
+
+<span class="n">sql</span><span class="o">&gt;</span> <span class="no">INSERT</span> <span class="no">INTO</span> <span class="nf">test</span><span class="o">(</span><span class="n">f1</span><span class="o">,</span> <span class="n">f2</span><span class="o">)</span> <span class="no">VALUES</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">);</span>
+<span class="o">(</span><span class="nc">Update</span> <span class="nl">count:</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">2</span> <span class="n">ms</span><span class="o">)</span>
+
+<span class="n">sql</span><span class="o">&gt;</span> <span class="no">SELECT</span> <span class="o">*</span> <span class="no">FROM</span> <span class="n">test</span><span class="o">;</span>
+<span class="o">+----+----+</span>
+<span class="o">|</span> <span class="no">F1</span> <span class="o">|</span> <span class="no">F2</span> <span class="o">|</span>
+<span class="o">+----+----+</span>
+<span class="o">|</span> <span class="mi">1</span>  <span class="o">|</span> <span class="mi">2</span>  <span class="o">|</span>
+<span class="o">+----+----+</span>
+<span class="o">(</span><span class="mi">1</span> <span class="n">row</span><span class="o">,</span> <span class="mi">8</span> <span class="n">ms</span><span class="o">)</span>
+
+<span class="n">sql</span><span class="o">&gt;</span> <span class="no">UPDATE</span> <span class="n">test</span> <span class="no">SET</span> <span class="n">f2</span> <span class="o">=</span> <span class="mi">20</span><span class="o">;</span>
+<span class="o">(</span><span class="nc">Update</span> <span class="nl">count:</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">1</span> <span class="n">ms</span><span class="o">)</span>
+
+<span class="n">sql</span><span class="o">&gt;</span> <span class="no">SELECT</span> <span class="o">*</span> <span class="no">FROM</span> <span class="n">test</span><span class="o">;</span>
+<span class="o">+----+----+</span>
+<span class="o">|</span> <span class="no">F1</span> <span class="o">|</span> <span class="no">F2</span> <span class="o">|</span>
+<span class="o">+----+----+</span>
+<span class="o">|</span> <span class="mi">1</span>  <span class="o">|</span> <span class="mi">20</span> <span class="o">|</span>
+<span class="o">+----+----+</span>
+<span class="o">(</span><span class="mi">1</span> <span class="n">row</span><span class="o">,</span> <span class="mi">2</span> <span class="n">ms</span><span class="o">)</span>
+
+<span class="n">sql</span><span class="o">&gt;</span> <span class="no">DELETE</span> <span class="no">FROM</span> <span class="n">test</span><span class="o">;</span>
+<span class="o">(</span><span class="nc">Update</span> <span class="nl">count:</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">2</span> <span class="n">ms</span><span class="o">)</span>
+
+<span class="n">sql</span><span class="o">&gt;</span> <span class="no">SELECT</span> <span class="o">*</span> <span class="no">FROM</span> <span class="n">test</span><span class="o">;</span>
+<span class="o">+----+----+</span>
+<span class="o">|</span> <span class="no">F1</span> <span class="o">|</span> <span class="no">F2</span> <span class="o">|</span>
+<span class="o">+----+----+</span>
+<span class="o">+----+----+</span>
+<span class="o">(</span><span class="mi">0</span> <span class="n">rows</span><span class="o">,</span> <span class="mi">1</span> <span class="n">ms</span><span class="o">)</span>
+</code></pre></div></div>
+
+<h3 id="15-crud-example">1.5. CRUD Example</h3>
+
+<p>只需要懂 JDBC 和 SQL 就可以轻松看懂下面的代码:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.sql.*</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">CRUDExample</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">Exception</span> <span class="o">{</span>
+        <span class="nc">String</span> <span class="n">url</span> <span class="o">=</span> <span class="s">"jdbc:lealone:tcp://localhost:9210/lealone"</span><span class="o">;</span>
+        <span class="nc">Connection</span> <span class="n">conn</span> <span class="o">=</span> <span class="nc">DriverManager</span><span class="o">.</span><span class="na">getConnection</span><span class="o">(</span><span class="n">url</span><span class="o">,</span> <span class="s">"root"</span><span class="o">,</span> <span class="s">""</span><span class="o">);</span>
+        <span class="nc">Statement</span> <span class="n">stmt</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="na">createStatement</span><span class="o">();</span>
+
+        <span class="n">stmt</span><span class="o">.</span><span class="na">executeUpdate</span><span class="o">(</span><span class="s">"CREATE TABLE IF NOT EXISTS test (f1 int primary key, f2 long)"</span><span class="o">);</span>
+        <span class="n">stmt</span><span class="o">.</span><span class="na">executeUpdate</span><span class="o">(</span><span class="s">"INSERT INTO test(f1, f2) VALUES(1, 1)"</span><span class="o">);</span>
+        <span class="n">stmt</span><span class="o">.</span><span class="na">executeUpdate</span><span class="o">(</span><span class="s">"UPDATE test SET f2 = 2 WHERE f1 = 1"</span><span class="o">);</span>
+        <span class="nc">ResultSet</span> <span class="n">rs</span> <span class="o">=</span> <span class="n">stmt</span><span class="o">.</span><span class="na">executeQuery</span><span class="o">(</span><span class="s">"SELECT * FROM test"</span><span class="o">);</span>
+        <span class="k">while</span> <span class="o">(</span><span class="n">rs</span><span class="o">.</span><span class="na">next</span><span class="o">())</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"f1="</span> <span class="o">+</span> <span class="n">rs</span><span class="o">.</span><span class="na">getInt</span><span class="o">(</span><span class="mi">1</span><span class="o">)</span> <span class="o">+</span> <span class="s">" f2="</span> <span class="o">+</span> <span class="n">rs</span><span class="o">.</span><span class="na">getLong</span><span class="o">(</span><span class="mi">2</span><span class="o">));</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">();</span>
+        <span class="o">}</span>
+        <span class="n">rs</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+        <span class="n">stmt</span><span class="o">.</span><span class="na">executeUpdate</span><span class="o">(</span><span class="s">"DELETE FROM test WHERE f1 = 1"</span><span class="o">);</span>
+        <span class="n">stmt</span><span class="o">.</span><span class="na">executeUpdate</span><span class="o">(</span><span class="s">"DROP TABLE IF EXISTS test"</span><span class="o">);</span>
+        <span class="n">stmt</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+        <span class="n">conn</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>把上面的代码存到一个 CRUDExample.java 文件 (目录随意) <br /></p>
+
+<p>编译:</p>
+<blockquote>
+  <p>javac CRUDExample.java</p>
+</blockquote>
+
+<p>运行:</p>
+<blockquote>
+  <p>java -cp .;lealone-5.0.0.jar CRUDExample</p>
+</blockquote>
+
+<h1 id="2-ui-客户端">2. UI 客户端</h1>
+
+<p>可以使用 <a href="https://dbeaver.io/">DBeaver</a> 这类 JDBC UI 客户端访问 Lealone</p>
+
+<h1 id="3-sql-reference">3. SQL Reference</h1>
+
+<p>因为 Lealone 的 SQL 引擎从 <a href="http://www.h2database.com/html/main.html">H2 数据库</a> 的 SQL 引擎发展而来， 
+所以 Lealone 的 SQL 用法与 H2 数据库一样。</p>
+
+<ul>
+  <li>
+    <p><a href="http://www.h2database.com/html/grammar.html">SQL Grammar</a></p>
+  </li>
+  <li>
+    <p><a href="http://www.h2database.com/html/functions.html">Functions</a></p>
+  </li>
+  <li>
+    <p><a href="http://www.h2database.com/html/datatypes.html">Data Types</a></p>
+  </li>
+</ul>
+
+
+      
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        This site is open source. <a href="https://github.com/lealone/Lealone-Docs/edit/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E7%94%A8%E6%88%B7%E6%96%87%E6%A1%A3.md">Improve this page</a>.
+      </div>
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>
