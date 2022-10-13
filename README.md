@@ -20,11 +20,11 @@ Lealone 既可以作为一个独立的数据库来使用，也可以当成一个
 
 #### SQL Reference
 
-  * [SQL Grammar](http://47.92.197.136/docs/grammar.html)
+  * [SQL Grammar](http://47.92.197.136/grammar.html)
 
-  * [Functions](http://47.92.197.136/docs/functions.html)
+  * [Functions](http://47.92.197.136/functions.html)
 
-  * [Data Types](http://47.92.197.136/docs/datatypes.html)
+  * [Data Types](http://47.92.197.136/datatypes.html)
 
 
 ### Lealone 微服务框架
