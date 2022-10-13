@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>存储引擎快速入门</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="Lealone-Docs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="与 Lealone 相关的所有文档" />
+<meta property="og:description" content="与 Lealone 相关的所有文档" />
+<link rel="canonical" href="https://lealone.github.io/Lealone-Docs/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.html" />
+<meta property="og:url" content="https://lealone.github.io/Lealone-Docs/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.html" />
+<meta property="og:site_name" content="Lealone-Docs" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Lealone-Docs" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"与 Lealone 相关的所有文档","headline":"Lealone-Docs","url":"https://lealone.github.io/Lealone-Docs/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="../style.css?v=5ab46cda7f9d318b03cc735d3d5826e390e7c60f">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/Lealone-Docs/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+
+      <p>Lealone 支持可插拔的存储引擎架构，所以存储引擎不但可以单独拿出来使用，为 Lealone 增加新的存储引擎也很方便。</p>
+
+<p>Lealone 内置了两个存储引擎，一个是 AOSE 异步自适应优化存储引擎(Async adaptive Optimization Storage Engine)。
+另一个是 memory 存储引擎，内部基于 ConcurrentSkipListMap 来实现。</p>
+
+<p>这篇文章介绍如何使用 Lealone 内置的存储引擎。</p>
+
+<p>文章最后有完整的项目代码，可直接下载到本机上尝试。</p>
+
+<h3 id="在-pomxml-中增加依赖">在 pom.xml 中增加依赖</h3>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;dependencies&gt;</span>
+        <span class="nt">&lt;dependency&gt;</span>
+            <span class="nt">&lt;groupId&gt;</span>org.lealone<span class="nt">&lt;/groupId&gt;</span>
+            <span class="nt">&lt;artifactId&gt;</span>lealone-aose<span class="nt">&lt;/artifactId&gt;</span>
+            <span class="nt">&lt;version&gt;</span>5.0.0-SNAPSHOT<span class="nt">&lt;/version&gt;</span>
+        <span class="nt">&lt;/dependency&gt;</span>
+    <span class="nt">&lt;/dependencies&gt;</span>
+
+    <span class="nt">&lt;repositories&gt;</span>
+        <span class="nt">&lt;repository&gt;</span>
+            <span class="nt">&lt;id&gt;</span>ossrh<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;url&gt;</span>https://oss.sonatype.org/content/repositories/snapshots<span class="nt">&lt;/url&gt;</span>
+        <span class="nt">&lt;/repository&gt;</span>
+    <span class="nt">&lt;/repositories&gt;</span>
+</code></pre></div></div>
+
+<h3 id="通过统一的插件管理器获取存储引擎实例">通过统一的插件管理器获取存储引擎实例</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kd">private</span> <span class="kd">static</span> <span class="nc">Storage</span> <span class="nf">getStorage</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">StorageEngine</span> <span class="n">se</span> <span class="o">=</span> <span class="nc">PluginManager</span><span class="o">.</span><span class="na">getPlugin</span><span class="o">(</span><span class="nc">StorageEngine</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="n">name</span><span class="o">);</span>
+        <span class="nc">StorageBuilder</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">se</span><span class="o">.</span><span class="na">getStorageBuilder</span><span class="o">();</span>
+        <span class="n">builder</span><span class="o">.</span><span class="na">storagePath</span><span class="o">(</span><span class="s">"./target/"</span> <span class="o">+</span> <span class="n">name</span><span class="o">);</span>
+        <span class="nc">Storage</span> <span class="n">storage</span> <span class="o">=</span> <span class="n">builder</span><span class="o">.</span><span class="na">openStorage</span><span class="o">();</span>
+        <span class="k">return</span> <span class="n">storage</span><span class="o">;</span>
+    <span class="o">}</span>
+</code></pre></div></div>
+
+<p>org.lealone.storage.StorageEngine 是存储引擎的接口，也是一种插件类型，
+所以可以通过统一的插件管理器获取存储引擎实例，
+比如要获取 AOSE 存储引擎的实例可以使用 PluginManager.getPlugin(StorageEngine.class, “aose”) 来获取，
+getPlugin 的第2个参数是存储引擎的名称，不区分大写小。</p>
+
+<p>通过 StorageEngine.getStorageBuilder() 得到一个 StorageBuilder 后可以配置具体的参数，
+大多数情况下通过 StorageBuilder.storagePath() 方法配置根目录即可。</p>
+
+<p>最后通过 StorageBuilder.openStorage() 就能创建一个 Storage 实例。</p>
+
+<h3 id="通过-storagemap-读写数据">通过 StorageMap 读写数据</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">testMap</span><span class="o">(</span><span class="nc">Storage</span> <span class="n">storage</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">StorageMap</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">,</span> <span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">map</span> <span class="o">=</span> <span class="n">storage</span><span class="o">.</span><span class="na">openMap</span><span class="o">(</span><span class="s">"test"</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
+        <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"a"</span><span class="o">,</span> <span class="mi">100</span><span class="o">);</span>
+        <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"b"</span><span class="o">,</span> <span class="mi">200</span><span class="o">);</span>
+
+        <span class="nc">Integer</span> <span class="n">v</span> <span class="o">=</span> <span class="n">map</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s">"a"</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">v</span><span class="o">);</span>
+
+        <span class="n">map</span><span class="o">.</span><span class="na">cursor</span><span class="o">().</span><span class="na">forEachRemaining</span><span class="o">(</span><span class="n">k</span> <span class="o">-&gt;</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">map</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">k</span><span class="o">));</span>
+        <span class="o">});</span>
+
+        <span class="n">map</span><span class="o">.</span><span class="na">save</span><span class="o">();</span>
+    <span class="o">}</span>
+</code></pre></div></div>
+
+<p>调用 org.lealone.storage.Storage.openMap(String, Map&lt;String, String&gt;) 可以创建一个 StorageMap 实例，
+第一个参数是 StorageMap 的名称，第二个参数是可选的配置，默认为 null 即可。</p>
+
+<p>StorageMap 的用法跟 java.util.Map 很相似。</p>
+
+<h3 id="通过-storagemap-异步写数据">通过 StorageMap 异步写数据</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">testAsyncMap</span><span class="o">(</span><span class="nc">Storage</span> <span class="n">storage</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">StorageMap</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">,</span> <span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">map</span> <span class="o">=</span> <span class="n">storage</span><span class="o">.</span><span class="na">openMap</span><span class="o">(</span><span class="s">"test"</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
+        <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"c"</span><span class="o">,</span> <span class="mi">300</span><span class="o">,</span> <span class="n">ac</span> <span class="o">-&gt;</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Async old value: "</span> <span class="o">+</span> <span class="n">ac</span><span class="o">.</span><span class="na">getResult</span><span class="o">());</span>
+        <span class="o">});</span>
+        <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"d"</span><span class="o">,</span> <span class="mi">400</span><span class="o">,</span> <span class="n">ac</span> <span class="o">-&gt;</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Async old value: "</span> <span class="o">+</span> <span class="n">ac</span><span class="o">.</span><span class="na">getResult</span><span class="o">());</span>
+        <span class="o">});</span>
+        <span class="nc">Integer</span> <span class="n">v</span> <span class="o">=</span> <span class="n">map</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s">"c"</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">v</span><span class="o">);</span>
+
+        <span class="n">map</span><span class="o">.</span><span class="na">cursor</span><span class="o">().</span><span class="na">forEachRemaining</span><span class="o">(</span><span class="n">k</span> <span class="o">-&gt;</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">map</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">k</span><span class="o">));</span>
+        <span class="o">});</span>
+
+        <span class="n">map</span><span class="o">.</span><span class="na">save</span><span class="o">();</span>
+    <span class="o">}</span>
+</code></pre></div></div>
+
+<p>StorageMap.put 支持同步和异步操作，例如上一小节的 map.put(“a”, 100) 就是同步写操作，
+调用 put 的线程需要同步等待，直到 put 完成写操作才返回。</p>
+
+<p>StorageMap.put 还支持异步操作，给第三个参数传递一个异步回调处理器即可，此时调用 put 的线程不会被阻塞。</p>
+
+<h3 id="存储引擎使用总结">存储引擎使用总结</h3>
+
+<p>通过 PluginManager.getPlugin 获取 StorageEngine 的具体实例</p>
+
+<p>再通过 StorageEngine.getStorageBuilder 得到一个 StorageBuilder</p>
+
+<p>设置好 StorageBuilder 的参数后，调用 StorageBuilder.openStorage() 创建一个 Storage 实例</p>
+
+<p>最后使用 Storage.openMap 打开一个新的或已经存在的 StorageMap 就能进行读写操作了。</p>
+
+<h3 id="完整例子">完整例子</h3>
+
+<p>下载项目 <a href="https://github.com/lealone/Lealone-Examples/tree/main/storage-engine-demo">lealone-storage-engine-demo</a></p>
+
+<p>源码编译与打包请执行 build -p</p>
+
+<p>运行例子请执行 build -r</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">org.lealone.db.PluginManager</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.lealone.storage.Storage</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.lealone.storage.StorageBuilder</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.lealone.storage.StorageEngine</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.lealone.storage.StorageMap</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">StorageEngineDemo</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">Storage</span> <span class="n">storage</span> <span class="o">=</span> <span class="n">getStorage</span><span class="o">(</span><span class="s">"aose"</span><span class="o">);</span>
+        <span class="n">testMap</span><span class="o">(</span><span class="n">storage</span><span class="o">);</span>
+        <span class="n">testAsyncMap</span><span class="o">(</span><span class="n">storage</span><span class="o">);</span>
+
+        <span class="n">storage</span> <span class="o">=</span> <span class="n">getStorage</span><span class="o">(</span><span class="s">"memory"</span><span class="o">);</span>
+        <span class="n">testMap</span><span class="o">(</span><span class="n">storage</span><span class="o">);</span>
+        <span class="n">testAsyncMap</span><span class="o">(</span><span class="n">storage</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">testMap</span><span class="o">(</span><span class="nc">Storage</span> <span class="n">storage</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">StorageMap</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">,</span> <span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">map</span> <span class="o">=</span> <span class="n">storage</span><span class="o">.</span><span class="na">openMap</span><span class="o">(</span><span class="s">"test"</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
+        <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"a"</span><span class="o">,</span> <span class="mi">100</span><span class="o">);</span>
+        <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"b"</span><span class="o">,</span> <span class="mi">200</span><span class="o">);</span>
+
+        <span class="nc">Integer</span> <span class="n">v</span> <span class="o">=</span> <span class="n">map</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s">"a"</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">v</span><span class="o">);</span>
+
+        <span class="n">map</span><span class="o">.</span><span class="na">cursor</span><span class="o">().</span><span class="na">forEachRemaining</span><span class="o">(</span><span class="n">k</span> <span class="o">-&gt;</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">map</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">k</span><span class="o">));</span>
+        <span class="o">});</span>
+
+        <span class="n">map</span><span class="o">.</span><span class="na">save</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">testAsyncMap</span><span class="o">(</span><span class="nc">Storage</span> <span class="n">storage</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">StorageMap</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">,</span> <span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">map</span> <span class="o">=</span> <span class="n">storage</span><span class="o">.</span><span class="na">openMap</span><span class="o">(</span><span class="s">"test"</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
+        <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"c"</span><span class="o">,</span> <span class="mi">300</span><span class="o">,</span> <span class="n">ac</span> <span class="o">-&gt;</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Async old value: "</span> <span class="o">+</span> <span class="n">ac</span><span class="o">.</span><span class="na">getResult</span><span class="o">());</span>
+        <span class="o">});</span>
+        <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"d"</span><span class="o">,</span> <span class="mi">400</span><span class="o">,</span> <span class="n">ac</span> <span class="o">-&gt;</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Async old value: "</span> <span class="o">+</span> <span class="n">ac</span><span class="o">.</span><span class="na">getResult</span><span class="o">());</span>
+        <span class="o">});</span>
+        <span class="nc">Integer</span> <span class="n">v</span> <span class="o">=</span> <span class="n">map</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s">"c"</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">v</span><span class="o">);</span>
+
+        <span class="n">map</span><span class="o">.</span><span class="na">cursor</span><span class="o">().</span><span class="na">forEachRemaining</span><span class="o">(</span><span class="n">k</span> <span class="o">-&gt;</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">map</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">k</span><span class="o">));</span>
+        <span class="o">});</span>
+
+        <span class="n">map</span><span class="o">.</span><span class="na">save</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="nc">Storage</span> <span class="nf">getStorage</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">StorageEngine</span> <span class="n">se</span> <span class="o">=</span> <span class="nc">PluginManager</span><span class="o">.</span><span class="na">getPlugin</span><span class="o">(</span><span class="nc">StorageEngine</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="n">name</span><span class="o">);</span>
+        <span class="nc">StorageBuilder</span> <span class="n">builder</span> <span class="o">=</span> <span class="n">se</span><span class="o">.</span><span class="na">getStorageBuilder</span><span class="o">();</span>
+        <span class="n">builder</span><span class="o">.</span><span class="na">storagePath</span><span class="o">(</span><span class="s">"./target/"</span> <span class="o">+</span> <span class="n">name</span><span class="o">);</span>
+        <span class="nc">Storage</span> <span class="n">storage</span> <span class="o">=</span> <span class="n">builder</span><span class="o">.</span><span class="na">openStorage</span><span class="o">();</span>
+        <span class="k">return</span> <span class="n">storage</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="可能出现的问题">可能出现的问题</h3>
+
+<p>如果执行 build -p 找不到 Lealone 的依赖包，
+需要下载以下项目的代码:</p>
+
+<p><a href="https://github.com/lealone/Lealone">lealone-database</a></p>
+
+<p>执行 build -i 把它们安装到本地的 maven 仓库即可。</p>
+
+ 
+  </body>
+</html>

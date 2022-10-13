@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>使用 JavaScript 在 Lealone 中开发微服务应用</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="使用 JavaScript 在 Lealone 中开发微服务应用" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="与 Lealone 相关的所有文档" />
+<meta property="og:description" content="与 Lealone 相关的所有文档" />
+<link rel="canonical" href="https://lealone.github.io/Lealone-Docs/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E4%BD%BF%E7%94%A8JavaScript%E5%BC%80%E5%8F%91%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BA%94%E7%94%A8.html" />
+<meta property="og:url" content="https://lealone.github.io/Lealone-Docs/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E4%BD%BF%E7%94%A8JavaScript%E5%BC%80%E5%8F%91%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BA%94%E7%94%A8.html" />
+<meta property="og:site_name" content="Lealone-Docs" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="使用 JavaScript 在 Lealone 中开发微服务应用" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"与 Lealone 相关的所有文档","headline":"使用 JavaScript 在 Lealone 中开发微服务应用","url":"https://lealone.github.io/Lealone-Docs/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E4%BD%BF%E7%94%A8JavaScript%E5%BC%80%E5%8F%91%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BA%94%E7%94%A8.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="../style.css?v=5ab46cda7f9d318b03cc735d3d5826e390e7c60f">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/Lealone-Docs/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+
+      <h1 id="使用-javascript-在-lealone-中开发微服务应用">使用 JavaScript 在 Lealone 中开发微服务应用</h1>
+
+<h2 id="运行需要">运行需要</h2>
+
+<ul>
+  <li>
+    <p>JDK 1.8+</p>
+  </li>
+  <li>
+    <p>支持 ECMAScript 2021</p>
+  </li>
+</ul>
+
+<h2 id="下载-lealone-polyglot">下载 Lealone-Polyglot</h2>
+
+<p><a href="/download/lealone-polyglot-5.0.0.jar">lealone-polyglot-5.0.0.jar</a></p>
+
+<p>Lealone-Polyglot 只有一个 jar 包，下载下来之后随意放到一个目录即可</p>
+
+<p>也可以<a href="https://github.com/lealone/Lealone-Plugins/tree/master/polyglot">从源代码构建最新版本</a></p>
+
+<h2 id="启动-lealone-polyglot">启动 Lealone-polyglot</h2>
+
+<p>打开一个新的命令行窗口，运行: <code class="language-plaintext highlighter-rouge">java -jar lealone-polyglot-5.0.0.jar</code></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Lealone</span> <span class="nl">version:</span> <span class="mf">5.0</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="no">SNAPSHOT</span>
+<span class="nc">Loading</span> <span class="n">config</span> <span class="n">from</span> <span class="nl">jar:file:</span><span class="o">/</span><span class="nl">E:</span><span class="o">/</span><span class="n">lealone</span><span class="o">-</span><span class="n">polyglot</span><span class="o">-</span><span class="mf">5.0</span><span class="o">.</span><span class="mi">0</span><span class="o">/</span><span class="n">lealone</span><span class="o">-</span><span class="n">polyglot</span><span class="o">-</span><span class="mf">5.0</span><span class="o">.</span><span class="mi">0</span><span class="o">.</span><span class="na">jar</span><span class="o">!/</span><span class="n">lealone</span><span class="o">.</span><span class="na">yaml</span>
+<span class="nc">Base</span> <span class="nl">dir:</span> <span class="o">.</span><span class="err">\</span><span class="n">lealone_data</span>
+<span class="nc">Init</span> <span class="n">storage</span> <span class="nl">engines:</span> <span class="mi">7</span> <span class="n">ms</span>
+<span class="nc">Init</span> <span class="n">transaction</span> <span class="nl">engines:</span> <span class="mi">76</span> <span class="n">ms</span>
+<span class="nc">Init</span> <span class="n">sql</span> <span class="nl">engines:</span> <span class="mi">5</span> <span class="n">ms</span>
+<span class="nc">Init</span> <span class="n">protocol</span> <span class="n">server</span> <span class="nl">engines:</span> <span class="mi">124</span> <span class="n">ms</span>
+<span class="nc">Init</span> <span class="n">lealone</span> <span class="nl">database:</span> <span class="mi">82</span> <span class="n">ms</span>
+<span class="nc">Starting</span> <span class="n">tcp</span> <span class="n">server</span> <span class="n">accepter</span>
+<span class="nc">TcpServer</span> <span class="n">started</span><span class="o">,</span> <span class="nl">host:</span> <span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="o">,</span> <span class="nl">port:</span> <span class="mi">9210</span>
+<span class="nc">Web</span> <span class="nl">root:</span> <span class="o">./</span><span class="n">web</span>
+<span class="nc">Sockjs</span> <span class="nl">path:</span> <span class="o">/</span><span class="n">_lealone_sockjs_</span><span class="o">/*</span>
+<span class="nc">HttpServer</span> <span class="n">is</span> <span class="n">now</span> <span class="n">listening</span> <span class="n">on</span> <span class="nl">port:</span> <span class="mi">9000</span>
+<span class="nc">HttpServer</span> <span class="n">started</span><span class="o">,</span> <span class="nl">host:</span> <span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="o">,</span> <span class="nl">port:</span> <span class="mi">9000</span>
+<span class="nc">Total</span> <span class="nl">time:</span> <span class="mi">681</span> <span class="n">ms</span> <span class="o">(</span><span class="nc">Load</span> <span class="nl">config:</span> <span class="mi">97</span> <span class="n">ms</span><span class="o">,</span> <span class="nl">Init:</span> <span class="mi">299</span> <span class="n">ms</span><span class="o">,</span> <span class="nl">Start:</span> <span class="mi">285</span> <span class="n">ms</span><span class="o">)</span>
+<span class="nc">Exit</span> <span class="n">with</span> <span class="nc">Ctrl</span><span class="o">+</span><span class="no">C</span>
+</code></pre></div></div>
+
+<p>要停止 Lealone-polyglot，直接按 Ctrl + C</p>
+
+<h2 id="使用-javascript-开发微服务应用">使用 JavaScript 开发微服务应用</h2>
+
+<p>用 JavaScript 编写两个普通函数</p>
+
+<p>./js/my_js_service.js</p>
+
+<pre><code class="language-JavaScript">function hello(name) {
+    return "hello " + name;
+}
+
+function getCurrentTime() {
+    return new Date();
+}
+</code></pre>
+
+<h2 id="在-lealone-数据库中创建服务">在 Lealone 数据库中创建服务</h2>
+
+<p>打开一个新的命令行窗口，运行: <code class="language-plaintext highlighter-rouge">java -jar lealone-polyglot-5.0.0.jar -client</code></p>
+
+<p>执行以下 SQL 创建 my_js_service</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">create</span> <span class="n">service</span> <span class="n">if</span> <span class="k">not</span> <span class="k">exists</span> <span class="n">my_js_service</span> <span class="p">(</span>
+  <span class="n">hello</span><span class="p">(</span><span class="n">name</span> <span class="nb">varchar</span><span class="p">)</span> <span class="nb">varchar</span><span class="p">,</span>
+  <span class="n">get_current_time</span><span class="p">()</span> <span class="nb">varchar</span>
+<span class="p">)</span>
+<span class="k">language</span> <span class="s1">'js'</span> <span class="n">implement</span> <span class="k">by</span> <span class="s1">'./js/my_js_service.js'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>执行以下 SQL 就可以直接调用 my_js_service 了</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">sql</span><span class="o">&gt;</span> <span class="k">execute</span> <span class="n">service</span> <span class="n">my_js_service</span> <span class="n">hello</span><span class="p">(</span><span class="s1">'test'</span><span class="p">);</span>
+<span class="o">+</span><span class="c1">-------------------------+</span>
+<span class="o">|</span> <span class="s1">'MY_JS_SERVICE.HELLO()'</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">-------------------------+</span>
+<span class="o">|</span> <span class="n">hello</span> <span class="n">test</span>              <span class="o">|</span>
+<span class="o">+</span><span class="c1">-------------------------+</span>
+<span class="p">(</span><span class="mi">1</span> <span class="k">row</span><span class="p">,</span> <span class="mi">2</span> <span class="n">ms</span><span class="p">)</span>
+
+<span class="k">sql</span><span class="o">&gt;</span> <span class="k">execute</span> <span class="n">service</span> <span class="n">my_js_service</span> <span class="n">get_current_time</span><span class="p">();</span>
+<span class="o">+</span><span class="c1">------------------------------------+</span>
+<span class="o">|</span> <span class="s1">'MY_JS_SERVICE.GET_CURRENT_TIME()'</span> <span class="o">|</span>
+<span class="o">+</span><span class="c1">------------------------------------+</span>
+<span class="o">|</span> <span class="mi">2022</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">21</span><span class="n">T07</span><span class="p">:</span><span class="mi">19</span><span class="p">:</span><span class="mi">33</span><span class="p">.</span><span class="mi">441</span><span class="n">Z</span>           <span class="o">|</span>
+<span class="o">+</span><span class="c1">------------------------------------+</span>
+<span class="p">(</span><span class="mi">1</span> <span class="k">row</span><span class="p">,</span> <span class="mi">2</span> <span class="n">ms</span><span class="p">)</span>
+
+<span class="k">sql</span><span class="o">&gt;</span>
+</code></pre></div></div>
+
+<h2 id="在浏览器中调用后端服务">在浏览器中调用后端服务</h2>
+
+<p>直接打开以下 URL 即可</p>
+
+<p>http://localhost:9000/service/my_js_service/hello?name=zhh</p>
+
+<p>http://localhost:9000/service/my_js_service/get_current_time</p>
+
+  </body>
+</html>
