@@ -17,7 +17,7 @@
 
         // 启动HttpServer，请在浏览器中打开下面这个URL进行测试:
         // http://localhost:8080/fullStack.html
-        HttpServer server = new HttpServer();
+        HttpServer server = HttpServer.create();
         server.setJdbcUrl(jdbcUrl);
         server.setWebRoot(webRoot);
         server.start();

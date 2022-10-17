@@ -18,7 +18,7 @@
 
         // 启动 HttpServer，请在浏览器中打开下面这个 URL 进行测试:
         // http://localhost:8080/hello.html
-        HttpServer server = new HttpServer();
+        HttpServer server = HttpServer.create();
         server.setJdbcUrl(jdbcUrl);
         server.setWebRoot(webRoot);
         server.start();
