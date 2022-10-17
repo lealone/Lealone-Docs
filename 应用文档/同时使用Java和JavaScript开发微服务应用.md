@@ -10,8 +10,13 @@
 ```xml
     <dependencies>
         <dependency>
-            <groupId>org.lealone</groupId>
-            <artifactId>lealone-main</artifactId>
+            <groupId>org.lealone.plugins</groupId>
+            <artifactId>lealone-service</artifactId>
+            <version>5.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.lealone.plugins</groupId>
+            <artifactId>lealone-vertx</artifactId>
             <version>5.0.0-SNAPSHOT</version>
         </dependency>
         <dependency>
