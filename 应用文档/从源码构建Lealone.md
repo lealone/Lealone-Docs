@@ -19,3 +19,7 @@
 生成的文件放在 E:\lealone\target 目录中，
 默认生成 lealone-x.y.z.tar.gz 和 lealone-x.y.z.zip 两个压缩文件，
 其中 x.y.z 代表实际的版本号
+
+如果运行: `mvn package -Dmaven.test.skip=true -P database`
+
+只生成 lealone 数据库和 lealone-client 打包后不包含依赖的最小 jar 包
