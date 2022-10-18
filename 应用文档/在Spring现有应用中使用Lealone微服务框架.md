@@ -25,7 +25,7 @@
 
 ### 在 @SpringBootApplication 中增加 scanBasePackages 扫描 org.lealone.plugins.spring 的组件
 
-```Java
+```java
 @SpringBootApplication(scanBasePackages = {
         "org.lealone.plugins.spring",
         "org.lealone.examples.spring" })
