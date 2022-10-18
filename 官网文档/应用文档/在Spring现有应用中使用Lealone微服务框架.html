@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>在 Spring 现有应用中使用 Lealone 微服务框架</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="MyDocs" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://codefollower.github.io/MyDocs/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E5%9C%A8Spring%E7%8E%B0%E6%9C%89%E5%BA%94%E7%94%A8%E4%B8%AD%E4%BD%BF%E7%94%A8Lealone%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%A1%86%E6%9E%B6.html" />
+<meta property="og:url" content="https://codefollower.github.io/MyDocs/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E5%9C%A8Spring%E7%8E%B0%E6%9C%89%E5%BA%94%E7%94%A8%E4%B8%AD%E4%BD%BF%E7%94%A8Lealone%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%A1%86%E6%9E%B6.html" />
+<meta property="og:site_name" content="MyDocs" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="MyDocs" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"MyDocs","url":"https://codefollower.github.io/MyDocs/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E5%9C%A8Spring%E7%8E%B0%E6%9C%89%E5%BA%94%E7%94%A8%E4%B8%AD%E4%BD%BF%E7%94%A8Lealone%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%A1%86%E6%9E%B6.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="../style.css?v=5ab46cda7f9d318b03cc735d3d5826e390e7c60f">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/MyDocs/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <p>在 Spring 现有应用中使用 Lealone 微服务框架。</p>
+
+<p>文章最后有完整的项目代码，可直接下载到本机上尝试。</p>
+
+<h3 id="在-pomxml-中增加依赖">在 pom.xml 中增加依赖</h3>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;dependencies&gt;</span>
+        <span class="nt">&lt;dependency&gt;</span>
+            <span class="nt">&lt;groupId&gt;</span>org.lealone.plugins<span class="nt">&lt;/groupId&gt;</span>
+            <span class="nt">&lt;artifactId&gt;</span>lealone-spring<span class="nt">&lt;/artifactId&gt;</span>
+            <span class="nt">&lt;version&gt;</span>5.0.0-SNAPSHOT<span class="nt">&lt;/version&gt;</span>
+        <span class="nt">&lt;/dependency&gt;</span>
+    <span class="nt">&lt;/dependencies&gt;</span>
+
+    <span class="nt">&lt;repositories&gt;</span>
+        <span class="nt">&lt;repository&gt;</span>
+            <span class="nt">&lt;id&gt;</span>ossrh<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;url&gt;</span>https://oss.sonatype.org/content/repositories/snapshots<span class="nt">&lt;/url&gt;</span>
+        <span class="nt">&lt;/repository&gt;</span>
+    <span class="nt">&lt;/repositories&gt;</span>
+</code></pre></div></div>
+
+<h3 id="在-springbootapplication-中增加-scanbasepackages-扫描-orglealonepluginsspring-的组件">在 @SpringBootApplication 中增加 scanBasePackages 扫描 org.lealone.plugins.spring 的组件</h3>
+
+<pre><code class="language-Java">@SpringBootApplication(scanBasePackages = {
+        "org.lealone.plugins.spring",
+        "org.lealone.examples.spring" })
+public class SpringDemo {
+
+    public static void main(String[] args) {
+        HelloService.create();
+        SpringApplication.run(SpringDemo.class, args);
+    }
+}
+</code></pre>
+
+<h3 id="创建应用的-restcontroller">创建应用的 RestController</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@RestController</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HelloController</span> <span class="o">{</span>
+
+    <span class="c1">// 用这样的url打开: http://localhost:8080/hello?name=zhh</span>
+    <span class="nd">@GetMapping</span><span class="o">(</span><span class="s">"/hello"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="nc">String</span> <span class="nf">hello</span><span class="o">(</span><span class="nd">@RequestParam</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">"name"</span><span class="o">,</span> <span class="n">defaultValue</span> <span class="o">=</span> <span class="s">"World"</span><span class="o">)</span> <span class="nc">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="s">"Hello "</span> <span class="o">+</span> <span class="n">name</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="创建-helloservice">创建 HelloService</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">HelloService</span> <span class="o">{</span>
+
+    <span class="c1">// 用这样的url打开: http://localhost:8080/service/hello_service/hello?name=zhh</span>
+    <span class="kd">public</span> <span class="nc">String</span> <span class="nf">hello</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="s">"Hello "</span> <span class="o">+</span> <span class="n">name</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">create</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="nc">Connection</span> <span class="n">conn</span> <span class="o">=</span> <span class="nc">DriverManager</span><span class="o">.</span><span class="na">getConnection</span><span class="o">(</span><span class="s">"jdbc:lealone:embed:lealone"</span><span class="o">,</span> <span class="s">"root"</span><span class="o">,</span> <span class="s">""</span><span class="o">);</span>
+            <span class="nc">String</span> <span class="n">sql</span> <span class="o">=</span> <span class="s">"create service if not exists hello_service (hello(name varchar) varchar)"</span> <span class="c1">//</span>
+                    <span class="o">+</span> <span class="s">" implement by '"</span> <span class="o">+</span> <span class="nc">HelloService</span><span class="o">.</span><span class="na">class</span><span class="o">.</span><span class="na">getName</span><span class="o">()</span> <span class="o">+</span> <span class="s">"'"</span><span class="o">;</span>
+            <span class="n">conn</span><span class="o">.</span><span class="na">createStatement</span><span class="o">().</span><span class="na">executeUpdate</span><span class="o">(</span><span class="n">sql</span><span class="o">);</span>
+            <span class="n">conn</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">SQLException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="运行">运行</h3>
+
+<p>mvn spring-boot:run</p>
+
+<p>在浏览器中打开下面的 URL 进行测试:</p>
+
+<p>http://localhost:8080/hello?name=zhh</p>
+
+<p>http://localhost:8080/service/hello_service/hello?name=zhh</p>
+
+<h3 id="完整例子">完整例子</h3>
+
+<p>下载项目 <a href="https://github.com/lealone/Lealone-Examples/tree/main/spring-demo">spring-demo</a></p>
+
+<h3 id="可能出现的问题">可能出现的问题</h3>
+
+<p>如果执行 build -p 找不到 Lealone 的依赖包，
+需要下载以下项目的代码:</p>
+
+<p><a href="https://github.com/lealone/Lealone">lealone-database</a></p>
+
+<p>执行 build -i 把它们安装到本地的 maven 仓库即可。</p>
+  </body>
+</html>
