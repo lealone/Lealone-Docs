@@ -34,7 +34,7 @@
     </repositories>
 ```
 
-其中的 lealone-main 表示引入 Lealone，而 lealone-js 是对 JavaScript 的支持。
+其中的 lealone-service 表示引入 Lealone 微服务框架，lealone-vertx 是把 vertx 当成 http server，而 lealone-javascript 是对 JavaScript 的支持。
 
 
 ### 用 Java 和 JavaScript 实现服务
@@ -119,7 +119,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
-import org.lealone.server.http.HttpServer;
+import org.lealone.plugins.service.http.HttpServer;
 
 public class PolyglotDemo {
 

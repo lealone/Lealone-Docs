@@ -49,8 +49,13 @@
 
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;dependencies&gt;</span>
         <span class="nt">&lt;dependency&gt;</span>
-            <span class="nt">&lt;groupId&gt;</span>org.lealone<span class="nt">&lt;/groupId&gt;</span>
-            <span class="nt">&lt;artifactId&gt;</span>lealone-main<span class="nt">&lt;/artifactId&gt;</span>
+            <span class="nt">&lt;groupId&gt;</span>org.lealone.plugins<span class="nt">&lt;/groupId&gt;</span>
+            <span class="nt">&lt;artifactId&gt;</span>lealone-service<span class="nt">&lt;/artifactId&gt;</span>
+            <span class="nt">&lt;version&gt;</span>5.0.0-SNAPSHOT<span class="nt">&lt;/version&gt;</span>
+        <span class="nt">&lt;/dependency&gt;</span>
+        <span class="nt">&lt;dependency&gt;</span>
+            <span class="nt">&lt;groupId&gt;</span>org.lealone.plugins<span class="nt">&lt;/groupId&gt;</span>
+            <span class="nt">&lt;artifactId&gt;</span>lealone-vertx<span class="nt">&lt;/artifactId&gt;</span>
             <span class="nt">&lt;version&gt;</span>5.0.0-SNAPSHOT<span class="nt">&lt;/version&gt;</span>
         <span class="nt">&lt;/dependency&gt;</span>
         <span class="nt">&lt;dependency&gt;</span>
@@ -68,7 +73,7 @@
     <span class="nt">&lt;/repositories&gt;</span>
 </code></pre></div></div>
 
-<p>其中的 lealone-main 表示引入 Lealone，而 lealone-javascript 是对 JavaScript 的支持。</p>
+<p>其中的 lealone-service 表示引入 Lealone 微服务框架，lealone-vertx 是把 vertx 当成 http server，而 lealone-javascript 是对 JavaScript 的支持。</p>
 
 <h3 id="用-java-和-javascript-实现服务">用 Java 和 JavaScript 实现服务</h3>
 
@@ -142,7 +147,7 @@ implement by 'org.lealone.examples.polyglot.TimeService';
 <span class="kn">import</span> <span class="nn">java.sql.DriverManager</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">java.sql.Statement</span><span class="o">;</span>
 
-<span class="kn">import</span> <span class="nn">org.lealone.server.http.HttpServer</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">import org.lealone.plugins.service.http.HttpServer</span><span class="o">;</span>
 
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">PolyglotDemo</span> <span class="o">{</span>
 
@@ -153,7 +158,7 @@ implement by 'org.lealone.examples.polyglot.TimeService';
         <span class="c1">// 启动 HttpServer，请在浏览器中打开下面的 URL 进行测试:</span>
         <span class="c1">// http://localhost:8080/service/hello_service/hello?name=zhh</span>
         <span class="c1">// http://localhost:8080/service/time_service/get_current_time</span>
-        <span class="nc">HttpServer</span> <span class="n">server</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">HttpServer</span><span class="o">();</span>
+        <span class="nc">HttpServer</span> <span class="n">server</span> <span class="o">=</span> <span class="nc">HttpServer</span><span class="o">.</span><span class="na">create</span><span class="o">();</span>
         <span class="n">server</span><span class="o">.</span><span class="na">setJdbcUrl</span><span class="o">(</span><span class="n">jdbcUrl</span><span class="o">);</span>
         <span class="n">server</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
 
