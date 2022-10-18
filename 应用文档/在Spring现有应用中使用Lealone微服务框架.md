@@ -23,9 +23,7 @@
 ```
 
 
-### 在 @SpringBootApplication 中增加 scanBasePackages
-
-这里用 JavaScript 实现一个 hello 服务，假设保存到 ./js/hello_service.js
+### 在 @SpringBootApplication 中增加 scanBasePackages 扫描 org.lealone.plugins.spring 的组件
 
 ```Java
 @SpringBootApplication(scanBasePackages = {

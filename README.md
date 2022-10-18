@@ -38,7 +38,8 @@ Lealone 既可以作为一个独立的数据库来使用，也可以当成一个
   * [使用 JavaScript 在 Lealone 中开发微服务应用](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E4%BD%BF%E7%94%A8JavaScript%E5%BC%80%E5%8F%91%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BA%94%E7%94%A8.md)
 
   * [同时使用 Java 和 JavaScript 开发微服务应用](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E5%90%8C%E6%97%B6%E4%BD%BF%E7%94%A8Java%E5%92%8CJavaScript%E5%BC%80%E5%8F%91%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%BA%94%E7%94%A8.md)
-
+  
+  * [在 Spring 现有应用中使用 Lealone 微服务框架](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E5%9C%A8Spring%E7%8E%B0%E6%9C%89%E5%BA%94%E7%94%A8%E4%B8%AD%E4%BD%BF%E7%94%A8Lealone%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%A1%86%E6%9E%B6.md)
 
 ### Lealone ORM 框架
 
