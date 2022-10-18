@@ -60,17 +60,17 @@
 
 <h3 id="在-springbootapplication-中增加-scanbasepackages-扫描-orglealonepluginsspring-的组件">在 @SpringBootApplication 中增加 scanBasePackages 扫描 org.lealone.plugins.spring 的组件</h3>
 
-<pre><code class="language-Java">@SpringBootApplication(scanBasePackages = {
-        "org.lealone.plugins.spring",
-        "org.lealone.examples.spring" })
-public class SpringDemo {
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@SpringBootApplication</span><span class="o">(</span><span class="n">scanBasePackages</span> <span class="o">=</span> <span class="o">{</span>
+        <span class="s">"org.lealone.plugins.spring"</span><span class="o">,</span>
+        <span class="s">"org.lealone.examples.spring"</span> <span class="o">})</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">SpringDemo</span> <span class="o">{</span>
 
-    public static void main(String[] args) {
-        HelloService.create();
-        SpringApplication.run(SpringDemo.class, args);
-    }
-}
-</code></pre>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">HelloService</span><span class="o">.</span><span class="na">create</span><span class="o">();</span>
+        <span class="nc">SpringApplication</span><span class="o">.</span><span class="na">run</span><span class="o">(</span><span class="nc">SpringDemo</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="n">args</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
 
 <h3 id="创建应用的-restcontroller">创建应用的 RestController</h3>
 
