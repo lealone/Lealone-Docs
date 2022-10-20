@@ -31,7 +31,7 @@
 
 ### Lealone 微服务框架
 
-  * [使用 RPC 框架来开发 web 应用](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E4%BD%BF%E7%94%A8RPC%E6%A1%86%E6%9E%B6%E6%9D%A5%E5%BC%80%E5%8F%91web%E5%BA%94%E7%94%A8.md)
+  * [微服务框架快速入门](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/微服务框架快速入门.md)
   
   * [使用 Lealone 脚手架创建微服务应用](https://github.com/lealone/Lealone-Plugins/tree/master/service/create-app)
 
