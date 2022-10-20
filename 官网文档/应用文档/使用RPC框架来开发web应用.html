@@ -58,7 +58,7 @@
 
         <span class="c1">// 启动 HttpServer，请在浏览器中打开下面这个 URL 进行测试:</span>
         <span class="c1">// http://localhost:8080/hello.html</span>
-        <span class="nc">HttpServer</span> <span class="n">server</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">HttpServer</span><span class="o">();</span>
+        <span class="nc">HttpServer</span> <span class="n">server</span> <span class="o">=</span> <span class="nc">HttpServer</span><span class="o">.</span><span class="na">create</span><span class="o">();</span>
         <span class="n">server</span><span class="o">.</span><span class="na">setJdbcUrl</span><span class="o">(</span><span class="n">jdbcUrl</span><span class="o">);</span>
         <span class="n">server</span><span class="o">.</span><span class="na">setWebRoot</span><span class="o">(</span><span class="n">webRoot</span><span class="o">);</span>
         <span class="n">server</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>

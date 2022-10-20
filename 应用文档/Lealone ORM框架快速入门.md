@@ -252,7 +252,7 @@ Lealone ORM 框架实现关联查询时不会像其他 ORM 框架那样产生 N 
 
 ### 7. 更多例子
 
-请看 [orm unit test](https://github.com/lealone/Lealone/tree/master/lealone-test/src/test/java/org/lealone/test/orm)
+请看 [orm unit test](https://github.com/lealone/Lealone-Plugins/tree/master/test/src/test/java/org/lealone/plugins/test/orm)
 
 
 ### 8. 完整的代码例子

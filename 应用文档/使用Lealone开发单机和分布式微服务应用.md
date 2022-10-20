@@ -20,7 +20,7 @@
 
 `java -jar create-lealone-app-5.0.0.jar -groupId my.app.hello -artifactId hello`
 
-应用脚手架的参数用法可以阅读 [README](https://github.com/lealone/Lealone-Plugins/blob/master/create-app/README.md) 文件
+应用脚手架的参数用法可以阅读 [README](https://github.com/lealone/Lealone-Plugins/blob/master/service/create-app/README.md) 文件
 
 
 
@@ -83,9 +83,11 @@ create service if not exists hello_service (
 
 打包的结果放在 target 目录中，有以下三种打包格式:
 
-hello-1.0.0 (可以直接运行)</br>
-hello-1.0.0.tar.gz </br>
-hello-1.0.0.zip </br>
+hello-1.0.0 (可以直接运行)
+
+hello-1.0.0.tar.gz
+
+hello-1.0.0.zip
 
 
 
