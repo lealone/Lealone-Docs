@@ -124,25 +124,25 @@
 
 <p>执行以下命令启动 PostgreSQL 客户端:</p>
 
-<p><code class="language-plaintext highlighter-rouge">psql -h 127.0.0.1 -p 9510 -U test -W -d test</code></p>
+<p><code class="language-plaintext highlighter-rouge">psql -h 127.0.0.1 -p 9510 -U postgres -W</code></p>
 
-<p>提示口令时输入: test</p>
+<p>提示口令时输入: postgres</p>
 
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">口令</span><span class="p">:</span>
 <span class="n">psql</span> <span class="p">(</span><span class="mi">14</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="err">服务器</span> <span class="mi">8</span><span class="p">.</span><span class="mi">2</span><span class="p">.</span><span class="mi">23</span><span class="p">)</span>
 <span class="err">输入</span> <span class="nv">"help"</span> <span class="err">来获取帮助信息</span><span class="p">.</span>
 
-<span class="n">test</span><span class="o">=&gt;</span> <span class="k">create</span> <span class="k">table</span> <span class="n">if</span> <span class="k">not</span> <span class="k">exists</span> <span class="n">pet</span><span class="p">(</span><span class="n">name</span> <span class="nb">varchar</span><span class="p">(</span><span class="mi">20</span><span class="p">),</span> <span class="n">age</span> <span class="nb">int</span><span class="p">);</span>
+<span class="n">postgres</span><span class="o">=&gt;</span> <span class="k">create</span> <span class="k">table</span> <span class="n">if</span> <span class="k">not</span> <span class="k">exists</span> <span class="n">pet</span><span class="p">(</span><span class="n">name</span> <span class="nb">varchar</span><span class="p">(</span><span class="mi">20</span><span class="p">),</span> <span class="n">age</span> <span class="nb">int</span><span class="p">);</span>
 <span class="k">UPDATE</span> <span class="mi">0</span>
-<span class="n">test</span><span class="o">=&gt;</span> <span class="k">insert</span> <span class="k">into</span> <span class="n">pet</span> <span class="k">values</span><span class="p">(</span><span class="s1">'pet1'</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+<span class="n">postgres</span><span class="o">=&gt;</span> <span class="k">insert</span> <span class="k">into</span> <span class="n">pet</span> <span class="k">values</span><span class="p">(</span><span class="s1">'pet1'</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
 <span class="n">CommandInterfaceINSERT</span> <span class="mi">0</span> <span class="mi">1</span>
-<span class="n">test</span><span class="o">=&gt;</span> <span class="k">select</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">from</span> <span class="n">pet</span><span class="p">;</span>
+<span class="n">postgres</span><span class="o">=&gt;</span> <span class="k">select</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">from</span> <span class="n">pet</span><span class="p">;</span>
  <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
 <span class="c1">----------</span>
         <span class="mi">1</span>
 <span class="p">(</span><span class="mi">1</span> <span class="err">行记录</span><span class="p">)</span>
 
-<span class="n">test</span><span class="o">=&gt;</span>
+<span class="n">postgres</span><span class="o">=&gt;</span>
 </code></pre></div></div>
 
   </body>

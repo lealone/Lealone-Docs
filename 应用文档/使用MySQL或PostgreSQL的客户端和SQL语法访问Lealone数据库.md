@@ -83,24 +83,24 @@ mysql>
 
 执行以下命令启动 PostgreSQL 客户端:
 
-`psql -h 127.0.0.1 -p 9510 -U test -W -d test`
+`psql -h 127.0.0.1 -p 9510 -U postgres -W`
 
-提示口令时输入: test
+提示口令时输入: postgres
 
 ```sql
 口令:
 psql (14.0, 服务器 8.2.23)
 输入 "help" 来获取帮助信息.
 
-test=> create table if not exists pet(name varchar(20), age int);
+postgres=> create table if not exists pet(name varchar(20), age int);
 UPDATE 0
-test=> insert into pet values('pet1', 2);
+postgres=> insert into pet values('pet1', 2);
 CommandInterfaceINSERT 0 1
-test=> select count(*) from pet;
+postgres=> select count(*) from pet;
  count(*)
 ----------
         1
 (1 行记录)
 
-test=>
+postgres=>
 ```
