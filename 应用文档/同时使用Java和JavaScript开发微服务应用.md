@@ -12,17 +12,17 @@
         <dependency>
             <groupId>org.lealone.plugins</groupId>
             <artifactId>lealone-service</artifactId>
-            <version>5.0.0-SNAPSHOT</version>
+            <version>5.0.0</version>
         </dependency>
         <dependency>
             <groupId>org.lealone.plugins</groupId>
             <artifactId>lealone-vertx</artifactId>
-            <version>5.0.0-SNAPSHOT</version>
+            <version>5.0.0</version>
         </dependency>
         <dependency>
             <groupId>org.lealone.plugins</groupId>
             <artifactId>lealone-javascript</artifactId>
-            <version>5.0.0-SNAPSHOT</version>
+            <version>5.0.0</version>
         </dependency>
     </dependencies>
 

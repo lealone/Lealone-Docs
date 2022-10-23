@@ -21,7 +21,7 @@ Lealone-xSQL 只有一个 jar 包，下载下来之后随意放到一个目录�
 打开一个新的命令行窗口，运行: `java -jar lealone-xsql-5.0.0.jar`
 
 ```java
-Lealone version: 5.0.0-SNAPSHOT
+Lealone version: 5.0.0
 Loading config from jar:file:/E:/lealone-xsql/lealone-xsql-5.0.0.jar!/lealone.yaml
 Base dir: .\lealone_data
 Init storage engines: 3 ms
@@ -51,7 +51,7 @@ Exit with Ctrl+C
 ```sql
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 0
-Server version: 5.1.48-lealone-5.0.0-SNAPSHOT
+Server version: 5.1.48-lealone-5.0.0
 
 Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved.
 

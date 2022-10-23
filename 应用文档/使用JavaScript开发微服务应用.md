@@ -21,7 +21,7 @@ Lealone-Polyglot 只有一个 jar 包，下载下来之后随意放到一个目�
 打开一个新的命令行窗口，运行: `java -jar lealone-polyglot-5.0.0.jar`
 
 ```java
-Lealone version: 5.0.0-SNAPSHOT
+Lealone version: 5.0.0
 Loading config from jar:file:/E:/lealone-polyglot-5.0.0/lealone-polyglot-5.0.0.jar!/lealone.yaml
 Base dir: .\lealone_data
 Init storage engines: 7 ms
