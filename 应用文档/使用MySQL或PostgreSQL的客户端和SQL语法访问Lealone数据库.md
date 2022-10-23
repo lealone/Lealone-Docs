@@ -9,7 +9,7 @@
 
 ## 下载 Lealone-xSQL
 
-[lealone-xsql-5.0.0.jar](https://github.com/lealone/Lealone-Plugins/releases/download/lealone-plugins-5.0.0-rc-01/lealone-xsql-5.0.0.jar)
+[lealone-xsql-5.0.0.jar](https://github.com/lealone/Lealone-Plugins/releases/download/lealone-plugins-5.0.0/lealone-xsql-5.0.0.jar)
 
 Lealone-xSQL 只有一个 jar 包，下载下来之后随意放到一个目录即可
 
