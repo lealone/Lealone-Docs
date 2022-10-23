@@ -156,8 +156,8 @@
 <span class="nt">&lt;html&gt;</span>
 
 <span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"sockjs-1.1.2.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"lealone-5.0.0.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"axios.min-0.21.1.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"lealone-rpc-5.0.0.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
     <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"vue.min-2.3.3.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
 
@@ -219,7 +219,7 @@
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
-<p>lealone-5.0.0.js 相当于一个 RPC 框架的客户端，通过 sockjs 与后端 RPC 框架通信，
+<p>lealone-rpc-5.0.0.js 相当于一个 RPC 框架的客户端，通过 axios 与后端 RPC 框架通信，
 通过 lealone.getService() 方法获得一个服务代理后就可以直接调用后端服务了。</p>
 
 <h3 id="6-完整例子">6. 完整例子</h3>

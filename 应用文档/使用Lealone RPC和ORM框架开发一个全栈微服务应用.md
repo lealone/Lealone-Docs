@@ -124,8 +124,8 @@ Lealone ORM 框架的更多用法演示可以尝试一下这个
 <html>
 
 <head>
-    <script src="sockjs-1.1.2.js"></script>
-    <script src="lealone-5.0.0.js"></script>
+    <script src="axios.min-0.21.1.js"></script>
+    <script src="lealone-rpc-5.0.0.js"></script>
     <script src="vue.min-2.3.3.js"></script>
 </head>
 
@@ -187,7 +187,7 @@ Lealone ORM 框架的更多用法演示可以尝试一下这个
 </html>
 ```
 
-lealone-5.0.0.js 相当于一个 RPC 框架的客户端，通过 sockjs 与后端 RPC 框架通信，
+lealone-rpc-5.0.0.js 相当于一个 RPC 框架的客户端，通过 axios 与后端 RPC 框架通信，
 通过 lealone.getService() 方法获得一个服务代理后就可以直接调用后端服务了。
 
 
