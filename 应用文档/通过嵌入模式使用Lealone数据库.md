@@ -20,13 +20,6 @@ Lealone 可以当一个嵌入式数据库使用，通过标准 JDBC 访问嵌入
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <repositories>
-        <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </repository>
-    </repositories>
 ```
 
 
