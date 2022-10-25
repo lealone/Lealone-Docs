@@ -20,8 +20,28 @@ Change Log
 <h1>Change Log</h1>
 
 <h2>Lealone 5.0.1 (unreleased)</h2>
+
+<h3>bug fix</h3>
+
+<h4>lealone database</h4>
 <ul>
 <li><a href="https://github.com/lealone/Lealone-Plugins/issues/22">Issue #22</a>: ReadonlyArray 在转成字符串时如果包含特殊字符错误的多加了 STRINGDECODE
 </li>
 </ul>
+
+
+<h3>new features</h3>
+
+<h4>lealone database</h4>
+<ul>
+<li>执行 create table 语句时生成的 mode l类新加 decode(String str, CaseFormat format) 方法
+</li>
+</ul>
+
+<h4>lealone orm</h4>
+<ul>
+<li>在 model 对象和 json 字符串之间相互转换时可以设置 model 属性名的格式，支持驼峰、大小写下划线三种格式
+</li>
+</ul>
+
 <!-- [close] { --></div></td></tr></table><!-- } --><!-- analytics --></body></html>
