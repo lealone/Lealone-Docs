@@ -62,6 +62,7 @@
 
   * [基于 ORM 框架使用 JavaScript 开发一个全栈微服务应用](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/基于ORM框架使用JavaScript开发一个全栈微服务应用.md)
 
+  * [基于 ORM 框架使用 Python 开发一个全栈微服务应用](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/基于ORM框架使用Python开发一个全栈微服务应用.md)
 
 ### Lealone 存储引擎
 
