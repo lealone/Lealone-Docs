@@ -13,7 +13,7 @@
 
 #### database
 
-* 执行 create table 语句时生成的 mode l类新加 decode(String str, JsonFormat format) 方法
+* 执行 create table 语句时生成的 model类新加 decode(String str, JsonFormat format) 方法
 
 * create service 语句支持 parameters 子句，用于配置各类参数
 
