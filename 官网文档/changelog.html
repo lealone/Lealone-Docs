@@ -34,7 +34,7 @@ Change Log
 
 <h4>lealone database</h4>
 <ul>
-<li>执行 create table 语句时生成的 mode l类新加 decode(String str, CaseFormat format) 方法
+<li>执行 create table 语句时生成的 mode l类新加 decode(String str, JsonFormat format) 方法
 </li>
 <li><a href="https://github.com/lealone/Lealone/issues/165">Issue #165</a>: 兼容 PostgreSQL 语法 ALTER TABLE tableName RENAME COLUMN oldName TO newName
 </li>
@@ -42,7 +42,7 @@ Change Log
 
 <h4>lealone orm</h4>
 <ul>
-<li>在 model 对象和 json 字符串之间相互转换时可以设置 model 属性名的格式，支持驼峰、大小写下划线三种格式
+<li>在 model 对象和 json 字符串之间相互转换时可以自定义 json 的数据格式
 </li>
 </ul>
 
