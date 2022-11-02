@@ -12,6 +12,18 @@ Lealone ORM 是一个简洁优雅的类型安全的 ORM 框架，支持链式(�
 
 文章最后有完整的 Java 代码。
 
+### 在 pom.xml 中增加对 lealone orm 框架的依赖
+
+```xml
+    <dependencies>
+        <dependency>
+            <groupId>org.lealone.plugins</groupId>
+            <artifactId>lealone-orm</artifactId>
+            <version>5.0.0</version>
+        </dependency>
+    </dependencies>
+```
+
 ### 1. 建表
 
 ```sql

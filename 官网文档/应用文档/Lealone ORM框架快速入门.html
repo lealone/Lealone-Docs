@@ -51,6 +51,17 @@
 
 <p>文章最后有完整的 Java 代码。</p>
 
+<h3 id="在-pomxml-中增加依赖">在 pom.xml 中增加对 lealone orm 框架的依赖</h3>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;dependencies&gt;</span>
+        <span class="nt">&lt;dependency&gt;</span>
+            <span class="nt">&lt;groupId&gt;</span>org.lealone.plugins<span class="nt">&lt;/groupId&gt;</span>
+            <span class="nt">&lt;artifactId&gt;</span>lealone-orm<span class="nt">&lt;/artifactId&gt;</span>
+            <span class="nt">&lt;version&gt;</span>5.0.0<span class="nt">&lt;/version&gt;</span>
+        <span class="nt">&lt;/dependency&gt;</span>
+    <span class="nt">&lt;/dependencies&gt;</span>
+</code></pre></div></div>
+
 <h3 id="1-建表">1. 建表</h3>
 
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">set</span> <span class="o">@</span><span class="n">packageName</span> <span class="s1">'org.lealone.examples.orm.generated'</span><span class="p">;</span> <span class="c1">-- 生成的模型类所在的包名</span>
