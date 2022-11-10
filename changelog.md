@@ -1,6 +1,6 @@
 # Change Log
 
-## Lealone 5.0.1 (unreleased)
+## Lealone 5.1.0 (unreleased)
 
 ### bug fix
 
@@ -18,6 +18,8 @@
 * create service 语句支持 parameters 子句，用于配置各类参数
 
 * [Issue #165](https://github.com/lealone/Lealone/issues/165): 兼容 PostgreSQL 语法 ALTER TABLE tableName RENAME COLUMN oldName TO newName
+
+* 支持 set、list、map 数据类型
 
 
 #### orm
