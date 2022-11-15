@@ -279,15 +279,3 @@ http://localhost:9000/fullStack.html
 
 运行 build -r (或: java -jar ./target/lealone-js-demo-all-1.0.0.jar)
 
-
-
-### 9. 可能出现的问题
-
-如果执行 build -p 找不到 Lealone 的依赖包，
-需要下载以下项目的代码: 
-
-[lealone-database](https://github.com/lealone/Lealone)
-
-
-执行 build -i 把它们安装到本地的 maven 仓库即可。
-

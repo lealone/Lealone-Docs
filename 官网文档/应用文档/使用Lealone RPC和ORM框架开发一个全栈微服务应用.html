@@ -168,13 +168,13 @@
         name: <span class="nt">&lt;input</span> <span class="na">v-model=</span><span class="s">"name"</span><span class="nt">&gt;</span>
         age <span class="nt">&lt;input</span> <span class="na">v-model=</span><span class="s">"age"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">v-on:click=</span><span class="s">"addUser"</span><span class="nt">&gt;</span>add<span class="nt">&lt;/button&gt;</span>
-        <span class="nt">&lt;p&gt;&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;{{ message }}&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"find"</span><span class="nt">&gt;</span> 
         name: <span class="nt">&lt;input</span> <span class="na">v-model=</span><span class="s">"name"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">v-on:click=</span><span class="s">"findByName"</span><span class="nt">&gt;</span>find<span class="nt">&lt;/button&gt;</span>
-        <span class="nt">&lt;p&gt;&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;{{ message }}&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;script&gt;</span>
@@ -230,17 +230,8 @@
 
 <p>运行执行 build -r</p>
 
-<p>启动成功后，在浏览器中打开下面这个 URL 进行测试:
-http://localhost:8080/fullStack.html</p>
-
-<h3 id="7-可能出现的问题">7. 可能出现的问题</h3>
-
-<p>如果执行 build -p 找不到 Lealone 的依赖包，
-需要下载以下项目的代码:</p>
-
-<p><a href="https://github.com/lealone/Lealone">lealone-database</a></p>
-
-<p>执行 build -i 把它们安装到本地的 maven 仓库即可。</p>
+<p>启动成功后，在浏览器中打开下面这个 URL 进行测试:</p>
+<p>http://localhost:8080/fullStack.html</p>
 
   </body>
 </html>

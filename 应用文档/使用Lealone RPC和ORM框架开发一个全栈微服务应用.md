@@ -201,16 +201,5 @@ lealone-rpc-5.0.0.js 相当于一个 RPC 框架的客户端，通过 axios 与�
 运行执行 build -r
 
 启动成功后，在浏览器中打开下面这个 URL 进行测试:
+
 http://localhost:8080/fullStack.html
-
-
-### 7. 可能出现的问题
-
-如果执行 build -p 找不到 Lealone 的依赖包，
-需要下载以下项目的代码: 
-
-[lealone-database](https://github.com/lealone/Lealone)
-
-
-执行 build -i 把它们安装到本地的 maven 仓库即可。
-
