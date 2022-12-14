@@ -32,6 +32,8 @@
 
 * 在 model 对象和 json 字符串之间相互转换时可以自定义 json 的数据格式
 
+* 支持 left join 和 right join
+
 
 # Lealone 5.0.0 (2022-10-24)
 
