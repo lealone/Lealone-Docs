@@ -23,7 +23,7 @@
 
 * 支持 set、list、map 数据类型
 
-* 执行 create service 语句时可以通过参数配置是否生成 HTTP 和 SOCKJS 对应的 EXECUTOR METHOD
+* 执行 create service 语句时可以通过参数配置是否生成 MAP 和 JSON 对应的 EXECUTOR METHOD
 
 * 支持 GRANT/REVOKE EXECUTE ON SERVICE 语句
 
