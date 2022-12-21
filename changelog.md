@@ -27,6 +27,8 @@
 
 * 支持 GRANT/REVOKE EXECUTE ON SERVICE 语句
 
+* 执行 create table 语句时可以通过 DAO_NAME 参数设置 dao 字段的名称
+
 
 #### orm
 
