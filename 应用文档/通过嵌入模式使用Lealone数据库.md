@@ -10,7 +10,7 @@ Lealone 可以当一个嵌入式数据库使用，通过标准 JDBC 访问嵌入
         <dependency>
             <groupId>org.lealone</groupId>
             <artifactId>lealone-main</artifactId>
-            <version>5.0.0</version>
+            <version>5.1.0</version>
         </dependency>
 
         <dependency>

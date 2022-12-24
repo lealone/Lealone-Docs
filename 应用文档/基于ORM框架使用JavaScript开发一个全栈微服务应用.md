@@ -16,28 +16,28 @@
         <dependency>
             <groupId>org.lealone.plugins</groupId>
             <artifactId>lealone-orm</artifactId>
-            <version>5.0.0</version>
+            <version>5.1.0</version>
         </dependency>
 
         <!-- lealone 微服务框架 -->
         <dependency>
             <groupId>org.lealone.plugins</groupId>
             <artifactId>lealone-service</artifactId>
-            <version>5.0.0</version>
+            <version>5.1.0</version>
         </dependency>
 	
         <!-- 使用 vertx 作为 lealone 的 http server -->
         <dependency>
             <groupId>org.lealone.plugins</groupId>
             <artifactId>lealone-vertx</artifactId>
-            <version>5.0.0</version>
+            <version>5.1.0</version>
         </dependency>
 	
 	<!-- 启用对 JavaScript 的支持 -->
         <dependency>
             <groupId>org.lealone.plugins</groupId>
             <artifactId>lealone-javascript</artifactId>
-            <version>5.0.0</version>
+            <version>5.1.0</version>
         </dependency>
     </dependencies>
 ```

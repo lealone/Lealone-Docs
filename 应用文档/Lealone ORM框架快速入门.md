@@ -19,7 +19,7 @@ Lealone ORM 是一个简洁优雅的类型安全的 ORM 框架，支持链式(�
         <dependency>
             <groupId>org.lealone.plugins</groupId>
             <artifactId>lealone-orm</artifactId>
-            <version>5.0.0</version>
+            <version>5.1.0</version>
         </dependency>
     </dependencies>
 ```
