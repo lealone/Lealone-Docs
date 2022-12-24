@@ -4,12 +4,16 @@
 
 ## bug fix
 
+#### database
+
 * [Issue #22](https://github.com/lealone/Lealone-Plugins/issues/22): ReadonlyArray 在转成字符串时如果包含特殊字符错误的多加了 STRINGDECODE
 
 * 加行锁后如果在创建 redo log 之前出错会导致行锁无法释放
 
 
 ## new features
+
+#### database
 
 * 执行 create table 语句时生成的 model 类新加 decode(String str, JsonFormat format) 方法
 
