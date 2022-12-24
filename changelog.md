@@ -1,6 +1,6 @@
 # Change Log
 
-# Lealone 5.1.0 (2022-12-24)
+# [Lealone 5.1.0](https://github.com/lealone/Lealone/releases/tag/lealone-5.1.0) (2022-12-24)
 
 ## bug fix
 
@@ -37,7 +37,7 @@
 * 支持 left join 和 right join
 
 
-# Lealone 5.0.0 (2022-10-24)
+# [Lealone 5.0.0](https://github.com/lealone/Lealone/releases/tag/lealone-5.0.0) (2022-10-24)
 
 这是10年以来 Lealone 发布的第一个 GA 版本！
 
