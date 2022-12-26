@@ -1,5 +1,14 @@
 # Change Log
 
+# Lealone 5.1.1 (unreleased)
+
+## bug fix
+
+#### database
+
+* 使用 SystemSession 创建嵌入式数据库接着马上访问它会找不到数据库
+
+
 # [Lealone 5.1.0](https://github.com/lealone/Lealone/releases/tag/lealone-5.1.0) (2022-12-24)
 
 ## bug fix
