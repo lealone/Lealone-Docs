@@ -8,6 +8,12 @@
 
 * 使用 SystemSession 创建嵌入式数据库接着马上访问它会找不到数据库
 
+## new features
+
+#### service
+
+* 微服务脚手架支持创建单模块微服务应用
+
 
 # [Lealone 5.1.0](https://github.com/lealone/Lealone/releases/tag/lealone-5.1.0) (2022-12-24)
 
