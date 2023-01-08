@@ -8,6 +8,9 @@
 
 * 使用 SystemSession 创建嵌入式数据库接着马上访问它会找不到数据库
 
+* 事务因为锁超时后未正确设置 Session 状态导致无法执行某些 SQL 语句(比如 SET 语句)
+
+
 ## new features
 
 #### service
