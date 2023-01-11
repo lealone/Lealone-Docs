@@ -10,6 +10,8 @@
 
 * 事务因为锁超时后未正确设置 Session 状态导致无法执行某些 SQL 语句(比如 SET 语句)
 
+* 执行 DDL 语句遇到对象锁时重复设置 Session 状态为 WAITING 有可能导致当前事务会被挂起
+
 
 ## new features
 
