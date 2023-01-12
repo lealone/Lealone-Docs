@@ -1,7 +1,7 @@
 # 1. Lealone 数据库快速入门
 
 
-## 1.1. 运行需要
+### 1.1. 运行需要
 
 * [JDK 1.8+](https://www.oracle.com/java/technologies/downloads/)
 
