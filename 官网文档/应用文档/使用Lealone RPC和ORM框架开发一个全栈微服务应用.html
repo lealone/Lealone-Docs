@@ -39,32 +39,41 @@
     <div class="container-lg px-3 my-5 markdown-body">
       
 
-      <p>这里介绍如何使用前端 Vue 框架配合 Lealone 数据库内置的 RPC 和 ORM 框架开发一个简单的全栈微服务应用。</p>
+<p>这里介绍如何使用前端 Vue 框架配合 Lealone 数据库内置的 RPC 和 ORM 框架开发一个简单的全栈微服务应用。</p>
 
-<p><b>Lealone 的学习成本极低，下文只有启动 HttpServer 的代码需要引入 Lealone 的类，</br>
+<p><b>Lealone 的学习成本极低，下文只有启动 Lealone 的代码需要引入 Lealone 的类，</br>
 其他应用开发人员负责编写的代码无需导入 Lealone 的任何东西(比如类、接口、注解)。</b></p>
 
 <p>文章最后有完整的项目代码，可直接下载到本机上尝试。</p>
 
-<h3 id="1-启动-http-server">1. 启动 http server</h3>
+<h3 id="1-在-pomxml-中增加依赖">1. 在 pom.xml 中增加依赖</h3>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">startHttpServer</span><span class="o">()</span> <span class="o">{</span>
-        <span class="c1">// 通过JDBC访问的数据库的URL</span>
-        <span class="nc">String</span> <span class="n">jdbcUrl</span> <span class="o">=</span> <span class="s">"jdbc:lealone:embed:test"</span><span class="o">;</span>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;dependencies&gt;</span>
+        <span class="c">&lt;!-- lealone orm 框架 --&gt;</span>
+        <span class="nt">&lt;dependency&gt;</span>
+            <span class="nt">&lt;groupId&gt;</span>org.lealone.plugins<span class="nt">&lt;/groupId&gt;</span>
+            <span class="nt">&lt;artifactId&gt;</span>lealone-orm<span class="nt">&lt;/artifactId&gt;</span>
+            <span class="nt">&lt;version&gt;</span>5.1.0<span class="nt">&lt;/version&gt;</span>
+        <span class="nt">&lt;/dependency&gt;</span>
 
-        <span class="c1">// 静态资源文件的根目录，如果有多个可以用逗号分隔</span>
-        <span class="nc">String</span> <span class="n">webRoot</span> <span class="o">=</span> <span class="s">"./web"</span><span class="o">;</span>
-
-        <span class="c1">// 启动HttpServer，请在浏览器中打开下面这个URL进行测试:</span>
-        <span class="c1">// http://localhost:8080/fullStack.html</span>
-        <span class="nc">HttpServer</span> <span class="n">server</span> <span class="o">=</span> <span class="nc">HttpServer</span><span class="o">.</span><span class="na">create</span><span class="o">();</span>
-        <span class="n">server</span><span class="o">.</span><span class="na">setJdbcUrl</span><span class="o">(</span><span class="n">jdbcUrl</span><span class="o">);</span>
-        <span class="n">server</span><span class="o">.</span><span class="na">setWebRoot</span><span class="o">(</span><span class="n">webRoot</span><span class="o">);</span>
-        <span class="n">server</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
-    <span class="o">}</span>
+        <span class="c">&lt;!-- lealone 微服务框架 --&gt;</span>
+        <span class="nt">&lt;dependency&gt;</span>
+            <span class="nt">&lt;groupId&gt;</span>org.lealone.plugins<span class="nt">&lt;/groupId&gt;</span>
+            <span class="nt">&lt;artifactId&gt;</span>lealone-service<span class="nt">&lt;/artifactId&gt;</span>
+            <span class="nt">&lt;version&gt;</span>5.1.0<span class="nt">&lt;/version&gt;</span>
+        <span class="nt">&lt;/dependency&gt;</span>
+	
+        <span class="c">&lt;!-- 使用 vertx 作为 lealone 的 http server --&gt;</span>
+        <span class="nt">&lt;dependency&gt;</span>
+            <span class="nt">&lt;groupId&gt;</span>org.lealone.plugins<span class="nt">&lt;/groupId&gt;</span>
+            <span class="nt">&lt;artifactId&gt;</span>lealone-vertx<span class="nt">&lt;/artifactId&gt;</span>
+            <span class="nt">&lt;version&gt;</span>5.1.0<span class="nt">&lt;/version&gt;</span>
+        <span class="nt">&lt;/dependency&gt;</span>
 </code></pre></div></div>
 
 <h3 id="2-建表">2. 建表</h3>
+
+<p>放在 sql/tables.sql 文件中</p>
 
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- 创建表: user，会生成一个名为 User 的模型类</span>
 <span class="k">create</span> <span class="k">table</span> <span class="n">if</span> <span class="k">not</span> <span class="k">exists</span> <span class="k">user</span> <span class="p">(</span>
@@ -101,6 +110,8 @@
 可以基于模型类的字段来构建出跟普通 SQL 极其相似的类型安全的 DSL，下文会有用法演示。</p>
 
 <h3 id="3-创建后端服务">3. 创建后端服务</h3>
+
+<p>放在 sql/services.sql 文件中</p>
 
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- 创建服务: user_service，会生成一个对应的 UserService 接口</span>
 <span class="k">create</span> <span class="n">service</span> <span class="n">if</span> <span class="k">not</span> <span class="k">exists</span> <span class="n">user_service</span> <span class="p">(</span>
@@ -148,7 +159,7 @@
 <p>Lealone ORM 框架的更多用法演示可以尝试一下这个
 <a href="https://github.com/lealone/Lealone-Examples/tree/main/orm-demo">lealone-orm-demo</a></p>
 
-<p><a href="Lealone%20ORM%E6%A1%86%E6%9E%B6%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.html">Lealone ORM 框架快速入门</a></p>
+<p><a href="https://github.com/lealone/Lealone-Examples/blob/main/docs/Lealone%20ORM%E6%A1%86%E6%9E%B6%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.md">Lealone ORM 框架快速入门</a></p>
 
 <h3 id="5-在前端使用后端服务">5. 在前端使用后端服务</h3>
 
@@ -168,13 +179,13 @@
         name: <span class="nt">&lt;input</span> <span class="na">v-model=</span><span class="s">"name"</span><span class="nt">&gt;</span>
         age <span class="nt">&lt;input</span> <span class="na">v-model=</span><span class="s">"age"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">v-on:click=</span><span class="s">"addUser"</span><span class="nt">&gt;</span>add<span class="nt">&lt;/button&gt;</span>
-        <span class="nt">&lt;p&gt;{{ message }}&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"find"</span><span class="nt">&gt;</span> 
         name: <span class="nt">&lt;input</span> <span class="na">v-model=</span><span class="s">"name"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">v-on:click=</span><span class="s">"findByName"</span><span class="nt">&gt;</span>find<span class="nt">&lt;/button&gt;</span>
-        <span class="nt">&lt;p&gt;{{ message }}&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;script&gt;</span>
@@ -222,7 +233,30 @@
 <p>lealone-rpc-5.0.0.js 相当于一个 RPC 框架的客户端，通过 axios 与后端 RPC 框架通信，
 通过 lealone.getService() 方法获得一个服务代理后就可以直接调用后端服务了。</p>
 
-<h3 id="6-完整例子">6. 完整例子</h3>
+<h3 id="6-启动-lealone-并执行-sql-脚本">6. 启动 Lealone 并执行 sql 脚本</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">org.lealone.examples.fullstack</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">org.lealone.main.Lealone</span><span class="o">;</span>
+
+<span class="c1">// 请在浏览器中打开下面的 URL 进行测试:</span>
+<span class="c1">// http://localhost:9000/fullStack.html</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">FullStackDemo</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">Lealone</span><span class="o">.</span><span class="na">main</span><span class="o">(</span><span class="n">args</span><span class="o">,</span> <span class="o">()</span> <span class="o">-&gt;</span> <span class="n">runScript</span><span class="o">());</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">runScript</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">String</span> <span class="n">url</span> <span class="o">=</span> <span class="s">"jdbc:lealone:tcp://localhost:9210/lealone?user=root"</span><span class="o">;</span>
+        <span class="c1">// 执行建表脚本，同时自动生成对应的模型类的代码</span>
+        <span class="c1">// 执行服务创建脚本，同时自动生成对应的服务接口代码</span>
+        <span class="nc">Lealone</span><span class="o">.</span><span class="na">runScript</span><span class="o">(</span><span class="n">url</span><span class="o">,</span> <span class="s">"./sql/tables.sql"</span><span class="o">,</span> <span class="s">"./sql/services.sql"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h3 id="7-完整例子">7. 完整例子</h3>
 
 <p>下载项目 <a href="https://github.com/lealone/Lealone-Examples/tree/main/fullstack-demo">lealone-fullstack-demo</a></p>
 
@@ -231,6 +265,7 @@
 <p>运行执行 build -r</p>
 
 <p>启动成功后，在浏览器中打开下面这个 URL 进行测试:</p>
+
 <p>http://localhost:8080/fullStack.html</p>
 
   </body>

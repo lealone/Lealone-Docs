@@ -252,27 +252,26 @@ function findByName(name) {
 
 <h3 id="6-启动-lealone-并执行-sql-脚本">6. 启动 Lealone 并执行 sql 脚本</h3>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">JsDemo</span> <span class="o">{</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">org.lealone.examples.js</span><span class="o">;</span>
 
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">Exception</span> <span class="o">{</span>
-        <span class="c1">// 在一个新线程中启动 Lealone</span>
-        <span class="nc">CountDownLatch</span> <span class="n">latch</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">CountDownLatch</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
-        <span class="k">new</span> <span class="nf">Thread</span><span class="o">(()</span> <span class="o">-&gt;</span> <span class="o">{</span>
-            <span class="nc">Lealone</span><span class="o">.</span><span class="na">run</span><span class="o">(</span><span class="n">args</span><span class="o">,</span> <span class="kc">false</span><span class="o">,</span> <span class="n">latch</span><span class="o">);</span>
-        <span class="o">}).</span><span class="na">start</span><span class="o">();</span>
-        <span class="n">latch</span><span class="o">.</span><span class="na">await</span><span class="o">();</span>
+<span class="kn">import</span> <span class="nn">org.lealone.main.Lealone</span><span class="o">;</span>
 
-        <span class="n">runScript</span><span class="o">();</span>
+<span class="c1">// 在前端调用 hello_service 服务，用以下 url:</span>
+<span class="c1">// http://localhost:9000/service/hello_service/hello?name=zhh</span>
+
+<span class="c1">// 在前端调用 user_service 服务，请在浏览器中打开下面这个 url 进行测试:</span>
+<span class="c1">// http://localhost:9000/fullStack.html</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">JsDemo</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">Lealone</span><span class="o">.</span><span class="na">main</span><span class="o">(</span><span class="n">args</span><span class="o">,</span> <span class="o">()</span> <span class="o">-&gt;</span> <span class="n">runScript</span><span class="o">());</span>
     <span class="o">}</span>
 
-    <span class="c1">// 执行 tables.sql 和 services.sql 脚本，创建表和服务</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">runScript</span><span class="o">()</span> <span class="kd">throws</span> <span class="nc">Exception</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">runScript</span><span class="o">()</span> <span class="o">{</span>
         <span class="nc">String</span> <span class="n">url</span> <span class="o">=</span> <span class="s">"jdbc:lealone:tcp://localhost:9210/lealone?user=root"</span><span class="o">;</span>
-        <span class="k">try</span> <span class="o">(</span><span class="nc">Connection</span> <span class="n">conn</span> <span class="o">=</span> <span class="nc">DriverManager</span><span class="o">.</span><span class="na">getConnection</span><span class="o">(</span><span class="n">url</span><span class="o">);</span>
-                <span class="nc">Statement</span> <span class="n">stmt</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="na">createStatement</span><span class="o">())</span> <span class="o">{</span>
-            <span class="n">stmt</span><span class="o">.</span><span class="na">executeUpdate</span><span class="o">(</span><span class="s">"RUNSCRIPT FROM './sql/tables.sql'"</span><span class="o">);</span>
-            <span class="n">stmt</span><span class="o">.</span><span class="na">executeUpdate</span><span class="o">(</span><span class="s">"RUNSCRIPT FROM './sql/services.sql'"</span><span class="o">);</span>
-        <span class="o">}</span>
+        <span class="c1">// 执行建表脚本，同时自动生成对应的模型类的代码</span>
+        <span class="c1">// 执行服务创建脚本，同时自动生成对应的服务接口代码</span>
+        <span class="nc">Lealone</span><span class="o">.</span><span class="na">runScript</span><span class="o">(</span><span class="n">url</span><span class="o">,</span> <span class="s">"./sql/tables.sql"</span><span class="o">,</span> <span class="s">"./sql/services.sql"</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
 </code></pre></div></div>

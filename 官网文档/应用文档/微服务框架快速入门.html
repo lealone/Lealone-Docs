@@ -37,7 +37,11 @@
     <div class="container-lg px-3 my-5 markdown-body">
       
 
-      <h2 id="lealone-微服务框架快速入门">Lealone 微服务框架快速入门</h2>
+<h2 id="lealone-微服务框架快速入门">Lealone 微服务框架快速入门</h2>
+
+<p>Lealone 微服务框架的学习成本极低，下文只有启动 Lealone 的代码需要引入 Lealone 的类，</p>
+
+<p>其他应用开发人员负责编写的代码无需导入 Lealone 的任何东西(比如类、接口、注解)。</p>
 
 <p>文章最后有完整的项目代码，可直接下载到本机上尝试。</p>
 
@@ -60,25 +64,9 @@
     <span class="nt">&lt;/dependencies&gt;</span>
 </code></pre></div></div>
 
-<h3 id="2-启动-http-server">2. 启动 http server</h3>
+<h3 id="2-创建后端服务">2. 创建后端服务</h3>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">startHttpServer</span><span class="o">()</span> <span class="o">{</span>
-        <span class="c1">// 通过 JDBC 访问的数据库的 URL</span>
-        <span class="nc">String</span> <span class="n">jdbcUrl</span> <span class="o">=</span> <span class="s">"jdbc:lealone:embed:test"</span><span class="o">;</span>
-
-        <span class="c1">// 静态资源文件的根目录，如果有多个可以用逗号分隔</span>
-        <span class="nc">String</span> <span class="n">webRoot</span> <span class="o">=</span> <span class="s">"./web"</span><span class="o">;</span>
-
-        <span class="c1">// 启动 HttpServer，请在浏览器中打开下面这个 URL 进行测试:</span>
-        <span class="c1">// http://localhost:8080/hello.html</span>
-        <span class="nc">HttpServer</span> <span class="n">server</span> <span class="o">=</span> <span class="nc">HttpServer</span><span class="o">.</span><span class="na">create</span><span class="o">();</span>
-        <span class="n">server</span><span class="o">.</span><span class="na">setJdbcUrl</span><span class="o">(</span><span class="n">jdbcUrl</span><span class="o">);</span>
-        <span class="n">server</span><span class="o">.</span><span class="na">setWebRoot</span><span class="o">(</span><span class="n">webRoot</span><span class="o">);</span>
-        <span class="n">server</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
-    <span class="o">}</span>
-</code></pre></div></div>
-
-<h3 id="3-创建后端服务">3. 创建后端服务</h3>
+<p>放在 sql/services.sql 文件中</p>
 
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- 创建服务: hello_service</span>
 <span class="k">create</span> <span class="n">service</span> <span class="n">if</span> <span class="k">not</span> <span class="k">exists</span> <span class="n">hello_service</span> <span class="p">(</span>
@@ -88,12 +76,13 @@
 </code></pre></div></div>
 
 <p>这一步用于描述一个服务的相关信息，比如它有哪些可调用的方法。</p>
+
 <p>通过 create service 语句创建的服务在内部会被托管，
 服务的注册与发现功能已经内置在框架当中，不需要再依赖其他第三方组件。</p>
 
 <p>执行 create service 语句时，如果服务实现类不存在会自动创建一个空的实现类。</p>
 
-<h3 id="4-实现后端服务">4. 实现后端服务</h3>
+<h3 id="3-实现后端服务">3. 实现后端服务</h3>
 
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">org.lealone.examples.rpc</span><span class="o">;</span>
 
@@ -105,6 +94,29 @@
 </code></pre></div></div>
 
 <p>服务实现类就是一个最普通的类，框架对服务实现类是无侵入的。</p>
+
+<h3 id="4-启动-lealone-并执行-sql-脚本">4. 启动 Lealone 并执行 sql 脚本</h3>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">org.lealone.examples.rpc</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">org.lealone.main.Lealone</span><span class="o">;</span>
+
+<span class="c1">// 请在浏览器中打开下面的 URL 进行测试:</span>
+<span class="c1">// http://localhost:9000/service/hello_service/say_hello?name=zhh</span>
+<span class="c1">// http://localhost:9000/hello.html</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">RpcDemo</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">Lealone</span><span class="o">.</span><span class="na">main</span><span class="o">(</span><span class="n">args</span><span class="o">,</span> <span class="o">()</span> <span class="o">-&gt;</span> <span class="n">runScript</span><span class="o">());</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">runScript</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">String</span> <span class="n">url</span> <span class="o">=</span> <span class="s">"jdbc:lealone:tcp://localhost:9210/lealone?user=root"</span><span class="o">;</span>
+        <span class="c1">// 执行 services.sql 脚本，创建服务</span>
+        <span class="nc">Lealone</span><span class="o">.</span><span class="na">runScript</span><span class="o">(</span><span class="n">url</span><span class="o">,</span> <span class="s">"./sql/services.sql"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
 
 <h3 id="5-在前端浏览器中打开下面的-url-调用后端服务">5. 在前端浏览器中打开下面的 URL 调用后端服务:</h3>
 
@@ -127,7 +139,7 @@
     <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"test"</span><span class="nt">&gt;</span>
         say hello: <span class="nt">&lt;input</span> <span class="na">v-model=</span><span class="s">"name"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">v-on:click=</span><span class="s">"sayHello"</span><span class="nt">&gt;</span>submit<span class="nt">&lt;/button&gt;</span>
-        <span class="nt">&lt;p&gt;{{ message }}&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;script&gt;</span> 
@@ -165,6 +177,7 @@
 <p>运行执行 build -r</p>
 
 <p>启动成功后，在浏览器中打开下面这个 URL 进行测试:</p>
+
 <p>http://localhost:8080/hello.html</p>
 
   </body>
