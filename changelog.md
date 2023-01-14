@@ -12,6 +12,10 @@
 
 * 执行 DDL 语句遇到对象锁时重复设置 Session 状态为 WAITING 有可能导致当前事务会被挂起
 
+#### lealone-plugins-test
+
+* [Issue #23](https://github.com/lealone/Lealone-Plugins/issues/23): lealone-plugins-test 模块找不到 lealone-test 模块的类
+
 
 ## new features
 
