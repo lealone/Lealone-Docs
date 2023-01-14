@@ -1,30 +1,37 @@
 这里介绍如何使用前端 Vue 框架配合 Lealone 数据库内置的 RPC 和 ORM 框架开发一个简单的全栈微服务应用。
 
-<b>Lealone 的学习成本极低，下文只有启动 HttpServer 的代码需要引入 Lealone 的类，</br>
+<b>Lealone 的学习成本极低，下文只有启动 Lealone 的代码需要引入 Lealone 的类，</br>
 其他应用开发人员负责编写的代码无需导入 Lealone 的任何东西(比如类、接口、注解)。</b>
 
 文章最后有完整的项目代码，可直接下载到本机上尝试。
 
-### 1. 启动 http server
+```xml
+    <dependencies>
+        <!-- lealone orm 框架 -->
+        <dependency>
+            <groupId>org.lealone.plugins</groupId>
+            <artifactId>lealone-orm</artifactId>
+            <version>5.1.0</version>
+        </dependency>
 
-```java
-    public static void startHttpServer() {
-        // 通过JDBC访问的数据库的URL
-        String jdbcUrl = "jdbc:lealone:embed:test";
-
-        // 静态资源文件的根目录，如果有多个可以用逗号分隔
-        String webRoot = "./web";
-
-        // 启动HttpServer，请在浏览器中打开下面这个URL进行测试:
-        // http://localhost:8080/fullStack.html
-        HttpServer server = HttpServer.create();
-        server.setJdbcUrl(jdbcUrl);
-        server.setWebRoot(webRoot);
-        server.start();
-    }
+        <!-- lealone 微服务框架 -->
+        <dependency>
+            <groupId>org.lealone.plugins</groupId>
+            <artifactId>lealone-service</artifactId>
+            <version>5.1.0</version>
+        </dependency>
+	
+        <!-- 使用 vertx 作为 lealone 的 http server -->
+        <dependency>
+            <groupId>org.lealone.plugins</groupId>
+            <artifactId>lealone-vertx</artifactId>
+            <version>5.1.0</version>
+        </dependency>
 ```
 
 ### 2. 建表
+
+放在 sql/tables.sql 文件中
 
 ```sql
 -- 创建表: user，会生成一个名为 User 的模型类
@@ -64,6 +71,8 @@ User 模型类生成的代码是不用修改的，采用的是一种简化的充
 
 
 ### 3. 创建后端服务
+
+放在 sql/services.sql 文件中
 
 ```sql
 -- 创建服务: user_service，会生成一个对应的 UserService 接口
@@ -192,7 +201,33 @@ lealone-rpc-5.0.0.js 相当于一个 RPC 框架的客户端，通过 axios 与�
 
 
 
-### 6. 完整例子
+### 6. 启动 Lealone 并执行 sql 脚本
+
+```java
+package org.lealone.examples.fullstack;
+
+import org.lealone.main.Lealone;
+
+// 请在浏览器中打开下面的 URL 进行测试:
+// http://localhost:9000/fullStack.html
+public class FullStackDemo {
+
+    public static void main(String[] args) {
+        Lealone.main(args, () -> runScript());
+    }
+
+    public static void runScript() {
+        String url = "jdbc:lealone:tcp://localhost:9210/lealone?user=root";
+        // 执行建表脚本，同时自动生成对应的模型类的代码
+        // 执行服务创建脚本，同时自动生成对应的服务接口代码
+        Lealone.runScript(url, "./sql/tables.sql", "./sql/services.sql");
+    }
+}
+```
+
+
+
+### 7. 完整例子
 
 下载项目 [lealone-fullstack-demo](https://github.com/lealone/Lealone-Examples/tree/main/fullstack-demo)
 

@@ -231,27 +231,26 @@ lealone-rpc-5.0.0.js 相当于一个 RPC 框架的客户端，通过 axios 与�
 ### 6. 启动 Lealone 并执行 sql 脚本
 
 ```java
+package org.lealone.examples.js;
+
+import org.lealone.main.Lealone;
+
+// 在前端调用 hello_service 服务，用以下 url:
+// http://localhost:9000/service/hello_service/hello?name=zhh
+
+// 在前端调用 user_service 服务，请在浏览器中打开下面这个 url 进行测试:
+// http://localhost:9000/fullStack.html
 public class JsDemo {
 
-    public static void main(String[] args) throws Exception {
-        // 在一个新线程中启动 Lealone
-        CountDownLatch latch = new CountDownLatch(1);
-        new Thread(() -> {
-            Lealone.run(args, false, latch);
-        }).start();
-        latch.await();
-
-        runScript();
+    public static void main(String[] args) {
+        Lealone.main(args, () -> runScript());
     }
 
-    // 执行 tables.sql 和 services.sql 脚本，创建表和服务
-    public static void runScript() throws Exception {
+    public static void runScript() {
         String url = "jdbc:lealone:tcp://localhost:9210/lealone?user=root";
-        try (Connection conn = DriverManager.getConnection(url);
-                Statement stmt = conn.createStatement()) {
-            stmt.executeUpdate("RUNSCRIPT FROM './sql/tables.sql'");
-            stmt.executeUpdate("RUNSCRIPT FROM './sql/services.sql'");
-        }
+        // 执行建表脚本，同时自动生成对应的模型类的代码
+        // 执行服务创建脚本，同时自动生成对应的服务接口代码
+        Lealone.runScript(url, "./sql/tables.sql", "./sql/services.sql");
     }
 }
 ```
