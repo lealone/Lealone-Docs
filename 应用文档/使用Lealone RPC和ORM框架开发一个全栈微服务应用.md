@@ -5,6 +5,8 @@
 
 文章最后有完整的项目代码，可直接下载到本机上尝试。
 
+### 1. 在 pom.xml 中增加依赖
+
 ```xml
     <dependencies>
         <!-- lealone orm 框架 -->
