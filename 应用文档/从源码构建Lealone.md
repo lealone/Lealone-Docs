@@ -22,4 +22,4 @@
 
 如果运行: `mvn package -Dmaven.test.skip=true -P database`
 
-只生成 lealone 数据库和 lealone-client 打包后不包含依赖的最小 jar 包
+只生成 lealone 数据库和 lealone-client 不包含依赖的最小 jar 包

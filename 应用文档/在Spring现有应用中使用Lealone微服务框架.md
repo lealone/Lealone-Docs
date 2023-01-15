@@ -10,7 +10,7 @@
         <dependency>
             <groupId>org.lealone.plugins</groupId>
             <artifactId>lealone-spring</artifactId>
-            <version>5.1.0</version>
+            <version>5.1.1</version>
         </dependency>
     </dependencies>
 ```
