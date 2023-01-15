@@ -233,10 +233,10 @@ public class FullStackDemo {
 
 下载项目 [lealone-fullstack-demo](https://github.com/lealone/Lealone-Examples/tree/main/fullstack-demo)
 
-源码编译与打包请执行 build -p
+打包 build -p
 
-运行执行 build -r
+运行 build -r
 
 启动成功后，在浏览器中打开下面这个 URL 进行测试:
 
-http://localhost:8080/fullStack.html
+http://localhost:9000/fullStack.html
