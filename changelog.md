@@ -1,5 +1,15 @@
 # Change Log
 
+# Lealone 5.1.2 (unreleased)
+
+## bug fix
+
+#### database
+
+* 多个事务同时使用 SET 语句修数据库参数时未加锁会导致并发问题
+
+
+
 # [Lealone 5.1.1](https://github.com/lealone/Lealone/releases/tag/lealone-5.1.1) (2023-01-15)
 
 ## bug fix
