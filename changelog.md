@@ -9,6 +9,20 @@
 * 多个事务同时使用 SET 语句修数据库参数时未加锁会导致并发问题
 
 
+## improvement
+
+#### database
+
+* 每条记录在内存中不再需要 commitTimestamp 字段，能节省8个字节的内存大小
+
+
+## new features
+
+#### database
+
+* 可以配置客户端 SocketChannel 参数(socket_recv_buffer_size/socket_send_buffer_size)
+
+
 
 # [Lealone 5.1.1](https://github.com/lealone/Lealone/releases/tag/lealone-5.1.1) (2023-01-15)
 
