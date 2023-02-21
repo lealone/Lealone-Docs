@@ -15,6 +15,8 @@
 
 * 每条记录在内存中不再需要 commitTimestamp 字段，能节省8个字节的内存大小
 
+* 优化行锁的性能，无需在一个 ConcurrentHashMap 中增加删除查询 LockOwner
+
 
 ## new features
 
