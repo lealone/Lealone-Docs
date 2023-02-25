@@ -17,6 +17,8 @@
 
 * 优化行锁的性能，无需在一个 ConcurrentHashMap 中增加删除查询 LockOwner
 
+* 执行 select for update 时不再需要在内存中生成 undo log，直接加行锁即可
+
 
 ## new features
 
