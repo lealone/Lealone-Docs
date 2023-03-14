@@ -8,7 +8,7 @@
 
 ### 1.2. 下载 Lealone
 
-[lealone-5.1.1.jar](https://github.com/lealone/Lealone/releases/download/lealone-5.1.1/lealone-5.1.1.jar)
+[lealone-5.1.2.jar](https://github.com/lealone/Lealone/releases/download/lealone-5.1.2/lealone-5.1.2.jar)
 
 Lealone 只有一个 jar 包，下载下来之后随意放到一个目录即可
 
@@ -17,10 +17,10 @@ Lealone 只有一个 jar 包，下载下来之后随意放到一个目录即可
 
 ### 1.3. 启动 Lealone 数据库
 
-打开一个新的命令行窗口，运行: `java -jar lealone-5.1.1.jar`
+打开一个新的命令行窗口，运行: `java -jar lealone-5.1.2.jar`
 
 ```java
-Lealone version: 5.1.1
+Lealone version: 5.1.2
 Use default config
 Base dir: .\lealone_data
 Init storage engines: 5 ms
@@ -39,14 +39,14 @@ Exit with Ctrl+C
 
 ### 1.4. 使用 Lealone 客户端执行 SQL 语句
 
-打开一个新的命令行窗口，运行: `java -jar lealone-5.1.1.jar -client`
+打开一个新的命令行窗口，运行: `java -jar lealone-5.1.2.jar -client`
 
 默认用 `root` 用户连到 127.0.0.1:9210，密码为空
 
 默认数据库是 `lealone`，可以通过 `-database` 参数指定其他数据库
 
 ```java
-Welcome to Lealone Shell 5.1.1
+Welcome to Lealone Shell 5.1.2
 Connect to jdbc:lealone:tcp://localhost:9210/lealone
 Commands are case insensitive; SQL statements end with ';'
 help or ?          Display this help
@@ -129,7 +129,7 @@ public class CRUDExample {
 > javac CRUDExample.java
 
 运行: 
-> java -cp .;lealone-5.1.1.jar CRUDExample
+> java -cp .;lealone-5.1.2.jar CRUDExample
 
 
 ### 1.6. Lealone Client Maven 依赖
@@ -139,7 +139,7 @@ public class CRUDExample {
     <dependency>
         <groupId>org.lealone</groupId>
         <artifactId>lealone-client</artifactId>
-        <version>5.1.1</version>
+        <version>5.1.2</version>
     </dependency>
 </dependencies>
 ```

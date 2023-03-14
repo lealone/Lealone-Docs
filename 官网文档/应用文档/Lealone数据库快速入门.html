@@ -49,7 +49,7 @@
 
 <h3 id="12-下载-lealone">1.2. 下载 Lealone</h3>
 
-<p><a href="../download/lealone-5.1.1.jar">lealone-5.1.1.jar</a></p>
+<p><a href="../download/lealone-5.1.2.jar">lealone-5.1.2.jar</a></p>
 
 <p>Lealone 只有一个 jar 包，下载下来之后随意放到一个目录即可</p>
 
@@ -57,9 +57,9 @@
 
 <h3 id="13-启动-lealone-数据库">1.3. 启动 Lealone 数据库</h3>
 
-<p>打开一个新的命令行窗口，运行: <code class="language-plaintext highlighter-rouge">java -jar lealone-5.1.1.jar</code></p>
+<p>打开一个新的命令行窗口，运行: <code class="language-plaintext highlighter-rouge">java -jar lealone-5.1.2.jar</code></p>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Lealone</span> <span class="nl">version:</span> <span class="mf">5.1.1</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Lealone</span> <span class="nl">version:</span> <span class="mf">5.1.2</span>
 <span class="nc">Use</span> <span class="k">default</span> <span class="n">config</span>
 <span class="nc">Base</span> <span class="nl">dir:</span> <span class="o">.</span><span class="err">\</span><span class="n">lealone_data</span>
 <span class="nc">Init</span> <span class="n">storage</span> <span class="nl">engines:</span> <span class="mi">5</span> <span class="n">ms</span>
@@ -77,13 +77,13 @@
 
 <h3 id="14-使用-lealone-客户端执行-sql-语句">1.4. 使用 Lealone 客户端执行 SQL 语句</h3>
 
-<p>打开一个新的命令行窗口，运行: <code class="language-plaintext highlighter-rouge">java -jar lealone-5.1.1.jar -client</code></p>
+<p>打开一个新的命令行窗口，运行: <code class="language-plaintext highlighter-rouge">java -jar lealone-5.1.2.jar -client</code></p>
 
 <p>默认用 <code class="language-plaintext highlighter-rouge">root</code> 用户连到 127.0.0.1:9210，密码为空</p>
 
 <p>默认数据库是 <code class="language-plaintext highlighter-rouge">lealone</code>，可以通过 <code class="language-plaintext highlighter-rouge">-database</code> 参数指定其他数据库</p>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Welcome</span> <span class="n">to</span> <span class="nc">Lealone</span> <span class="nc">Shell</span> <span class="mf">5.1.1</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Welcome</span> <span class="n">to</span> <span class="nc">Lealone</span> <span class="nc">Shell</span> <span class="mf">5.1.2</span>
 <span class="nc">Connect</span> <span class="n">to</span> <span class="nl">jdbc:lealone:tcp:</span><span class="c1">//localhost:9210/lealone</span>
 <span class="nc">Commands</span> <span class="n">are</span> <span class="k">case</span> <span class="n">insensitive</span><span class="o">;</span> <span class="no">SQL</span> <span class="n">statements</span> <span class="n">end</span> <span class="n">with</span> <span class="sc">';'</span>
 <span class="n">help</span> <span class="n">or</span> <span class="o">?</span>          <span class="nc">Display</span> <span class="k">this</span> <span class="n">help</span>
@@ -167,7 +167,7 @@
 
 <p>运行:</p>
 <blockquote>
-  <p>java -cp .;lealone-5.1.1.jar CRUDExample</p>
+  <p>java -cp .;lealone-5.1.2.jar CRUDExample</p>
 </blockquote>
 
 
@@ -177,7 +177,7 @@
         <span class="nt">&lt;dependency&gt;</span>
             <span class="nt">&lt;groupId&gt;</span>org.lealone<span class="nt">&lt;/groupId&gt;</span>
             <span class="nt">&lt;artifactId&gt;</span>lealone-client<span class="nt">&lt;/artifactId&gt;</span>
-            <span class="nt">&lt;version&gt;</span>5.1.1<span class="nt">&lt;/version&gt;</span>
+            <span class="nt">&lt;version&gt;</span>5.1.2<span class="nt">&lt;/version&gt;</span>
         <span class="nt">&lt;/dependency&gt;</span>
     <span class="nt">&lt;/dependencies&gt;</span>
 </code></pre></div></div>
