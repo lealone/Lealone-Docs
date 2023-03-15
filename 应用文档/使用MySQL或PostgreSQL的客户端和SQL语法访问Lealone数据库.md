@@ -9,7 +9,7 @@
 
 ## 下载 Lealone-xSQL
 
-[lealone-xsql-5.1.1.jar](https://github.com/lealone/Lealone-Plugins/releases/download/lealone-plugins-5.1.1/lealone-xsql-5.1.1.jar)
+[lealone-xsql-5.1.2.jar](https://github.com/lealone/Lealone-Plugins/releases/download/lealone-plugins-5.1.2/lealone-xsql-5.1.2.jar)
 
 Lealone-xSQL 只有一个 jar 包，下载下来之后随意放到一个目录即可
 
@@ -18,11 +18,11 @@ Lealone-xSQL 只有一个 jar 包，下载下来之后随意放到一个目录�
 
 ## 启动 Lealone-xSQL
 
-打开一个新的命令行窗口，运行: `java -jar lealone-xsql-5.1.1.jar`
+打开一个新的命令行窗口，运行: `java -jar lealone-xsql-5.1.2.jar`
 
 ```java
-Lealone version: 5.1.1
-Loading config from jar:file:/E:/lealone-xsql/lealone-xsql-5.1.1.jar!/lealone.yaml
+Lealone version: 5.1.2
+Loading config from jar:file:/E:/lealone-xsql/lealone-xsql-5.1.2.jar!/lealone.yaml
 Base dir: .\lealone_data
 Init storage engines: 3 ms
 Init transaction engines: 60 ms
@@ -51,7 +51,7 @@ Exit with Ctrl+C
 ```sql
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 0
-Server version: 5.1.48-lealone-5.1.1
+Server version: 5.1.48-lealone-5.1.2
 
 Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved.
 
