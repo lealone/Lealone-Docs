@@ -1,5 +1,16 @@
 # Change Log
 
+# Lealone 5.1.3 (unreleased)
+
+## bug fix
+
+#### database
+
+* 如果执行 insert 语句时执行 prepared 类型的 select 语句，
+  当 select 语句让出执行权时可能会导致 insert 语句被执行两次
+
+
+
 # [Lealone 5.1.2](https://github.com/lealone/Lealone/releases/tag/lealone-5.1.2) (2023-03-14)
 
 ## bug fix
