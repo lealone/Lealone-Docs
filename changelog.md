@@ -10,6 +10,13 @@
   当 select 语句让出执行权时可能会导致 insert 语句被执行两次
 
 
+## improvement
+
+#### database
+
+* 执行 shutdown server 语句需要 lealone database 的 admin 权限
+
+
 
 # [Lealone 5.1.2](https://github.com/lealone/Lealone/releases/tag/lealone-5.1.2) (2023-03-14)
 
