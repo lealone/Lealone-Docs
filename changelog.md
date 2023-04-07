@@ -9,6 +9,8 @@
 * 如果执行 insert 语句时执行 prepared 类型的 select 语句，
   当 select 语句让出执行权时可能会导致 insert 语句被执行两次
 
+* 对于无主键的表如果存在索引，在多个线程写索引时可能导致索引 key 指向的 row id 是0
+
 
 ## improvement
 
