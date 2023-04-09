@@ -18,6 +18,7 @@
 
 * 执行 shutdown server 语句需要 lealone database 的 admin 权限
 
+* 初始化数据库时把表的版本号也初始化了，避免在执行 insert/update 时用同步的方式加载表的版本号
 
 
 # [Lealone 5.1.2](https://github.com/lealone/Lealone/releases/tag/lealone-5.1.2) (2023-03-14)
