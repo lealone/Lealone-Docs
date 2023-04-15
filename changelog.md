@@ -22,6 +22,8 @@
 
 * 只允许一个线程初始化数据库，其他线程异步等待，但是不会挂起
 
+* 使用 ConcurrentHashMap 实现 UniqueHashIndex，支持多线程并发读写
+
 
 # [Lealone 5.1.2](https://github.com/lealone/Lealone/releases/tag/lealone-5.1.2) (2023-03-14)
 
