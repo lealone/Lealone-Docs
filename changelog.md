@@ -24,6 +24,8 @@
 
 * 使用 ConcurrentHashMap 实现 UniqueHashIndex，支持多线程并发读写
 
+* 每条记录在内存中不再需要包装成一个 ValueArray 对象，能节省5个字节的内存大小
+
 
 # [Lealone 5.1.2](https://github.com/lealone/Lealone/releases/tag/lealone-5.1.2) (2023-03-14)
 
