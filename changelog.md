@@ -28,7 +28,8 @@
 
 * 二级索引的 Key 由 ValueArray 类型变成 IndexKey 类型，能节省5个字节的内存大小
 
-* btree page 从缓存中被逐出后释放 page 中的记录占用的内存，只保留 byte buffer，能大量节省内存
+* 不再需要 btree page 缓存，会自动根据内存使用情况动态回收 btree page 占用的内存空间
+
 
 
 # [Lealone 5.1.2](https://github.com/lealone/Lealone/releases/tag/lealone-5.1.2) (2023-03-14)
