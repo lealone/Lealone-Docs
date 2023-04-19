@@ -30,6 +30,8 @@
 
 * 不再需要 btree page 缓存，会自动根据内存使用情况动态回收 btree page 占用的内存空间
 
+* 修改记录时，如果存在可重复读的事务并且记录的历史版本足够这些事务使用了，那就不必再把记录的旧值加到历史版本链表里了
+
 
 
 # [Lealone 5.1.2](https://github.com/lealone/Lealone/releases/tag/lealone-5.1.2) (2023-03-14)
