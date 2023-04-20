@@ -1,6 +1,6 @@
 # Change Log
 
-# Lealone 5.1.3 (unreleased)
+# Lealone 5.2.0 (unreleased)
 
 ## bug fix
 
