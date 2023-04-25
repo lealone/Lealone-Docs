@@ -38,6 +38,9 @@
 
 * 执行 checkpoint 分两步进行，每一步只需要放一条 checkpoint log 到 log sync 线程的队列即可，无需等待
 
+* 优化 sequence 的实现，并且事务回滚时可以退回到之前的值
+
+
 
 ## new features
 
