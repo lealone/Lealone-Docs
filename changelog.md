@@ -40,6 +40,8 @@
 
 * 优化 sequence 的实现，并且事务回滚时可以退回到之前的值
 
+* 事务提交时，无需把被更新的记录 put 回 btree map 中，标记一下脏页即可
+
 
 
 ## new features
