@@ -684,10 +684,10 @@ syntax-end -->
     </tr>
 </table>
 <!-- railroad-end -->
-
 <h3>System Tables</h3>
 <p class="notranslate">
 <a href="#information_schema">Information Schema</a><br />
+<a href="#performance_schema">Performance Schema</a><br />
 <a href="#range_table">Range Table</a><br />
 </p>
 
@@ -3532,18 +3532,8 @@ of all tables in the database as well as the current settings.
 </tr>
 
 <tr class="notranslate">
-    <td>IN_DOUBT</td>
-    <td>TRANSACTION, STATE</td>
-</tr>
-
-<tr class="notranslate">
     <td>LOCKS</td>
     <td>TABLE_SCHEMA, TABLE_NAME, SESSION_ID, LOCK_TYPE</td>
-</tr>
-
-<tr class="notranslate">
-    <td>QUERY_STATISTICS</td>
-    <td>SQL_STATEMENT, EXECUTION_COUNT, MIN_EXECUTION_TIME, MAX_EXECUTION_TIME, CUMULATIVE_EXECUTION_TIME, AVERAGE_EXECUTION_TIME, STD_DEV_EXECUTION_TIME, MIN_ROW_COUNT, MAX_ROW_COUNT, CUMULATIVE_ROW_COUNT, AVERAGE_ROW_COUNT, STD_DEV_ROW_COUNT</td>
 </tr>
 
 <tr class="notranslate">
@@ -3557,7 +3547,7 @@ of all tables in the database as well as the current settings.
 </tr>
 
 <tr class="notranslate">
-    <td>SCHEMATA</td>
+    <td>SCHEMAS</td>
     <td>CATALOG_NAME, SCHEMA_NAME, SCHEMA_OWNER, DEFAULT_CHARACTER_SET_NAME, DEFAULT_COLLATION_NAME, IS_DEFAULT, REMARKS, ID</td>
 </tr>
 
@@ -3614,6 +3604,30 @@ of all tables in the database as well as the current settings.
 <tr class="notranslate">
     <td>VIEWS</td>
     <td>TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME, VIEW_DEFINITION, CHECK_OPTION, IS_UPDATABLE, STATUS, REMARKS, ID</td>
+</tr>
+
+<tr class="notranslate">
+    <td>DATABASES</td>
+    <td>ID, DATABASE_NAME, RUN_MODE, NODES</td>
+</tr>
+
+<tr class="notranslate">
+    <td>DB_OBJECTS</td>
+    <td>ID, TYPE, SQL</td>
+</tr>
+
+<tr class="notranslate">
+    <td>SERVICES</td>
+    <td>SERVICE_CATALOG, SERVICE_SCHEMA, SERVICET_NAME, SQL, ID</td>
+</tr>
+</table>
+
+<h3 id="performance_schema" class="notranslate">Performance Schema</h3>
+<table class="main">
+<tr><th>Table</th><th>Columns</th></tr>
+<tr class="notranslate">
+    <td>QUERY_STATISTICS</td>
+    <td>SQL_STATEMENT, EXECUTION_COUNT, MIN_EXECUTION_TIME, MAX_EXECUTION_TIME, CUMULATIVE_EXECUTION_TIME, AVERAGE_EXECUTION_TIME, STD_DEV_EXECUTION_TIME, MIN_ROW_COUNT, MAX_ROW_COUNT, CUMULATIVE_ROW_COUNT, AVERAGE_ROW_COUNT, STD_DEV_ROW_COUNT</td>
 </tr>
 </table>
 
