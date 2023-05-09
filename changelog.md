@@ -56,6 +56,8 @@
 
 * 执行 checkpoint 时会把老的 redo log 文件归档
 
+* 支持在 lealone.yaml 配置文件中使用环境变量
+
 
 
 # [Lealone 5.1.2](https://github.com/lealone/Lealone/releases/tag/lealone-5.1.2) (2023-03-14)
