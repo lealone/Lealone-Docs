@@ -21,6 +21,9 @@
 
 * 调度器在一个事务中先执行一条 sql，然后再执行 select，如果给其他事务让出执行权后 select 会被挂起
 
+* [Issue #177](https://github.com/lealone/Lealone/issues/177) 在聚合函数中使用 case 表达式会出现类型错误
+
+
 
 ## improvement
 
