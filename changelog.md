@@ -23,6 +23,8 @@
 
 * [Issue #177](https://github.com/lealone/Lealone/issues/177) 在聚合函数中使用 case 表达式会出现类型错误
 
+* [Issue #180](https://github.com/lealone/Lealone/issues/180) 在 shell 脚本中$@需要加上双引号才能把命令行中带双引号的字符串当成一个整体处理
+
 
 
 ## improvement
