@@ -61,6 +61,12 @@ Data Types
     <a href="#uuid_type" >UUID Type</a><br />
 
     <a href="#array_type" >ARRAY Type</a><br />
+
+    <a href="#list_type" >LIST Type</a><br />
+
+    <a href="#set_type" >SET Type</a><br />
+
+    <a href="#map_type" >MAP Type</a><br />
 </p>
 syntax-end -->
 <!-- railroad-start -->
@@ -68,49 +74,55 @@ syntax-end -->
     <tr>
         <td class="index">
             
-                <a href="#int_type" >INT Type</a><br />
+                <a href="#int_type" >INT</a><br />
             
-                <a href="#boolean_type" >BOOLEAN Type</a><br />
+                <a href="#boolean_type" >BOOLEAN</a><br />
             
-                <a href="#tinyint_type" >TINYINT Type</a><br />
+                <a href="#tinyint_type" >TINYINT</a><br />
             
-                <a href="#smallint_type" >SMALLINT Type</a><br />
+                <a href="#smallint_type" >SMALLINT</a><br />
             
-                <a href="#bigint_type" >BIGINT Type</a><br />
+                <a href="#bigint_type" >BIGINT</a><br />
             
-                <a href="#identity_type" >IDENTITY Type</a><br />
+                <a href="#identity_type" >IDENTITY</a><br />
             
-                <a href="#decimal_type" >DECIMAL Type</a><br />
+                <a href="#decimal_type" >DECIMAL</a><br />
+            
+                <a href="#double_type" >DOUBLE</a><br />
                     </td><td class="index">
             
-                <a href="#double_type" >DOUBLE Type</a><br />
+                <a href="#real_type" >REAL</a><br />
             
-                <a href="#real_type" >REAL Type</a><br />
+                <a href="#time_type" >TIME</a><br />
             
-                <a href="#time_type" >TIME Type</a><br />
+                <a href="#date_type" >DATE</a><br />
             
-                <a href="#date_type" >DATE Type</a><br />
+                <a href="#timestamp_type" >TIMESTAMP</a><br />
             
-                <a href="#timestamp_type" >TIMESTAMP Type</a><br />
+                <a href="#binary_type" >BINARY</a><br />
             
-                <a href="#binary_type" >BINARY Type</a><br />
+                <a href="#other_type" >OTHER</a><br />
             
-                <a href="#other_type" >OTHER Type</a><br />
+                <a href="#varchar_type" >VARCHAR</a><br />
+            
+                <a href="#varchar_ignorecase_type" >VARCHAR_IGNORECASE</a><br />
                     </td><td class="index">
             
-                <a href="#varchar_type" >VARCHAR Type</a><br />
+                <a href="#char_type" >CHAR</a><br />
             
-                <a href="#varchar_ignorecase_type" >VARCHAR_IGNORECASE Type</a><br />
+                <a href="#blob_type" >BLOB</a><br />
             
-                <a href="#char_type" >CHAR Type</a><br />
+                <a href="#clob_type" >CLOB</a><br />
             
-                <a href="#blob_type" >BLOB Type</a><br />
+                <a href="#uuid_type" >UUID</a><br />
             
-                <a href="#clob_type" >CLOB Type</a><br />
+                <a href="#array_type" >ARRAY</a><br />
             
-                <a href="#uuid_type" >UUID Type</a><br />
+                <a href="#array_type" >LIST</a><br />
             
-                <a href="#array_type" >ARRAY Type</a><br />
+                <a href="#array_type" >SET</a><br />
+            
+                <a href="#array_type" >MAP</a><br />
                     </td>
     </tr>
 </table>
@@ -501,6 +513,60 @@ syntax-end -->
 <p>An array of values. Mapped to <code class="notranslate">java.lang.Object[]</code> (arrays of any non-primitive type are also supported).</p><p> Use a value list (1, 2) or <code class="notranslate">PreparedStatement.setObject(.., new Object[] {..})</code> to store values, and <code class="notranslate">ResultSet.getObject(..)</code> or <code class="notranslate">ResultSet.getArray(..)</code> to retrieve the values.</p>
 <p>Example:</p>
 <p class="notranslate">ARRAY</p>
+
+<h3 id="list_type" class="notranslate" onclick="switchBnf(this)">LIST Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+LIST
+</pre>
+<div name="railroad">
+<code class="c">LIST&lt;type&gt;</code>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+LIST
+</pre>
+syntax-end -->
+<p>A list of values.</p>
+<p>Example:</p>
+<p class="notranslate">LIST&lt;int&gt;</p>
+
+<h3 id="set_type" class="notranslate" onclick="switchBnf(this)">SET Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+SET
+</pre>
+<div name="railroad">
+<code class="c">SET&lt;type&gt;</code>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+SET
+</pre>
+syntax-end -->
+<p>A set of values.</p>
+<p>Example:</p>
+<p class="notranslate">SET&lt;int&gt;</p>
+
+<h3 id="map_type" class="notranslate" onclick="switchBnf(this)">MAP Type</h3>
+<!-- railroad-start -->
+<pre name="bnf" style="display: none">
+MAP
+</pre>
+<div name="railroad">
+<code class="c">MAP&lt;type,type&gt;</code>
+</div>
+<!-- railroad-end -->
+<!-- syntax-start
+<pre class="notranslate">
+MAP
+</pre>
+syntax-end -->
+<p>Maps keys to values.</p>
+<p>Example:</p>
+<p class="notranslate">MAP&lt;int,varchar&gt;</p>
 
 <!--[if lte IE 7]><script language="javascript">switchBnf(null);</script><![endif]-->
 
