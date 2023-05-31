@@ -63,6 +63,7 @@
 
 * 支持在 lealone.yaml 配置文件中使用环境变量
 
+* 单个表可以拥有自己的专属 lob 存储
 
 
 # [Lealone 5.1.2](https://github.com/lealone/Lealone/releases/tag/lealone-5.1.2) (2023-03-14)
