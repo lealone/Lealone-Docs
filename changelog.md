@@ -72,6 +72,7 @@
 
 * 支持 shutdown server 语句
 
+* 支持多个 net client，能大幅提升性能
 
 
 # [Lealone 5.1.2](https://github.com/lealone/Lealone/releases/tag/lealone-5.1.2) (2023-03-14)
