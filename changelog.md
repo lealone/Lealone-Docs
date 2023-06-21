@@ -53,6 +53,8 @@
 
 * 事务提交时，无需把被更新的记录 put 回 btree map 中，标记一下脏页即可
 
+* 只要 chunk 文件的大小没有超过 chunk_max_size，脏页数据会一直 append 到最新的 chunk 文件
+
 
 #### lealone-plugins
 
