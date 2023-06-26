@@ -55,6 +55,8 @@
 
 * 只要 chunk 文件的大小没有超过 chunk_max_size，脏页数据会一直 append 到最新的 chunk 文件
 
+* 优化IN(SELECT)语句，避免每次都查询 [Issue #189](https://github.com/lealone/Lealone/issues/189)
+
 
 #### lealone-plugins
 
