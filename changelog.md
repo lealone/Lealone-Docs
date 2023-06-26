@@ -25,6 +25,7 @@
 
 * [Issue #180](https://github.com/lealone/Lealone/issues/180) 在 shell 脚本中$@需要加上双引号才能把命令行中带双引号的字符串当成一个整体处理
 
+* [Issue #190](https://github.com/lealone/Lealone/issues/190) 保存 RemovedPages 时使用一个拷贝，避免产生 ConcurrentModificationException 
 
 
 ## improvement
