@@ -58,6 +58,8 @@
 
 * 优化IN(SELECT)语句，避免每次都查询 [Issue #189](https://github.com/lealone/Lealone/issues/189)
 
+* 数据库重新启动或网络断开后 lealone 命令行客户端会自动重连
+
 
 #### lealone-plugins
 
