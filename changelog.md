@@ -60,6 +60,8 @@
 
 * 数据库重新启动或网络断开后 lealone 命令行客户端会自动重连
 
+* 创建索引的过程中不再需要创建多个临时 btree map
+
 
 #### lealone-plugins
 
