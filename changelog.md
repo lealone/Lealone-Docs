@@ -85,6 +85,8 @@
 
 * jdbc client 支持阻塞 IO，能提升执行 jdbc 同步 api 的性能
 
+* 表数据损坏时可以通过 repair table 语句修复
+
 
 
 # [Lealone 5.1.2](https://github.com/lealone/Lealone/releases/tag/lealone-5.1.2) (2023-03-14)
