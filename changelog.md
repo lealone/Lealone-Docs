@@ -27,6 +27,8 @@
 
 * [Issue #190](https://github.com/lealone/Lealone/issues/190) 保存 RemovedPages 时使用一个拷贝，避免产生 ConcurrentModificationException 
 
+* [Issue #196](https://github.com/lealone/Lealone/issues/196) 存在多个事务时，执行不带 where 条件的 count(*) 可能产生 NPE
+
 
 ## improvement
 
