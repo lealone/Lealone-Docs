@@ -285,8 +285,6 @@ syntax-end -->
 
     <a href="#commit">COMMIT</a><br />
 
-    <a href="#commit_transaction">COMMIT TRANSACTION</a><br />
-
     <a href="#grant_right">GRANT RIGHT</a><br />
 
     <a href="#grant_alter_any_schema">GRANT ALTER ANY SCHEMA</a><br />
@@ -295,15 +293,11 @@ syntax-end -->
 
     <a href="#help">HELP</a><br />
 
-    <a href="#prepare_commit">PREPARE COMMIT</a><br />
-
     <a href="#revoke_right">REVOKE RIGHT</a><br />
 
     <a href="#revoke_role">REVOKE ROLE</a><br />
 
     <a href="#rollback">ROLLBACK</a><br />
-
-    <a href="#rollback_transaction">ROLLBACK TRANSACTION</a><br />
 
     <a href="#savepoint">SAVEPOINT</a><br />
 
@@ -383,8 +377,6 @@ syntax-end -->
             
                 <a href="#commit" >COMMIT</a><br />
             
-                <a href="#commit_transaction" >COMMIT TRANSACTION</a><br />
-            
                 <a href="#grant_right" >GRANT RIGHT</a><br />
             
                 <a href="#grant_alter_any_schema" >GRANT ALTER ANY SCHEMA</a><br />
@@ -393,26 +385,22 @@ syntax-end -->
             
                 <a href="#help" >HELP</a><br />
             
-                <a href="#prepare_commit" >PREPARE COMMIT</a><br />
-            
                 <a href="#revoke_right" >REVOKE RIGHT</a><br />
             
                 <a href="#revoke_role" >REVOKE ROLE</a><br />
             
                 <a href="#rollback" >ROLLBACK</a><br />
             
-                <a href="#rollback_transaction" >ROLLBACK TRANSACTION</a><br />
-            
                 <a href="#savepoint" >SAVEPOINT</a><br />
             
                 <a href="#set__" >SET @</a><br />
             
                 <a href="#set_allow_literals" >SET ALLOW_LITERALS</a><br />
-                    </td><td class="index">
             
                 <a href="#set_autocommit" >SET AUTOCOMMIT</a><br />
             
                 <a href="#set_cache_size" >SET CACHE_SIZE</a><br />
+                    </td><td class="index">
             
                 <a href="#set_binary_collation" >SET BINARY_COLLATION</a><br />
             
@@ -1949,25 +1937,6 @@ syntax-end -->
 <p class="notranslate">
 COMMIT</p>
 
-<h3 id="commit_transaction" class="notranslate" onclick="switchBnf(this)">COMMIT TRANSACTION</h3>
-<!-- railroad-start -->
-<pre name="bnf" style="display: none">
-COMMIT TRANSACTION <a href="grammar.html#name">transactionName</a>
-</pre>
-<div name="railroad">
-<table class="railroad"><tr class="railroad"><td class="d"><code class="c">COMMIT TRANSACTION <a href="grammar.html#name">transactionName</a></code></td></tr></table>
-</div>
-<!-- railroad-end -->
-<!-- syntax-start
-<pre class="notranslate">
-COMMIT TRANSACTION <a href="grammar.html#name">transactionName</a>
-</pre>
-syntax-end -->
-<p>Sets the resolution of an in-doubt transaction to &#39;commit&#39;.</p><p>Admin rights are required to execute this command. This command is part of the 2-phase-commit protocol.</p>
-<p>Example:</p>
-<p class="notranslate">
-COMMIT TRANSACTION XID_TEST</p>
-
 <h3 id="grant_right" class="notranslate" onclick="switchBnf(this)">GRANT RIGHT</h3>
 <!-- railroad-start -->
 <pre name="bnf" style="display: none">
@@ -2046,25 +2015,6 @@ syntax-end -->
 <p class="notranslate">
 HELP SELECT</p>
 
-<h3 id="prepare_commit" class="notranslate" onclick="switchBnf(this)">PREPARE COMMIT</h3>
-<!-- railroad-start -->
-<pre name="bnf" style="display: none">
-PREPARE COMMIT <a href="grammar.html#name">newTransactionName</a>
-</pre>
-<div name="railroad">
-<table class="railroad"><tr class="railroad"><td class="d"><code class="c">PREPARE COMMIT <a href="grammar.html#name">newTransactionName</a></code></td></tr></table>
-</div>
-<!-- railroad-end -->
-<!-- syntax-start
-<pre class="notranslate">
-PREPARE COMMIT <a href="grammar.html#name">newTransactionName</a>
-</pre>
-syntax-end -->
-<p>Prepares committing a transaction. This command is part of the 2-phase-commit protocol.</p>
-<p>Example:</p>
-<p class="notranslate">
-PREPARE COMMIT XID_TEST</p>
-
 <h3 id="revoke_right" class="notranslate" onclick="switchBnf(this)">REVOKE RIGHT</h3>
 <!-- railroad-start -->
 <pre name="bnf" style="display: none">
@@ -2123,25 +2073,6 @@ syntax-end -->
 <p>Example:</p>
 <p class="notranslate">
 ROLLBACK</p>
-
-<h3 id="rollback_transaction" class="notranslate" onclick="switchBnf(this)">ROLLBACK TRANSACTION</h3>
-<!-- railroad-start -->
-<pre name="bnf" style="display: none">
-ROLLBACK TRANSACTION <a href="grammar.html#name">transactionName</a>
-</pre>
-<div name="railroad">
-<table class="railroad"><tr class="railroad"><td class="d"><code class="c">ROLLBACK TRANSACTION <a href="grammar.html#name">transactionName</a></code></td></tr></table>
-</div>
-<!-- railroad-end -->
-<!-- syntax-start
-<pre class="notranslate">
-ROLLBACK TRANSACTION <a href="grammar.html#name">transactionName</a>
-</pre>
-syntax-end -->
-<p>Sets the resolution of an in-doubt transaction to &#39;rollback&#39;.</p><p>Admin rights are required to execute this command. This command is part of the 2-phase-commit protocol.</p>
-<p>Example:</p>
-<p class="notranslate">
-ROLLBACK TRANSACTION XID_TEST</p>
 
 <h3 id="savepoint" class="notranslate" onclick="switchBnf(this)">SAVEPOINT</h3>
 <!-- railroad-start -->
