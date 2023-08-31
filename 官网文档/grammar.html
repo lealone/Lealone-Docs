@@ -283,8 +283,6 @@ syntax-end -->
 
     <a href="#checkpoint">CHECKPOINT</a><br />
 
-    <a href="#checkpoint_sync">CHECKPOINT SYNC</a><br />
-
     <a href="#commit">COMMIT</a><br />
 
     <a href="#commit_transaction">COMMIT TRANSACTION</a><br />
@@ -382,8 +380,6 @@ syntax-end -->
         <td class="index">
             
                 <a href="#checkpoint" >CHECKPOINT</a><br />
-            
-                <a href="#checkpoint_sync" >CHECKPOINT SYNC</a><br />
             
                 <a href="#commit" >COMMIT</a><br />
             
@@ -1928,29 +1924,11 @@ CHECKPOINT
 CHECKPOINT
 </pre>
 syntax-end -->
-<p>Flushes the data to disk.</p><p>Admin rights are required to execute this command.</p>
+<p>Flushes the data to disk and open a new transaction log.</p><p>Admin rights are required to execute this command.</p>
 <p>Example:</p>
 <p class="notranslate">
 CHECKPOINT</p>
 
-<h3 id="checkpoint_sync" class="notranslate" onclick="switchBnf(this)">CHECKPOINT SYNC</h3>
-<!-- railroad-start -->
-<pre name="bnf" style="display: none">
-CHECKPOINT SYNC
-</pre>
-<div name="railroad">
-<table class="railroad"><tr class="railroad"><td class="d"><code class="c">CHECKPOINT SYNC</code></td></tr></table>
-</div>
-<!-- railroad-end -->
-<!-- syntax-start
-<pre class="notranslate">
-CHECKPOINT SYNC
-</pre>
-syntax-end -->
-<p>Flushes the data to disk and and forces all system buffers be written to the underlying device.</p><p>Admin rights are required to execute this command.</p>
-<p>Example:</p>
-<p class="notranslate">
-CHECKPOINT SYNC</p>
 
 <h3 id="commit" class="notranslate" onclick="switchBnf(this)">COMMIT</h3>
 <!-- railroad-start -->
