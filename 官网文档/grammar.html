@@ -363,8 +363,6 @@ syntax-end -->
 
     <a href="#set_trace_max_file_size">SET TRACE_MAX_FILE_SIZE</a><br />
 
-    <a href="#set_write_delay">SET WRITE_DELAY</a><br />
-
     <a href="#shutdown_database">SHUTDOWN DATABASE</a><br />
 
     <a href="#shutdown_server">SHUTDOWN SERVER</a><br />
@@ -458,8 +456,6 @@ syntax-end -->
                 <a href="#set_trace_level" >SET TRACE_LEVEL</a><br />
             
                 <a href="#set_trace_max_file_size" >SET TRACE_MAX_FILE_SIZE</a><br />
-            
-                <a href="#set_write_delay" >SET WRITE_DELAY</a><br />
             
                 <a href="#shutdown_database" >SHUTDOWN DATABASE</a><br />
             
@@ -2696,25 +2692,6 @@ syntax-end -->
 <p>Example:</p>
 <p class="notranslate">
 SET TRACE_MAX_FILE_SIZE 10</p>
-
-<h3 id="set_write_delay" class="notranslate" onclick="switchBnf(this)">SET WRITE_DELAY</h3>
-<!-- railroad-start -->
-<pre name="bnf" style="display: none">
-SET WRITE_DELAY <a href="grammar.html#int">int</a>
-</pre>
-<div name="railroad">
-<table class="railroad"><tr class="railroad"><td class="d"><code class="c">SET WRITE_DELAY <a href="grammar.html#int">int</a></code></td></tr></table>
-</div>
-<!-- railroad-end -->
-<!-- syntax-start
-<pre>
-SET WRITE_DELAY <a href="grammar.html#int">int</a>
-</pre>
-syntax-end -->
-<p>Set the maximum delay between a commit and flushing the log, in milliseconds. This setting is persistent. The default is 500 ms.  Admin rights are required to execute this command, as it affects all connections.  This setting can be appended to the database URL: <code>jdbc:lealone:embed:test;WRITE_DELAY=0</code></p>
-<p>Example:</p>
-<p class="notranslate">
-SET WRITE_DELAY 2000</p>
 
 <h3 id="shutdown_database" class="notranslate" onclick="switchBnf(this)">SHUTDOWN DATABASE</h3>
 <!-- railroad-start -->
