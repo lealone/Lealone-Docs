@@ -313,8 +313,6 @@ syntax-end -->
 
     <a href="#set_collation">SET COLLATION</a><br />
 
-    <a href="#set_compress_lob">SET COMPRESS_LOB</a><br />
-
     <a href="#set_database_event_listener">SET DATABASE_EVENT_LISTENER</a><br />
 
     <a href="#set_db_close_delay">SET DB_CLOSE_DELAY</a><br />
@@ -327,7 +325,7 @@ syntax-end -->
 
     <a href="#set_ignorecase">SET IGNORECASE</a><br />
 
-    <a href="#set_java_object_serializer">SET JAVA_OBJECT_SERIALIZER</a><br />
+    <a href="#set_lob_compression_algorithm">SET LOB_COMPRESSION_ALGORITHM</a><br />
 
     <a href="#set_lock_timeout">SET LOCK_TIMEOUT</a><br />
 
@@ -400,13 +398,11 @@ syntax-end -->
                 <a href="#set_autocommit" >SET AUTOCOMMIT</a><br />
             
                 <a href="#set_cache_size" >SET CACHE_SIZE</a><br />
-            
-                <a href="#set_binary_collation" >SET BINARY_COLLATION</a><br />
                     </td><td class="index">
             
-                <a href="#set_collation" >SET COLLATION</a><br />
+                <a href="#set_binary_collation" >SET BINARY_COLLATION</a><br />
             
-                <a href="#set_compress_lob" >SET COMPRESS_LOB</a><br />
+                <a href="#set_collation" >SET COLLATION</a><br />
             
                 <a href="#set_database_event_listener" >SET DATABASE_EVENT_LISTENER</a><br />
             
@@ -420,7 +416,7 @@ syntax-end -->
             
                 <a href="#set_ignorecase" >SET IGNORECASE</a><br />
             
-                <a href="#set_java_object_serializer" >SET JAVA_OBJECT_SERIALIZER</a><br />
+                <a href="#set_lob_compression_algorithm" >SET LOB_COMPRESSION_ALGORITHM</a><br />
             
                 <a href="#set_lock_timeout" >SET LOCK_TIMEOUT</a><br />
             
@@ -431,9 +427,9 @@ syntax-end -->
                 <a href="#set_max_memory_undo" >SET MAX_MEMORY_UNDO</a><br />
             
                 <a href="#set_max_operation_memory" >SET MAX_OPERATION_MEMORY</a><br />
+                    </td><td class="index">
             
                 <a href="#set_mode" >SET MODE</a><br />
-                    </td><td class="index">
             
                 <a href="#set_optimize_reuse_results" >SET OPTIMIZE_REUSE_RESULTS</a><br />
             
@@ -1914,11 +1910,13 @@ CHECKPOINT
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 CHECKPOINT
 </pre>
 syntax-end -->
-<p>Flushes the data to disk and open a new transaction log.  Admin rights are required to execute this command.</p>
+<p>Flushes the data to disk and open a new transaction log.
+ 
+ Admin rights are required to execute this command.</p>
 <p>Example:</p>
 <p class="notranslate">
 CHECKPOINT</p>
@@ -1933,7 +1931,7 @@ COMMIT [ WORK ]
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 COMMIT [ WORK ]
 </pre>
 syntax-end -->
@@ -1953,12 +1951,14 @@ GRANT { SELECT | INSERT | UPDATE | DELETE | ALL } [,...] ON
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 GRANT { SELECT | INSERT | UPDATE | DELETE | ALL } [,...] ON
 <a href="grammar.html#name">tableName</a> [,...] TO { PUBLIC | <a href="grammar.html#name">userName</a> | <a href="grammar.html#name">roleName</a> }
 </pre>
 syntax-end -->
-<p>Grants rights for a table to a user or role.  Admin rights are required to execute this command.</p>
+<p>Grants rights for a table to a user or role.
+ 
+ Admin rights are required to execute this command.</p>
 <p>Example:</p>
 <p class="notranslate">
 GRANT SELECT ON TEST TO READONLY</p>
@@ -1973,11 +1973,13 @@ GRANT ALTER ANY SCHEMA TO <a href="grammar.html#name">userName</a>
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 GRANT ALTER ANY SCHEMA TO <a href="grammar.html#name">userName</a>
 </pre>
 syntax-end -->
-<p>Grant schema altering rights to a user.  Admin rights are required to execute this command.</p>
+<p>Grant schema altering rights to a user.
+ 
+ Admin rights are required to execute this command.</p>
 <p>Example:</p>
 <p class="notranslate">
 GRANT ALTER ANY SCHEMA TO Bob</p>
@@ -1992,11 +1994,13 @@ GRANT <a href="grammar.html#name">roleName</a> TO { PUBLIC | <a href="grammar.ht
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 GRANT <a href="grammar.html#name">roleName</a> TO { PUBLIC | <a href="grammar.html#name">userName</a> | <a href="grammar.html#name">roleName</a> }
 </pre>
 syntax-end -->
-<p>Grants a role to a user or role.  Admin rights are required to execute this command.</p>
+<p>Grants a role to a user or role.
+ 
+ Admin rights are required to execute this command.</p>
 <p>Example:</p>
 <p class="notranslate">
 GRANT READONLY TO PUBLIC</p>
@@ -2011,7 +2015,7 @@ HELP [ anything [...] ]
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 HELP [ anything [...] ]
 </pre>
 syntax-end -->
@@ -2031,12 +2035,14 @@ REVOKE { SELECT | INSERT | UPDATE | DELETE | ALL } [,...] ON
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 REVOKE { SELECT | INSERT | UPDATE | DELETE | ALL } [,...] ON
 <a href="grammar.html#name">tableName</a> [,...] FROM { PUBLIC | <a href="grammar.html#name">userName</a> | <a href="grammar.html#name">roleName</a> }
 </pre>
 syntax-end -->
-<p>Removes rights for a table from a user or role.  Admin rights are required to execute this command.</p>
+<p>Removes rights for a table from a user or role.
+ 
+ Admin rights are required to execute this command.</p>
 <p>Example:</p>
 <p class="notranslate">
 REVOKE SELECT ON TEST FROM READONLY</p>
@@ -2051,11 +2057,13 @@ REVOKE <a href="grammar.html#name">roleName</a> FROM { PUBLIC | <a href="grammar
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 REVOKE <a href="grammar.html#name">roleName</a> FROM { PUBLIC | <a href="grammar.html#name">userName</a> | <a href="grammar.html#name">roleName</a> }
 </pre>
 syntax-end -->
-<p>Removes a role from a user or role.  Admin rights are required to execute this command.</p>
+<p>Removes a role from a user or role.
+ 
+ Admin rights are required to execute this command.</p>
 <p>Example:</p>
 <p class="notranslate">
 REVOKE READONLY FROM TOM</p>
@@ -2070,11 +2078,12 @@ ROLLBACK [ TO SAVEPOINT <a href="grammar.html#name">savepointName</a> ]
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 ROLLBACK [ TO SAVEPOINT <a href="grammar.html#name">savepointName</a> ]
 </pre>
 syntax-end -->
-<p>Rolls back a transaction. If a savepoint name is used, the transaction is only rolled back to the specified savepoint.</p>
+<p>Rolls back a transaction. If a savepoint name is used, the transaction is only
+ rolled back to the specified savepoint.</p>
 <p>Example:</p>
 <p class="notranslate">
 ROLLBACK</p>
@@ -2089,11 +2098,12 @@ SAVEPOINT <a href="grammar.html#name">savepointName</a>
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SAVEPOINT <a href="grammar.html#name">savepointName</a>
 </pre>
 syntax-end -->
-<p>Create a new savepoint. See also <code>ROLLBACK</code>. Savepoints are only valid until the transaction is committed or rolled back.</p>
+<p>Create a new savepoint. See also <code class="notranslate">ROLLBACK</code>.
+ Savepoints are only valid until the transaction is committed or rolled back.</p>
 <p>Example:</p>
 <p class="notranslate">
 SAVEPOINT HALF_DONE</p>
@@ -2108,11 +2118,13 @@ SET <a href="grammar.html#name">@variableName</a> [ = ] <a href="grammar.html#ex
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET <a href="grammar.html#name">@variableName</a> [ = ] <a href="grammar.html#expression">expression</a>
 </pre>
 syntax-end -->
-<p>Updates a user-defined variable. Variables are not persisted and session scoped, that means only visible from within the session in which they are defined. This command does not commit a transaction, and rollback does not affect it.</p>
+<p>Updates a user-defined variable.
+ Variables are not persisted and session scoped, that means only visible from within the session in which they are defined.
+ This command does not commit a transaction, and rollback does not affect it.</p>
 <p>Example:</p>
 <p class="notranslate">
 SET @TOTAL=0</p>
@@ -2127,11 +2139,25 @@ SET ALLOW_LITERALS { NONE | ALL | NUMBERS }
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET ALLOW_LITERALS { NONE | ALL | NUMBERS }
 </pre>
 syntax-end -->
-<p>This setting can help solve the SQL injection problem. By default, text and number literals are allowed in SQL statements. However, this enables SQL injection if the application dynamically builds SQL statements. SQL injection is not possible if user data is set using parameters (&#39;?&#39;).  <code>NONE</code> means literals of any kind are not allowed, only parameters and constants are allowed. <code>NUMBERS</code> mean only numerical and boolean literals are allowed. <code>ALL</code> means all literals are allowed (default).  See also <code>CREATE CONSTANT</code>.  Admin rights are required to execute this command, as it affects all connections.  This setting is persistent. This setting can be appended to the database URL: <code>jdbc:lealone:embed:test;ALLOW_LITERALS=NONE</code></p>
+<p>This setting can help solve the SQL injection problem. By default, text and
+ number literals are allowed in SQL statements. However, this enables SQL
+ injection if the application dynamically builds SQL statements. SQL injection is
+ not possible if user data is set using parameters (&#39;?&#39;).
+ 
+ <code class="notranslate">NONE</code> means literals of any kind are not allowed, only parameters and constants
+ are allowed. <code class="notranslate">NUMBERS</code> mean only numerical and boolean literals are allowed. <code class="notranslate">ALL</code>
+ means all literals are allowed (default).
+ 
+ See also <code class="notranslate">CREATE CONSTANT</code>.
+ 
+ Admin rights are required to execute this command, as it affects all connections.
+ 
+ This setting is persistent.
+ This setting can be appended to the database URL: <code class="notranslate">jdbc:lealone:embed:test;ALLOW_LITERALS=NONE</code></p>
 <p>Example:</p>
 <p class="notranslate">
 SET ALLOW_LITERALS NONE</p>
@@ -2146,11 +2172,16 @@ SET AUTOCOMMIT { TRUE | ON | FALSE | OFF }
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET AUTOCOMMIT { TRUE | ON | FALSE | OFF }
 </pre>
 syntax-end -->
-<p>Switches auto commit on or off. This setting can be appended to the database URL: <code>jdbc:lealone:embed:test;AUTOCOMMIT=OFF</code> - however this will not work as expected when using a connection pool (the connection pool manager will re-enable autocommit when returning the connection to the pool, so autocommit will only be disabled the first time the connection is used.</p>
+<p>Switches auto commit on or off.
+ This setting can be appended to the database URL: <code class="notranslate">jdbc:lealone:embed:test;AUTOCOMMIT=OFF</code> -
+ however this will not work as expected when using a connection pool
+ (the connection pool manager will re-enable autocommit when returning
+ the connection to the pool, so autocommit will only be disabled the first
+ time the connection is used.</p>
 <p>Example:</p>
 <p class="notranslate">
 SET AUTOCOMMIT OFF</p>
@@ -2165,14 +2196,26 @@ SET CACHE_SIZE <a href="grammar.html#int">int</a>
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET CACHE_SIZE <a href="grammar.html#int">int</a>
 </pre>
 syntax-end -->
-<p>Sets the size of the cache in KB (each KB being 1024 bytes) for the current database. The default value is 16384 (16 MB). The value is rounded to the next higher power of two. Depending on the virtual machine, the actual memory required may be higher.  This setting is persistent and affects all connections as there is only one cache per database. Using a very small value (specially 0) will reduce performance a lot. This setting only affects the database engine (the server in a client/server environment). It has no effect for in-memory databases.  Admin rights are required to execute this command, as it affects all connections.  This setting is persistent. This setting can be appended to the database URL: <code>jdbc:lealone:embed:test;CACHE_SIZE=8192</code></p>
+<p>Sets the size of the cache in MB (each MB being 1024*1024 bytes) for the current database.
+ The default value is 32 MB. The value is rounded to the next higher power of two.
+ Depending on the virtual machine, the actual memory required may be higher.
+ 
+ This setting is persistent and affects all connections as there is only one cache per database.
+ Using a very small value (specially 0) will reduce performance a lot.
+ This setting only affects the database engine (the server in a client/server environment).
+ It has no effect for in-memory databases.
+ 
+ Admin rights are required to execute this command, as it affects all connections.
+ 
+ This setting is persistent.
+ This setting can be appended to the database URL: <code class="notranslate">jdbc:lealone:embed:test;CACHE_SIZE=8</code></p>
 <p>Example:</p>
 <p class="notranslate">
-SET CACHE_SIZE 8192</p>
+SET CACHE_SIZE 8</p>
 
 <h3 id="set_binary_collation" class="notranslate" onclick="switchBnf(this)">SET BINARY_COLLATION</h3>
 <!-- railroad-start -->
@@ -2185,12 +2228,18 @@ SET BINARY_COLLATION
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET BINARY_COLLATION
 { UNSIGNED | SIGNED } ] }
 </pre>
 syntax-end -->
-<p>Sets the collation used for comparing <code>BINARY</code> columns, the default is <code>SIGNED</code> for version 1.3 and older, and <code>UNSIGNED</code> for version 1.4 and newer. This command can only be executed if there are no tables defined.  Admin rights are required to execute this command.  This setting is persistent.</p>
+<p>Sets the collation used for comparing <code class="notranslate">BINARY</code> columns, the default is <code class="notranslate">SIGNED</code>
+ for version 1.3 and older, and <code class="notranslate">UNSIGNED</code> for version 1.4 and newer.
+ This command can only be executed if there are no tables defined.
+ 
+ Admin rights are required to execute this command.
+ 
+ This setting is persistent.</p>
 <p>Example:</p>
 <p class="notranslate">
 SET BINARY_COLLATION SIGNED</p>
@@ -2206,34 +2255,29 @@ SET [ DATABASE ] COLLATION
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET [ DATABASE ] COLLATION
 { OFF | <a href="grammar.html#name">collationName</a> [ STRENGTH { PRIMARY | SECONDARY | TERTIARY | IDENTICAL } ] }
 </pre>
 syntax-end -->
-<p>Sets the collation used for comparing strings. This command can only be executed if there are no tables defined. See <code>java.text.Collator</code> for details about the supported collations and the <code>STRENGTH</code> (<code>PRIMARY</code> is usually case- and umlaut-insensitive; <code>SECONDARY</code> is case-insensitive but umlaut-sensitive; <code>TERTIARY</code> is both case- and umlaut-sensitive; <code>IDENTICAL</code> is sensitive to all differences and only affects ordering).  The <code>ICU4J</code> collator is used if it is in the classpath. It is also used if the collation name starts with <code>ICU4J_</code> (in that case, the <code>ICU4J</code> must be in the classpath, otherwise an exception is thrown). The default collator is used if the collation name starts with <code>DEFAULT_</code> (even if <code>ICU4J</code> is in the classpath).  Admin rights are required to execute this command.  This setting is persistent.</p>
+<p>Sets the collation used for comparing strings.
+ This command can only be executed if there are no tables defined.
+ See <code class="notranslate">java.text.Collator</code> for details about the supported collations and the <code class="notranslate">STRENGTH</code>
+ (<code class="notranslate">PRIMARY</code> is usually case- and umlaut-insensitive; <code class="notranslate">SECONDARY</code> is case-insensitive but umlaut-sensitive;
+ <code class="notranslate">TERTIARY</code> is both case- and umlaut-sensitive; <code class="notranslate">IDENTICAL</code> is sensitive to all differences and only affects ordering).
+ 
+ The <code class="notranslate">ICU4J</code> collator is used if it is in the classpath.
+ It is also used if the collation name starts with <code class="notranslate">ICU4J_</code>
+ (in that case, the <code class="notranslate">ICU4J</code> must be in the classpath, otherwise an exception is thrown).
+ The default collator is used if the collation name starts with <code class="notranslate">DEFAULT_</code>
+ (even if <code class="notranslate">ICU4J</code> is in the classpath).
+ 
+ Admin rights are required to execute this command.
+ 
+ This setting is persistent.</p>
 <p>Example:</p>
 <p class="notranslate">
 SET COLLATION ENGLISH</p>
-
-<h3 id="set_compress_lob" class="notranslate" onclick="switchBnf(this)">SET COMPRESS_LOB</h3>
-<!-- railroad-start -->
-<pre name="bnf" style="display: none">
-SET COMPRESS_LOB { NO | LZF | DEFLATE }
-</pre>
-<div name="railroad">
-<table class="railroad"><tr class="railroad"><td class="d"><code class="c">SET COMPRESS_LOB</code></td><td class="d"><table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d"><code class="c">NO</code></td><td class="te"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">LZF</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><code class="c">DEFLATE</code></td><td class="le"></td></tr></table></td></tr></table>
-</div>
-<!-- railroad-end -->
-<!-- syntax-start
-<pre>
-SET COMPRESS_LOB { NO | LZF | DEFLATE }
-</pre>
-syntax-end -->
-<p>Sets the compression algorithm for <code>BLOB</code> and <code>CLOB</code> data. Compression is usually slower, but needs less disk space. <code>LZF</code> is faster but uses more space.  Admin rights are required to execute this command, as it affects all connections.  This setting is persistent.</p>
-<p>Example:</p>
-<p class="notranslate">
-SET COMPRESS_LOB LZF</p>
 
 <h3 id="set_database_event_listener" class="notranslate" onclick="switchBnf(this)">SET DATABASE_EVENT_LISTENER</h3>
 <!-- railroad-start -->
@@ -2245,11 +2289,16 @@ SET DATABASE_EVENT_LISTENER <a href="grammar.html#string">classNameString</a>
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET DATABASE_EVENT_LISTENER <a href="grammar.html#string">classNameString</a>
 </pre>
 syntax-end -->
-<p>Sets the event listener class. An empty string (&#39;&#39;) means no listener should be used. This setting is not persistent.  Admin rights are required to execute this command, except if it is set when opening the database (in this case it is reset just after opening the database). This setting can be appended to the database URL: <code>jdbc:lealone:embed:test;DATABASE_EVENT_LISTENER=&#39;sample.MyListener&#39;</code></p>
+<p>Sets the event listener class. An empty string (&#39;&#39;) means no listener should be
+ used. This setting is not persistent.
+ 
+ Admin rights are required to execute this command, except if it is set when
+ opening the database (in this case it is reset just after opening the database).
+ This setting can be appended to the database URL: <code class="notranslate">jdbc:lealone:embed:test;DATABASE_EVENT_LISTENER=&#39;sample.MyListener&#39;</code></p>
 <p>Example:</p>
 <p class="notranslate">
 SET DATABASE_EVENT_LISTENER &#39;sample.MyListener&#39;</p>
@@ -2264,11 +2313,21 @@ SET DB_CLOSE_DELAY <a href="grammar.html#int">int</a>
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET DB_CLOSE_DELAY <a href="grammar.html#int">int</a>
 </pre>
 syntax-end -->
-<p>Sets the delay for closing a database if all connections are closed. The value -1 means the database is never closed until the close delay is set to some other value or <code>SHUTDOWN</code> is called. The value 0 means no delay (default; the database is closed if the last connection to it is closed). Values 1 and larger mean the number of seconds the database is left open after closing the last connection.  If the application exits normally or System.exit is called, the database is closed immediately, even if a delay is set.  Admin rights are required to execute this command, as it affects all connections.  This setting is persistent. This setting can be appended to the database URL: <code>jdbc:lealone:embed:test;DB_CLOSE_DELAY=-1</code></p>
+<p>Sets the delay for closing a database if all connections are closed.
+ The value -1 means the database is never closed until the close delay is set to some other value or <code class="notranslate">SHUTDOWN</code> is called.
+ The value 0 means no delay (default; the database is closed if the last connection to it is closed).
+ Values 1 and larger mean the number of seconds the database is left open after closing the last connection.
+ 
+ If the application exits normally or System.exit is called, the database is closed immediately, even if a delay is set.
+ 
+ Admin rights are required to execute this command, as it affects all connections.
+ 
+ This setting is persistent.
+ This setting can be appended to the database URL: <code class="notranslate">jdbc:lealone:embed:test;DB_CLOSE_DELAY=-1</code></p>
 <p>Example:</p>
 <p class="notranslate">
 SET DB_CLOSE_DELAY -1</p>
@@ -2283,11 +2342,16 @@ SET DEFAULT LOCK_TIMEOUT <a href="grammar.html#int">int</a>
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET DEFAULT LOCK_TIMEOUT <a href="grammar.html#int">int</a>
 </pre>
 syntax-end -->
-<p>Sets the default lock timeout (in milliseconds) in this database that is used for the new sessions. The default value for this setting is 1000 (one second).  Admin rights are required to execute this command, as it affects all connections.  This setting is persistent.</p>
+<p>Sets the default lock timeout (in milliseconds) in this database that is used
+ for the new sessions. The default value for this setting is 1000 (one second).
+ 
+ Admin rights are required to execute this command, as it affects all connections.
+ 
+ This setting is persistent.</p>
 <p>Example:</p>
 <p class="notranslate">
 SET DEFAULT_LOCK_TIMEOUT 5000</p>
@@ -2302,11 +2366,19 @@ SET DEFAULT_TABLE_TYPE { MEMORY | CACHED }
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET DEFAULT_TABLE_TYPE { MEMORY | CACHED }
 </pre>
 syntax-end -->
-<p>Sets the default table storage type that is used when creating new tables. Memory tables are kept fully in the main memory (including indexes), however the data is still stored in the database file. The size of memory tables is limited by the memory. The default is <code>CACHED</code>.  Admin rights are required to execute this command, as it affects all connections.  This setting is persistent. It has no effect for in-memory databases.</p>
+<p>Sets the default table storage type that is used when creating new tables.
+ Memory tables are kept fully in the main memory (including indexes), however
+ the data is still stored in the database file. The size of memory tables is
+ limited by the memory. The default is <code class="notranslate">CACHED</code>.
+ 
+ Admin rights are required to execute this command, as it affects all connections.
+ 
+ This setting is persistent.
+ It has no effect for in-memory databases.</p>
 <p>Example:</p>
 <p class="notranslate">
 SET DEFAULT_TABLE_TYPE MEMORY</p>
@@ -2321,11 +2393,22 @@ SET EXCLUSIVE { 0 | 1 | 2 }
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET EXCLUSIVE { 0 | 1 | 2 }
 </pre>
 syntax-end -->
-<p>Switched the database to exclusive mode (1, 2) and back to normal mode (0).  In exclusive mode, new connections are rejected, and operations by other connections are paused until the exclusive mode is disabled. When using the value 1, existing connections stay open. When using the value 2, all existing connections are closed (and current transactions are rolled back) except the connection that executes <code>SET EXCLUSIVE</code>. Only the connection that set the exclusive mode can disable it. When the connection is closed, it is automatically disabled.  Admin rights are required to execute this command.</p>
+<p>Switched the database to exclusive mode (1, 2) and back to normal mode (0).
+ 
+ In exclusive mode, new connections are rejected, and operations by
+ other connections are paused until the exclusive mode is disabled.
+ When using the value 1, existing connections stay open.
+ When using the value 2, all existing connections are closed
+ (and current transactions are rolled back) except the connection
+ that executes <code class="notranslate">SET EXCLUSIVE</code>.
+ Only the connection that set the exclusive mode can disable it.
+ When the connection is closed, it is automatically disabled.
+ 
+ Admin rights are required to execute this command.</p>
 <p>Example:</p>
 <p class="notranslate">
 SET EXCLUSIVE 1</p>
@@ -2340,35 +2423,47 @@ SET IGNORECASE { TRUE | FALSE }
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET IGNORECASE { TRUE | FALSE }
 </pre>
 syntax-end -->
-<p>If <code>IGNORECASE</code> is enabled, text columns in newly created tables will be case-insensitive. Already existing tables are not affected. The effect of case-insensitive columns is similar to using a collation with strength <code>PRIMARY</code>. Case-insensitive columns are compared faster than when using a collation. String literals and parameters are however still considered case sensitive even if this option is set.  Admin rights are required to execute this command, as it affects all connections.  This setting is persistent. This setting can be appended to the database URL: <code>jdbc:lealone:embed:test;IGNORECASE=TRUE</code></p>
+<p>If <code class="notranslate">IGNORECASE</code> is enabled, text columns in newly created tables will be
+ case-insensitive. Already existing tables are not affected. The effect of
+ case-insensitive columns is similar to using a collation with strength <code class="notranslate">PRIMARY</code>.
+ Case-insensitive columns are compared faster than when using a collation.
+ String literals and parameters are however still considered case sensitive even if this option is set.
+ 
+ Admin rights are required to execute this command, as it affects all connections.
+ 
+ This setting is persistent.
+ This setting can be appended to the database URL: <code class="notranslate">jdbc:lealone:embed:test;IGNORECASE=TRUE</code></p>
 <p>Example:</p>
 <p class="notranslate">
 SET IGNORECASE TRUE</p>
 
-<h3 id="set_java_object_serializer" class="notranslate" onclick="switchBnf(this)">SET JAVA_OBJECT_SERIALIZER</h3>
+<h3 id="set_lob_compression_algorithm" class="notranslate" onclick="switchBnf(this)">SET LOB_COMPRESSION_ALGORITHM</h3>
 <!-- railroad-start -->
 <pre name="bnf" style="display: none">
-SET JAVA_OBJECT_SERIALIZER
-{ <a href="grammar.html#null">null</a> | <a href="grammar.html#name">className</a> }
+SET LOB_COMPRESSION_ALGORITHM { NO | LZF | DEFLATE }
 </pre>
 <div name="railroad">
-<table class="railroad"><tr class="railroad"><td class="d"><code class="c">SET JAVA_OBJECT_SERIALIZER</code></td></tr></table><br /><table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d"><code class="c"><a href="grammar.html#null">null</a></code></td><td class="te"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><code class="c"><a href="grammar.html#name">className</a></code></td><td class="le"></td></tr></table>
+<table class="railroad"><tr class="railroad"><td class="d"><code class="c">SET LOB_COMPRESSION_ALGORITHM</code></td><td class="d"><table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d"><code class="c">NO</code></td><td class="te"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">LZF</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><code class="c">DEFLATE</code></td><td class="le"></td></tr></table></td></tr></table>
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
-SET JAVA_OBJECT_SERIALIZER
-{ <a href="grammar.html#null">null</a> | <a href="grammar.html#name">className</a> }
+<pre class="notranslate">
+SET LOB_COMPRESSION_ALGORITHM { NO | LZF | DEFLATE }
 </pre>
 syntax-end -->
-<p>Sets the object used to serialize and deserialize java objects being stored in column of type <code>OTHER</code>. The serializer class must be public and implement <code>org.lealone.db.api.JavaObjectSerializer</code>. Inner classes are not supported. The class must be available in the classpath of the database engine (when using the server mode, it must be both in the classpath of the server and the client). This command can only be executed if there are no tables defined.  Admin rights are required to execute this command.  This setting is persistent. This setting can be appended to the database URL: <code>jdbc:lealone:embed:test;JAVA_OBJECT_SERIALIZER=&#39;com.acme.SerializerClassName&#39;</code></p>
+<p>Sets the compression algorithm for <code class="notranslate">BLOB</code> and <code class="notranslate">CLOB</code> data. Compression is usually
+ slower, but needs less disk space. <code class="notranslate">LZF</code> is faster but uses more space.
+ 
+ Admin rights are required to execute this command, as it affects all connections.
+ 
+ This setting is persistent.</p>
 <p>Example:</p>
 <p class="notranslate">
-SET JAVA_OBJECT_SERIALIZER &#39;com.acme.SerializerClassName&#39;</p>
+SET LOB_COMPRESSION_ALGORITHM LZF</p>
 
 <h3 id="set_lock_timeout" class="notranslate" onclick="switchBnf(this)">SET LOCK_TIMEOUT</h3>
 <!-- railroad-start -->
@@ -2380,11 +2475,15 @@ SET LOCK_TIMEOUT <a href="grammar.html#int">int</a>
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET LOCK_TIMEOUT <a href="grammar.html#int">int</a>
 </pre>
 syntax-end -->
-<p>Sets the lock timeout (in milliseconds) for the current session. The default value for this setting is 1000 (one second).  This command does not commit a transaction, and rollback does not affect it. This setting can be appended to the database URL: <code>jdbc:lealone:embed:test;LOCK_TIMEOUT=10000</code></p>
+<p>Sets the lock timeout (in milliseconds) for the current session. The default
+ value for this setting is 1000 (one second).
+ 
+ This command does not commit a transaction, and rollback does not affect it.
+ This setting can be appended to the database URL: <code class="notranslate">jdbc:lealone:embed:test;LOCK_TIMEOUT=10000</code></p>
 <p>Example:</p>
 <p class="notranslate">
 SET LOCK_TIMEOUT 1000</p>
@@ -2399,11 +2498,20 @@ SET MAX_LENGTH_INPLACE_LOB <a href="grammar.html#int">int</a>
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET MAX_LENGTH_INPLACE_LOB <a href="grammar.html#int">int</a>
 </pre>
 syntax-end -->
-<p>Sets the maximum size of an in-place <code>LOB</code> object.  This is the maximum length of an <code>LOB</code> that is stored with the record itself, and the default value is 128.  This setting has no effect for in-memory databases.  Admin rights are required to execute this command, as it affects all connections.  This setting is persistent.</p>
+<p>Sets the maximum size of an in-place <code class="notranslate">LOB</code> object.
+ 
+ This is the maximum length of an <code class="notranslate">LOB</code> that is stored with the record itself,
+ and the default value is 128.
+ 
+ This setting has no effect for in-memory databases.
+ 
+ Admin rights are required to execute this command, as it affects all connections.
+ 
+ This setting is persistent.</p>
 <p>Example:</p>
 <p class="notranslate">
 SET MAX_LENGTH_INPLACE_LOB 128</p>
@@ -2418,11 +2526,17 @@ SET MAX_MEMORY_ROWS <a href="grammar.html#int">int</a>
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET MAX_MEMORY_ROWS <a href="grammar.html#int">int</a>
 </pre>
 syntax-end -->
-<p>The maximum number of rows in a result set that are kept in-memory. If more rows are read, then the rows are buffered to disk. The default value is 10000.  Admin rights are required to execute this command, as it affects all connections.  This setting is persistent. It has no effect for in-memory databases.</p>
+<p>The maximum number of rows in a result set that are kept in-memory. If more rows
+ are read, then the rows are buffered to disk. The default value is 10000.
+ 
+ Admin rights are required to execute this command, as it affects all connections.
+ 
+ This setting is persistent.
+ It has no effect for in-memory databases.</p>
 <p>Example:</p>
 <p class="notranslate">
 SET MAX_MEMORY_ROWS 1000</p>
@@ -2437,11 +2551,20 @@ SET MAX_MEMORY_UNDO <a href="grammar.html#int">int</a>
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET MAX_MEMORY_UNDO <a href="grammar.html#int">int</a>
 </pre>
 syntax-end -->
-<p>The maximum number of undo records per a session that are kept in-memory. If a transaction is larger, the records are buffered to disk. The default value is 50000. Changes to tables without a primary key can not be buffered to disk. This setting is not supported when using multi-version concurrency.  Admin rights are required to execute this command, as it affects all connections.  This setting is persistent. It has no effect for in-memory databases.</p>
+<p>The maximum number of undo records per a session that are kept in-memory.
+ If a transaction is larger, the records are buffered to disk.
+ The default value is 50000.
+ Changes to tables without a primary key can not be buffered to disk.
+ This setting is not supported when using multi-version concurrency.
+ 
+ Admin rights are required to execute this command, as it affects all connections.
+ 
+ This setting is persistent.
+ It has no effect for in-memory databases.</p>
 <p>Example:</p>
 <p class="notranslate">
 SET MAX_MEMORY_UNDO 1000</p>
@@ -2456,11 +2579,18 @@ SET MAX_OPERATION_MEMORY <a href="grammar.html#int">int</a>
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET MAX_OPERATION_MEMORY <a href="grammar.html#int">int</a>
 </pre>
 syntax-end -->
-<p>Sets the maximum memory used for large operations (delete and insert), in bytes. Operations that use more memory are buffered to disk, slowing down the operation. The default max size is 100000. 0 means no limit.  This setting is not persistent. Admin rights are required to execute this command, as it affects all connections. It has no effect for in-memory databases. This setting can be appended to the database URL: <code>jdbc:lealone:embed:test;MAX_OPERATION_MEMORY=10000</code></p>
+<p>Sets the maximum memory used for large operations (delete and insert), in bytes.
+ Operations that use more memory are buffered to disk, slowing down the
+ operation. The default max size is 100000. 0 means no limit.
+ 
+ This setting is not persistent.
+ Admin rights are required to execute this command, as it affects all connections.
+ It has no effect for in-memory databases.
+ This setting can be appended to the database URL: <code class="notranslate">jdbc:lealone:embed:test;MAX_OPERATION_MEMORY=10000</code></p>
 <p>Example:</p>
 <p class="notranslate">
 SET MAX_OPERATION_MEMORY 0</p>
@@ -2468,21 +2598,27 @@ SET MAX_OPERATION_MEMORY 0</p>
 <h3 id="set_mode" class="notranslate" onclick="switchBnf(this)">SET MODE</h3>
 <!-- railroad-start -->
 <pre name="bnf" style="display: none">
-SET MODE { REGULAR | DB2 | DERBY | HSQLDB | MSSQLSERVER | MYSQL | ORACLE | POSTGRESQL }
+SET MODE { REGULAR | MYSQL | POSTGRESQL }
 </pre>
 <div name="railroad">
-<table class="railroad"><tr class="railroad"><td class="d"><code class="c">SET MODE</code></td><td class="d"><table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d"><code class="c">REGULAR</code></td><td class="te"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">DB2</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">DERBY</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">HSQLDB</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">MSSQLSERVER</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">MYSQL</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">ORACLE</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><code class="c">POSTGRESQL</code></td><td class="le"></td></tr></table></td></tr></table>
+<table class="railroad"><tr class="railroad"><td class="d"><code class="c">SET MODE</code></td><td class="d"><table class="railroad"><tr class="railroad"><td class="ts"></td><td class="d"><code class="c">REGULAR</code></td><td class="te"></td></tr><tr class="railroad"><td class="ks"></td><td class="d"><code class="c">MYSQL</code></td><td class="ke"></td></tr><tr class="railroad"><td class="ls"></td><td class="d"><code class="c">POSTGRESQL</code></td><td class="le"></td></tr></table></td></tr></table>
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
-SET MODE { REGULAR | DB2 | DERBY | HSQLDB | MSSQLSERVER | MYSQL | ORACLE | POSTGRESQL }
+<pre class="notranslate">
+SET MODE { REGULAR | MYSQL | POSTGRESQL }
 </pre>
 syntax-end -->
-<p>Changes to another database compatibility mode. For details, see Compatibility Modes in the feature section.  This setting is not persistent. Admin rights are required to execute this command, as it affects all connections.  This setting can be appended to the database URL: <code>jdbc:lealone:embed:test;MODE=MYSQL</code></p>
+<p>Changes to another database compatibility mode. For details, see Compatibility
+ Modes in the feature section.
+ 
+ This setting is not persistent.
+ Admin rights are required to execute this command, as it affects all connections.
+ 
+ This setting can be appended to the database URL: <code class="notranslate">jdbc:lealone:embed:test;MODE=MYSQL</code></p>
 <p>Example:</p>
 <p class="notranslate">
-SET MODE HSQLDB</p>
+SET MODE MYSQL</p>
 
 <h3 id="set_optimize_reuse_results" class="notranslate" onclick="switchBnf(this)">SET OPTIMIZE_REUSE_RESULTS</h3>
 <!-- railroad-start -->
@@ -2494,11 +2630,17 @@ SET OPTIMIZE_REUSE_RESULTS { 0 | 1 }
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET OPTIMIZE_REUSE_RESULTS { 0 | 1 }
 </pre>
 syntax-end -->
-<p>Enabled (1) or disabled (0) the result reuse optimization. If enabled, subqueries and views used as subqueries are only re-run if the data in one of the tables was changed. This option is enabled by default.  Admin rights are required to execute this command, as it affects all connections.  This setting can be appended to the database URL: <code>jdbc:lealone:embed:test;OPTIMIZE_REUSE_RESULTS=0</code></p>
+<p>Enabled (1) or disabled (0) the result reuse optimization. If enabled,
+ subqueries and views used as subqueries are only re-run if the data in one of
+ the tables was changed. This option is enabled by default.
+ 
+ Admin rights are required to execute this command, as it affects all connections.
+ 
+ This setting can be appended to the database URL: <code class="notranslate">jdbc:lealone:embed:test;OPTIMIZE_REUSE_RESULTS=0</code></p>
 <p>Example:</p>
 <p class="notranslate">
 SET OPTIMIZE_REUSE_RESULTS 0</p>
@@ -2513,11 +2655,12 @@ SET PASSWORD <a href="grammar.html#string">string</a>
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET PASSWORD <a href="grammar.html#string">string</a>
 </pre>
 syntax-end -->
-<p>Changes the password of the current user. The password must be in single quotes. It is case sensitive and can contain spaces.</p>
+<p>Changes the password of the current user. The password must be in single quotes.
+ It is case sensitive and can contain spaces.</p>
 <p>Example:</p>
 <p class="notranslate">
 SET PASSWORD &#39;abcstzri!.5&#39;</p>
@@ -2532,11 +2675,16 @@ SET QUERY_STATISTICS { TRUE | FALSE }
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET QUERY_STATISTICS { TRUE | FALSE }
 </pre>
 syntax-end -->
-<p>Disabled or enables query statistics gathering for the whole database. The statistics are reflected in the <code>INFORMATION_SCHEMA.QUERY_STATISTICS</code> meta-table.  This setting is not persistent.  Admin rights are required to execute this command, as it affects all connections.</p>
+<p>Disabled or enables query statistics gathering for the whole database.
+ The statistics are reflected in the <code class="notranslate">INFORMATION_SCHEMA.QUERY_STATISTICS</code> meta-table.
+ 
+ This setting is not persistent.
+ 
+ Admin rights are required to execute this command, as it affects all connections.</p>
 <p>Example:</p>
 <p class="notranslate">
 SET QUERY_STATISTICS FALSE</p>
@@ -2551,11 +2699,15 @@ SET QUERY_TIMEOUT <a href="grammar.html#int">int</a>
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET QUERY_TIMEOUT <a href="grammar.html#int">int</a>
 </pre>
 syntax-end -->
-<p>Set the query timeout of the current session to the given value. The timeout is in milliseconds. All kinds of statements will throw an exception if they take longer than the given value. The default timeout is 0, meaning no timeout.  This command does not commit a transaction, and rollback does not affect it.</p>
+<p>Set the query timeout of the current session to the given value. The timeout is
+ in milliseconds. All kinds of statements will throw an exception if they take
+ longer than the given value. The default timeout is 0, meaning no timeout.
+ 
+ This command does not commit a transaction, and rollback does not affect it.</p>
 <p>Example:</p>
 <p class="notranslate">
 SET QUERY_TIMEOUT 10000</p>
@@ -2570,11 +2722,17 @@ SET REFERENTIAL_INTEGRITY { TRUE | FALSE }
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET REFERENTIAL_INTEGRITY { TRUE | FALSE }
 </pre>
 syntax-end -->
-<p>Disabled or enables referential integrity checking for the whole database. Enabling it does not check existing data. Use <code>ALTER TABLE SET</code> to disable it only for one table.  This setting is not persistent.  Admin rights are required to execute this command, as it affects all connections.</p>
+<p>Disabled or enables referential integrity checking for the whole database.
+ Enabling it does not check existing data. Use <code class="notranslate">ALTER TABLE SET</code> to disable it only
+ for one table.
+ 
+ This setting is not persistent.
+ 
+ Admin rights are required to execute this command, as it affects all connections.</p>
 <p>Example:</p>
 <p class="notranslate">
 SET REFERENTIAL_INTEGRITY FALSE</p>
@@ -2589,11 +2747,12 @@ SET SALT <a href="grammar.html#bytes">bytes</a> HASH <a href="grammar.html#bytes
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET SALT <a href="grammar.html#bytes">bytes</a> HASH <a href="grammar.html#bytes">bytes</a>
 </pre>
 syntax-end -->
-<p>Sets the password salt and hash for the current user. The password must be in single quotes. It is case sensitive and can contain spaces.</p>
+<p>Sets the password salt and hash for the current user. The password must be in
+ single quotes. It is case sensitive and can contain spaces.</p>
 <p>Example:</p>
 <p class="notranslate">
 SET SALT &#39;00&#39; HASH &#39;1122&#39;</p>
@@ -2608,11 +2767,16 @@ SET SCHEMA <a href="grammar.html#name">schemaName</a>
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET SCHEMA <a href="grammar.html#name">schemaName</a>
 </pre>
 syntax-end -->
-<p>Changes the default schema of the current connection. The default schema is used in statements where no schema is set explicitly. The default schema for new connections is <code>PUBLIC</code>.  This command does not commit a transaction, and rollback does not affect it. This setting can be appended to the database URL: <code>jdbc:lealone:embed:test;SCHEMA=ABC</code></p>
+<p>Changes the default schema of the current connection. The default schema is used
+ in statements where no schema is set explicitly. The default schema for new
+ connections is <code class="notranslate">PUBLIC</code>.
+ 
+ This command does not commit a transaction, and rollback does not affect it.
+ This setting can be appended to the database URL: <code class="notranslate">jdbc:lealone:embed:test;SCHEMA=ABC</code></p>
 <p>Example:</p>
 <p class="notranslate">
 SET SCHEMA INFORMATION_SCHEMA</p>
@@ -2627,11 +2791,16 @@ SET SCHEMA_SEARCH_PATH <a href="grammar.html#name">schemaName</a> [,...]
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET SCHEMA_SEARCH_PATH <a href="grammar.html#name">schemaName</a> [,...]
 </pre>
 syntax-end -->
-<p>Changes the schema search path of the current connection. The default schema is used in statements where no schema is set explicitly. The default schema for new connections is <code>PUBLIC</code>.  This command does not commit a transaction, and rollback does not affect it. This setting can be appended to the database URL: <code>jdbc:lealone:embed:test;SCHEMA_SEARCH_PATH=ABC,DEF</code></p>
+<p>Changes the schema search path of the current connection. The default schema is
+ used in statements where no schema is set explicitly. The default schema for new
+ connections is <code class="notranslate">PUBLIC</code>.
+ 
+ This command does not commit a transaction, and rollback does not affect it.
+ This setting can be appended to the database URL: <code class="notranslate">jdbc:lealone:embed:test;SCHEMA_SEARCH_PATH=ABC,DEF</code></p>
 <p>Example:</p>
 <p class="notranslate">
 SET SCHEMA_SEARCH_PATH INFORMATION_SCHEMA, PUBLIC</p>
@@ -2646,11 +2815,16 @@ SET THROTTLE <a href="grammar.html#int">int</a>
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET THROTTLE <a href="grammar.html#int">int</a>
 </pre>
 syntax-end -->
-<p>Sets the throttle for the current connection. The value is the number of milliseconds delay after each 50 ms. The default value is 0 (throttling disabled).  This command does not commit a transaction, and rollback does not affect it. This setting can be appended to the database URL: <code>jdbc:lealone:embed:test;THROTTLE=50</code></p>
+<p>Sets the throttle for the current connection. The value is the number of
+ milliseconds delay after each 50 ms. The default value is 0 (throttling
+ disabled).
+ 
+ This command does not commit a transaction, and rollback does not affect it.
+ This setting can be appended to the database URL: <code class="notranslate">jdbc:lealone:embed:test;THROTTLE=50</code></p>
 <p>Example:</p>
 <p class="notranslate">
 SET THROTTLE 200</p>
@@ -2665,11 +2839,18 @@ SET { TRACE_LEVEL_FILE | TRACE_LEVEL_SYSTEM_OUT } <a href="grammar.html#int">int
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET { TRACE_LEVEL_FILE | TRACE_LEVEL_SYSTEM_OUT } <a href="grammar.html#int">int</a>
 </pre>
 syntax-end -->
-<p>Sets the trace level for file the file or system out stream. Levels are: 0=off, 1=error, 2=info, 3=debug. The default level is 1 for file and 0 for system out. To use <code>SLF4J</code>, append <code>;TRACE_LEVEL_FILE=4</code> to the database URL when opening the database.  This setting is not persistent. Admin rights are required to execute this command, as it affects all connections. This command does not commit a transaction, and rollback does not affect it. This setting can be appended to the database URL: <code>jdbc:lealone:embed:test;TRACE_LEVEL_SYSTEM_OUT=3</code></p>
+<p>Sets the trace level for file the file or system out stream. Levels are: 0=off,
+ 1=error, 2=info, 3=debug. The default level is 1 for file and 0 for system out.
+ To use <code class="notranslate">SLF4J</code>, append <code class="notranslate">;TRACE_LEVEL_FILE=4</code> to the database URL when opening the database.
+ 
+ This setting is not persistent.
+ Admin rights are required to execute this command, as it affects all connections.
+ This command does not commit a transaction, and rollback does not affect it.
+ This setting can be appended to the database URL: <code class="notranslate">jdbc:lealone:embed:test;TRACE_LEVEL_SYSTEM_OUT=3</code></p>
 <p>Example:</p>
 <p class="notranslate">
 SET TRACE_LEVEL_SYSTEM_OUT 3</p>
@@ -2684,11 +2865,18 @@ SET TRACE_MAX_FILE_SIZE <a href="grammar.html#int">int</a>
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SET TRACE_MAX_FILE_SIZE <a href="grammar.html#int">int</a>
 </pre>
 syntax-end -->
-<p>Sets the maximum trace file size. If the file exceeds the limit, the file is renamed to .old and a new file is created. If another .old file exists, it is deleted. The default max size is 16 MB.  This setting is persistent. Admin rights are required to execute this command, as it affects all connections.  This setting can be appended to the database URL: <code>jdbc:lealone:embed:test;TRACE_MAX_FILE_SIZE=3</code></p>
+<p>Sets the maximum trace file size. If the file exceeds the limit, the file is
+ renamed to .old and a new file is created. If another .old file exists, it is
+ deleted. The default max size is 16 MB.
+ 
+ This setting is persistent.
+ Admin rights are required to execute this command, as it affects all connections.
+ 
+ This setting can be appended to the database URL: <code class="notranslate">jdbc:lealone:embed:test;TRACE_MAX_FILE_SIZE=3</code></p>
 <p>Example:</p>
 <p class="notranslate">
 SET TRACE_MAX_FILE_SIZE 10</p>
@@ -2703,11 +2891,20 @@ SHUTDOWN DATABASE <a href="grammar.html#name">dbName</a> [ IMMEDIATELY ]
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SHUTDOWN DATABASE <a href="grammar.html#name">dbName</a> [ IMMEDIATELY ]
 </pre>
 syntax-end -->
-<p>This statement closes all open connections to the database and closes the database. This command is usually not required, as the database is closed automatically when the last connection to it is closed.  If no option is used, then the database is closed normally. All connections are closed, open transactions are rolled back.  <code>SHUTDOWN IMMEDIATELY</code> closes the database files without any cleanup.  Admin rights are required to execute this command.</p>
+<p>This statement closes all open connections to the database and closes the
+ database. This command is usually not required, as the database is
+ closed automatically when the last connection to it is closed.
+ 
+ If no option is used, then the database is closed normally.
+ All connections are closed, open transactions are rolled back.
+ 
+ <code class="notranslate">SHUTDOWN IMMEDIATELY</code> closes the database files without any cleanup.
+ 
+ Admin rights are required to execute this command.</p>
 <p>Example:</p>
 <p class="notranslate">
 SHUTDOWN DATABASE mydb</p>
@@ -2722,11 +2919,14 @@ SHUTDOWN SERVER [ port ]
 </div>
 <!-- railroad-end -->
 <!-- syntax-start
-<pre>
+<pre class="notranslate">
 SHUTDOWN SERVER [ port ]
 </pre>
 syntax-end -->
-<p>This statement closes the server corresponding to the port, or closes all servers if the port is -1 or unspecified.  Admin rights are required to execute this command.</p>
+<p>This statement closes the server corresponding to the port,
+ or closes all servers if the port is -1 or unspecified.
+ 
+ Admin rights are required to execute this command.</p>
 <p>Example:</p>
 <p class="notranslate">
 SHUTDOWN SERVER 9210</p>
