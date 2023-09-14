@@ -53,21 +53,21 @@
   </li>
 </ul>
 
-<h2 id="下载-lealone-xsql">下载 Lealone-xSQL</h2>
+<h2 id="下载-qinsql">下载 QinSQL</h2>
 
-<p><a href="/download/lealone-xsql-5.1.2.jar">lealone-xsql-5.1.2.jar</a></p>
+<p><a href="/download/qinsql-5.2.0.jar">qinsql-5.2.0.jar</a></p>
 
-<p>Lealone-xSQL 只有一个 jar 包，下载下来之后随意放到一个目录即可</p>
+<p>QinSQL 只有一个 jar 包，下载下来之后随意放到一个目录即可</p>
 
 <p>也可以<a href="https://github.com/qinsql/QinSQL/blob/master/README.md">从源代码构建最新版本</a></p>
 
-<h2 id="启动-lealone-xsql">启动 Lealone-xSQL</h2>
+<h2 id="启动-qinsql">启动 QinSQL</h2>
 
-<p>打开一个新的命令行窗口，运行: <code class="language-plaintext highlighter-rouge">java -jar lealone-xsql-5.1.2.jar</code></p>
+<p>打开一个新的命令行窗口，运行: <code class="language-plaintext highlighter-rouge">java -jar qinsql-5.2.0.jar</code></p>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Lealone</span> <span class="nl">version:</span> <span class="mf">5.1.2</span>
-<span class="nc">Loading</span> <span class="n">config</span> <span class="n">from</span> <span class="nl">jar:file:</span><span class="o">/</span><span class="nl">E:</span><span class="o">/</span><span class="n">lealone</span><span class="o">-</span><span class="n">xsql</span><span class="o">/</span><span class="n">lealone</span><span class="o">-</span><span class="n">xsql</span><span class="o">-</span><span class="mf">5.1.2</span><span class="o">.</span><span class="na">jar</span><span class="o">!/</span><span class="n">lealone</span><span class="o">.</span><span class="na">yaml</span>
-<span class="nc">Base</span> <span class="nl">dir:</span> <span class="o">.</span><span class="err">\</span><span class="n">lealone_data</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Lealone</span> <span class="nl">version:</span> <span class="mf">5.2.0</span>
+<span class="nc">Loading</span> <span class="n">config</span> <span class="n">from</span> <span class="nl">jar:file:</span><span class="o">/</span><span class="nl">E:</span><span class="o">/</span><span class="n">qinsql</span><span class="o">/</span><span class="n">qinsql</span><span class="o">-</span><span class="mf">5.2.0</span><span class="o">.</span><span class="na">jar</span><span class="o">!/</span><span class="n">qinsql</span><span class="o">.</span><span class="na">yaml</span>
+<span class="nc">Base</span> <span class="nl">dir:</span> <span class="o">.</span><span class="err">\</span><span class="n">qinsql_data</span>
 <span class="nc">Init</span> <span class="n">storage</span> <span class="nl">engines:</span> <span class="mi">3</span> <span class="n">ms</span>
 <span class="nc">Init</span> <span class="n">transaction</span> <span class="nl">engines:</span> <span class="mi">60</span> <span class="n">ms</span>
 <span class="nc">Init</span> <span class="n">sql</span> <span class="nl">engines:</span> <span class="mi">3</span> <span class="n">ms</span>
@@ -83,7 +83,7 @@
 <span class="nc">Exit</span> <span class="n">with</span> <span class="nc">Ctrl</span><span class="o">+</span><span class="no">C</span>
 </code></pre></div></div>
 
-<p>要停止 Lealone-xSQL，直接按 Ctrl + C</p>
+<p>要停止 QinSQL，直接按 Ctrl + C</p>
 
 <h2 id="用-mysql-客户端访问-lealone-数据库">用 MySQL 客户端访问 Lealone 数据库</h2>
 
@@ -93,7 +93,7 @@
 
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Welcome</span> <span class="k">to</span> <span class="n">the</span> <span class="n">MySQL</span> <span class="n">monitor</span><span class="p">.</span>  <span class="n">Commands</span> <span class="k">end</span> <span class="k">with</span> <span class="p">;</span> <span class="k">or</span> <span class="err">\</span><span class="k">g</span><span class="p">.</span>
 <span class="n">Your</span> <span class="n">MySQL</span> <span class="k">connection</span> <span class="n">id</span> <span class="k">is</span> <span class="mi">0</span>
-<span class="n">Server</span> <span class="k">version</span><span class="p">:</span> <span class="mi">5</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">48</span><span class="o">-</span><span class="n">lealone</span><span class="o">-</span><span class="mi">5.1.2</span>
+<span class="n">Server</span> <span class="k">version</span><span class="p">:</span> <span class="mi">5</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">48</span><span class="o">-</span><span class="n">lealone</span><span class="o">-</span><span class="mi">5.2.0</span>
 
 <span class="n">Copyright</span> <span class="p">(</span><span class="k">c</span><span class="p">)</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">2013</span><span class="p">,</span> <span class="n">Oracle</span> <span class="k">and</span><span class="o">/</span><span class="k">or</span> <span class="n">its</span> <span class="n">affiliates</span><span class="p">.</span> <span class="k">All</span> <span class="n">rights</span> <span class="n">reserved</span><span class="p">.</span>
 

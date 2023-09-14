@@ -6,12 +6,12 @@
 
 ## 下载脚手架
 
-[create-lealone-app-5.1.2.jar](https://github.com/lealone/Lealone-Plugins/releases/download/lealone-plugins-5.1.2/create-lealone-app-5.1.2.jar)
+[create-lealone-app-5.2.0.jar](https://github.com/lealone/Lealone-Plugins/releases/download/lealone-plugins-5.2.0/create-lealone-app-5.2.0.jar)
 
 
 ## 创建一个 hello 应用
 
-`java -jar create-lealone-app-5.1.2.jar -groupId org.lealone.examples.hello -artifactId hello`
+`java -jar create-lealone-app-5.2.0.jar -groupId org.lealone.examples.hello -artifactId hello`
 
 应用脚手架的参数用法可以阅读 [README](https://github.com/lealone/Lealone-Plugins/blob/master/service/create-app/README.md) 文件
 

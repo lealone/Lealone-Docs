@@ -1,6 +1,6 @@
 # Change Log
 
-# Lealone 5.2.0 (unreleased)
+# [Lealone 5.2.0](https://github.com/lealone/Lealone/releases/tag/lealone-5.2.0) (2023-09-15)
 
 ## bug fix
 

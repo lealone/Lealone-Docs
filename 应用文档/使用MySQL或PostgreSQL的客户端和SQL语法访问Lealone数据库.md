@@ -7,39 +7,39 @@
 * PostgreSQL JDBC Driver 支持 9.x 和 42.x 两个系列版本
 
 
-## 下载 Lealone-xSQL
+## 下载 QinSQL
 
-[lealone-xsql-5.1.2.jar](https://github.com/lealone/Lealone-Plugins/releases/download/lealone-plugins-5.1.2/lealone-xsql-5.1.2.jar)
+[qinsql-5.2.0.jar](https://github.com/qinsql/QinSQL/releases/download/qinsql-5.2.0/qinsql-5.2.0.jar)
 
-Lealone-xSQL 只有一个 jar 包，下载下来之后随意放到一个目录即可
+QinSQL 只有一个 jar 包，下载下来之后随意放到一个目录即可
 
 也可以[从源代码构建最新版本](https://github.com/qinsql/QinSQL/blob/master/README.md)
 
 
-## 启动 Lealone-xSQL
+## 启动 QinSQL
 
-打开一个新的命令行窗口，运行: `java -jar lealone-xsql-5.1.2.jar`
+打开一个新的命令行窗口，运行: `java -jar qinsql-5.2.0.jar`
 
 ```java
-Lealone version: 5.1.2
-Loading config from jar:file:/E:/lealone-xsql/lealone-xsql-5.1.2.jar!/lealone.yaml
-Base dir: .\lealone_data
+Lealone version: 5.2.0
+Loading config from jar:file:/E:/qinsql/qinsql-5.2.0.jar!/qinsql.yaml
+Base dir: E:/qinsql/qinsql_data
 Init storage engines: 3 ms
-Init transaction engines: 60 ms
+Init transaction engines: 29 ms
 Init sql engines: 3 ms
-Init protocol server engines: 171 ms
+Init protocol server engines: 198 ms
 Init lealone database: 0 ms
-Starting tcp server accepter
+Starting TcpServer accepter
 TcpServer started, host: 127.0.0.1, port: 9210
-Starting tcp server accepter
+Starting MySQLServer accepter
 MySQLServer started, host: 127.0.0.1, port: 9310
-Starting tcp server accepter
+Starting PgServer accepter
 PgServer started, host: 127.0.0.1, port: 9510
-Total time: 326 ms (Load config: 76 ms, Init: 242 ms, Start: 8 ms)
+Total time: 314 ms (Load config: 72 ms, Init: 237 ms, Start: 5 ms)
 Exit with Ctrl+C
 ```
 
-要停止 Lealone-xSQL，直接按 Ctrl + C
+要停止 QinSQL，直接按 Ctrl + C
 
 
 ## 用 MySQL 客户端访问 Lealone 数据库
@@ -51,7 +51,7 @@ Exit with Ctrl+C
 ```sql
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 0
-Server version: 5.1.48-lealone-5.1.2
+Server version: 5.1.48-lealone-5.2.0
 
 Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved.
 
