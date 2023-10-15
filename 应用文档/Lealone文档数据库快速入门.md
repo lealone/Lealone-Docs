@@ -45,7 +45,7 @@ Exit with Ctrl+C
 
 打开一个新的命令行窗口，运行: `mongosh mongodb://127.0.0.1:9610/test`
 
-```json
+```sql
 Connecting to:          mongodb://127.0.0.1:9610/test?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.9.1
 Using MongoDB:          6.0.0
 Using Mongosh:          1.9.1
