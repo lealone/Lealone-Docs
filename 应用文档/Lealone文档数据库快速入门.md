@@ -1,6 +1,6 @@
 # 1. Lealone 文档数据库快速入门
 
-Lealone 是一个兼容 MongoDB 的文档数据库，可以使用 MongoDB 的各种客户端访问 Lealone。
+Lealone 是一个高度兼容 MongoDB 的文档数据库，可以使用 MongoDB 的各种客户端访问 Lealone。
 
 
 ### 1.1. 运行需要
@@ -26,13 +26,14 @@ Lealone version: 6.0.0-SNAPSHOT
 Use default config
 Base dir: E:/lealone/target/lealone_data
 Init storage engines: 6 ms
-Init transaction engines: 30 ms
-Init sql engines: 2 ms
-Init protocol server engines: 198 ms
-Init lealone database: 0 ms
+Init transaction engines: 31 ms
+Init sql engines: 3 ms
+Init protocol server engines: 99 ms
+Init lealone database: 93 ms
 TcpServer started, host: 127.0.0.1, port: 9210
-DocDBServer started, host: 127.0.0.1, port: 9610
-Total time: 244 ms (Load config: 2 ms, Init: 239 ms, Start: 3 ms)
+MySQLServer started, host: 127.0.0.1, port: 3306
+MongoServer started, host: 127.0.0.1, port: 27017
+Total time: 288 ms (Load config: 1 ms, Init: 238 ms, Start: 49 ms)
 Exit with Ctrl+C
 ```
 
@@ -43,10 +44,10 @@ Exit with Ctrl+C
 
 需要下载 [MongoDB Shell 客户端](https://www.mongodb.com/try/download/shell)
 
-打开一个新的命令行窗口，运行: `mongosh mongodb://127.0.0.1:9610/test`
+打开一个新的命令行窗口，运行: `mongosh mongodb://127.0.0.1:27017/test`
 
 ```sql
-Connecting to:          mongodb://127.0.0.1:9610/test?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.9.1
+Connecting to:          mongodb://127.0.0.1:27017/test?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.9.1
 Using MongoDB:          6.0.0
 Using Mongosh:          1.9.1
 
