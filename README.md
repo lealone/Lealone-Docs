@@ -15,12 +15,14 @@
 
   * [Lealone 文档数据库快速入门](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/Lealone文档数据库快速入门.md)
 
-  * [从源码构建 Lealone 数据库](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E4%BB%8E%E6%BA%90%E7%A0%81%E6%9E%84%E5%BB%BALealone.md)
+  * [从源码构建 Lealone 数据库](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/从源码构建Lealone.md)
  
   * [通过嵌入模式使用 Lealone 数据库](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/通过嵌入模式使用Lealone数据库.md)
 
   * [使用 MySQL 的客户端和 SQL 语法访问 Lealone 数据库](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/使用MySQL的客户端和SQL语法访问Lealone数据库.md)
-  
+   
+  * [使用 PostgreSQL 的客户端和 SQL 语法访问 Lealone 数据库](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/使用PostgreSQL的客户端和SQL语法访问Lealone数据库.md)
+
   * [Change Log](https://github.com/lealone/Lealone-Docs/blob/master/changelog.md)
   
 
