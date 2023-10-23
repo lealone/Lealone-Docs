@@ -1,10 +1,10 @@
-Lealone 高度兼容 MySQL 的协议和 SQL 语法，可以使用 MySQL 的各种客户端访问 Lealone。
+Lealone 高度兼容 PostgreSQL 的协议和 SQL 语法，可以使用 PostgreSQL 的各种客户端访问 Lealone。
 
 ## 运行需要
 
 * [JDK 1.8+](https://www.oracle.com/java/technologies/downloads/)
 
-* MySQL 版本支持 5.x 到 8.x 系列
+* PostgreSQL 版本支持 9.x 和 14.x 系列
 
 
 ## 下载 Lealone
@@ -40,38 +40,28 @@ Exit with Ctrl+C
 要停止 Lealone，直接按 Ctrl + C
 
 
-## 用 MySQL 客户端访问 Lealone 数据库
+## 用 PostgreSQL 客户端访问 Lealone 数据库
 
-执行以下命令启动 MySQL 客户端:
+执行以下命令启动 PostgreSQL 客户端:
 
-`mysql --no-beep -h 127.0.0.1 -P 3306 -u root`
+`psql -h 127.0.0.1 -p 5432 -U postgres -W`
+
+提示口令时输入: postgres
 
 ```sql
-Welcome to the MySQL monitor.  Commands end with ; or \g.
-Your MySQL connection id is 4
-Server version: 5.7.35 Lealone-6.0.0-SNAPSHOT Community Server - SSPL
+口令:
+psql (14.0, 服务器 8.2.23)
+输入 "help" 来获取帮助信息.
 
-Copyright (c) 2000, 2021, Oracle and/or its affiliates.
+postgres=> create table if not exists pet(name varchar(20), age int);
+UPDATE 0
+postgres=> insert into pet values('pet1', 2);
+CommandInterfaceINSERT 0 1
+postgres=> select count(*) from pet;
+ count(*)
+----------
+        1
+(1 行记录)
 
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
-mysql> create table if not exists pet(name varchar(20), age int);
-Query OK, 0 rows affected (0.00 sec)
-
-mysql> insert into pet values('pet1', 2);
-Query OK, 1 row affected (0.01 sec)
-
-mysql> select count(*) from pet;
-+----------+
-| COUNT(*) |
-+----------+
-|        1 |
-+----------+
-1 row in set (0.01 sec)
-
-mysql>
+postgres=>
 ```
