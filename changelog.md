@@ -1,5 +1,15 @@
 # Change Log
 
+# Lealone 5.2.1(未发布)
+
+## bug fix
+
+#### database
+
+[Issue #207](https://github.com/lealone/Lealone/issues/207#issuecomment-1782552948) 调度服务线程拿到表名列表后，如果接下来在进行fullGc前表被其他线程删除了，会导致NPE
+
+
+
 # [Lealone 5.2.0](https://github.com/lealone/Lealone/releases/tag/lealone-5.2.0) (2023-09-15)
 
 ## bug fix
