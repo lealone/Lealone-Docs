@@ -8,6 +8,8 @@
 
 [Issue #207](https://github.com/lealone/Lealone/issues/207#issuecomment-1782552948) 调度服务线程拿到表名列表后，如果接下来在进行fullGc前表被其他线程删除了，会导致NPE
 
+[Issue #207](https://github.com/lealone/Lealone/issues/207) 在一个大事务中写入数据频繁产生 page split 后有可能产生堆栈溢出错误，标记脏页时产生 Position 0 错误 
+
 
 
 # [Lealone 5.2.0](https://github.com/lealone/Lealone/releases/tag/lealone-5.2.0) (2023-09-15)
