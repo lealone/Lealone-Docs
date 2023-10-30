@@ -13,11 +13,11 @@
 
   * [快速入门](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/Lealone数据库快速入门.md)
 
-  * [Lealone 文档数据库快速入门](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/Lealone文档数据库快速入门.md)
-
   * [从源码构建 Lealone 数据库](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/从源码构建Lealone.md)
  
   * [通过嵌入模式使用 Lealone 数据库](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/通过嵌入模式使用Lealone数据库.md)
+
+  * [Lealone 文档数据库快速入门](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/Lealone文档数据库快速入门.md)
 
   * [使用 MySQL 的客户端和 SQL 语法访问 Lealone 数据库](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/使用MySQL的客户端和SQL语法访问Lealone数据库.md)
    
@@ -27,6 +27,8 @@
   
 
 #### 下载
+
+  * [lealone-6.0.0-SNAPSHOT.jar](https://github.com/lealone/Lealone-Docs/releases/download/lealone-docs-1.0.0/lealone-6.0.0-SNAPSHOT.jar)
 
   * [lealone-5.2.0.jar](https://github.com/lealone/Lealone/releases/download/lealone-5.2.0/lealone-5.2.0.jar)
 
