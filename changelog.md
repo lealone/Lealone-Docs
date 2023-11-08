@@ -10,6 +10,8 @@
 
 [Issue #207](https://github.com/lealone/Lealone/issues/207) 在一个大事务中写入数据频繁产生 page split 后有可能产生堆栈溢出错误，标记脏页时产生 Position 0 错误 
 
+如果一张表存在 lob 字段,当删除这张表时会错误关闭其他表对应的 BTreeMap 从而抛出 IllegalStateException: This map is closed
+
 
 
 # [Lealone 5.2.0](https://github.com/lealone/Lealone/releases/tag/lealone-5.2.0) (2023-09-15)
