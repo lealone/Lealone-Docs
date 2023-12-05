@@ -6,11 +6,13 @@
 
 #### database
 
-[Issue #207](https://github.com/lealone/Lealone/issues/207#issuecomment-1782552948) 调度服务线程拿到表名列表后，如果接下来在进行fullGc前表被其他线程删除了，会导致NPE
+* [Issue #207](https://github.com/lealone/Lealone/issues/207#issuecomment-1782552948) 调度服务线程拿到表名列表后，如果接下来在进行fullGc前表被其他线程删除了，会导致NPE
 
-[Issue #207](https://github.com/lealone/Lealone/issues/207) 在一个大事务中写入数据频繁产生 page split 后有可能产生堆栈溢出错误，标记脏页时产生 Position 0 错误 
+* [Issue #207](https://github.com/lealone/Lealone/issues/207) 在一个大事务中写入数据频繁产生 page split 后有可能产生堆栈溢出错误，标记脏页时产生 Position 0 错误 
 
-如果一张表存在 lob 字段,当删除这张表时会错误关闭其他表对应的 BTreeMap 从而抛出 IllegalStateException: This map is closed
+* 如果一张表存在 lob 字段,当删除这张表时会错误关闭其他表对应的 BTreeMap 从而抛出 IllegalStateException: This map is closed
+
+* 修改表结构后，版本号不为0的老记录执行 redo 时会多执行一遍 ddl 语句
 
 
 
