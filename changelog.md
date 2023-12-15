@@ -1,6 +1,6 @@
 # Change Log
 
-# Lealone 5.2.1(未发布)
+# [Lealone 5.2.1](https://github.com/lealone/Lealone/releases/tag/lealone-5.2.1) (2023-12-15)
 
 ## bug fix
 
@@ -13,6 +13,13 @@
 * 如果一张表存在 lob 字段,当删除这张表时会错误关闭其他表对应的 BTreeMap 从而抛出 IllegalStateException: This map is closed
 
 * 修改表结构后，版本号不为0的老记录执行 redo 时会多执行一遍 ddl 语句
+
+
+## improvement
+
+#### database
+
+* DEFAULT_MAX_MEMORY_ROWS 从1万改成10万，避免查询的数据量很小时也写临时文件
 
 
 
