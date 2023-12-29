@@ -8,6 +8,8 @@
 
 * [Issue #215](https://github.com/lealone/Lealone/issues/215) 执行 backup 命令时，如果 chunk 文件太大，可用内存不够时会导致 oom
 
+* [Issue #218](https://github.com/lealone/Lealone/issues/218) 用 NULL 更新 lob 字段会导致 NPE
+
 
 
 # [Lealone 5.2.1](https://github.com/lealone/Lealone/releases/tag/lealone-5.2.1) (2023-12-15)
