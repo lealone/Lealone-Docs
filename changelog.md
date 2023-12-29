@@ -1,5 +1,15 @@
 # Change Log
 
+# Lealone 5.2.2(未发布)
+
+## bug fix
+
+#### database
+
+* [Issue #215](https://github.com/lealone/Lealone/issues/215) 执行 backup 命令时，如果 chunk 文件太大，可用内存不够时会导致 oom
+
+
+
 # [Lealone 5.2.1](https://github.com/lealone/Lealone/releases/tag/lealone-5.2.1) (2023-12-15)
 
 ## bug fix
