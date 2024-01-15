@@ -17,11 +17,11 @@
  
   * [通过嵌入模式使用 Lealone 数据库](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/通过嵌入模式使用Lealone数据库.md)
 
-  * [Lealone 文档数据库快速入门](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/Lealone文档数据库快速入门.md)
+  * [Lealone 文档数据库快速入门](https://github.com/lealone-plugins/lealone-mongo/blob/main/README.md)
 
-  * [使用 MySQL 的客户端和 SQL 语法访问 Lealone 数据库](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/使用MySQL的客户端和SQL语法访问Lealone数据库.md)
+  * [使用 MySQL 的客户端和 SQL 语法访问 Lealone 数据库](https://github.com/lealone-plugins/lealone-mysql/blob/main/README.md)
    
-  * [使用 PostgreSQL 的客户端和 SQL 语法访问 Lealone 数据库](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/使用PostgreSQL的客户端和SQL语法访问Lealone数据库.md)
+  * [使用 PostgreSQL 的客户端和 SQL 语法访问 Lealone 数据库](https://github.com/lealone-plugins/lealone-postgresql/blob/main/README.md)
 
   * [Change Log](https://github.com/lealone/Lealone-Docs/blob/master/changelog.md)
   
