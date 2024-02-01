@@ -11,21 +11,21 @@
     <dependencies>
         <!-- lealone orm 框架 -->
         <dependency>
-            <groupId>org.lealone.plugins</groupId>
+            <groupId>com.lealone.plugins</groupId>
             <artifactId>lealone-orm</artifactId>
             <version>5.2.0</version>
         </dependency>
 
         <!-- lealone 微服务框架 -->
         <dependency>
-            <groupId>org.lealone.plugins</groupId>
+            <groupId>com.lealone.plugins</groupId>
             <artifactId>lealone-service</artifactId>
             <version>5.2.0</version>
         </dependency>
 	
         <!-- 使用 vertx 作为 lealone 的 http server -->
         <dependency>
-            <groupId>org.lealone.plugins</groupId>
+            <groupId>com.lealone.plugins</groupId>
             <artifactId>lealone-vertx</artifactId>
             <version>5.2.0</version>
         </dependency>
@@ -42,7 +42,7 @@ create table if not exists user (
   name varchar,
   age int
 )
-package 'org.lealone.examples.fullstack.generated.model' -- User 类所在的包名
+package 'com.lealone.examples.fullstack.generated.model' -- User 类所在的包名
 generate code './src/main/java' -- User 类的源文件所在的根目录
 ```
 
@@ -82,8 +82,8 @@ create service if not exists user_service (
   add_user(name varchar, age int) long, -- 定义 UserService 接口方法 add_user
   find_by_name(name varchar) user -- 定义 UserService 接口方法 find_by_name
 )
-package 'org.lealone.examples.fullstack.generated.service' -- UserService 接口所在的包名
-implement by 'org.lealone.examples.fullstack.UserServiceImpl' -- UserService 接口的默认实现类
+package 'com.lealone.examples.fullstack.generated.service' -- UserService 接口所在的包名
+implement by 'com.lealone.examples.fullstack.UserServiceImpl' -- UserService 接口的默认实现类
 generate code './src/main/java' -- UserService 接口源文件的根目录
 ```
 
@@ -96,10 +96,10 @@ generate code './src/main/java' -- UserService 接口源文件的根目录
 ### 4. 实现后端服务
 
 ```java
-package org.lealone.examples.fullstack;
+package com.lealone.examples.fullstack;
 
-import org.lealone.examples.fullstack.generated.model.User;
-import org.lealone.examples.fullstack.generated.service.UserService;
+import com.lealone.examples.fullstack.generated.model.User;
+import com.lealone.examples.fullstack.generated.service.UserService;
 
 public class UserServiceImpl implements UserService {
     @Override
@@ -206,9 +206,9 @@ lealone-rpc-5.0.0.js 相当于一个 RPC 框架的客户端，通过 axios 与�
 ### 6. 启动 Lealone 并执行 sql 脚本
 
 ```java
-package org.lealone.examples.fullstack;
+package com.lealone.examples.fullstack;
 
-import org.lealone.main.Lealone;
+import com.lealone.main.Lealone;
 
 // 请在浏览器中打开下面的 URL 进行测试:
 // http://localhost:9000/fullStack.html

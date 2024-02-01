@@ -17,7 +17,7 @@ Lealone ORM 是一个简洁优雅的类型安全的 ORM 框架，支持链式(�
 ```xml
     <dependencies>
         <dependency>
-            <groupId>org.lealone.plugins</groupId>
+            <groupId>com.lealone.plugins</groupId>
             <artifactId>lealone-orm</artifactId>
             <version>5.2.0</version>
         </dependency>
@@ -27,7 +27,7 @@ Lealone ORM 是一个简洁优雅的类型安全的 ORM 框架，支持链式(�
 ### 1. 建表
 
 ```sql
-set @packageName 'org.lealone.examples.orm.generated'; -- 生成的模型类所在的包名
+set @packageName 'com.lealone.examples.orm.generated'; -- 生成的模型类所在的包名
 set @srcPath './src/main/java'; -- 生成的模型类对应的源文件所在的根目录
 
 -- 创建customer表，会生成一个名为Customer的模型类
@@ -113,7 +113,7 @@ public class Customer extends Model<Customer> {
 自动生成的 Customer 类不是 POJO，所以并没有使用常规的 setter/getter 方法，
 而是用 c.name.set("rob") 替换 c.setName("rob")，这样的设计是有特别考量的。
 
-Customer 类继承自 org.lealone.orm.Model，因为继承有先天的缺陷，
+Customer 类继承自 com.lealone.orm.Model，因为继承有先天的缺陷，
 比如将来在 Model 这个父类中新增一些方法就有可能跟它的子类出现方法名冲突，
 所以 Customer 类这样的 Model 子类使用 final 字段比使用 setter/getter 更安全，Model 类将来更容易扩展和维护。
 
@@ -264,13 +264,13 @@ Lealone ORM 框架实现关联查询时不会像其他 ORM 框架那样产生 N 
 
 ### 7. 更多例子
 
-请看 [orm unit test](https://github.com/lealone/Lealone-Plugins/tree/master/test/src/test/java/org/lealone/plugins/test/orm)
+请看 [orm unit test](https://github.com/lealone-plugins/lealone-orm/tree/main/src/test/java/com/lealone/plugins/orm/test)
 
 
 ### 8. 完整的代码例子
 
 ```java
-package org.lealone.examples.orm;
+package com.lealone.examples.orm;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -280,8 +280,8 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 import java.util.List;
 
-import org.lealone.examples.orm.generated.Customer;
-import org.lealone.examples.orm.generated.Order;
+import com.lealone.examples.orm.generated.Customer;
+import com.lealone.examples.orm.generated.Order;
 
 public class OrmDemo {
 

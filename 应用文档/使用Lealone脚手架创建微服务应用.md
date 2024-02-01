@@ -11,7 +11,7 @@
 
 ## 创建一个 hello 应用
 
-`java -jar create-lealone-app-5.2.0.jar -groupId org.lealone.examples.hello -artifactId hello`
+`java -jar create-lealone-app-5.2.0.jar -groupId com.lealone.examples.hello -artifactId hello`
 
 应用脚手架的参数用法可以阅读 [README](https://github.com/lealone/Lealone-Plugins/blob/master/service/create-app/README.md) 文件
 

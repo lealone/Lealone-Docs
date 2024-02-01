@@ -49,17 +49,17 @@
 
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;dependencies&gt;</span>
         <span class="nt">&lt;dependency&gt;</span>
-            <span class="nt">&lt;groupId&gt;</span>org.lealone.plugins<span class="nt">&lt;/groupId&gt;</span>
+            <span class="nt">&lt;groupId&gt;</span>com.lealone.plugins<span class="nt">&lt;/groupId&gt;</span>
             <span class="nt">&lt;artifactId&gt;</span>lealone-service<span class="nt">&lt;/artifactId&gt;</span>
             <span class="nt">&lt;version&gt;</span>5.2.0<span class="nt">&lt;/version&gt;</span>
         <span class="nt">&lt;/dependency&gt;</span>
         <span class="nt">&lt;dependency&gt;</span>
-            <span class="nt">&lt;groupId&gt;</span>org.lealone.plugins<span class="nt">&lt;/groupId&gt;</span>
+            <span class="nt">&lt;groupId&gt;</span>com.lealone.plugins<span class="nt">&lt;/groupId&gt;</span>
             <span class="nt">&lt;artifactId&gt;</span>lealone-vertx<span class="nt">&lt;/artifactId&gt;</span>
             <span class="nt">&lt;version&gt;</span>5.2.0<span class="nt">&lt;/version&gt;</span>
         <span class="nt">&lt;/dependency&gt;</span>
         <span class="nt">&lt;dependency&gt;</span>
-            <span class="nt">&lt;groupId&gt;</span>org.lealone.plugins<span class="nt">&lt;/groupId&gt;</span>
+            <span class="nt">&lt;groupId&gt;</span>com.lealone.plugins<span class="nt">&lt;/groupId&gt;</span>
             <span class="nt">&lt;artifactId&gt;</span>lealone-javascript<span class="nt">&lt;/artifactId&gt;</span>
             <span class="nt">&lt;version&gt;</span>5.2.0<span class="nt">&lt;/version&gt;</span>
         <span class="nt">&lt;/dependency&gt;</span>
@@ -79,7 +79,7 @@
 
 <p>然后用 Java 实现一个返回当前时间的服务</p>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">org.lealone.examples.polyglot</span><span class="o">;</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">com.lealone.examples.polyglot</span><span class="o">;</span>
 
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">TimeService</span> <span class="o">{</span>
     <span class="kd">public</span> <span class="nc">String</span> <span class="nf">getCurrentTime</span><span class="o">()</span> <span class="o">{</span>
@@ -103,7 +103,7 @@ language 'js' implement by './js/hello_service.js';
 create service if not exists time_service (
   get_current_time() varchar
 )
-implement by 'org.lealone.examples.polyglot.TimeService';
+implement by 'com.lealone.examples.polyglot.TimeService';
 </code></pre>
 
 <p>SQL 脚本可以存放到一个 services.sql 文件中方便运行。</p>
@@ -134,13 +134,13 @@ implement by 'org.lealone.examples.polyglot.TimeService';
 
 <p>如果在 Eclipse 或其它 IDE 中，可以直接运行 PolyglotDemo</p>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">org.lealone.examples.polyglot</span><span class="o">;</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">com.lealone.examples.polyglot</span><span class="o">;</span>
 
 <span class="kn">import</span> <span class="nn">java.sql.Connection</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">java.sql.DriverManager</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">java.sql.Statement</span><span class="o">;</span>
 
-<span class="kn">import</span> <span class="nn">import org.lealone.plugins.service.http.HttpServer</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">import com.lealone.plugins.service.http.HttpServer</span><span class="o">;</span>
 
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">PolyglotDemo</span> <span class="o">{</span>
 

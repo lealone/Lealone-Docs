@@ -8,7 +8,7 @@ Lealone 可以当一个嵌入式数据库使用，通过标准 JDBC 访问嵌入
 ```xml
     <dependencies>
         <dependency>
-            <groupId>org.lealone</groupId>
+            <groupId>com.lealone</groupId>
             <artifactId>lealone-main</artifactId>
             <version>5.2.1</version>
         </dependency>

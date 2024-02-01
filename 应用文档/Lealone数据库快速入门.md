@@ -137,7 +137,7 @@ public class CRUDExample {
 ```xml
 <dependencies>
     <dependency>
-        <groupId>org.lealone</groupId>
+        <groupId>com.lealone</groupId>
         <artifactId>lealone-client</artifactId>
         <version>5.2.1</version>
     </dependency>

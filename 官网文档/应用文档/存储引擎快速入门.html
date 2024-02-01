@@ -52,7 +52,7 @@
 
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;dependencies&gt;</span>
         <span class="nt">&lt;dependency&gt;</span>
-            <span class="nt">&lt;groupId&gt;</span>org.lealone<span class="nt">&lt;/groupId&gt;</span>
+            <span class="nt">&lt;groupId&gt;</span>com.lealone<span class="nt">&lt;/groupId&gt;</span>
             <span class="nt">&lt;artifactId&gt;</span>lealone-aose<span class="nt">&lt;/artifactId&gt;</span>
             <span class="nt">&lt;version&gt;</span>5.2.0<span class="nt">&lt;/version&gt;</span>
         <span class="nt">&lt;/dependency&gt;</span>
@@ -70,7 +70,7 @@
     <span class="o">}</span>
 </code></pre></div></div>
 
-<p>org.lealone.storage.StorageEngine 是存储引擎的接口，也是一种插件类型，
+<p>com.lealone.storage.StorageEngine 是存储引擎的接口，也是一种插件类型，
 所以可以通过统一的插件管理器获取存储引擎实例，
 比如要获取 AOSE 存储引擎的实例可以使用 PluginManager.getPlugin(StorageEngine.class, “aose”) 来获取，
 getPlugin 的第2个参数是存储引擎的名称，不区分大写小。</p>
@@ -98,7 +98,7 @@ getPlugin 的第2个参数是存储引擎的名称，不区分大写小。</p>
     <span class="o">}</span>
 </code></pre></div></div>
 
-<p>调用 org.lealone.storage.Storage.openMap(String, Map&lt;String, String&gt;) 可以创建一个 StorageMap 实例，
+<p>调用 com.lealone.storage.Storage.openMap(String, Map&lt;String, String&gt;) 可以创建一个 StorageMap 实例，
 第一个参数是 StorageMap 的名称，第二个参数是可选的配置，默认为 null 即可。</p>
 
 <p>StorageMap 的用法跟 java.util.Map 很相似。</p>
@@ -147,11 +147,11 @@ getPlugin 的第2个参数是存储引擎的名称，不区分大写小。</p>
 
 <p>运行例子请执行 build -r</p>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">org.lealone.db.PluginManager</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">org.lealone.storage.Storage</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">org.lealone.storage.StorageBuilder</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">org.lealone.storage.StorageEngine</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">org.lealone.storage.StorageMap</span><span class="o">;</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">com.lealone.db.PluginManager</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">com.lealone.storage.Storage</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">com.lealone.storage.StorageBuilder</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">com.lealone.storage.StorageEngine</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">com.lealone.storage.StorageMap</span><span class="o">;</span>
 
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">StorageEngineDemo</span> <span class="o">{</span>
 

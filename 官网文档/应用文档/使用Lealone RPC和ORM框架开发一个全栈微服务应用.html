@@ -51,21 +51,21 @@
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;dependencies&gt;</span>
         <span class="c">&lt;!-- lealone orm 框架 --&gt;</span>
         <span class="nt">&lt;dependency&gt;</span>
-            <span class="nt">&lt;groupId&gt;</span>org.lealone.plugins<span class="nt">&lt;/groupId&gt;</span>
+            <span class="nt">&lt;groupId&gt;</span>com.lealone.plugins<span class="nt">&lt;/groupId&gt;</span>
             <span class="nt">&lt;artifactId&gt;</span>lealone-orm<span class="nt">&lt;/artifactId&gt;</span>
             <span class="nt">&lt;version&gt;</span>5.2.0<span class="nt">&lt;/version&gt;</span>
         <span class="nt">&lt;/dependency&gt;</span>
 
         <span class="c">&lt;!-- lealone 微服务框架 --&gt;</span>
         <span class="nt">&lt;dependency&gt;</span>
-            <span class="nt">&lt;groupId&gt;</span>org.lealone.plugins<span class="nt">&lt;/groupId&gt;</span>
+            <span class="nt">&lt;groupId&gt;</span>com.lealone.plugins<span class="nt">&lt;/groupId&gt;</span>
             <span class="nt">&lt;artifactId&gt;</span>lealone-service<span class="nt">&lt;/artifactId&gt;</span>
             <span class="nt">&lt;version&gt;</span>5.2.0<span class="nt">&lt;/version&gt;</span>
         <span class="nt">&lt;/dependency&gt;</span>
 	
         <span class="c">&lt;!-- 使用 vertx 作为 lealone 的 http server --&gt;</span>
         <span class="nt">&lt;dependency&gt;</span>
-            <span class="nt">&lt;groupId&gt;</span>org.lealone.plugins<span class="nt">&lt;/groupId&gt;</span>
+            <span class="nt">&lt;groupId&gt;</span>com.lealone.plugins<span class="nt">&lt;/groupId&gt;</span>
             <span class="nt">&lt;artifactId&gt;</span>lealone-vertx<span class="nt">&lt;/artifactId&gt;</span>
             <span class="nt">&lt;version&gt;</span>5.2.0<span class="nt">&lt;/version&gt;</span>
         <span class="nt">&lt;/dependency&gt;</span>
@@ -81,7 +81,7 @@
   <span class="n">name</span> <span class="nb">varchar</span><span class="p">,</span>
   <span class="n">age</span> <span class="nb">int</span>
 <span class="p">)</span>
-<span class="n">package</span> <span class="s1">'org.lealone.examples.fullstack.generated.model'</span> <span class="c1">-- User 类所在的包名</span>
+<span class="n">package</span> <span class="s1">'com.lealone.examples.fullstack.generated.model'</span> <span class="c1">-- User 类所在的包名</span>
 <span class="n">generate</span> <span class="n">code</span> <span class="s1">'./src/main/java'</span> <span class="c1">-- User 类的源文件所在的根目录</span>
 </code></pre></div></div>
 
@@ -118,8 +118,8 @@
   <span class="n">add_user</span><span class="p">(</span><span class="n">name</span> <span class="nb">varchar</span><span class="p">,</span> <span class="n">age</span> <span class="nb">int</span><span class="p">)</span> <span class="n">long</span><span class="p">,</span> <span class="c1">-- 定义 UserService 接口方法 add_user</span>
   <span class="n">find_by_name</span><span class="p">(</span><span class="n">name</span> <span class="nb">varchar</span><span class="p">)</span> <span class="k">user</span> <span class="c1">-- 定义 UserService 接口方法 find_by_name</span>
 <span class="p">)</span>
-<span class="n">package</span> <span class="s1">'org.lealone.examples.fullstack.generated.service'</span> <span class="c1">-- UserService 接口所在的包名</span>
-<span class="n">implement</span> <span class="k">by</span> <span class="s1">'org.lealone.examples.fullstack.UserServiceImpl'</span> <span class="c1">-- UserService 接口的默认实现类</span>
+<span class="n">package</span> <span class="s1">'com.lealone.examples.fullstack.generated.service'</span> <span class="c1">-- UserService 接口所在的包名</span>
+<span class="n">implement</span> <span class="k">by</span> <span class="s1">'com.lealone.examples.fullstack.UserServiceImpl'</span> <span class="c1">-- UserService 接口的默认实现类</span>
 <span class="n">generate</span> <span class="n">code</span> <span class="s1">'./src/main/java'</span> <span class="c1">-- UserService 接口源文件的根目录</span>
 </code></pre></div></div>
 
@@ -130,10 +130,10 @@
 
 <h3 id="4-实现后端服务">4. 实现后端服务</h3>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">org.lealone.examples.fullstack</span><span class="o">;</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">com.lealone.examples.fullstack</span><span class="o">;</span>
 
-<span class="kn">import</span> <span class="nn">org.lealone.examples.fullstack.generated.model.User</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">org.lealone.examples.fullstack.generated.service.UserService</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">com.lealone.examples.fullstack.generated.model.User</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">com.lealone.examples.fullstack.generated.service.UserService</span><span class="o">;</span>
 
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">UserServiceImpl</span> <span class="kd">implements</span> <span class="nc">UserService</span> <span class="o">{</span>
     <span class="nd">@Override</span>
@@ -235,9 +235,9 @@
 
 <h3 id="6-启动-lealone-并执行-sql-脚本">6. 启动 Lealone 并执行 sql 脚本</h3>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">org.lealone.examples.fullstack</span><span class="o">;</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">com.lealone.examples.fullstack</span><span class="o">;</span>
 
-<span class="kn">import</span> <span class="nn">org.lealone.main.Lealone</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">com.lealone.main.Lealone</span><span class="o">;</span>
 
 <span class="c1">// 请在浏览器中打开下面的 URL 进行测试:</span>
 <span class="c1">// http://localhost:9000/fullStack.html</span>

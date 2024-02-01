@@ -14,28 +14,28 @@
     <dependencies>
         <!-- lealone orm 框架 -->
         <dependency>
-            <groupId>org.lealone.plugins</groupId>
+            <groupId>com.lealone.plugins</groupId>
             <artifactId>lealone-orm</artifactId>
             <version>5.2.0</version>
         </dependency>
 
         <!-- lealone 微服务框架 -->
         <dependency>
-            <groupId>org.lealone.plugins</groupId>
+            <groupId>com.lealone.plugins</groupId>
             <artifactId>lealone-service</artifactId>
             <version>5.2.0</version>
         </dependency>
 	
         <!-- 使用 vertx 作为 lealone 的 http server -->
         <dependency>
-            <groupId>org.lealone.plugins</groupId>
+            <groupId>com.lealone.plugins</groupId>
             <artifactId>lealone-vertx</artifactId>
             <version>5.2.0</version>
         </dependency>
 	
 	<!-- 启用对 JavaScript 的支持 -->
         <dependency>
-            <groupId>org.lealone.plugins</groupId>
+            <groupId>com.lealone.plugins</groupId>
             <artifactId>lealone-javascript</artifactId>
             <version>5.2.0</version>
         </dependency>
@@ -54,7 +54,7 @@ create table if not exists user (
   name varchar,
   age int
 )
-package 'org.lealone.examples.js' -- User 类所在的包名
+package 'com.lealone.examples.js' -- User 类所在的包名
 generate code './src/main/java' -- User 类的源文件所在的根目录
 ```
 
@@ -125,7 +125,7 @@ function hello(name) {
 
 ```JavaScript
 // 使用 java 的类
-var User = Java.type('org.lealone.examples.js.User');
+var User = Java.type('com.lealone.examples.js.User');
 
 function addUser(name, age) {
     // 创建 User 对象
@@ -231,9 +231,9 @@ lealone-rpc-5.0.0.js 相当于一个 RPC 框架的客户端，通过 axios 与�
 ### 6. 启动 Lealone 并执行 sql 脚本
 
 ```java
-package org.lealone.examples.js;
+package com.lealone.examples.js;
 
-import org.lealone.main.Lealone;
+import com.lealone.main.Lealone;
 
 // 在前端调用 hello_service 服务，用以下 url:
 // http://localhost:9000/service/hello_service/hello?name=zhh

@@ -8,7 +8,7 @@
 ```xml
     <dependencies>
         <dependency>
-            <groupId>org.lealone.plugins</groupId>
+            <groupId>com.lealone.plugins</groupId>
             <artifactId>lealone-spring</artifactId>
             <version>5.2.0</version>
         </dependency>
@@ -16,12 +16,12 @@
 ```
 
 
-### 在 @SpringBootApplication 中增加 scanBasePackages 扫描 org.lealone.plugins.spring 的组件
+### 在 @SpringBootApplication 中增加 scanBasePackages 扫描 com.lealone.plugins.spring 的组件
 
 ```java
 @SpringBootApplication(scanBasePackages = {
-        "org.lealone.plugins.spring",
-        "org.lealone.examples.spring" })
+        "com.lealone.plugins.spring",
+        "com.lealone.examples.spring" })
 public class SpringDemo {
 
     public static void main(String[] args) {

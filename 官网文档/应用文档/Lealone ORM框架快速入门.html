@@ -55,7 +55,7 @@
 
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nt">&lt;dependencies&gt;</span>
         <span class="nt">&lt;dependency&gt;</span>
-            <span class="nt">&lt;groupId&gt;</span>org.lealone.plugins<span class="nt">&lt;/groupId&gt;</span>
+            <span class="nt">&lt;groupId&gt;</span>com.lealone.plugins<span class="nt">&lt;/groupId&gt;</span>
             <span class="nt">&lt;artifactId&gt;</span>lealone-orm<span class="nt">&lt;/artifactId&gt;</span>
             <span class="nt">&lt;version&gt;</span>5.2.0<span class="nt">&lt;/version&gt;</span>
         <span class="nt">&lt;/dependency&gt;</span>
@@ -64,7 +64,7 @@
 
 <h3 id="1-建表">1. 建表</h3>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">set</span> <span class="o">@</span><span class="n">packageName</span> <span class="s1">'org.lealone.examples.orm.generated'</span><span class="p">;</span> <span class="c1">-- 生成的模型类所在的包名</span>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">set</span> <span class="o">@</span><span class="n">packageName</span> <span class="s1">'com.lealone.examples.orm.generated'</span><span class="p">;</span> <span class="c1">-- 生成的模型类所在的包名</span>
 <span class="k">set</span> <span class="o">@</span><span class="n">srcPath</span> <span class="s1">'./src/main/java'</span><span class="p">;</span> <span class="c1">-- 生成的模型类对应的源文件所在的根目录</span>
 
 <span class="c1">-- 创建customer表，会生成一个名为Customer的模型类</span>
@@ -145,7 +145,7 @@
 <p>自动生成的 Customer 类不是 POJO，所以并没有使用常规的 setter/getter 方法，
 而是用 c.name.set(“rob”) 替换 c.setName(“rob”)，这样的设计是有特别考量的。</p>
 
-<p>Customer 类继承自 org.lealone.orm.Model，因为继承有先天的缺陷，
+<p>Customer 类继承自 com.lealone.orm.Model，因为继承有先天的缺陷，
 比如将来在 Model 这个父类中新增一些方法就有可能跟它的子类出现方法名冲突，
 所以 Customer 类这样的 Model 子类使用 final 字段比使用 setter/getter 更安全，Model 类将来更容易扩展和维护。</p>
 
@@ -276,11 +276,11 @@
 
 <h3 id="7-更多例子">7. 更多例子</h3>
 
-<p>请看 <a href="https://github.com/lealone/Lealone-Plugins/tree/master/test/src/test/java/org/lealone/plugins/test/orm">orm unit test</a></p>
+<p>请看 <a href="https://github.com/lealone-plugins/lealone-orm/tree/main/src/test/java/com/lealone/plugins/orm/test">orm unit test</a></p>
 
 <h3 id="8-完整的代码例子">8. 完整的代码例子</h3>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">org.lealone.examples.orm</span><span class="o">;</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">com.lealone.examples.orm</span><span class="o">;</span>
 
 <span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">junit</span><span class="o">.</span><span class="na">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">junit</span><span class="o">.</span><span class="na">Assert</span><span class="o">.</span><span class="na">assertTrue</span><span class="o">;</span>
@@ -290,8 +290,8 @@
 <span class="kn">import</span> <span class="nn">java.sql.Statement</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
 
-<span class="kn">import</span> <span class="nn">org.lealone.examples.orm.generated.Customer</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">org.lealone.examples.orm.generated.Order</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">com.lealone.examples.orm.generated.Customer</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">com.lealone.examples.orm.generated.Order</span><span class="o">;</span>
 
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">OrmDemo</span> <span class="o">{</span>
 

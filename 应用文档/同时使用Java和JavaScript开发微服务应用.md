@@ -10,17 +10,17 @@
 ```xml
     <dependencies>
         <dependency>
-            <groupId>org.lealone.plugins</groupId>
+            <groupId>com.lealone.plugins</groupId>
             <artifactId>lealone-service</artifactId>
             <version>5.2.0</version>
         </dependency>
         <dependency>
-            <groupId>org.lealone.plugins</groupId>
+            <groupId>com.lealone.plugins</groupId>
             <artifactId>lealone-vertx</artifactId>
             <version>5.2.0</version>
         </dependency>
         <dependency>
-            <groupId>org.lealone.plugins</groupId>
+            <groupId>com.lealone.plugins</groupId>
             <artifactId>lealone-javascript</artifactId>
             <version>5.2.0</version>
         </dependency>
@@ -43,7 +43,7 @@
 然后用 Java 实现一个返回当前时间的服务
 
 ```java
-package org.lealone.examples.polyglot;
+package com.lealone.examples.polyglot;
 
 public class TimeService {
     public String getCurrentTime() {
@@ -71,7 +71,7 @@ language 'js' implement by './js/hello_service.js';
 create service if not exists time_service (
   get_current_time() varchar
 )
-implement by 'org.lealone.examples.polyglot.TimeService';
+implement by 'com.lealone.examples.polyglot.TimeService';
 ```
 
 SQL 脚本可以存放到一个 services.sql 文件中方便运行。
@@ -106,13 +106,13 @@ http://localhost:8080/service/time_service/get_current_time
 如果在 Eclipse 或其它 IDE 中，可以直接运行 PolyglotDemo
 
 ```java
-package org.lealone.examples.polyglot;
+package com.lealone.examples.polyglot;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
-import org.lealone.plugins.service.http.HttpServer;
+import com.lealone.plugins.service.http.HttpServer;
 
 public class PolyglotDemo {
 
