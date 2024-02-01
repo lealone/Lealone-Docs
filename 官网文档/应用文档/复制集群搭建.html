@@ -49,7 +49,7 @@
 
 <h3 id="12-下载-lealone">1.2. 下载 Lealone</h3>
 
-<p><a href="../download/lealone-5.2.0.jar">lealone-5.2.0.jar</a></p>
+<p><a href="../download/lealone-6.0.0.jar">lealone-6.0.0.jar</a></p>
 
 <p>Lealone 只有一个 jar 包，下载下来之后随意放到一个目录即可</p>
 
@@ -59,17 +59,17 @@
 
 <p>打开3个新的命令行窗口，在每个窗口分别执行以下命令之一，启动一个带有3个节点的集群:</p>
 
-<p><code class="language-plaintext highlighter-rouge">java -jar lealone-5.2.0.jar -cluster -host 127.0.0.1</code></p>
+<p><code class="language-plaintext highlighter-rouge">java -jar lealone-6.0.0.jar -cluster -host 127.0.0.1</code></p>
 
-<p><code class="language-plaintext highlighter-rouge">java -jar lealone-5.2.0.jar -cluster -host 127.0.0.2</code></p>
+<p><code class="language-plaintext highlighter-rouge">java -jar lealone-6.0.0.jar -cluster -host 127.0.0.2</code></p>
 
-<p><code class="language-plaintext highlighter-rouge">java -jar lealone-5.2.0.jar -cluster -host 127.0.0.3</code></p>
+<p><code class="language-plaintext highlighter-rouge">java -jar lealone-6.0.0.jar -cluster -host 127.0.0.3</code></p>
 
 <h3 id="14-创建使用复制模式运行的数据库">1.4. 创建使用复制模式运行的数据库</h3>
 
-<p>打开一个新的命令行窗口，运行: <code class="language-plaintext highlighter-rouge">java -jar lealone-5.2.0.jar -client</code></p>
+<p>打开一个新的命令行窗口，运行: <code class="language-plaintext highlighter-rouge">java -jar lealone-6.0.0.jar -client</code></p>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Welcome</span> <span class="n">to</span> <span class="nc">Lealone</span> <span class="nc">Shell</span> <span class="mf">5.2.0</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Welcome</span> <span class="n">to</span> <span class="nc">Lealone</span> <span class="nc">Shell</span> <span class="mf">6.0.0</span>
 <span class="nc">Connect</span> <span class="n">to</span> <span class="nl">jdbc:lealone:tcp:</span><span class="c1">//localhost:9210/lealone</span>
 <span class="nc">Commands</span> <span class="n">are</span> <span class="k">case</span> <span class="n">insensitive</span><span class="o">;</span> <span class="no">SQL</span> <span class="n">statements</span> <span class="n">end</span> <span class="n">with</span> <span class="sc">';'</span>
 <span class="n">help</span> <span class="n">or</span> <span class="o">?</span>          <span class="nc">Display</span> <span class="k">this</span> <span class="n">help</span>
@@ -101,9 +101,9 @@
 
 <p>打开一个新的命令行窗口，</p>
 
-<p>运行: <code class="language-plaintext highlighter-rouge">java -jar lealone-5.2.0.jar -client -database mydb_replication</code></p>
+<p>运行: <code class="language-plaintext highlighter-rouge">java -jar lealone-6.0.0.jar -client -database mydb_replication</code></p>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Welcome</span> <span class="n">to</span> <span class="nc">Lealone</span> <span class="nc">Shell</span> <span class="mf">5.2.0</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Welcome</span> <span class="n">to</span> <span class="nc">Lealone</span> <span class="nc">Shell</span> <span class="mf">6.0.0</span>
 <span class="nc">Connect</span> <span class="n">to</span> <span class="nl">jdbc:lealone:tcp:</span><span class="c1">//localhost:9210/mydb_replication</span>
 <span class="nc">Commands</span> <span class="n">are</span> <span class="k">case</span> <span class="n">insensitive</span><span class="o">;</span> <span class="no">SQL</span> <span class="n">statements</span> <span class="n">end</span> <span class="n">with</span> <span class="sc">';'</span>
 <span class="n">help</span> <span class="n">or</span> <span class="o">?</span>          <span class="nc">Display</span> <span class="k">this</span> <span class="n">help</span>
@@ -153,11 +153,11 @@
 
 <p>把 192.168.0.101 当成种子节点，只需要在三台服务器上分别执行以下命令之一即可:</p>
 
-<p><code class="language-plaintext highlighter-rouge">java -jar lealone-5.2.0.jar -cluster -host 192.168.0.101 -seeds 192.168.0.101</code></p>
+<p><code class="language-plaintext highlighter-rouge">java -jar lealone-6.0.0.jar -cluster -host 192.168.0.101 -seeds 192.168.0.101</code></p>
 
-<p><code class="language-plaintext highlighter-rouge">java -jar lealone-5.2.0.jar -cluster -host 192.168.0.102 -seeds 192.168.0.101</code></p>
+<p><code class="language-plaintext highlighter-rouge">java -jar lealone-6.0.0.jar -cluster -host 192.168.0.102 -seeds 192.168.0.101</code></p>
 
-<p><code class="language-plaintext highlighter-rouge">java -jar lealone-5.2.0.jar -cluster -host 192.168.0.103 -seeds 192.168.0.101</code></p>
+<p><code class="language-plaintext highlighter-rouge">java -jar lealone-6.0.0.jar -cluster -host 192.168.0.103 -seeds 192.168.0.101</code></p>
 
 <p>在多台服务器上启动 Lealone 复制集群后，创建 mydb_replication 数据库的操作跟1.4、1.5小节一样。</p>
 

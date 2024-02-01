@@ -13,21 +13,21 @@
         <dependency>
             <groupId>com.lealone.plugins</groupId>
             <artifactId>lealone-orm</artifactId>
-            <version>5.2.0</version>
+            <version>6.0.0</version>
         </dependency>
 
         <!-- lealone 微服务框架 -->
         <dependency>
             <groupId>com.lealone.plugins</groupId>
             <artifactId>lealone-service</artifactId>
-            <version>5.2.0</version>
+            <version>6.0.0</version>
         </dependency>
 	
         <!-- 使用 vertx 作为 lealone 的 http server -->
         <dependency>
             <groupId>com.lealone.plugins</groupId>
             <artifactId>lealone-vertx</artifactId>
-            <version>5.2.0</version>
+            <version>6.0.0</version>
         </dependency>
 ```
 
