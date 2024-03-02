@@ -39,11 +39,11 @@
 
 ### SQL Reference
 
-  * [SQL Grammar](http://lealone.org/grammar.html)
+  * [SQL Grammar](http://118.178.254.54/grammar.html)
 
-  * [Functions](http://lealone.org/functions.html)
+  * [Functions](http://118.178.254.54/functions.html)
 
-  * [Data Types](http://lealone.org/datatypes.html)
+  * [Data Types](http://118.178.254.54/datatypes.html)
 
 
 # Lealone 微服务框架
