@@ -1,5 +1,21 @@
 # Change Log
 
+# Lealone 6.0.0(未发布)
+
+## new features
+
+* 使用全新的并发控制系统和线程模型
+
+* 调度器分成了 ClientScheduler、GlobalScheduler、EmbeddedScheduler
+
+* 插件系统更加完善，支持 Create/Drop/Start/Stop Plugin 语句
+
+* 支持文档数据模型，通过插件兼容 MongoDB 的协议和 API
+
+* 支持事务化或非事务化 Sequence
+
+
+
 # Lealone 5.2.2(未发布)
 
 ## bug fix
