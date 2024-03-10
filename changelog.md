@@ -18,7 +18,7 @@
 
 
 
-# Lealone 5.2.2(未发布)
+# Lealone 5.2.2(https://github.com/lealone/Lealone/releases/tag/lealone-5.2.2) (2024-03-10)
 
 ## bug fix
 
