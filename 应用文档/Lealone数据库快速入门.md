@@ -31,7 +31,6 @@ Init lealone database: 119 ms
 TcpServer started, host: 127.0.0.1, port: 9210
 Total time: 207 ms (Load config: 2 ms, Init: 201 ms, Start: 4 ms)
 Exit with Ctrl+C
-TcpServer stopped
 ```
 
 要停止 Lealone，直接按 Ctrl + C

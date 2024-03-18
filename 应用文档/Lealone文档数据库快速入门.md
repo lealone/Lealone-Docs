@@ -10,7 +10,7 @@ Lealone 是一个高度兼容 MongoDB 的文档数据库，可以使用 MongoDB 
 
 ### 1.2. 下载 Lealone
 
-[lealone-6.0.0-SNAPSHOT.jar](https://github.com/lealone/Lealone-Docs/releases/download/lealone-docs-1.0.0/lealone-6.0.0-SNAPSHOT.jar)
+[lealone-6.0.0.jar](https://github.com/lealone/Lealone/releases/download/lealone-6.0.0/lealone-6.0.0.jar)
 
 Lealone 只有一个 jar 包，下载下来之后随意放到一个目录即可
 
@@ -19,21 +19,19 @@ Lealone 只有一个 jar 包，下载下来之后随意放到一个目录即可
 
 ### 1.3. 启动 Lealone 数据库
 
-打开一个新的命令行窗口，运行: `java -jar lealone-6.0.0-SNAPSHOT.jar`
+打开一个新的命令行窗口，运行: `java -jar lealone-6.0.0.jar`
 
 ```java
-Lealone version: 6.0.0-SNAPSHOT
+Lealone version: 6.0.0
 Use default config
-Base dir: E:/lealone/target/lealone_data
-Init storage engines: 6 ms
-Init transaction engines: 31 ms
-Init sql engines: 3 ms
-Init protocol server engines: 99 ms
-Init lealone database: 93 ms
+Base dir: ./lealone_data
+Init storage engines: 5 ms
+Init transaction engines: 46 ms
+Init sql engines: 4 ms
+Init protocol server engines: 13 ms
+Init lealone database: 119 ms
 TcpServer started, host: 127.0.0.1, port: 9210
-MySQLServer started, host: 127.0.0.1, port: 3306
-MongoServer started, host: 127.0.0.1, port: 27017
-Total time: 288 ms (Load config: 1 ms, Init: 238 ms, Start: 49 ms)
+Total time: 207 ms (Load config: 2 ms, Init: 201 ms, Start: 4 ms)
 Exit with Ctrl+C
 ```
 
