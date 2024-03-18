@@ -1,6 +1,6 @@
 # Change Log
 
-# Lealone 6.0.0(未发布)
+# Lealone 6.0.0(https://github.com/lealone/Lealone/releases/tag/lealone-6.0.0) (2024-03-20)
 
 ## new features
 
