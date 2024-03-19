@@ -1,8 +1,3 @@
-# 前言
-
-[Lealone](https://github.com/lealone/Lealone) 既可以作为一个独立的数据库来使用，也可以当成一个微服务框架来用，或者两者同时用。
-
-
 # Lealone 数据库
 
 ### 用户文档
@@ -45,16 +40,7 @@
 
 # [Lealone 微服务和 ORM 框架文档](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/微服务和ORM框架文档.md)
 
-
-
-# Lealone 集群版(商业版)
-
-  * [运行模式快速入门](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.md)
-  
-  * [复制集群搭建](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/%E5%A4%8D%E5%88%B6%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA.md)
-
-  * [Sharding 集群搭建](https://github.com/lealone/Lealone-Docs/blob/master/%E5%BA%94%E7%94%A8%E6%96%87%E6%A1%A3/Sharding%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA.md)
-
+# [Lealone 集群版(商业版)文档](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/集群版文档.md)
 
 
 # Lealone 设计文档
@@ -63,5 +49,5 @@
   
   * 架构图
   
-  ![image](http://lealone.org/images/jgt.png)
+  ![image](http://118.178.254.54/images/jgt.png)
 
