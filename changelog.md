@@ -22,8 +22,6 @@
 
 ## bug fix
 
-#### database
-
 * [Issue #215](https://github.com/lealone/Lealone/issues/215) 执行 backup 命令时，如果 chunk 文件太大，可用内存不够时会导致 oom
 
 * [Issue #218](https://github.com/lealone/Lealone/issues/218) 用 NULL 更新 lob 字段会导致 NPE
@@ -33,8 +31,6 @@
 # [Lealone 5.2.1](https://github.com/lealone/Lealone/releases/tag/lealone-5.2.1) (2023-12-15)
 
 ## bug fix
-
-#### database
 
 * [Issue #207](https://github.com/lealone/Lealone/issues/207#issuecomment-1782552948) 调度服务线程拿到表名列表后，如果接下来在进行fullGc前表被其他线程删除了，会导致NPE
 
@@ -46,8 +42,6 @@
 
 
 ## improvement
-
-#### database
 
 * DEFAULT_MAX_MEMORY_ROWS 从1万改成10万，避免查询的数据量很小时也写临时文件
 
