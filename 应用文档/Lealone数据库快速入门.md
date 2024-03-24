@@ -148,7 +148,7 @@ public class CRUDExample {
 
 可以使用 [DBeaver](https://dbeaver.io/) 这类 JDBC UI 客户端访问 Lealone
 
-[DBeaver 配置文档](https://github.com/lealone/Lealone-Examples/issues/23)
+[DBeaver 配置文档]((https://github.com/lealone/Lealone-Docs/blob/master/应用文档/使用DBeaver访问Lealone数据库.md))
 
 
 

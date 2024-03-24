@@ -16,6 +16,8 @@
   
   * [存储引擎快速入门](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/存储引擎快速入门.md)
 
+  * [使用 DBeaver 访问 Lealone 数据库](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/使用DBeaver访问Lealone数据库.md)
+
   * [Change Log](https://github.com/lealone/Lealone-Docs/blob/master/changelog.md)
   
 ### 下载
