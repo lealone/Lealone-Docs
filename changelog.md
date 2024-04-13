@@ -1,5 +1,14 @@
 # Change Log
 
+# Lealone 6.0.1(未发布)
+
+## bug fix
+
+* 用0调用 PreparedStatement.setFetchSize，当执行 ResultSet.next 时会导致 IndexOutOfBoundsException
+
+
+
+
 # [Lealone 6.0.0](https://github.com/lealone/Lealone/releases/tag/lealone-6.0.0) (2024-03-20)
 
 ## new features
