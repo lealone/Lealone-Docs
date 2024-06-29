@@ -6,7 +6,7 @@
 
 * 用0调用 PreparedStatement.setFetchSize，当执行 ResultSet.next 时会导致 IndexOutOfBoundsException
 
-
+* 通过命令行的方式用嵌入模式运行数据库时无法显示 sql> 提示符
 
 
 # [Lealone 6.0.0](https://github.com/lealone/Lealone/releases/tag/lealone-6.0.0) (2024-03-20)
