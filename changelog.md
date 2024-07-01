@@ -8,6 +8,8 @@
 
 * 通过命令行的方式用嵌入模式运行数据库时无法显示 sql> 提示符
 
+* 执行存储过程时没有对参数进行优化，如果参数不是一个简单的常量值会导致错误
+
 
 # [Lealone 6.0.0](https://github.com/lealone/Lealone/releases/tag/lealone-6.0.0) (2024-03-20)
 
