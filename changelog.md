@@ -10,6 +10,10 @@
 
 * 执行存储过程时没有对参数进行优化，如果参数不是一个简单的常量值会导致错误
 
+## new features
+
+* 新增 auto_start 参数用于自动启动插件
+
 
 # [Lealone 6.0.0](https://github.com/lealone/Lealone/releases/tag/lealone-6.0.0) (2024-03-20)
 
