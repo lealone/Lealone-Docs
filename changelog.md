@@ -14,6 +14,9 @@
 
 * 新增 auto_start 参数用于自动启动插件
 
+* 字符串字段支持转义字符
+
+
 
 # [Lealone 6.0.0](https://github.com/lealone/Lealone/releases/tag/lealone-6.0.0) (2024-03-20)
 
