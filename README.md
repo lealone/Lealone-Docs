@@ -22,13 +22,13 @@
   
 ### 下载
 
-  * [lealone-6.0.0.jar](https://github.com/lealone/Lealone/releases/download/lealone-6.0.0/lealone-6.0.0.jar)
+  * [lealone-6.0.1.jar](https://github.com/lealone/Lealone/releases/download/lealone-6.0.1/lealone-6.0.1.jar)
 
-  * [lealone-6.0.0.zip](https://github.com/lealone/Lealone/releases/download/lealone-6.0.0/lealone-6.0.0.zip)
+  * [lealone-6.0.1.zip](https://github.com/lealone/Lealone/releases/download/lealone-6.0.1/lealone-6.0.1.zip)
 
-  * [lealone-6.0.0.tar.gz](https://github.com/lealone/Lealone/releases/download/lealone-6.0.0/lealone-6.0.0.tar.gz)
+  * [lealone-6.0.1.tar.gz](https://github.com/lealone/Lealone/releases/download/lealone-6.0.1/lealone-6.0.1.tar.gz)
 
-  * [lealone-client-6.0.0.jar](https://github.com/lealone/Lealone/releases/download/lealone-6.0.0/lealone-client-6.0.0.jar)
+  * [lealone-client-6.0.1.jar](https://github.com/lealone/Lealone/releases/download/lealone-6.0.1/lealone-client-6.0.1.jar)
 
 ### SQL Reference
 

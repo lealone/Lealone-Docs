@@ -9,7 +9,7 @@
 
 ## 下载 Lealone-Polyglot
 
-[lealone-polyglot-6.0.0.jar](https://github.com/lealone/Lealone-Docs/releases/download/lealone-docs-1.0.0/lealone-polyglot-6.0.0.jar)
+[lealone-polyglot-6.0.1.jar](https://github.com/lealone/Lealone-Docs/releases/download/lealone-docs-1.0.0/lealone-polyglot-6.0.1.jar)
 
 Lealone-Polyglot 只有一个 jar 包，下载下来之后随意放到一个目录即可
 
@@ -18,11 +18,11 @@ Lealone-Polyglot 只有一个 jar 包，下载下来之后随意放到一个目�
 
 ## 启动 Lealone-polyglot
 
-打开一个新的命令行窗口，运行: `java -jar lealone-polyglot-6.0.0.jar`
+打开一个新的命令行窗口，运行: `java -jar lealone-polyglot-6.0.1.jar`
 
 ```java
-Lealone version: 6.0.0
-Loading config from jar:file:/E:/lealone-polyglot-6.0.0/lealone-polyglot-6.0.0.jar!/lealone.yaml
+Lealone version: 6.0.1
+Loading config from jar:file:/E:/lealone-polyglot-6.0.1/lealone-polyglot-6.0.1.jar!/lealone.yaml
 Base dir: .\lealone_data
 Init storage engines: 7 ms
 Init transaction engines: 76 ms
@@ -60,7 +60,7 @@ function getCurrentTime() {
 
 ## 在 Lealone 数据库中创建服务
 
-打开一个新的命令行窗口，运行: `java -jar lealone-polyglot-6.0.0.jar -client`
+打开一个新的命令行窗口，运行: `java -jar lealone-polyglot-6.0.1.jar -client`
 
 执行以下 SQL 创建 my_js_service
 

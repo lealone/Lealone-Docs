@@ -16,28 +16,28 @@
         <dependency>
             <groupId>com.lealone.plugins</groupId>
             <artifactId>lealone-orm</artifactId>
-            <version>6.0.0</version>
+            <version>6.0.1</version>
         </dependency>
 
         <!-- lealone 微服务框架 -->
         <dependency>
             <groupId>com.lealone.plugins</groupId>
             <artifactId>lealone-service</artifactId>
-            <version>6.0.0</version>
+            <version>6.0.1</version>
         </dependency>
 	
         <!-- 使用 vertx 作为 lealone 的 http server -->
         <dependency>
             <groupId>com.lealone.plugins</groupId>
             <artifactId>lealone-vertx</artifactId>
-            <version>6.0.0</version>
+            <version>6.0.1</version>
         </dependency>
 	
 	<!-- 启用对 Python 的支持 -->
         <dependency>
             <groupId>com.lealone.plugins</groupId>
             <artifactId>lealone-python</artifactId>
-            <version>6.0.0</version>
+            <version>6.0.1</version>
         </dependency>
     </dependencies>
 ```

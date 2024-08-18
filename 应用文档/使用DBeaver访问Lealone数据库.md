@@ -3,7 +3,7 @@
 
 * [DBeaver](https://dbeaver.io/download/)
 
-* [lealone-6.0.0.jar](https://github.com/lealone/Lealone/releases/download/lealone-6.0.0/lealone-6.0.0.jar)
+* [lealone-6.0.1.jar](https://github.com/lealone/Lealone/releases/download/lealone-6.0.1/lealone-6.0.1.jar)
 
 ## 在 DBeaver 中配置 Lealone 的驱动
 
@@ -32,7 +32,7 @@ URL 模板: jdbc:lealone:tcp://{host}[:{port}]/[{database}]
 
 ![dbeaver01](https://github.com/lealone/Lealone-Docs/assets/872655/5b97e98e-d0d6-4487-a18f-130a78476a77)
 
-在"库"界面点"添加文件"按钮，把 lealone-6.0.0.jar 加进去
+在"库"界面点"添加文件"按钮，把 lealone-6.0.1.jar 加进去
 
 最后点"确定"按钮完成 Lealone 驱动的配置
 

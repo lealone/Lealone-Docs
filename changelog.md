@@ -1,6 +1,6 @@
 # Change Log
 
-# Lealone 6.0.1(未发布)
+# [Lealone 6.0.1](https://github.com/lealone/Lealone/releases/tag/lealone-6.0.1) (2024-08-18)
 
 ## bug fix
 
@@ -16,6 +16,7 @@
 * 新增 auto_start 参数用于自动启动插件
 
 * 字符串字段支持转义字符
+
 
 ## improvement
 
