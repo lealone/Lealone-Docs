@@ -1,4 +1,14 @@
 # Lealone 数据库
+  
+### 下载
+
+  * [lealone-6.0.1.jar](https://github.com/lealone/Lealone/releases/download/lealone-6.0.1/lealone-6.0.1.jar)
+
+  * [lealone-6.0.1.zip](https://github.com/lealone/Lealone/releases/download/lealone-6.0.1/lealone-6.0.1.zip)
+
+  * [lealone-6.0.1.tar.gz](https://github.com/lealone/Lealone/releases/download/lealone-6.0.1/lealone-6.0.1.tar.gz)
+
+  * [lealone-client-6.0.1.jar](https://github.com/lealone/Lealone/releases/download/lealone-6.0.1/lealone-client-6.0.1.jar)
 
 ### 用户文档
 
@@ -19,16 +29,6 @@
   * [使用 DBeaver 访问 Lealone 数据库](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/使用DBeaver访问Lealone数据库.md)
 
   * [Change Log](https://github.com/lealone/Lealone-Docs/blob/master/changelog.md)
-  
-### 下载
-
-  * [lealone-6.0.1.jar](https://github.com/lealone/Lealone/releases/download/lealone-6.0.1/lealone-6.0.1.jar)
-
-  * [lealone-6.0.1.zip](https://github.com/lealone/Lealone/releases/download/lealone-6.0.1/lealone-6.0.1.zip)
-
-  * [lealone-6.0.1.tar.gz](https://github.com/lealone/Lealone/releases/download/lealone-6.0.1/lealone-6.0.1.tar.gz)
-
-  * [lealone-client-6.0.1.jar](https://github.com/lealone/Lealone/releases/download/lealone-6.0.1/lealone-client-6.0.1.jar)
 
 ### SQL Reference
 
