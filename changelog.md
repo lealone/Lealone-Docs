@@ -1,5 +1,13 @@
 # Change Log
 
+# Lealone 6.0.2(未发布)
+
+## bug fix
+
+* [Issue #239](https://github.com/lealone/Lealone/issues/239) 嵌入式模式下批量更新会卡住
+
+
+
 # [Lealone 6.0.1](https://github.com/lealone/Lealone/releases/tag/lealone-6.0.1) (2024-08-18)
 
 ## bug fix
