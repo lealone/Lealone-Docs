@@ -5,7 +5,10 @@
 ## bug fix
 
 * [Issue #238](https://github.com/lealone/Lealone/issues/238) 对于枚举字段 ResultSetMetaData.getColumnClassName 返回 java.lang.String
+
 * [Issue #239](https://github.com/lealone/Lealone/issues/239) 嵌入式模式下批量更新会卡住
+
+* 执行 drop database if exists mydb 如果 mydb 不存在会抛错
 
 
 ## new features
