@@ -8,6 +8,11 @@
 * [Issue #239](https://github.com/lealone/Lealone/issues/239) 嵌入式模式下批量更新会卡住
 
 
+## new features
+
+* JDBC 客户端支持 LocalDate、LocalTime、LocalDateTime
+
+
 
 # [Lealone 6.0.1](https://github.com/lealone/Lealone/releases/tag/lealone-6.0.1) (2024-08-18)
 
