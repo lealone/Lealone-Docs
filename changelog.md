@@ -15,6 +15,7 @@
 
 * JDBC 客户端支持 LocalDate、LocalTime、LocalDateTime
 
+* JDBC 客户端支持 AUTO_RECONNECT 参数用于自动重连
 
 
 # [Lealone 6.0.1](https://github.com/lealone/Lealone/releases/tag/lealone-6.0.1) (2024-08-18)
