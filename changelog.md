@@ -22,6 +22,8 @@
 
 * 优化批量写入，大幅提升性能
 
+* 索引的创建已经异步化了，为大表创建索引无需再等很久了
+
 
 
 # [Lealone 6.0.1](https://github.com/lealone/Lealone/releases/tag/lealone-6.0.1) (2024-08-18)
