@@ -26,6 +26,8 @@
 
 * 对索引进行 update/delete/insert 时不再需要写 redo log 了
 
+* 并发更新完记录后行锁对象可以释放了，减少了内存占用
+
 
 
 # [Lealone 6.0.1](https://github.com/lealone/Lealone/releases/tag/lealone-6.0.1) (2024-08-18)
