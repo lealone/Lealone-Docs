@@ -10,6 +10,8 @@
 
 * 执行 drop database if exists mydb 如果 mydb 不存在会抛错
 
+* JDBC 客户端调用 DataInputStream.read(byte[], int, int) 时有可能读到不完整的数据，导致响应包解析失败
+
 
 ## new features
 
