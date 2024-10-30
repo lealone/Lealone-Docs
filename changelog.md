@@ -12,6 +12,8 @@
 
 * JDBC 客户端调用 DataInputStream.read(byte[], int, int) 时有可能读到不完整的数据，导致响应包解析失败
 
+* [Issue #237](https://github.com/lealone/Lealone/issues/237) 使用 database_to_upper=false 参数后重音符号引用的标识符不应该转成大写
+
 
 ## new features
 
