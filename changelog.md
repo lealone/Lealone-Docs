@@ -32,6 +32,8 @@
 
 * 并发更新完记录后行锁对象可以释放了，减少了内存占用
 
+* JDBC 客户端也采用统一调度的模式
+
 
 
 # [Lealone 6.0.1](https://github.com/lealone/Lealone/releases/tag/lealone-6.0.1) (2024-08-18)
