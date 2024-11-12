@@ -36,6 +36,8 @@
 
 * 不再使用 buffer pool，所有的 tcp 连接都统一使用调度线程的输入输出 buffer
 
+* 在 chunk 文件头中保存 mapMaxKey 打开表时不用再读取最后一个 page，启动数据库时表很多的话可以提升启动速度
+
 
 
 # [Lealone 6.0.1](https://github.com/lealone/Lealone/releases/tag/lealone-6.0.1) (2024-08-18)
