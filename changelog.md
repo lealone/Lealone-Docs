@@ -21,6 +21,8 @@
 
 * JDBC 客户端支持 AUTO_RECONNECT 参数用于自动重连
 
+* 新增 session 参数 disable_generate_code 用于设置是否为 create table 语句生成代码
+
 
 ## improvement
 
