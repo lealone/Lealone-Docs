@@ -32,11 +32,11 @@
 
 ### SQL Reference
 
-  * [SQL Grammar](http://118.178.254.54/grammar.html)
+  * [SQL Grammar](http://lealone-plugins.github.io/lealone.github.io/grammar.html)
 
-  * [Functions](http://118.178.254.54/functions.html)
+  * [Functions](http://lealone-plugins.github.io/lealone.github.io/functions.html)
 
-  * [Data Types](http://118.178.254.54/datatypes.html)
+  * [Data Types](http://lealone-plugins.github.io/lealone.github.io/datatypes.html)
 
 
 
@@ -51,5 +51,5 @@
   
   * 架构图
   
-  ![image](http://118.178.254.54/images/jgt.png)
+  ![image](http://lealone-plugins.github.io/lealone.github.io/images/jgt.png)
 
