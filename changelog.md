@@ -14,6 +14,8 @@
 
 * [Issue #237](https://github.com/lealone/Lealone/issues/237) 使用 database_to_upper=false 参数后重音符号引用的标识符不应该转成大写
 
+* [Issue #253](https://github.com/lealone/Lealone/issues/253) 执行 insert into t select * from t 触发 btree page 切割时会导致无限循环
+
 
 ## new features
 
