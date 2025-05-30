@@ -16,6 +16,8 @@
 
 * [Issue #253](https://github.com/lealone/Lealone/issues/253) 执行 insert into t select * from t 触发 btree page 切割时会导致无限循环
 
+* 如果在执行 insert/update/delete 时触发 analyzeTable，会修改当前 session 的状态，导致各种并发问题
+
 
 ## new features
 
