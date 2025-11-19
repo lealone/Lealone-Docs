@@ -27,6 +27,8 @@
 
 * 新增 session 参数 disable_generate_code 用于设置是否为 create table 语句生成代码
 
+* 不再使用全局 redo log，每个表的 redo log 单独存放，支持并行写 redo log
+
 
 ## improvement
 
