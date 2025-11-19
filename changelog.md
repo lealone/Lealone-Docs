@@ -48,7 +48,7 @@
 
 * set exclusive 已经废弃
 
-* 每次往 chunk 文件追加新的数据时，不用保留上一次生成的页面长度和已删除页面的信息，能减少占用的硬盘空间
+* leaf page 细分成 row page、key page 等多种类型，减少占用的内存空间
 
 * 执行 compact 重写 page 时，如果是 leaf page 直接写原始数据，不需要把记录反序列化后读到内存
 
