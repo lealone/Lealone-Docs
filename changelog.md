@@ -1,6 +1,6 @@
 # Change Log
 
-# Lealone 6.1.0(未发布)
+# Lealone 8.0.0(未发布)
 
 ## bug fix
 
@@ -52,6 +52,7 @@
 
 * 执行 compact 重写 page 时，如果是 leaf page 直接写原始数据，不需要把记录反序列化后读到内存
 
+* FsyncService 线程变成多个，负责并行写 redo log 并行刷脏页
 
 
 # [Lealone 6.0.1](https://github.com/lealone/Lealone/releases/tag/lealone-6.0.1) (2024-08-18)
