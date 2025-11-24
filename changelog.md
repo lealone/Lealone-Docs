@@ -50,6 +50,8 @@
 
 * leaf page 细分成 row page、key page 等多种类型，减少占用的内存空间
 
+* row 对象的字段大幅减少，能极大减少占用的内存空间
+
 * 执行 compact 重写 page 时，如果是 leaf page 直接写原始数据，不需要把记录反序列化后读到内存
 
 * FsyncService 线程变成多个，负责并行写 redo log 并行刷脏页
