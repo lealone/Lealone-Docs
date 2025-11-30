@@ -30,6 +30,9 @@
 
   * [Change Log](https://github.com/lealone/Lealone-Docs/blob/master/changelog.md)
 
+  * [Wiki](https://github.com/lealone/Lealone-Docs/tree/master/wiki)
+
+
 ### SQL Reference
 
   * [SQL Grammar](http://lealone-plugins.github.io/lealone.github.io/grammar.html)
