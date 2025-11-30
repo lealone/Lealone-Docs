@@ -2,21 +2,21 @@
 
 <cite>
 **本文引用的文件**
-- [NioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java)
-- [NioNetServer.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java)
-- [NioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java)
-- [NioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java)
-- [NioAttachment.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioAttachment.java)
-- [NetEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/NetEventLoop.java)
-- [NetFactoryBase.java](file://lealone-net/src/main/java/com/lealone/net/NetFactoryBase.java)
-- [BioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java)
-- [NetBuffer.java](file://lealone-common/src/main/java/com/lealone/net/NetBuffer.java)
-- [AsyncConnection.java](file://lealone-net/src/main/java/com/lealone/net/AsyncConnection.java)
-- [TcpClientConnection.java](file://lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java)
-- [ClientScheduler.java](file://lealone-client/src/main/java/com/lealone/client/ClientScheduler.java)
-- [lealone-test.yaml](file://lealone-test/src/test/resources/lealone-test.yaml)
-- [CRUDExample.java](file://lealone-test/src/test/java/com/lealone/test/misc/CRUDExample.java)
+- [NioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java)
+- [NioNetServer.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java)
+- [NioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java)
+- [NioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java)
+- [NioAttachment.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioAttachment.java)
+- [NetEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetEventLoop.java)
+- [NetFactoryBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetFactoryBase.java)
+- [BioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java)
+- [NetBuffer.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/net/NetBuffer.java)
+- [AsyncConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/AsyncConnection.java)
+- [TcpClientConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java)
+- [ClientScheduler.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/ClientScheduler.java)
+- [lealone-test.yaml](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/resources/lealone-test.yaml)
+- [CRUDExample.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/misc/CRUDExample.java)
 </cite>
 
 ## 目录
@@ -66,20 +66,20 @@ EL --> BC
 ```
 
 图表来源
-- [NioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L1-L37)
-- [NioNetServer.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L1-L77)
-- [NioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java#L1-L101)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L1-L569)
-- [NioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L1-L136)
-- [NioAttachment.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioAttachment.java#L1-L20)
-- [NetEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/NetEventLoop.java#L1-L52)
-- [AsyncConnection.java](file://lealone-net/src/main/java/com/lealone/net/AsyncConnection.java#L1-L96)
-- [NetBuffer.java](file://lealone-common/src/main/java/com/lealone/net/NetBuffer.java#L105-L171)
-- [BioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L150-L159)
+- [NioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L1-L37)
+- [NioNetServer.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L1-L77)
+- [NioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java#L1-L101)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L1-L569)
+- [NioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L1-L136)
+- [NioAttachment.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioAttachment.java#L1-L20)
+- [NetEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetEventLoop.java#L1-L52)
+- [AsyncConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/AsyncConnection.java#L1-L96)
+- [NetBuffer.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/net/NetBuffer.java#L105-L171)
+- [BioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L150-L159)
 
 章节来源
-- [NioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L1-L37)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L1-L120)
+- [NioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L1-L37)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L1-L120)
 
 ## 核心组件
 - NioNetFactory：工厂类，负责创建 NIO 客户端、服务端与事件循环实例。
@@ -93,16 +93,16 @@ EL --> BC
 - NetBuffer：共享的输入/输出缓冲区，支持可回收的可写/可读缓冲包装。
 
 章节来源
-- [NioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L1-L37)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L1-L120)
-- [NioNetServer.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L1-L77)
-- [NioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java#L1-L101)
-- [NioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L1-L136)
-- [NioAttachment.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioAttachment.java#L1-L20)
-- [NetEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/NetEventLoop.java#L1-L52)
-- [AsyncConnection.java](file://lealone-net/src/main/java/com/lealone/net/AsyncConnection.java#L1-L96)
-- [TcpClientConnection.java](file://lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java#L1-L191)
-- [NetBuffer.java](file://lealone-common/src/main/java/com/lealone/net/NetBuffer.java#L105-L171)
+- [NioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L1-L37)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L1-L120)
+- [NioNetServer.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L1-L77)
+- [NioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java#L1-L101)
+- [NioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L1-L136)
+- [NioAttachment.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioAttachment.java#L1-L20)
+- [NetEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetEventLoop.java#L1-L52)
+- [AsyncConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/AsyncConnection.java#L1-L96)
+- [TcpClientConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java#L1-L191)
+- [NetBuffer.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/net/NetBuffer.java#L105-L171)
 
 ## 架构总览
 NIO 模型采用“单事件循环线程 + 多通道”的模式：
@@ -134,9 +134,9 @@ EL->>EL : "handleSelectedKeys()分发事件"
 ```
 
 图表来源
-- [NioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java#L33-L101)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L113-L145)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L463-L487)
+- [NioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java#L33-L101)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L113-L145)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L463-L487)
 
 ## 详细组件分析
 
@@ -145,8 +145,8 @@ EL->>EL : "handleSelectedKeys()分发事件"
 - 事件循环构造时注入 Scheduler 与配置 Map，用于读写缓冲、批处理阈值与最大包长等参数。
 
 章节来源
-- [NioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L1-L37)
-- [NetFactoryBase.java](file://lealone-net/src/main/java/com/lealone/net/NetFactoryBase.java#L1-L22)
+- [NioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L1-L37)
+- [NetFactoryBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetFactoryBase.java#L1-L22)
 
 ### NioEventLoop：事件循环与I/O处理
 - Selector 延迟初始化，避免启动开销；select/selectNow/wakeup 控制事件轮询。
@@ -188,15 +188,15 @@ Next --> End
 ```
 
 图表来源
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L113-L145)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L463-L487)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L113-L145)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L463-L487)
 
 章节来源
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L1-L120)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L155-L375)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L372-L438)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L448-L487)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L489-L569)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L1-L120)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L155-L375)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L372-L438)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L448-L487)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L489-L569)
 
 ### NioNetServer：连接接受机制
 - 打开 ServerSocketChannel，绑定主机与端口，设为非阻塞。
@@ -224,10 +224,10 @@ S-->>EL : "完成"
 ```
 
 图表来源
-- [NioNetServer.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L25-L76)
+- [NioNetServer.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L25-L76)
 
 章节来源
-- [NioNetServer.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L1-L77)
+- [NioNetServer.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L1-L77)
 
 ### NioNetClient：连接建立与事件回调
 - 创建 SocketChannel 并设为非阻塞，注册 OP_CONNECT 与自定义附件（包含连接管理器、目标地址、回调等）。
@@ -235,15 +235,15 @@ S-->>EL : "完成"
 - 连接完成后创建 NioWritableChannel 与 AsyncConnection/TcpClientConnection，加入事件循环并切换为 OP_READ。
 
 章节来源
-- [NioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java#L33-L101)
+- [NioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java#L33-L101)
 
 ### NioAttachment：连接状态管理
 - 作为 SelectionKey 附件，保存 AsyncConnection、未读完包的 inBuffer 与 packetLength。
 - 在读取过程中用于恢复上次未完成的包解析，保证半包处理的正确性。
 
 章节来源
-- [NioAttachment.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioAttachment.java#L1-L20)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L155-L275)
+- [NioAttachment.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioAttachment.java#L1-L20)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L155-L275)
 
 ### NioWritableChannel：通道封装与缓冲队列
 - 维护待写缓冲列表，提供 addBuffer/write/close 等接口。
@@ -251,23 +251,23 @@ S-->>EL : "完成"
 - 关闭时回收缓冲并从事件循环 channels 中移除。
 
 章节来源
-- [NioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L1-L136)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L326-L407)
+- [NioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L1-L136)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L326-L407)
 
 ### NetBuffer：共享缓冲与包计数
 - 提供可回收的 WritableBuffer/ReadableBuffer，支持共享 inputBuffer 与 outputBuffer。
 - 读取时按包长切片，必要时扩容；写入时批量合并写出，减少系统调用。
 
 章节来源
-- [NetBuffer.java](file://lealone-common/src/main/java/com/lealone/net/NetBuffer.java#L105-L171)
+- [NetBuffer.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/net/NetBuffer.java#L105-L171)
 
 ### AsyncConnection/TcpClientConnection：连接抽象与客户端实现
 - AsyncConnection 定义包长解析、通道访问、异常处理与关闭语义。
 - TcpClientConnection 维护会话映射与回调表，处理响应状态与超时检查，异常时清理回调避免死等。
 
 章节来源
-- [AsyncConnection.java](file://lealone-net/src/main/java/com/lealone/net/AsyncConnection.java#L1-L96)
-- [TcpClientConnection.java](file://lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java#L1-L191)
+- [AsyncConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/AsyncConnection.java#L1-L96)
+- [TcpClientConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java#L1-L191)
 
 ## 依赖关系分析
 - NioNetFactory 继承 NetFactoryBase，实现 NetFactory 接口，提供 NIO 组件实例。
@@ -302,16 +302,16 @@ TcpClientConnection --|> AsyncConnection
 ```
 
 图表来源
-- [NioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L1-L37)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L1-L120)
-- [NioNetServer.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L1-L77)
-- [NioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java#L1-L101)
-- [NioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L1-L136)
-- [NioAttachment.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioAttachment.java#L1-L20)
-- [AsyncConnection.java](file://lealone-net/src/main/java/com/lealone/net/AsyncConnection.java#L1-L96)
-- [TcpClientConnection.java](file://lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java#L1-L191)
-- [NetBuffer.java](file://lealone-common/src/main/java/com/lealone/net/NetBuffer.java#L105-L171)
-- [BioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L150-L159)
+- [NioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L1-L37)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L1-L120)
+- [NioNetServer.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L1-L77)
+- [NioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java#L1-L101)
+- [NioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L1-L136)
+- [NioAttachment.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioAttachment.java#L1-L20)
+- [AsyncConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/AsyncConnection.java#L1-L96)
+- [TcpClientConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java#L1-L191)
+- [NetBuffer.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/net/NetBuffer.java#L105-L171)
+- [BioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L150-L159)
 
 ## 性能考量与优化建议
 - 线程池与调度器
@@ -331,11 +331,11 @@ TcpClientConnection --|> AsyncConnection
   - 对于高并发连接，建议合理设置 socket 接收/发送缓冲区大小（可通过连接参数配置）。
 
 章节来源
-- [ClientScheduler.java](file://lealone-client/src/main/java/com/lealone/client/ClientScheduler.java#L36-L70)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L63-L75)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L326-L407)
-- [BioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L150-L159)
-- [lealone-test.yaml](file://lealone-test/src/test/resources/lealone-test.yaml#L9-L14)
+- [ClientScheduler.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/ClientScheduler.java#L36-L70)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L63-L75)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L326-L407)
+- [BioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L150-L159)
+- [lealone-test.yaml](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/resources/lealone-test.yaml#L9-L14)
 
 ## 故障排查指南
 - 连接异常断开
@@ -350,33 +350,33 @@ TcpClientConnection --|> AsyncConnection
   - ClientScheduler 在停止时会关闭事件循环，确保资源释放。
 
 章节来源
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L284-L305)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L393-L407)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L531-L546)
-- [ClientScheduler.java](file://lealone-client/src/main/java/com/lealone/client/ClientScheduler.java#L207-L211)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L284-L305)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L393-L407)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L531-L546)
+- [ClientScheduler.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/ClientScheduler.java#L207-L211)
 
 ## 结论
 Lealone 的 NIO 网络模型通过 NioNetFactory 统一创建组件，NioEventLoop 以 Selector 为核心实现高效的事件驱动 I/O，结合共享缓冲与批量写策略在高并发场景下具备良好的吞吐与低延迟表现。NioNetServer 与 NioNetClient 分别负责连接接受与建立，NioAttachment 与 NioWritableChannel 提供了可靠的连接状态管理与通道封装。通过合理的调度器配置、缓冲区与批处理策略，可在不同业务场景下取得最佳性能。
 
 ## 附录：配置与使用示例路径
 - 服务端/调度器参数示例（scheduler_count、prefer_batch_write、max_packet_count_per_loop）
-  - [lealone-test.yaml](file://lealone-test/src/test/resources/lealone-test.yaml#L9-L14)
+  - [lealone-test.yaml](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/resources/lealone-test.yaml#L9-L14)
 - 客户端连接参数示例（MAX_PACKET_SIZE、AUTO_RECONNECT、SCHEDULER_COUNT）
-  - [CRUDExample.java](file://lealone-test/src/test/java/com/lealone/test/misc/CRUDExample.java#L61-L75)
+  - [CRUDExample.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/misc/CRUDExample.java#L61-L75)
 - 事件循环与批处理开关
-  - [ClientScheduler.java](file://lealone-client/src/main/java/com/lealone/client/ClientScheduler.java#L41-L48)
+  - [ClientScheduler.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/ClientScheduler.java#L41-L48)
 - 工厂与组件创建
-  - [NioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L24-L36)
+  - [NioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L24-L36)
 - 事件循环关键方法
-  - [NetEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/NetEventLoop.java#L14-L52)
-  - [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L113-L145)
-  - [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L326-L407)
+  - [NetEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetEventLoop.java#L14-L52)
+  - [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L113-L145)
+  - [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L326-L407)
 - 连接接受与建立
-  - [NioNetServer.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L54-L76)
-  - [NioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java#L33-L101)
+  - [NioNetServer.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L54-L76)
+  - [NioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java#L33-L101)
 - 附件与通道
-  - [NioAttachment.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioAttachment.java#L1-L20)
-  - [NioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L89-L136)
+  - [NioAttachment.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioAttachment.java#L1-L20)
+  - [NioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L89-L136)
 - 缓冲区与包长检查
-  - [NetBuffer.java](file://lealone-common/src/main/java/com/lealone/net/NetBuffer.java#L105-L171)
-  - [BioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L150-L159)
+  - [NetBuffer.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/net/NetBuffer.java#L105-L171)
+  - [BioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L150-L159)

@@ -2,15 +2,15 @@
 
 <cite>
 **本文档引用的文件**
-- [JdbcDriver.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java)
-- [JdbcConnection.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java)
-- [JdbcStatement.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcStatement.java)
-- [JdbcPreparedStatement.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcPreparedStatement.java)
-- [JdbcResultSet.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSet.java)
-- [JdbcDatabaseMetaData.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDatabaseMetaData.java)
-- [JdbcCallableStatement.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcCallableStatement.java)
-- [Database.java](file://lealone-db/src/main/java/com/lealone/db/Database.java)
-- [LealoneDatabase.java](file://lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java)
+- [JdbcDriver.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java)
+- [JdbcConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java)
+- [JdbcStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcStatement.java)
+- [JdbcPreparedStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcPreparedStatement.java)
+- [JdbcResultSet.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSet.java)
+- [JdbcDatabaseMetaData.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDatabaseMetaData.java)
+- [JdbcCallableStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcCallableStatement.java)
+- [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java)
+- [LealoneDatabase.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java)
 </cite>
 
 ## 目录
@@ -112,7 +112,7 @@
   - **异常**: 无
 
 **Section sources**
-- [JdbcDriver.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java#L1-L198)
+- [JdbcDriver.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java#L1-L198)
 
 ### JdbcConnection
 
@@ -305,7 +305,7 @@
   - **异常**: `SQLException`
 
 **Section sources**
-- [JdbcConnection.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java#L1-L800)
+- [JdbcConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java#L1-L800)
 
 ### JdbcStatement
 
@@ -454,7 +454,7 @@
   - **异常**: `SQLException`
 
 **Section sources**
-- [JdbcStatement.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcStatement.java#L1-L800)
+- [JdbcStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcStatement.java#L1-L800)
 
 ### JdbcPreparedStatement
 
@@ -658,7 +658,7 @@
   - **异常**: `SQLException`
 
 **Section sources**
-- [JdbcPreparedStatement.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcPreparedStatement.java#L1-L1519)
+- [JdbcPreparedStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcPreparedStatement.java#L1-L1519)
 
 ### JdbcResultSet
 
@@ -1119,7 +1119,7 @@
   - **异常**: `SQLException`
 
 **Section sources**
-- [JdbcResultSet.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSet.java#L1-L3668)
+- [JdbcResultSet.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSet.java#L1-L3668)
 
 ### JdbcDatabaseMetaData
 
@@ -1301,7 +1301,7 @@
   - **异常**: `SQLException`
 
 **Section sources**
-- [JdbcDatabaseMetaData.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDatabaseMetaData.java#L1-L2945)
+- [JdbcDatabaseMetaData.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDatabaseMetaData.java#L1-L2945)
 
 ### JdbcCallableStatement
 
@@ -1724,7 +1724,7 @@
   - **异常**: `SQLException`
 
 **Section sources**
-- [JdbcCallableStatement.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcCallableStatement.java#L1-L1615)
+- [JdbcCallableStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcCallableStatement.java#L1-L1615)
 
 ## 核心Java API
 
@@ -1956,7 +1956,7 @@
   - **异常**: 无
 
 **Section sources**
-- [Database.java](file://lealone-db/src/main/java/com/lealone/db/Database.java#L1-L2041)
+- [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L1-L2041)
 
 ### LealoneDatabase
 
@@ -2071,4 +2071,4 @@
   - **异常**: 无
 
 **Section sources**
-- [LealoneDatabase.java](file://lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java#L1-L204)
+- [LealoneDatabase.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java#L1-L204)

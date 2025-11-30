@@ -2,15 +2,15 @@
 
 <cite>
 **本文引用的文件列表**
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java)
-- [RedoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java)
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java)
-- [UndoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java)
-- [LogSyncService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java)
-- [CheckpointService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java)
-- [AOTransactionEngine.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java)
-- [Chunk.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java)
+- [RedoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java)
+- [UndoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java)
+- [LogSyncService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java)
+- [CheckpointService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java)
+- [AOTransactionEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java)
+- [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java)
 </cite>
 
 ## 目录
@@ -63,22 +63,22 @@ CS --> RL
 ```
 
 图表来源
-- [AOTransactionEngine.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java#L228-L311)
-- [LogSyncService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L34-L120)
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L41-L120)
-- [RedoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L1-L60)
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L1-L80)
-- [UndoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L80-L140)
-- [CheckpointService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java#L28-L120)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
-- [Chunk.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L311-L325)
+- [AOTransactionEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java#L228-L311)
+- [LogSyncService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L34-L120)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L41-L120)
+- [RedoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L1-L60)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L1-L80)
+- [UndoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L80-L140)
+- [CheckpointService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java#L28-L120)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
+- [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L311-L325)
 
 章节来源
-- [AOTransactionEngine.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java#L228-L311)
-- [LogSyncService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L34-L120)
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L41-L120)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
-- [Chunk.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L311-L325)
+- [AOTransactionEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java#L228-L311)
+- [LogSyncService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L34-L120)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L41-L120)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
+- [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L311-L325)
 
 ## 核心组件
 - RedoLog：事务提交阶段将UndoLog记录转换为重做日志并批量写入存储；在恢复阶段重放历史事务以保证持久性
@@ -89,14 +89,14 @@ CS --> RL
 - BTreeStorage/Chunk：存储层实现，负责将重做日志追加到分块文件末尾，并提供读取与校验能力
 
 章节来源
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L41-L120)
-- [RedoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L1-L60)
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L1-L80)
-- [UndoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L80-L140)
-- [LogSyncService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L34-L120)
-- [CheckpointService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java#L28-L120)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
-- [Chunk.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L311-L325)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L41-L120)
+- [RedoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L1-L60)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L1-L80)
+- [UndoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L80-L140)
+- [LogSyncService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L34-L120)
+- [CheckpointService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java#L28-L120)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
+- [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L311-L325)
 
 ## 架构总览
 RedoLog在事务提交路径上的工作流：
@@ -126,11 +126,11 @@ Note over RL,SM : 恢复时从SM读取并重放
 ```
 
 图表来源
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L107-L143)
-- [LogSyncService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L186-L217)
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L271-L363)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L393)
-- [CheckpointService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java#L227-L269)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L107-L143)
+- [LogSyncService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L186-L217)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L271-L363)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L393)
+- [CheckpointService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java#L227-L269)
 
 ## 详细组件分析
 
@@ -165,17 +165,17 @@ Loop --> |否| End(["结束"])
 ```
 
 图表来源
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L74-L190)
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L192-L270)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L380-L414)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L74-L190)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L192-L270)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L380-L414)
 
 章节来源
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L41-L120)
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L120-L190)
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L190-L270)
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L271-L363)
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L364-L452)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L41-L120)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L120-L190)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L190-L270)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L271-L363)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L364-L452)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
 
 ### RedoLogRecord：记录类型与兼容性
 - 类型体系
@@ -217,14 +217,14 @@ RedoLogRecord <|-- LobSave
 ```
 
 图表来源
-- [RedoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L1-L60)
-- [RedoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L61-L120)
-- [RedoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L120-L186)
+- [RedoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L1-L60)
+- [RedoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L61-L120)
+- [RedoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L120-L186)
 
 章节来源
-- [RedoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L1-L60)
-- [RedoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L61-L120)
-- [RedoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L120-L186)
+- [RedoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L1-L60)
+- [RedoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L61-L120)
+- [RedoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L120-L186)
 
 ### UndoLog/UndoLogRecord：生成重做日志
 - 记录内容
@@ -238,10 +238,10 @@ RedoLogRecord <|-- LobSave
   - 仅对非内存表写入重做日志，索引与内存表跳过
 
 章节来源
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L1-L80)
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L81-L143)
-- [UndoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L80-L140)
-- [UndoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L140-L195)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L1-L80)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L81-L143)
+- [UndoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L80-L140)
+- [UndoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L140-L195)
 
 ### LogSyncService：异步写入与批量提交
 - 写入模型
@@ -256,9 +256,9 @@ RedoLogRecord <|-- LobSave
   - 事务完成后设置同步状态，唤醒调度器回收资源
 
 章节来源
-- [LogSyncService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L34-L120)
-- [LogSyncService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L186-L217)
-- [LogSyncService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L218-L321)
+- [LogSyncService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L34-L120)
+- [LogSyncService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L186-L217)
+- [LogSyncService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L218-L321)
 
 ### CheckpointService：检查点与刷脏页
 - 触发条件
@@ -270,8 +270,8 @@ RedoLogRecord <|-- LobSave
   - 仅在无多表事务等待同步时才执行检查点，避免数据不一致
 
 章节来源
-- [CheckpointService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java#L28-L120)
-- [CheckpointService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java#L227-L269)
+- [CheckpointService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java#L28-L120)
+- [CheckpointService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java#L227-L269)
 
 ### 存储层：日志文件写入与校验
 - 写入
@@ -282,8 +282,8 @@ RedoLogRecord <|-- LobSave
   - validateRedoLog校验指定事务ID是否出现在最近日志中，确保恢复完整性
 
 章节来源
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
-- [Chunk.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L311-L325)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
+- [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L311-L325)
 
 ## 依赖关系分析
 - RedoLog依赖LogSyncService进行异步调度与同步控制
@@ -305,14 +305,14 @@ BS --> CH["Chunk"]
 ```
 
 图表来源
-- [AOTransactionEngine.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java#L228-L311)
-- [LogSyncService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L34-L120)
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L41-L120)
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L1-L80)
-- [UndoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L80-L140)
-- [CheckpointService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java#L227-L269)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
-- [Chunk.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L311-L325)
+- [AOTransactionEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java#L228-L311)
+- [LogSyncService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L34-L120)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L41-L120)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L1-L80)
+- [UndoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L80-L140)
+- [CheckpointService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java#L227-L269)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
+- [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L311-L325)
 
 ## 性能考量与调优
 - 同步策略选择
@@ -330,11 +330,11 @@ BS --> CH["Chunk"]
   - 恢复时仅读取最近Chunk的重做日志，避免全量扫描
 
 章节来源
-- [LogSyncService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L34-L120)
-- [LogSyncService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L271-L321)
-- [CheckpointService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java#L28-L120)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
-- [Chunk.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L311-L325)
+- [LogSyncService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L34-L120)
+- [LogSyncService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L271-L321)
+- [CheckpointService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java#L28-L120)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
+- [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L311-L325)
 
 ## 故障排查指南
 - 恢复失败或数据不一致
@@ -351,10 +351,10 @@ BS --> CH["Chunk"]
   - 恢复时确认readRedoLog读取的是最新Chunk
 
 章节来源
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L364-L452)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L394-L414)
-- [LogSyncService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L111-L160)
-- [CheckpointService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java#L227-L269)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L364-L452)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L394-L414)
+- [LogSyncService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L111-L160)
+- [CheckpointService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java#L227-L269)
 
 ## 结论
 Lealone的RedoLog通过“UndoLog→RedoLogRecord→StorageMap”的链路，实现了对事务物理修改的可靠持久化。配合多服务异步写入、批量提交与周期性检查点，既保证了高吞吐，又能在崩溃后通过validate与重放机制恢复一致性。通过合理配置同步策略、批量阈值与检查点参数，可在性能与可靠性之间取得平衡。

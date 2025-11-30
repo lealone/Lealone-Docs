@@ -2,21 +2,21 @@
 
 <cite>
 **本文档引用的文件**   
-- [Insert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java)
-- [Update.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Update.java)
-- [Delete.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java)
-- [UpDel.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java)
-- [MerSert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java)
-- [YieldableLocalUpdate.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableLocalUpdate.java)
-- [YieldableLoopUpdateBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableLoopUpdateBase.java)
-- [YieldableUpdateBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableUpdateBase.java)
-- [TransactionalValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java)
-- [TransactionalValueType.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValueType.java)
-- [Table.java](file://lealone-db/src/main/java/com/lealone/db/table/Table.java)
-- [BTreeGC.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeGC.java)
-- [ChunkCompactor.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkCompactor.java)
-- [BatchTest.java](file://lealone-test/src/test/java/com/lealone/test/client/BatchTest.java)
-- [BatchStatementPacketHandlers.java](file://lealone-server/src/main/java/com/lealone/server/handler/BatchStatementPacketHandlers.java)
+- [Insert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java)
+- [Update.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Update.java)
+- [Delete.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java)
+- [UpDel.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java)
+- [MerSert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java)
+- [YieldableLocalUpdate.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableLocalUpdate.java)
+- [YieldableLoopUpdateBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableLoopUpdateBase.java)
+- [YieldableUpdateBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableUpdateBase.java)
+- [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java)
+- [TransactionalValueType.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValueType.java)
+- [Table.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/Table.java)
+- [BTreeGC.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeGC.java)
+- [ChunkCompactor.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkCompactor.java)
+- [BatchTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/client/BatchTest.java)
+- [BatchStatementPacketHandlers.java](https://github.com/lealone/Lealone/blob/master/lealone-server/src/main/java/com/lealone/server/handler/BatchStatementPacketHandlers.java)
 </cite>
 
 ## 目录
@@ -51,9 +51,9 @@ Transaction --> MVCC[MVCC版本控制]
 ```
 
 **架构来源**
-- [Insert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L21-L74)
-- [Update.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L34-L180)
-- [Delete.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L23-L97)
+- [Insert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L21-L74)
+- [Update.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L34-L180)
+- [Delete.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L23-L97)
 
 ## 核心组件分析
 DML执行的核心组件包括语句解析器、执行器、存储引擎和事务管理器。这些组件协同工作，确保数据操作的正确性和高效性。
@@ -95,10 +95,10 @@ YieldableLoopUpdateBase <|-- YieldableLocalUpdate
 ```
 
 **组件来源**
-- [YieldableBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java#L11-L21)
-- [YieldableUpdateBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableUpdateBase.java#L11-L21)
-- [YieldableLoopUpdateBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableLoopUpdateBase.java#L15-L88)
-- [YieldableLocalUpdate.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableLocalUpdate.java#L12-L32)
+- [YieldableBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java#L11-L21)
+- [YieldableUpdateBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableUpdateBase.java#L11-L21)
+- [YieldableLoopUpdateBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableLoopUpdateBase.java#L15-L88)
+- [YieldableLocalUpdate.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableLocalUpdate.java#L12-L32)
 
 ## Insert语句执行机制
 Insert语句的执行机制基于MerSert基类实现，通过Yieldable模式支持异步执行。执行过程包括参数验证、行创建和数据插入三个主要阶段。
@@ -123,8 +123,8 @@ end
 ```
 
 **流程来源**
-- [Insert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L21-L74)
-- [MerSert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L168-L323)
+- [Insert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L21-L74)
+- [MerSert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L168-L323)
 
 ## Update语句执行机制
 Update语句的执行机制基于UpDel基类实现，通过YieldableUpDel内部类完成具体的更新操作。执行过程包括条件评估、行锁定、新行创建和数据更新。
@@ -151,8 +151,8 @@ Update-->>Client : 返回结果
 ```
 
 **流程来源**
-- [Update.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L34-L180)
-- [UpDel.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L27-L184)
+- [Update.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L34-L180)
+- [UpDel.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L27-L184)
 
 ## Delete语句执行机制
 Delete语句的执行机制同样基于UpDel基类实现，通过YieldableDelete内部类完成具体的删除操作。执行过程包括条件评估、行锁定、触发器处理和数据删除。
@@ -178,8 +178,8 @@ end
 ```
 
 **流程来源**
-- [Delete.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L23-L97)
-- [UpDel.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L27-L184)
+- [Delete.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L23-L97)
+- [UpDel.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L27-L184)
 
 ## 批量插入优化策略
 批量插入优化策略主要通过缓冲区管理和事务边界控制来提高性能。系统采用批量参数值处理和高效的内存管理机制，确保大批量数据插入的高效性。
@@ -206,8 +206,8 @@ Batch-->>Client : 返回结果
 ```
 
 **流程来源**
-- [BatchStatementPacketHandlers.java](file://lealone-server/src/main/java/com/lealone/server/handler/BatchStatementPacketHandlers.java#L63-L89)
-- [MerSert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L209-L217)
+- [BatchStatementPacketHandlers.java](https://github.com/lealone/Lealone/blob/master/lealone-server/src/main/java/com/lealone/server/handler/BatchStatementPacketHandlers.java#L63-L89)
+- [MerSert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L209-L217)
 
 ## 版本控制与MVCC实现
 版本控制与MVCC（多版本并发控制）实现在TransactionalValue类中，通过事务ID和版本链管理数据的可见性，确保不同隔离级别下的数据一致性。
@@ -241,8 +241,8 @@ TransactionalValue --> AOTransaction : "引用"
 ```
 
 **机制来源**
-- [TransactionalValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L35-L206)
-- [TransactionalValueType.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValueType.java#L43-L85)
+- [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L35-L206)
+- [TransactionalValueType.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValueType.java#L43-L85)
 
 ## 延迟清理与空间回收
 延迟清理与空间回收机制通过BTreeGC和ChunkCompactor组件实现，采用惰性删除策略，在系统空闲时进行垃圾回收，避免影响正常业务操作的性能。
@@ -264,8 +264,8 @@ UpdateMetadata --> End
 ```
 
 **流程来源**
-- [BTreeGC.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeGC.java#L44-L276)
-- [ChunkCompactor.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkCompactor.java#L76-L136)
+- [BTreeGC.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeGC.java#L44-L276)
+- [ChunkCompactor.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkCompactor.java#L76-L136)
 
 ## 性能测试与对比
 性能测试数据显示，在不同场景下DML操作的吞吐量和延迟表现。测试涵盖了单行插入、批量插入、更新和删除操作，对比了不同数据量和并发级别的性能特征。
@@ -281,8 +281,8 @@ UpdateMetadata --> End
 | 批量插入 | 1,000,000 | 10 | 32,000 | 0.03 | 2.8 |
 
 **数据来源**
-- [BatchTest.java](file://lealone-test/src/test/java/com/lealone/test/client/BatchTest.java#L44-L92)
-- [CRUDExample.java](file://lealone-test/src/test/java/com/lealone/test/misc/CRUDExample.java#L46-L58)
+- [BatchTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/client/BatchTest.java#L44-L92)
+- [CRUDExample.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/misc/CRUDExample.java#L46-L58)
 
 ## 结论
 Lealone数据库的DML执行机制通过分层架构设计和Yieldable模式实现了高效、可靠的数据操作。系统在保证数据一致性的同时，通过批量处理、MVCC和延迟清理等优化策略，提供了出色的性能表现。未来可以进一步优化批量操作的内存管理和并发控制，提升大规模数据处理的效率。

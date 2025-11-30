@@ -2,16 +2,16 @@
 
 <cite>
 **本文档引用的文件**
-- [AckPacket.java](file://lealone-common/src/main/java/com/lealone/server/protocol/AckPacket.java)
-- [NoAckPacket.java](file://lealone-common/src/main/java/com/lealone/server/protocol/NoAckPacket.java)
-- [AckPacketHandler.java](file://lealone-common/src/main/java/com/lealone/server/protocol/AckPacketHandler.java)
-- [Session.java](file://lealone-common/src/main/java/com/lealone/db/session/Session.java)
-- [ClientSession.java](file://lealone-client/src/main/java/com/lealone/client/session/ClientSession.java)
-- [Packet.java](file://lealone-common/src/main/java/com/lealone/server/protocol/Packet.java)
-- [PacketType.java](file://lealone-common/src/main/java/com/lealone/server/protocol/PacketType.java)
-- [StatementUpdateAck.java](file://lealone-common/src/main/java/com/lealone/server/protocol/statement/StatementUpdateAck.java)
-- [SessionInitAck.java](file://lealone-common/src/main/java/com/lealone/server/protocol/session/SessionInitAck.java)
-- [BatchStatementUpdateAck.java](file://lealone-common/src/main/java/com/lealone/server/protocol/batch/BatchStatementUpdateAck.java)
+- [AckPacket.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/AckPacket.java)
+- [NoAckPacket.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/NoAckPacket.java)
+- [AckPacketHandler.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/AckPacketHandler.java)
+- [Session.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/db/session/Session.java)
+- [ClientSession.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/session/ClientSession.java)
+- [Packet.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/Packet.java)
+- [PacketType.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/PacketType.java)
+- [StatementUpdateAck.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/statement/StatementUpdateAck.java)
+- [SessionInitAck.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/session/SessionInitAck.java)
+- [BatchStatementUpdateAck.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/batch/BatchStatementUpdateAck.java)
 </cite>
 
 ## 目录
@@ -75,16 +75,16 @@ AckPacket <|-- BatchStatementUpdateAck
 ```
 
 **图示来源**
-- [Packet.java](file://lealone-common/src/main/java/com/lealone/server/protocol/Packet.java#L12-L20)
-- [AckPacket.java](file://lealone-common/src/main/java/com/lealone/server/protocol/AckPacket.java#L8-L13)
-- [NoAckPacket.java](file://lealone-common/src/main/java/com/lealone/server/protocol/NoAckPacket.java#L8-L13)
-- [StatementUpdateAck.java](file://lealone-common/src/main/java/com/lealone/server/protocol/statement/StatementUpdateAck.java#L16-L47)
-- [SessionInitAck.java](file://lealone-common/src/main/java/com/lealone/server/protocol/session/SessionInitAck.java#L18-L75)
-- [BatchStatementUpdateAck.java](file://lealone-common/src/main/java/com/lealone/server/protocol/batch/BatchStatementUpdateAck.java#L16-L57)
+- [Packet.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/Packet.java#L12-L20)
+- [AckPacket.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/AckPacket.java#L8-L13)
+- [NoAckPacket.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/NoAckPacket.java#L8-L13)
+- [StatementUpdateAck.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/statement/StatementUpdateAck.java#L16-L47)
+- [SessionInitAck.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/session/SessionInitAck.java#L18-L75)
+- [BatchStatementUpdateAck.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/batch/BatchStatementUpdateAck.java#L16-L57)
 
 **本节来源**
-- [Packet.java](file://lealone-common/src/main/java/com/lealone/server/protocol/Packet.java#L12-L20)
-- [PacketType.java](file://lealone-common/src/main/java/com/lealone/server/protocol/PacketType.java#L10-L56)
+- [Packet.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/Packet.java#L12-L20)
+- [PacketType.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/PacketType.java#L10-L56)
 
 ## AckPacket与NoAckPacket语义差异
 
@@ -102,12 +102,12 @@ F --> H[客户端不等待响应]
 ```
 
 **图示来源**
-- [AckPacket.java](file://lealone-common/src/main/java/com/lealone/server/protocol/AckPacket.java#L8-L13)
-- [NoAckPacket.java](file://lealone-common/src/main/java/com/lealone/server/protocol/NoAckPacket.java#L8-L13)
+- [AckPacket.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/AckPacket.java#L8-L13)
+- [NoAckPacket.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/NoAckPacket.java#L8-L13)
 
 **本节来源**
-- [AckPacket.java](file://lealone-common/src/main/java/com/lealone/server/protocol/AckPacket.java#L8-L13)
-- [NoAckPacket.java](file://lealone-common/src/main/java/com/lealone/server/protocol/NoAckPacket.java#L8-L13)
+- [AckPacket.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/AckPacket.java#L8-L13)
+- [NoAckPacket.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/NoAckPacket.java#L8-L13)
 
 ### 高可靠性操作场景
 在需要确保操作结果的场景中，如事务提交、数据更新等，使用`AckPacket`确保服务器已成功处理请求。例如`StatementUpdateAck`包含更新计数，客户端可以验证操作影响的行数。
@@ -142,12 +142,12 @@ Callback->>Client : 返回Future结果
 ```
 
 **图示来源**
-- [ClientSession.java](file://lealone-client/src/main/java/com/lealone/client/session/ClientSession.java#L277-L322)
-- [AckPacketHandler.java](file://lealone-common/src/main/java/com/lealone/server/protocol/AckPacketHandler.java#L8-L10)
+- [ClientSession.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/session/ClientSession.java#L277-L322)
+- [AckPacketHandler.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/AckPacketHandler.java#L8-L10)
 
 **本节来源**
-- [ClientSession.java](file://lealone-client/src/main/java/com/lealone/client/session/ClientSession.java#L277-L377)
-- [AckPacketHandler.java](file://lealone-common/src/main/java/com/lealone/server/protocol/AckPacketHandler.java#L8-L10)
+- [ClientSession.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/session/ClientSession.java#L277-L377)
+- [AckPacketHandler.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/AckPacketHandler.java#L8-L10)
 
 ### 回调处理流程
 `AckPacketHandler`接口定义了`handle(P ack)`方法，用于处理服务器返回的确认包。在`ClientSession.send()`方法中，当检测到请求包需要确认时，会创建`AsyncCallback`实例并注册到连接中。当服务器响应到达时，通过`handleAsyncCallback`方法调用处理器的`handle`方法。
@@ -174,13 +174,13 @@ K --> L[确认事务完成]
 ```
 
 **图示来源**
-- [StatementUpdateAck.java](file://lealone-common/src/main/java/com/lealone/server/protocol/statement/StatementUpdateAck.java#L16-L47)
-- [BatchStatementUpdateAck.java](file://lealone-common/src/main/java/com/lealone/server/protocol/batch/BatchStatementUpdateAck.java#L16-L57)
+- [StatementUpdateAck.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/statement/StatementUpdateAck.java#L16-L47)
+- [BatchStatementUpdateAck.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/batch/BatchStatementUpdateAck.java#L16-L57)
 
 **本节来源**
-- [StatementUpdateAck.java](file://lealone-common/src/main/java/com/lealone/server/protocol/statement/StatementUpdateAck.java#L16-L47)
-- [BatchStatementUpdateAck.java](file://lealone-common/src/main/java/com/lealone/server/protocol/batch/BatchStatementUpdateAck.java#L16-L57)
-- [Session.java](file://lealone-common/src/main/java/com/lealone/db/session/Session.java#L155-L158)
+- [StatementUpdateAck.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/statement/StatementUpdateAck.java#L16-L47)
+- [BatchStatementUpdateAck.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/batch/BatchStatementUpdateAck.java#L16-L57)
+- [Session.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/db/session/Session.java#L155-L158)
 
 ### 事务提交集成
 在事务提交过程中，客户端发送提交请求并等待`AckPacket`响应。通过`AckPacketHandler`处理确认包，确保事务已成功提交到服务器。如果网络中断或超时，客户端可以发起重试或回滚操作。
@@ -206,12 +206,12 @@ L --> N[平衡性能与可靠性]
 ```
 
 **图示来源**
-- [PacketType.java](file://lealone-common/src/main/java/com/lealone/server/protocol/PacketType.java#L10-L56)
-- [ClientSession.java](file://lealone-client/src/main/java/com/lealone/client/session/ClientSession.java#L292-L304)
+- [PacketType.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/PacketType.java#L10-L56)
+- [ClientSession.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/session/ClientSession.java#L292-L304)
 
 **本节来源**
-- [ClientSession.java](file://lealone-client/src/main/java/com/lealone/client/session/ClientSession.java#L292-L304)
-- [PacketType.java](file://lealone-common/src/main/java/com/lealone/server/protocol/PacketType.java#L10-L56)
+- [ClientSession.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/session/ClientSession.java#L292-L304)
+- [PacketType.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/PacketType.java#L10-L56)
 
 ### 吞吐量影响
 使用`AckPacket`会增加每个请求的网络往返时间(RTT)，降低系统吞吐量。特别是在高延迟网络环境中，这种影响更为显著。而`NoAckPacket`允许客户端连续发送多个请求，显著提高吞吐量。
@@ -233,8 +233,8 @@ ACK机制引入了额外的延迟，因为客户端必须等待服务器响应�
 - **连接池**：使用连接池管理TCP连接，减少连接建立开销
 
 **本节来源**
-- [ClientSession.java](file://lealone-client/src/main/java/com/lealone/client/session/ClientSession.java#L267-L274)
-- [Session.java](file://lealone-common/src/main/java/com/lealone/db/session/Session.java#L124-L127)
+- [ClientSession.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/session/ClientSession.java#L267-L274)
+- [Session.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/db/session/Session.java#L124-L127)
 
 ## 结论
 Lealone的ACK确认机制通过精心设计的`AckPacket`和`NoAckPacket`语义，实现了灵活性与可靠性的平衡。通过`AckPacketHandler`的回调机制和超时控制，确保了消息的端到端可靠传输。在实际应用中，应根据具体场景选择合适的ACK模式，在保证数据可靠性的同时最大化系统性能。在网络不稳定环境中，合理的配置和调优策略可以显著提升系统的稳定性和响应能力。

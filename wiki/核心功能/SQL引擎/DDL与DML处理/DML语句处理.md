@@ -2,24 +2,24 @@
 
 <cite>
 **本文档引用的文件**   
-- [Insert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java)
-- [Update.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Update.java)
-- [Delete.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java)
-- [Merge.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Merge.java)
-- [UpDel.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java)
-- [MerSert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java)
-- [ManipulationStatement.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/ManipulationStatement.java)
-- [YieldableLoopUpdateBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableLoopUpdateBase.java)
-- [AOTransactionEngine.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java)
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java)
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java)
-- [RowLock.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLock.java)
-- [TransactionalValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java)
-- [AOStorageEngine.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/AOStorageEngine.java)
-- [BTreeGC.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeGC.java)
-- [PageReference.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java)
-- [CheckpointService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java)
-- [TransactionalDbObjects.java](file://lealone-db/src/main/java/com/lealone/db/TransactionalDbObjects.java)
+- [Insert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java)
+- [Update.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Update.java)
+- [Delete.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java)
+- [Merge.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Merge.java)
+- [UpDel.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java)
+- [MerSert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java)
+- [ManipulationStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/ManipulationStatement.java)
+- [YieldableLoopUpdateBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableLoopUpdateBase.java)
+- [AOTransactionEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java)
+- [RowLock.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLock.java)
+- [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java)
+- [AOStorageEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/AOStorageEngine.java)
+- [BTreeGC.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeGC.java)
+- [PageReference.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java)
+- [CheckpointService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java)
+- [TransactionalDbObjects.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/TransactionalDbObjects.java)
 </cite>
 
 ## 目录
@@ -41,10 +41,10 @@
 文档还详细说明了DML操作如何与存储引擎交互，包括页加载、修改、脏页刷新等过程。同时阐述了批量操作、条件更新、自增列处理等高级特性。通过完整的流程图展示了从SQL解析到结果返回的各个阶段，并结合实际代码示例说明并发场景下的冲突检测与解决策略，以及性能优化技巧。
 
 **本文档引用的文件**   
-- [Insert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L1-L74)
-- [Update.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L1-L180)
-- [Delete.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L1-L97)
-- [Merge.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Merge.java#L1-L163)
+- [Insert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L1-L74)
+- [Update.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L1-L180)
+- [Delete.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L1-L97)
+- [Merge.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Merge.java#L1-L163)
 
 ## DML语句执行机制
 Lealone数据库中的DML语句执行机制基于一套分层的架构设计，从高层SQL语句到底层存储操作，经过多个处理阶段。DML语句的执行主要分为INSERT、UPDATE、DELETE和MERGE四种类型，它们共享一个共同的基类体系。
@@ -119,19 +119,19 @@ UpDel <|-- Delete
 ```
 
 **图表来源**  
-- [Insert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L21-L74)
-- [Update.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L34-L180)
-- [Delete.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L23-L97)
-- [Merge.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Merge.java#L31-L163)
-- [MerSert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L33-L323)
-- [UpDel.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L27-L184)
-- [ManipulationStatement.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/ManipulationStatement.java#L11-L17)
+- [Insert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L21-L74)
+- [Update.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L34-L180)
+- [Delete.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L23-L97)
+- [Merge.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Merge.java#L31-L163)
+- [MerSert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L33-L323)
+- [UpDel.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L27-L184)
+- [ManipulationStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/ManipulationStatement.java#L11-L17)
 
 **本节来源**  
-- [Insert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L21-L74)
-- [Update.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L34-L180)
-- [Delete.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L23-L97)
-- [Merge.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Merge.java#L31-L163)
+- [Insert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L21-L74)
+- [Update.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L34-L180)
+- [Delete.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L23-L97)
+- [Merge.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Merge.java#L31-L163)
 
 ## 行级锁管理
 Lealone数据库的行级锁管理机制基于`RowLock`类实现，该类继承自通用的`Lock`基类。行级锁是实现事务隔离和并发控制的关键组件，确保多个事务在访问同一行数据时不会产生冲突。
@@ -194,14 +194,14 @@ Lockable --> RowLock : "被锁定"
 ```
 
 **图表来源**  
-- [RowLock.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLock.java#L16-L104)
-- [RowLockOwner.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLockOwner.java)
-- [Lock.java](file://lealone-db/src/main/java/com/lealone/db/lock/Lock.java)
-- [Lockable.java](file://lealone-db/src/main/java/com/lealone/db/lock/Lockable.java)
-- [TransactionalValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java)
+- [RowLock.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLock.java#L16-L104)
+- [RowLockOwner.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLockOwner.java)
+- [Lock.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/lock/Lock.java)
+- [Lockable.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/lock/Lockable.java)
+- [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java)
 
 **本节来源**  
-- [RowLock.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLock.java#L16-L104)
+- [RowLock.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLock.java#L16-L104)
 
 ## 多版本并发控制(MVCC)
 Lealone数据库的多版本并发控制（MVCC）机制通过`TransactionalValue`类实现，该类是MVCC的核心组件。MVCC允许多个事务同时读取同一数据的不同版本，从而提高并发性能，避免读写冲突。
@@ -261,15 +261,15 @@ MVCC流程 --> MVCC流程 : 循环
 ```
 
 **图表来源**  
-- [TransactionalValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L35-L206)
-- [OldValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java)
-- [Transaction.java](file://lealone-sci/src/main/java/com/lealone/transaction/Transaction.java)
-- [StorageMap.java](file://lealone-sci/src/main/java/com/lealone/storage/StorageMap.java)
-- [CheckpointService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java#L161-L195)
+- [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L35-L206)
+- [OldValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java)
+- [Transaction.java](https://github.com/lealone/Lealone/blob/master/lealone-sci/src/main/java/com/lealone/transaction/Transaction.java)
+- [StorageMap.java](https://github.com/lealone/Lealone/blob/master/lealone-sci/src/main/java/com/lealone/storage/StorageMap.java)
+- [CheckpointService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java#L161-L195)
 
 **本节来源**  
-- [TransactionalValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L35-L206)
-- [CheckpointService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java#L161-L195)
+- [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L35-L206)
+- [CheckpointService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java#L161-L195)
 
 ## 事务日志记录
 Lealone数据库的事务日志记录机制由`RedoLog`和`UndoLog`两个核心组件构成，它们共同确保了事务的持久性和原子性。日志系统采用异步写入和批量提交的策略，以提高性能并保证数据安全。
@@ -349,15 +349,15 @@ LogSyncService --> RedoLog : "写入"
 ```
 
 **图表来源**  
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L40-L453)
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L23-L144)
-- [UndoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java)
-- [LogSyncService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java)
-- [AOTransactionEngine.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java#L32-L311)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L40-L453)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L23-L144)
+- [UndoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java)
+- [LogSyncService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java)
+- [AOTransactionEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java#L32-L311)
 
 **本节来源**  
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L40-L453)
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L23-L144)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L40-L453)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L23-L144)
 
 ## 存储引擎交互
 Lealone数据库的DML操作与存储引擎的交互通过`AOStorageEngine`和`BTreeStorage`等组件实现。存储引擎负责数据的物理存储和检索，DML操作通过存储引擎提供的API进行数据的增删改查。
@@ -438,17 +438,17 @@ BTreeGC --> PageReference : "管理"
 ```
 
 **图表来源**  
-- [AOStorageEngine.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/AOStorageEngine.java#L15-L33)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java)
-- [BTreeMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java)
-- [PageReference.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L278-L349)
-- [PageInfo.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageInfo.java)
-- [BTreeGC.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeGC.java#L44-L94)
+- [AOStorageEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/AOStorageEngine.java#L15-L33)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java)
+- [BTreeMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java)
+- [PageReference.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L278-L349)
+- [PageInfo.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageInfo.java)
+- [BTreeGC.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeGC.java#L44-L94)
 
 **本节来源**  
-- [AOStorageEngine.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/AOStorageEngine.java#L15-L33)
-- [PageReference.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L278-L349)
-- [BTreeGC.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeGC.java#L44-L94)
+- [AOStorageEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/AOStorageEngine.java#L15-L33)
+- [PageReference.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L278-L349)
+- [BTreeGC.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeGC.java#L44-L94)
 
 ## 高级特性处理
 Lealone数据库支持多种DML高级特性，包括批量操作、条件更新和自增列处理等。这些特性通过专门的机制实现，以提高性能和功能完整性。
@@ -523,18 +523,18 @@ Table --> LobStreamStorage : "LOB处理"
 ```
 
 **图表来源**  
-- [MerSert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L39-L323)
-- [UpDel.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L29-L184)
-- [YieldableMerSert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L168-L323)
-- [YieldableUpDel.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L81-L184)
-- [YieldableMerge.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Merge.java#L109-L162)
-- [Table.java](file://lealone-db/src/main/java/com/lealone/db/table/Table.java)
-- [LobStreamStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java)
+- [MerSert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L39-L323)
+- [UpDel.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L29-L184)
+- [YieldableMerSert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L168-L323)
+- [YieldableUpDel.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L81-L184)
+- [YieldableMerge.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Merge.java#L109-L162)
+- [Table.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/Table.java)
+- [LobStreamStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java)
 
 **本节来源**  
-- [MerSert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L39-L323)
-- [UpDel.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L29-L184)
-- [Merge.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Merge.java#L109-L162)
+- [MerSert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L39-L323)
+- [UpDel.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L29-L184)
+- [Merge.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Merge.java#L109-L162)
 
 ## DML执行流程图
 Lealone数据库的DML语句执行流程从SQL解析开始，经过多个处理阶段，最终完成数据修改并返回结果。整个流程可以分为以下几个主要阶段：
@@ -582,18 +582,18 @@ X --> W
 ```
 
 **图表来源**  
-- [Insert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L21-L74)
-- [Update.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L34-L180)
-- [Delete.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L23-L97)
-- [Merge.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Merge.java#L31-L163)
-- [MerSert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L33-L323)
-- [UpDel.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L27-L184)
+- [Insert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L21-L74)
+- [Update.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L34-L180)
+- [Delete.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L23-L97)
+- [Merge.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Merge.java#L31-L163)
+- [MerSert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L33-L323)
+- [UpDel.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L27-L184)
 
 **本节来源**  
-- [Insert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L21-L74)
-- [Update.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L34-L180)
-- [Delete.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L23-L97)
-- [Merge.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Merge.java#L31-L163)
+- [Insert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L21-L74)
+- [Update.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L34-L180)
+- [Delete.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L23-L97)
+- [Merge.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Merge.java#L31-L163)
 
 ## 并发冲突检测与解决
 Lealone数据库的并发冲突检测与解决机制基于MVCC和行级锁的组合实现。系统通过事务ID、版本号和锁状态来检测和解决并发冲突。
@@ -629,14 +629,14 @@ T2->>Storage : 提交事务
 ```
 
 **图表来源**  
-- [RowLock.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLock.java#L16-L104)
-- [TransactionalValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L35-L206)
-- [UpDel.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L164-L169)
-- [AOTransactionEngine.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java#L203-L225)
+- [RowLock.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLock.java#L16-L104)
+- [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L35-L206)
+- [UpDel.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L164-L169)
+- [AOTransactionEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java#L203-L225)
 
 **本节来源**  
-- [RowLock.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLock.java#L16-L104)
-- [TransactionalValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L35-L206)
+- [RowLock.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLock.java#L16-L104)
+- [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L35-L206)
 
 ## 性能优化技巧
 Lealone数据库提供了多种DML性能优化技巧，通过合理的配置和使用方式可以显著提升系统性能。
@@ -671,14 +671,14 @@ N --> K
 ```
 
 **图表来源**  
-- [MerSert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L76-L78)
-- [UpDel.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L84-L89)
-- [AOTransactionEngine.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java#L203-L225)
-- [YieldableLoopUpdateBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableLoopUpdateBase.java#L27-L36)
+- [MerSert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L76-L78)
+- [UpDel.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L84-L89)
+- [AOTransactionEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java#L203-L225)
+- [YieldableLoopUpdateBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableLoopUpdateBase.java#L27-L36)
 
 **本节来源**  
-- [MerSert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L76-L78)
-- [UpDel.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L84-L89)
+- [MerSert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L76-L78)
+- [UpDel.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L84-L89)
 
 ## 结论
 Lealone数据库的DML语句处理机制是一个复杂而高效的系统，集成了行级锁管理、多版本并发控制、事务日志记录等多种先进技术。通过分层的架构设计和精心的算法实现，系统在保证数据一致性和事务隔离性的同时，提供了出色的并发性能。

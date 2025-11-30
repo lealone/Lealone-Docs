@@ -2,17 +2,17 @@
 
 <cite>
 **本文引用的文件列表**
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java)
-- [ChunkManager.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java)
-- [Chunk.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java)
-- [ChunkCompactor.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkCompactor.java)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java)
-- [PageInfo.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageInfo.java)
-- [PageReference.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java)
-- [PageStorageMode.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageStorageMode.java)
-- [PageUtils.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageUtils.java)
-- [PageOperations.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java)
-- [BTreeMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java)
+- [ChunkManager.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java)
+- [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java)
+- [ChunkCompactor.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkCompactor.java)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java)
+- [PageInfo.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageInfo.java)
+- [PageReference.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java)
+- [PageStorageMode.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageStorageMode.java)
+- [PageUtils.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageUtils.java)
+- [PageOperations.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java)
+- [BTreeMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java)
 </cite>
 
 ## 目录
@@ -69,18 +69,18 @@ PG --> CK
 ```
 
 图表来源
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L65-L194)
-- [ChunkManager.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L40-L113)
-- [Chunk.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L191-L309)
-- [PageReference.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L161-L208)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L226-L241)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L65-L194)
+- [ChunkManager.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L40-L113)
+- [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L191-L309)
+- [PageReference.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L161-L208)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L226-L241)
 
 章节来源
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L65-L194)
-- [ChunkManager.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L40-L113)
-- [Chunk.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L191-L309)
-- [PageReference.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L161-L208)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L226-L241)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L65-L194)
+- [ChunkManager.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L40-L113)
+- [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L191-L309)
+- [PageReference.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L161-L208)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L226-L241)
 
 ## 核心组件
 - BTreeStorage：负责B-Tree持久化存储的生命周期管理、页读取/写入、保存/恢复、压缩策略、磁盘空间统计与异常处理
@@ -92,14 +92,14 @@ PG --> CK
 - PageStorageMode：行式/列式存储模式枚举，影响页类型选择与序列化布局
 
 章节来源
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L65-L194)
-- [ChunkManager.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L124-L160)
-- [Chunk.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L191-L309)
-- [ChunkCompactor.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkCompactor.java#L69-L169)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L27-L52)
-- [PageReference.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L232-L363)
-- [PageInfo.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageInfo.java#L1-L181)
-- [PageStorageMode.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageStorageMode.java#L8-L12)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L65-L194)
+- [ChunkManager.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L124-L160)
+- [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L191-L309)
+- [ChunkCompactor.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkCompactor.java#L69-L169)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L27-L52)
+- [PageReference.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L232-L363)
+- [PageInfo.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageInfo.java#L1-L181)
+- [PageStorageMode.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageStorageMode.java#L8-L12)
 
 ## 架构总览
 BTreeStorage作为AOSE B-Tree的物理存储中枢，协调以下关键流程：
@@ -138,12 +138,12 @@ BS-->>Map : 完成
 ```
 
 图表来源
-- [BTreeMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L382-L405)
-- [PageOperations.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L82-L151)
-- [PageReference.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L161-L208)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L306-L366)
-- [ChunkManager.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L124-L146)
-- [Chunk.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L298-L309)
+- [BTreeMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L382-L405)
+- [PageOperations.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L82-L151)
+- [PageReference.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L161-L208)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L306-L366)
+- [ChunkManager.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L124-L146)
+- [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L298-L309)
 
 ## 详细组件分析
 
@@ -178,15 +178,15 @@ Cleanup --> End
 ```
 
 图表来源
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L306-L366)
-- [ChunkCompactor.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkCompactor.java#L69-L169)
-- [Chunk.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L298-L309)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L306-L366)
+- [ChunkCompactor.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkCompactor.java#L69-L169)
+- [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L298-L309)
 
 章节来源
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L65-L194)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L205-L241)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L306-L366)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L368-L414)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L65-L194)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L205-L241)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L306-L366)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L368-L414)
 
 ### ChunkManager：块管理与发现
 - 块发现与最后块
@@ -197,9 +197,9 @@ Cleanup --> End
   - 维护全局移除页集合，合并最后块的移除页集合，用于紧凑判断与重写
 
 章节来源
-- [ChunkManager.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L40-L75)
-- [ChunkManager.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L115-L146)
-- [ChunkManager.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L188-L206)
+- [ChunkManager.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L40-L75)
+- [ChunkManager.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L115-L146)
+- [ChunkManager.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L188-L206)
 
 ### Chunk：块文件的读写与元数据
 - 头部与校验
@@ -212,8 +212,8 @@ Cleanup --> End
   - 写入页位置表与删除页集合，写入头部与正文，支持追加模式与同步
 
 章节来源
-- [Chunk.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L191-L309)
-- [Chunk.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L311-L353)
+- [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L191-L309)
+- [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L311-L353)
 
 ### ChunkCompactor：紧凑与回收
 - 紧凑策略
@@ -224,7 +224,7 @@ Cleanup --> End
   - 清理UnusedChunks中的页对应移除集合，避免重复写入
 
 章节来源
-- [ChunkCompactor.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkCompactor.java#L69-L169)
+- [ChunkCompactor.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkCompactor.java#L69-L169)
 
 ### Page/Leaf/Node/Column：页类型与布局
 - 页类型工厂
@@ -235,10 +235,10 @@ Cleanup --> End
   - 支持快速/高压缩，写入前压缩，读取时解压；页头包含校验值与长度检查
 
 章节来源
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L27-L52)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L226-L241)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L308-L356)
-- [PageStorageMode.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageStorageMode.java#L8-L12)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L27-L52)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L226-L241)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L308-L356)
+- [PageStorageMode.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageStorageMode.java#L8-L12)
 
 ### PageReference/PageInfo：页引用与信息
 - 页引用
@@ -247,9 +247,9 @@ Cleanup --> End
   - 记录页对象、缓冲、长度、锁、命中时间与次数、元版本；支持复制与内存统计
 
 章节来源
-- [PageReference.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L161-L208)
-- [PageReference.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L232-L363)
-- [PageInfo.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageInfo.java#L1-L181)
+- [PageReference.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L161-L208)
+- [PageReference.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L232-L363)
+- [PageInfo.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageInfo.java#L1-L181)
 
 ### PageOperations：写操作编排
 - 单键写操作
@@ -258,9 +258,9 @@ Cleanup --> End
   - 分裂与删除采用异步调度，避免阻塞写路径
 
 章节来源
-- [PageOperations.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L82-L151)
-- [PageOperations.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L283-L400)
-- [PageOperations.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L402-L521)
+- [PageOperations.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L82-L151)
+- [PageOperations.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L283-L400)
+- [PageOperations.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L402-L521)
 
 ## 依赖关系分析
 
@@ -319,18 +319,18 @@ Page --> Chunk : "写入位置"
 ```
 
 图表来源
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L141-L170)
-- [ChunkManager.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L124-L160)
-- [Chunk.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L298-L309)
-- [PageReference.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L161-L208)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L226-L241)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L141-L170)
+- [ChunkManager.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L124-L160)
+- [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L298-L309)
+- [PageReference.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L161-L208)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L226-L241)
 
 章节来源
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L141-L170)
-- [ChunkManager.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L124-L160)
-- [Chunk.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L298-L309)
-- [PageReference.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L161-L208)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L226-L241)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L141-L170)
+- [ChunkManager.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L124-L160)
+- [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L298-L309)
+- [PageReference.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L161-L208)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L226-L241)
 
 ## 性能考量
 - 页与块布局
@@ -346,10 +346,10 @@ Page --> Chunk : "写入位置"
   - PageReference提供轻量级锁与PageListener链，写操作先定位叶页、加锁、标记脏页，再执行写入，减少冲突
 
 章节来源
-- [Chunk.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L191-L246)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L308-L356)
-- [ChunkCompactor.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkCompactor.java#L114-L169)
-- [PageReference.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L232-L363)
+- [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L191-L246)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L308-L356)
+- [ChunkCompactor.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkCompactor.java#L114-L169)
+- [PageReference.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L232-L363)
 
 ## 故障排查指南
 - 文件损坏与校验失败
@@ -362,10 +362,10 @@ Page --> Chunk : "写入位置"
   - 通过validateRedoLog校验事务ID，确保数据一致性
 
 章节来源
-- [Chunk.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L227-L246)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L300-L307)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L315-L366)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L394-L414)
+- [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L227-L246)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L300-L307)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L315-L366)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L394-L414)
 
 ## 结论
 BTreeStorage通过ChunkManager与Chunk实现可靠的页-块-文件组织，结合PageReference/PageInfo的页生命周期管理与PageOperations的写操作编排，形成高可靠、可扩展的B-Tree物理存储体系。通过最小填充率驱动的紧凑机制与压缩策略，兼顾磁盘利用率与CPU成本；通过BTreeGC与移除页集合，实现内存与磁盘的高效交换。不同PageStorageMode（行式/列式）在页类型与序列化布局上差异显著，应依据数据特征与查询模式选择合适模式以获得最佳性能。
@@ -381,18 +381,18 @@ BTreeStorage通过ChunkManager与Chunk实现可靠的页-块-文件组织，结�
   - 页类型区分叶子/内部/列式；行式/列式存储模式影响键值布局与序列化
 
 章节来源
-- [PageUtils.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageUtils.java#L40-L94)
-- [Chunk.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L191-L309)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L27-L52)
+- [PageUtils.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageUtils.java#L40-L94)
+- [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L191-L309)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L27-L52)
 
 ### BTreeStorage初始化、加载与持久化流程（代码路径）
 - 初始化
-  - [BTreeStorage构造函数](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L65-L98)
-  - [ChunkManager.init](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L40-L75)
+  - [BTreeStorage构造函数](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L65-L98)
+  - [ChunkManager.init](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L40-L75)
 - 加载
-  - [BTreeStorage.readPage](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L219-L241)
-  - [PageReference.getOrReadPage](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L161-L208)
+  - [BTreeStorage.readPage](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L219-L241)
+  - [PageReference.getOrReadPage](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L161-L208)
 - 持久化
-  - [BTreeMap.save](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L382-L405)
-  - [BTreeStorage.save](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L306-L366)
-  - [Chunk.write](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L298-L309)
+  - [BTreeMap.save](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L382-L405)
+  - [BTreeStorage.save](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L306-L366)
+  - [Chunk.write](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L298-L309)

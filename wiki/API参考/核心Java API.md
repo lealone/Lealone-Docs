@@ -2,16 +2,16 @@
 
 <cite>
 **本文引用的文件列表**
-- [Database.java](file://lealone-db/src/main/java/com/lealone/db/Database.java)
-- [LealoneDatabase.java](file://lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java)
-- [ServerSession.java](file://lealone-db/src/main/java/com/lealone/db/session/ServerSession.java)
-- [PluggableEngine.java](file://lealone-sci/src/main/java/com/lealone/db/plugin/PluggableEngine.java)
-- [SQLEngine.java](file://lealone-sci/src/main/java/com/lealone/sql/SQLEngine.java)
-- [TransactionEngine.java](file://lealone-sci/src/main/java/com/lealone/transaction/TransactionEngine.java)
-- [Schema.java](file://lealone-db/src/main/java/com/lealone/db/schema/Schema.java)
-- [DbObject.java](file://lealone-db/src/main/java/com/lealone/db/DbObject.java)
-- [EmbeddedExample.java](file://lealone-test/src/test/java/com/lealone/test/misc/EmbeddedExample.java)
-- [CRUDExample.java](file://lealone-test/src/test/java/com/lealone/test/misc/CRUDExample.java)
+- [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java)
+- [LealoneDatabase.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java)
+- [ServerSession.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/session/ServerSession.java)
+- [PluggableEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-sci/src/main/java/com/lealone/db/plugin/PluggableEngine.java)
+- [SQLEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-sci/src/main/java/com/lealone/sql/SQLEngine.java)
+- [TransactionEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-sci/src/main/java/com/lealone/transaction/TransactionEngine.java)
+- [Schema.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/schema/Schema.java)
+- [DbObject.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/DbObject.java)
+- [EmbeddedExample.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/misc/EmbeddedExample.java)
+- [CRUDExample.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/misc/CRUDExample.java)
 </cite>
 
 ## 目录
@@ -69,12 +69,12 @@ TEST --> SCI
 - DbObject：数据库对象接口，定义对象类型、标识、SQL名、重命名、注释等通用能力。
 
 **章节来源**
-- file://lealone-db/src/main/java/com/lealone/db/Database.java#L200-L420
-- file://lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java#L68-L110
-- file://lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L133-L170
-- file://lealone-sci/src/main/java/com/lealone/db/plugin/PluggableEngine.java#L16-L46
-- file://lealone-db/src/main/java/com/lealone/db/schema/Schema.java#L43-L120
-- file://lealone-db/src/main/java/com/lealone/db/DbObject.java#L16-L128
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L200-L420
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java#L68-L110
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L133-L170
+- https://github.com/lealone/Lealone/blob/master/lealone-sci/src/main/java/com/lealone/db/plugin/PluggableEngine.java#L16-L46
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/schema/Schema.java#L43-L120
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/DbObject.java#L16-L128
 
 ## 架构总览
 Database持有并统一管理SQL引擎与事务引擎，通过PluggableEngine机制按名称动态获取具体实现。LealoneDatabase作为顶层实例，负责创建嵌入式数据库，并将其纳入全局管理。ServerSession贯穿SQL解析、准备、执行与事务控制。
@@ -128,13 +128,13 @@ PluggableEngine <|.. TransactionEngine
 ```
 
 **图表来源**
-- [Database.java](file://lealone-db/src/main/java/com/lealone/db/Database.java#L224-L234)
-- [LealoneDatabase.java](file://lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java#L68-L110)
-- [ServerSession.java](file://lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L413-L496)
-- [PluggableEngine.java](file://lealone-sci/src/main/java/com/lealone/db/plugin/PluggableEngine.java#L16-L46)
-- [SQLEngine.java](file://lealone-sci/src/main/java/com/lealone/sql/SQLEngine.java#L15-L33)
-- [TransactionEngine.java](file://lealone-sci/src/main/java/com/lealone/transaction/TransactionEngine.java#L17-L70)
-- [Schema.java](file://lealone-db/src/main/java/com/lealone/db/schema/Schema.java#L191-L236)
+- [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L224-L234)
+- [LealoneDatabase.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java#L68-L110)
+- [ServerSession.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L413-L496)
+- [PluggableEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-sci/src/main/java/com/lealone/db/plugin/PluggableEngine.java#L16-L46)
+- [SQLEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-sci/src/main/java/com/lealone/sql/SQLEngine.java#L15-L33)
+- [TransactionEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-sci/src/main/java/com/lealone/transaction/TransactionEngine.java#L17-L70)
+- [Schema.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/schema/Schema.java#L191-L236)
 
 ## 详细组件分析
 
@@ -185,17 +185,17 @@ SE->>SE : commit()/rollback()
 ```
 
 **图表来源**
-- [LealoneDatabase.java](file://lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java#L68-L110)
-- [Database.java](file://lealone-db/src/main/java/com/lealone/db/Database.java#L224-L234)
-- [ServerSession.java](file://lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L413-L496)
+- [LealoneDatabase.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java#L68-L110)
+- [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L224-L234)
+- [ServerSession.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L413-L496)
 
 **章节来源**
-- file://lealone-db/src/main/java/com/lealone/db/Database.java#L224-L234
-- file://lealone-db/src/main/java/com/lealone/db/Database.java#L422-L533
-- file://lealone-db/src/main/java/com/lealone/db/Database.java#L1057-L1125
-- file://lealone-db/src/main/java/com/lealone/db/Database.java#L704-L827
-- file://lealone-db/src/main/java/com/lealone/db/Database.java#L829-L980
-- file://lealone-db/src/main/java/com/lealone/db/Database.java#L1144-L1256
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L224-L234
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L422-L533
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L1057-L1125
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L704-L827
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L829-L980
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L1144-L1256
 
 ### LealoneDatabase：全局实例与嵌入式数据库
 - 作用：管理所有应用创建的数据库，提供嵌入式数据库创建入口。
@@ -219,12 +219,12 @@ AddToMap --> Done(["完成"])
 ```
 
 **图表来源**
-- [LealoneDatabase.java](file://lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java#L68-L110)
+- [LealoneDatabase.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java#L68-L110)
 
 **章节来源**
-- file://lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java#L68-L110
-- file://lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java#L119-L147
-- file://lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java#L155-L203
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java#L68-L110
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java#L119-L147
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java#L155-L203
 
 ### ServerSession：会话管理机制
 - 会话创建与配置
@@ -258,14 +258,14 @@ SS->>SS : commit()/rollback()
 ```
 
 **图表来源**
-- [ServerSession.java](file://lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L413-L496)
-- [ServerSession.java](file://lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L566-L759)
+- [ServerSession.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L413-L496)
+- [ServerSession.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L566-L759)
 
 **章节来源**
-- file://lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L133-L170
-- file://lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L413-L496
-- file://lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L566-L759
-- file://lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L1706-L1762
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L133-L170
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L413-L496
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L566-L759
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L1706-L1762
 
 ### PluggableEngine与引擎获取机制
 - PluggableEngine.getEngine(Class, String)：按引擎类型与名称获取插件实例，若未注册则通过类名实例化并注册。
@@ -289,12 +289,12 @@ PluggableEngine <|.. ProtocolServerEngine
 ```
 
 **图表来源**
-- [PluggableEngine.java](file://lealone-sci/src/main/java/com/lealone/db/plugin/PluggableEngine.java#L16-L46)
-- [Database.java](file://lealone-db/src/main/java/com/lealone/db/Database.java#L224-L234)
+- [PluggableEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-sci/src/main/java/com/lealone/db/plugin/PluggableEngine.java#L16-L46)
+- [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L224-L234)
 
 **章节来源**
-- file://lealone-sci/src/main/java/com/lealone/db/plugin/PluggableEngine.java#L16-L46
-- file://lealone-db/src/main/java/com/lealone/db/Database.java#L224-L234
+- https://github.com/lealone/Lealone/blob/master/lealone-sci/src/main/java/com/lealone/db/plugin/PluggableEngine.java#L16-L46
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L224-L234
 
 ### 元数据操作与对象管理
 - 元数据表（SYS）与索引
@@ -319,19 +319,19 @@ F --> G["完成"]
 ```
 
 **图表来源**
-- [Database.java](file://lealone-db/src/main/java/com/lealone/db/Database.java#L704-L827)
-- [Database.java](file://lealone-db/src/main/java/com/lealone/db/Database.java#L829-L980)
-- [Schema.java](file://lealone-db/src/main/java/com/lealone/db/schema/Schema.java#L191-L236)
-- [Schema.java](file://lealone-db/src/main/java/com/lealone/db/schema/Schema.java#L272-L317)
-- [Schema.java](file://lealone-db/src/main/java/com/lealone/db/schema/Schema.java#L344-L381)
+- [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L704-L827)
+- [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L829-L980)
+- [Schema.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/schema/Schema.java#L191-L236)
+- [Schema.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/schema/Schema.java#L272-L317)
+- [Schema.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/schema/Schema.java#L344-L381)
 
 **章节来源**
-- file://lealone-db/src/main/java/com/lealone/db/Database.java#L535-L588
-- file://lealone-db/src/main/java/com/lealone/db/Database.java#L704-L827
-- file://lealone-db/src/main/java/com/lealone/db/Database.java#L829-L980
-- file://lealone-db/src/main/java/com/lealone/db/schema/Schema.java#L191-L236
-- file://lealone-db/src/main/java/com/lealone/db/schema/Schema.java#L272-L317
-- file://lealone-db/src/main/java/com/lealone/db/schema/Schema.java#L344-L381
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L535-L588
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L704-L827
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L829-L980
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/schema/Schema.java#L191-L236
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/schema/Schema.java#L272-L317
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/schema/Schema.java#L344-L381
 
 ## 依赖关系分析
 - Database依赖PluggableEngine以获取SQLEngine与TransactionEngine。
@@ -350,16 +350,16 @@ DB --> SCH["Schema"]
 ```
 
 **图表来源**
-- [LealoneDatabase.java](file://lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java#L68-L110)
-- [Database.java](file://lealone-db/src/main/java/com/lealone/db/Database.java#L224-L234)
-- [ServerSession.java](file://lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L413-L496)
-- [Schema.java](file://lealone-db/src/main/java/com/lealone/db/schema/Schema.java#L191-L236)
+- [LealoneDatabase.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java#L68-L110)
+- [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L224-L234)
+- [ServerSession.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L413-L496)
+- [Schema.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/schema/Schema.java#L191-L236)
 
 **章节来源**
-- file://lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java#L68-L110
-- file://lealone-db/src/main/java/com/lealone/db/Database.java#L224-L234
-- file://lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L413-L496
-- file://lealone-db/src/main/java/com/lealone/db/schema/Schema.java#L191-L236
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java#L68-L110
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L224-L234
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L413-L496
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/schema/Schema.java#L191-L236
 
 ## 性能考量
 - 查询缓存：ServerSession支持基于SQL文本的查询缓存，当数据库元数据变更时会清空缓存，确保一致性。
@@ -376,9 +376,9 @@ DB --> SCH["Schema"]
 - 元数据一致性：对象重命名或删除时，确保依赖关系满足（如外键约束），否则抛出错误。
 
 **章节来源**
-- file://lealone-db/src/main/java/com/lealone/db/Database.java#L1155-L1256
-- file://lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java#L162-L176
-- file://lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L566-L759
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L1155-L1256
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java#L162-L176
+- https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L566-L759
 
 ## 结论
 Lealone通过Database统一管理数据库生命周期、SQL/事务引擎与元数据，配合LealoneDatabase提供嵌入式数据库创建能力，ServerSession承载SQL解析与事务控制，PluggableEngine实现引擎的插件化扩展。Schema与DbObject接口保证了对象管理的一致性与可扩展性。结合示例代码，开发者可在嵌入式模式下快速完成表创建、数据CRUD与对象管理。
@@ -411,10 +411,10 @@ Main->>Conn : 关闭连接
 ```
 
 **图表来源**
-- [EmbeddedExample.java](file://lealone-test/src/test/java/com/lealone/test/misc/EmbeddedExample.java#L18-L34)
-- [CRUDExample.java](file://lealone-test/src/test/java/com/lealone/test/misc/CRUDExample.java#L101-L121)
+- [EmbeddedExample.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/misc/EmbeddedExample.java#L18-L34)
+- [CRUDExample.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/misc/CRUDExample.java#L101-L121)
 
 **章节来源**
-- file://lealone-test/src/test/java/com/lealone/test/misc/EmbeddedExample.java#L18-L34
-- file://lealone-test/src/test/java/com/lealone/test/misc/CRUDExample.java#L101-L121
-- file://lealone-test/src/test/java/com/lealone/test/misc/CRUDExample.java#L134-L151
+- https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/misc/EmbeddedExample.java#L18-L34
+- https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/misc/CRUDExample.java#L101-L121
+- https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/misc/CRUDExample.java#L134-L151

@@ -2,16 +2,16 @@
 
 <cite>
 **本文引用的文件列表**
-- [TransactionalValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java)
-- [AOTransaction.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransaction.java)
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java)
-- [UndoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java)
-- [AOTransactionEngine.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java)
-- [AOTransactionMap.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionMap.java)
-- [TransactionalValueType.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValueType.java)
-- [RowLock.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLock.java)
-- [TransactionalValueTest.java](file://lealone-test/src/test/java/com/lealone/test/aote/TransactionalValueTest.java)
-- [IsolationLevelTest.java](file://lealone-test/src/test/java/com/lealone/test/aote/IsolationLevelTest.java)
+- [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java)
+- [AOTransaction.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransaction.java)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java)
+- [UndoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java)
+- [AOTransactionEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java)
+- [AOTransactionMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionMap.java)
+- [TransactionalValueType.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValueType.java)
+- [RowLock.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLock.java)
+- [TransactionalValueTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/aote/TransactionalValueTest.java)
+- [IsolationLevelTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/aote/IsolationLevelTest.java)
 </cite>
 
 ## 目录
@@ -66,20 +66,20 @@ ILT --> ATM
 ```
 
 图表来源
-- [AOTransaction.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransaction.java#L1-L461)
-- [AOTransactionEngine.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java#L1-L311)
-- [TransactionalValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L1-L385)
-- [TransactionalValueType.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValueType.java#L1-L159)
-- [RowLock.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLock.java#L1-L104)
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L1-L144)
-- [UndoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L1-L195)
-- [AOTransactionMap.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionMap.java#L1-L618)
-- [TransactionalValueTest.java](file://lealone-test/src/test/java/com/lealone/test/aote/TransactionalValueTest.java#L1-L185)
-- [IsolationLevelTest.java](file://lealone-test/src/test/java/com/lealone/test/aote/IsolationLevelTest.java#L1-L102)
+- [AOTransaction.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransaction.java#L1-L461)
+- [AOTransactionEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java#L1-L311)
+- [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L1-L385)
+- [TransactionalValueType.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValueType.java#L1-L159)
+- [RowLock.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLock.java#L1-L104)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L1-L144)
+- [UndoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L1-L195)
+- [AOTransactionMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionMap.java#L1-L618)
+- [TransactionalValueTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/aote/TransactionalValueTest.java#L1-L185)
+- [IsolationLevelTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/aote/IsolationLevelTest.java#L1-L102)
 
 章节来源
-- [AOTransaction.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransaction.java#L1-L120)
-- [AOTransactionEngine.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java#L190-L246)
+- [AOTransaction.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransaction.java#L1-L120)
+- [AOTransactionEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java#L190-L246)
 
 ## 核心组件
 - TransactionalValue：记录的包装器，负责版本链管理、可见性判断、读写序列化与反序列化。
@@ -90,13 +90,13 @@ ILT --> ATM
 - RowLock：行级锁，承载事务与旧值，协调并发与可见性。
 
 章节来源
-- [TransactionalValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L25-L120)
-- [AOTransaction.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransaction.java#L36-L120)
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L22-L92)
-- [UndoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L23-L86)
-- [AOTransactionMap.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionMap.java#L29-L120)
-- [TransactionalValueType.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValueType.java#L16-L100)
-- [RowLock.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLock.java#L16-L70)
+- [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L25-L120)
+- [AOTransaction.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransaction.java#L36-L120)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L22-L92)
+- [UndoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L23-L86)
+- [AOTransactionMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionMap.java#L29-L120)
+- [TransactionalValueType.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValueType.java#L16-L100)
+- [RowLock.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLock.java#L16-L70)
 
 ## 架构总览
 MVCC在AOTE中的关键流程：
@@ -133,10 +133,10 @@ Txn-->>Client : 提交完成
 ```
 
 图表来源
-- [AOTransactionMap.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionMap.java#L372-L431)
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L107-L122)
-- [UndoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L51-L82)
-- [TransactionalValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L258-L297)
+- [AOTransactionMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionMap.java#L372-L431)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L107-L122)
+- [UndoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L51-L82)
+- [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L258-L297)
 
 ## 详细组件分析
 
@@ -166,13 +166,13 @@ Sightless --> End
 ```
 
 图表来源
-- [TransactionalValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L121-L196)
+- [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L121-L196)
 
 章节来源
-- [TransactionalValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L27-L39)
-- [TransactionalValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L121-L196)
-- [TransactionalValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L258-L297)
-- [TransactionalValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L311-L350)
+- [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L27-L39)
+- [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L121-L196)
+- [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L258-L297)
+- [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L311-L350)
 
 ### AOTransaction：事务生命周期与UndoLog
 - 生命周期：开启事务、写入Redo/Undo、生成commitTimestamp、提交/回滚。
@@ -195,15 +195,15 @@ Txn->>Txn : 生成commitTimestamp
 ```
 
 图表来源
-- [AOTransaction.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransaction.java#L222-L309)
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L107-L122)
-- [UndoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L51-L82)
-- [TransactionalValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L258-L297)
+- [AOTransaction.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransaction.java#L222-L309)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L107-L122)
+- [UndoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L51-L82)
+- [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L258-L297)
 
 章节来源
-- [AOTransaction.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransaction.java#L222-L309)
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L107-L122)
-- [UndoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L51-L82)
+- [AOTransaction.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransaction.java#L222-L309)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L107-L122)
+- [UndoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L51-L82)
 
 ### UndoLog/UndoLogRecord：修改记录与回滚
 - UndoLog：单线程访问的有序记录集合，维护first/last指针，支持commit与rollbackTo。
@@ -237,12 +237,12 @@ UndoLogRecord <|-- KeyValueULR
 ```
 
 图表来源
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L22-L144)
-- [UndoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L23-L177)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L22-L144)
+- [UndoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L23-L177)
 
 章节来源
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L67-L122)
-- [UndoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L51-L177)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L67-L122)
+- [UndoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L51-L177)
 
 ### AOTransactionMap：读写入口与可见性过滤
 - 读取：get调用TransactionalValue.getValue，结合事务隔离级别与旧值缓存过滤不可见版本。
@@ -263,28 +263,28 @@ Map-->>Client : 返回结果
 ```
 
 图表来源
-- [AOTransactionMap.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionMap.java#L52-L80)
-- [TransactionalValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L121-L196)
+- [AOTransactionMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionMap.java#L52-L80)
+- [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L121-L196)
 
 章节来源
-- [AOTransactionMap.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionMap.java#L52-L80)
-- [AOTransactionMap.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionMap.java#L372-L431)
+- [AOTransactionMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionMap.java#L52-L80)
+- [AOTransactionMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionMap.java#L372-L431)
 
 ### TransactionalValueType：值类型适配
 - 将存储类型与TransactionalValue读写逻辑桥接，支持列式读写、比较、元数据写入等。
 - 在比较时使用TransactionalValue.getTid以事务ID排序，确保事务内一致性。
 
 章节来源
-- [TransactionalValueType.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValueType.java#L45-L57)
-- [TransactionalValueType.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValueType.java#L66-L82)
+- [TransactionalValueType.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValueType.java#L45-L57)
+- [TransactionalValueType.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValueType.java#L66-L82)
 
 ### RowLock：行级锁与旧值
 - RowLock继承Lock，持有lockable与PageListener，负责加锁、解锁与旧值管理。
 - 与TransactionalValue配合，确保读取可见性与写入冲突检测。
 
 章节来源
-- [RowLock.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLock.java#L16-L104)
-- [TransactionalValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L83-L120)
+- [RowLock.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLock.java#L16-L104)
+- [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L83-L120)
 
 ## 依赖关系分析
 - AOTransaction持有UndoLog并在提交时调用UndoLog.commit，UndoLogRecord.commit再委托TransactionalValue.commit建立版本链。
@@ -304,24 +304,24 @@ TVT["TransactionalValueType"] --> TV
 ```
 
 图表来源
-- [AOTransactionEngine.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java#L190-L246)
-- [AOTransaction.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransaction.java#L222-L309)
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L107-L122)
-- [UndoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L51-L82)
-- [TransactionalValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L258-L297)
-- [AOTransactionMap.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionMap.java#L372-L431)
-- [RowLock.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLock.java#L16-L70)
-- [TransactionalValueType.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValueType.java#L45-L57)
+- [AOTransactionEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java#L190-L246)
+- [AOTransaction.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransaction.java#L222-L309)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L107-L122)
+- [UndoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L51-L82)
+- [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L258-L297)
+- [AOTransactionMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionMap.java#L372-L431)
+- [RowLock.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLock.java#L16-L70)
+- [TransactionalValueType.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValueType.java#L45-L57)
 
 章节来源
-- [AOTransactionEngine.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java#L190-L246)
-- [AOTransaction.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransaction.java#L222-L309)
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L107-L122)
-- [UndoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L51-L82)
-- [TransactionalValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L258-L297)
-- [AOTransactionMap.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionMap.java#L372-L431)
-- [RowLock.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLock.java#L16-L70)
-- [TransactionalValueType.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValueType.java#L45-L57)
+- [AOTransactionEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionEngine.java#L190-L246)
+- [AOTransaction.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransaction.java#L222-L309)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L107-L122)
+- [UndoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L51-L82)
+- [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L258-L297)
+- [AOTransactionMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionMap.java#L372-L431)
+- [RowLock.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/lock/RowLock.java#L16-L70)
+- [TransactionalValueType.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValueType.java#L45-L57)
 
 ## 性能考量
 - 旧值缓存：TransactionalValue在可重复读场景下将版本链写入StorageMap的旧值缓存，读取时避免全链扫描，提升可见性判断效率。
@@ -330,9 +330,9 @@ TVT["TransactionalValueType"] --> TV
 - 行锁粒度：RowLock提供细粒度并发控制，避免全局锁竞争，提高并发吞吐。
 
 章节来源
-- [TransactionalValue.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L164-L196)
-- [AOTransaction.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransaction.java#L250-L259)
-- [UndoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L119-L127)
+- [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java#L164-L196)
+- [AOTransaction.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransaction.java#L250-L259)
+- [UndoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L119-L127)
 
 ## 故障排查指南
 - 读不到预期值：
@@ -346,16 +346,16 @@ TVT["TransactionalValueType"] --> TV
   - 检查TransactionalValue.commit在插入/更新场景下是否正确写入旧值缓存与版本链。
 
 章节来源
-- [IsolationLevelTest.java](file://lealone-test/src/test/java/com/lealone/test/aote/IsolationLevelTest.java#L1-L102)
-- [TransactionalValueTest.java](file://lealone-test/src/test/java/com/lealone/test/aote/TransactionalValueTest.java#L1-L185)
-- [AOTransactionMap.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionMap.java#L372-L431)
-- [UndoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L72-L82)
+- [IsolationLevelTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/aote/IsolationLevelTest.java#L1-L102)
+- [TransactionalValueTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/aote/TransactionalValueTest.java#L1-L185)
+- [AOTransactionMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransactionMap.java#L372-L431)
+- [UndoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLogRecord.java#L72-L82)
 
 ## 结论
 Lealone的AOTE-MVCC通过TransactionalValue的版本链、RowLock的行级锁、UndoLog的轻量记录与AOTransaction的提交/回滚流程，实现了高效的并发控制与严格的隔离保障。不同隔离级别下，读取路径基于事务ID、commitTimestamp与旧值缓存精确选择可见版本，既满足Repeatable Read/Serializable的可重复读需求，又在Read Committed场景下提供良好的并发性能。
 
 ## 附录
 - 并发读写示例（测试用例路径）
-  - 事务写入与回滚验证：[TransactionalValueTest.java](file://lealone-test/src/test/java/com/lealone/test/aote/TransactionalValueTest.java#L32-L72)
-  - 多事务并发写入与提交顺序影响：[TransactionalValueTest.java](file://lealone-test/src/test/java/com/lealone/test/aote/TransactionalValueTest.java#L74-L148)
-  - 隔离级别可见性验证：[IsolationLevelTest.java](file://lealone-test/src/test/java/com/lealone/test/aote/IsolationLevelTest.java#L21-L101)
+  - 事务写入与回滚验证：[TransactionalValueTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/aote/TransactionalValueTest.java#L32-L72)
+  - 多事务并发写入与提交顺序影响：[TransactionalValueTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/aote/TransactionalValueTest.java#L74-L148)
+  - 隔离级别可见性验证：[IsolationLevelTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/aote/IsolationLevelTest.java#L21-L101)

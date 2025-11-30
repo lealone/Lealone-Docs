@@ -2,19 +2,19 @@
 
 <cite>
 **本文引用的文件列表**
-- [LobStreamStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java)
-- [LobStreamMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java)
-- [LobPacketHandlers.java](file://lealone-server/src/main/java/com/lealone/server/handler/LobPacketHandlers.java)
-- [LobLocalStorage.java](file://lealone-common/src/main/java/com/lealone/storage/lob/LobLocalStorage.java)
-- [ValueLob.java](file://lealone-common/src/main/java/com/lealone/db/value/ValueLob.java)
-- [LobStorageTest.java](file://lealone-test/src/test/java/com/lealone/test/aose/LobStorageTest.java)
-- [Constants.java](file://lealone-common/src/main/java/com/lealone/db/Constants.java)
-- [SysProperties.java](file://lealone-common/src/main/java/com/lealone/db/SysProperties.java)
-- [TableDataHandler.java](file://lealone-db/src/main/java/com/lealone/db/table/TableDataHandler.java)
-- [NodePage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/NodePage.java)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java)
-- [ChunkManager.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java)
-- [Chunk.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java)
+- [LobStreamStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java)
+- [LobStreamMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java)
+- [LobPacketHandlers.java](https://github.com/lealone/Lealone/blob/master/lealone-server/src/main/java/com/lealone/server/handler/LobPacketHandlers.java)
+- [LobLocalStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/storage/lob/LobLocalStorage.java)
+- [ValueLob.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/db/value/ValueLob.java)
+- [LobStorageTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/aose/LobStorageTest.java)
+- [Constants.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/db/Constants.java)
+- [SysProperties.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/db/SysProperties.java)
+- [TableDataHandler.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/TableDataHandler.java)
+- [NodePage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/NodePage.java)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java)
+- [ChunkManager.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java)
+- [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java)
 </cite>
 
 ## 目录
@@ -55,12 +55,12 @@ F --> C
 ```
 
 图表来源
-- [LobStreamStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L43-L117)
-- [LobStreamMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L36-L70)
+- [LobStreamStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L43-L117)
+- [LobStreamMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L36-L70)
 
 章节来源
-- [LobStreamStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L43-L117)
-- [LobStreamMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L36-L70)
+- [LobStreamStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L43-L117)
+- [LobStreamMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L36-L70)
 
 ## 核心组件
 - LobStreamStorage：LOB后端存储，负责元数据映射与生命周期管理（保存、GC、关闭、备份）
@@ -69,11 +69,11 @@ F --> C
 - 客户端读取链路：LobPacketHandlers与LobLocalStorage协作，支持缓存与限流读取
 
 章节来源
-- [LobStreamStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L43-L212)
-- [LobStreamMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L108-L173)
-- [ValueLob.java](file://lealone-common/src/main/java/com/lealone/db/value/ValueLob.java#L576-L605)
-- [LobPacketHandlers.java](file://lealone-server/src/main/java/com/lealone/server/handler/LobPacketHandlers.java#L37-L98)
-- [LobLocalStorage.java](file://lealone-common/src/main/java/com/lealone/storage/lob/LobLocalStorage.java#L80-L122)
+- [LobStreamStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L43-L212)
+- [LobStreamMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L108-L173)
+- [ValueLob.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/db/value/ValueLob.java#L576-L605)
+- [LobPacketHandlers.java](https://github.com/lealone/Lealone/blob/master/lealone-server/src/main/java/com/lealone/server/handler/LobPacketHandlers.java#L37-L98)
+- [LobLocalStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/storage/lob/LobLocalStorage.java#L80-L122)
 
 ## 架构总览
 LOB存储通过两层B-Tree映射实现：
@@ -101,10 +101,10 @@ Handler-->>Client : 发送片段
 ```
 
 图表来源
-- [LobPacketHandlers.java](file://lealone-server/src/main/java/com/lealone/server/handler/LobPacketHandlers.java#L37-L98)
-- [LobLocalStorage.java](file://lealone-common/src/main/java/com/lealone/storage/lob/LobLocalStorage.java#L80-L122)
-- [LobStreamStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L214-L223)
-- [LobStreamMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L368-L371)
+- [LobPacketHandlers.java](https://github.com/lealone/Lealone/blob/master/lealone-server/src/main/java/com/lealone/server/handler/LobPacketHandlers.java#L37-L98)
+- [LobLocalStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/storage/lob/LobLocalStorage.java#L80-L122)
+- [LobStreamStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L214-L223)
+- [LobStreamMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L368-L371)
 
 ## 组件详解
 
@@ -127,12 +127,12 @@ Inline --> Done
 ```
 
 图表来源
-- [LobStreamStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L110-L147)
-- [LobStreamStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L150-L212)
+- [LobStreamStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L110-L147)
+- [LobStreamStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L150-L212)
 
 章节来源
-- [LobStreamStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L43-L212)
-- [TableDataHandler.java](file://lealone-db/src/main/java/com/lealone/db/table/TableDataHandler.java#L34-L81)
+- [LobStreamStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L43-L212)
+- [TableDataHandler.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/TableDataHandler.java#L34-L81)
 
 ### LobStreamMap：块级流式存储与ID编码
 - 分块策略：最小块大小与最大块大小可配置，默认分别为256字节与256KB
@@ -173,14 +173,14 @@ LobStreamMap --> Stream : "创建"
 ```
 
 图表来源
-- [LobStreamMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L36-L100)
-- [LobStreamMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L108-L173)
-- [LobStreamMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L368-L521)
+- [LobStreamMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L36-L100)
+- [LobStreamMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L108-L173)
+- [LobStreamMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L368-L521)
 
 章节来源
-- [LobStreamMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L36-L173)
-- [LobStreamMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L175-L281)
-- [LobStreamMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L368-L521)
+- [LobStreamMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L36-L173)
+- [LobStreamMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L175-L281)
+- [LobStreamMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L368-L521)
 
 ### 读取链路：客户端与服务端协作
 - 服务端：LobPacketHandlers根据请求偏移与长度，定位LOB并构造InputStream，使用缓存流提升重复读取效率
@@ -207,13 +207,13 @@ H-->>S : 返回数据包
 ```
 
 图表来源
-- [LobPacketHandlers.java](file://lealone-server/src/main/java/com/lealone/server/handler/LobPacketHandlers.java#L37-L98)
-- [LobLocalStorage.java](file://lealone-common/src/main/java/com/lealone/storage/lob/LobLocalStorage.java#L80-L122)
-- [LobStreamStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L214-L223)
+- [LobPacketHandlers.java](https://github.com/lealone/Lealone/blob/master/lealone-server/src/main/java/com/lealone/server/handler/LobPacketHandlers.java#L37-L98)
+- [LobLocalStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/storage/lob/LobLocalStorage.java#L80-L122)
+- [LobStreamStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L214-L223)
 
 章节来源
-- [LobPacketHandlers.java](file://lealone-server/src/main/java/com/lealone/server/handler/LobPacketHandlers.java#L37-L98)
-- [LobLocalStorage.java](file://lealone-common/src/main/java/com/lealone/storage/lob/LobLocalStorage.java#L80-L122)
+- [LobPacketHandlers.java](https://github.com/lealone/Lealone/blob/master/lealone-server/src/main/java/com/lealone/server/handler/LobPacketHandlers.java#L37-L98)
+- [LobLocalStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/storage/lob/LobLocalStorage.java#L80-L122)
 
 ### 写入、读取、更新、删除流程
 
@@ -238,13 +238,13 @@ D["删除"] --> Rm
 ```
 
 图表来源
-- [LobStreamStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L150-L212)
-- [LobStreamStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L214-L284)
-- [LobStreamMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L108-L173)
+- [LobStreamStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L150-L212)
+- [LobStreamStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L214-L284)
+- [LobStreamMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L108-L173)
 
 章节来源
-- [LobStreamStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L150-L284)
-- [LobStreamMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L108-L173)
+- [LobStreamStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L150-L284)
+- [LobStreamMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L108-L173)
 
 ## 依赖关系分析
 
@@ -265,18 +265,18 @@ CM --> CK["Chunk"]
 ```
 
 图表来源
-- [LobStreamStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L110-L147)
-- [LobStreamMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L36-L70)
-- [NodePage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/NodePage.java#L143-L205)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L286-L369)
-- [ChunkManager.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L1-L164)
-- [Chunk.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L260-L325)
+- [LobStreamStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L110-L147)
+- [LobStreamMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L36-L70)
+- [NodePage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/NodePage.java#L143-L205)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L286-L369)
+- [ChunkManager.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L1-L164)
+- [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L260-L325)
 
 章节来源
-- [NodePage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/NodePage.java#L143-L205)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L286-L369)
-- [ChunkManager.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L1-L164)
-- [Chunk.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L260-L325)
+- [NodePage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/NodePage.java#L143-L205)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L286-L369)
+- [ChunkManager.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java#L1-L164)
+- [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java#L260-L325)
 
 ## 性能考量
 - 分块策略
@@ -294,10 +294,10 @@ CM --> CK["Chunk"]
   - 客户端读取：限制单次读取长度，避免过大内存占用
 
 章节来源
-- [LobStreamMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L108-L173)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L308-L355)
-- [Constants.java](file://lealone-common/src/main/java/com/lealone/db/Constants.java#L107-L118)
-- [SysProperties.java](file://lealone-common/src/main/java/com/lealone/db/SysProperties.java#L111-L130)
+- [LobStreamMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L108-L173)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L308-L355)
+- [Constants.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/db/Constants.java#L107-L118)
+- [SysProperties.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/db/SysProperties.java#L111-L130)
 
 ## 故障排查指南
 - 常见问题
@@ -311,9 +311,9 @@ CM --> CK["Chunk"]
   - 确保事务引擎已注册GC任务，定期执行垃圾回收
 
 章节来源
-- [LobStreamStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L110-L147)
-- [LobStreamMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L214-L247)
-- [LobPacketHandlers.java](file://lealone-server/src/main/java/com/lealone/server/handler/LobPacketHandlers.java#L37-L98)
+- [LobStreamStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java#L110-L147)
+- [LobStreamMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java#L214-L247)
+- [LobPacketHandlers.java](https://github.com/lealone/Lealone/blob/master/lealone-server/src/main/java/com/lealone/server/handler/LobPacketHandlers.java#L37-L98)
 
 ## 结论
 Lealone的LOB存储通过“元数据+B-Tree块映射”的双层设计，实现了高效的流式处理与分块存储。LobStreamStorage负责元数据与生命周期管理，LobStreamMap负责块级编码与延迟加载，二者协同在保证一致性的前提下，兼顾了吞吐与内存占用。结合B-Tree的压缩与校验能力，LOB存储在大文件场景具备良好的扩展性与可靠性。
@@ -331,5 +331,5 @@ Lealone的LOB存储通过“元数据+B-Tree块映射”的双层设计，实现
   - LOB存储：面向大对象的专用方案，兼顾性能与一致性
 
 章节来源
-- [LobStorageTest.java](file://lealone-test/src/test/java/com/lealone/test/aose/LobStorageTest.java#L1-L56)
-- [ValueLob.java](file://lealone-common/src/main/java/com/lealone/db/value/ValueLob.java#L576-L605)
+- [LobStorageTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/aose/LobStorageTest.java#L1-L56)
+- [ValueLob.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/db/value/ValueLob.java#L576-L605)

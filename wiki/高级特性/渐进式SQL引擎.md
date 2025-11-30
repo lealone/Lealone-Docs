@@ -2,15 +2,15 @@
 
 <cite>
 **本文档引用的文件**  
-- [YieldableBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java)
-- [YieldableLocalQuery.java](file://lealone-sql/src/main/java/com/lealone/sql/query/YieldableLocalQuery.java)
-- [YieldableUpdateBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableUpdateBase.java)
-- [YieldableLoopUpdateBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableLoopUpdateBase.java)
-- [YieldableSelect.java](file://lealone-sql/src/main/java/com/lealone/sql/query/YieldableSelect.java)
-- [StatementBase.java](file://lealone-sql/src/main/java/com/lealone/sql/StatementBase.java)
-- [SessionStatus.java](file://lealone-sci/src/main/java/com/lealone/db/session/SessionStatus.java)
-- [UpDel.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java)
-- [ServerSession.java](file://lealone-db/src/main/java/com/lealone/db/session/ServerSession.java)
+- [YieldableBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java)
+- [YieldableLocalQuery.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/query/YieldableLocalQuery.java)
+- [YieldableUpdateBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableUpdateBase.java)
+- [YieldableLoopUpdateBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableLoopUpdateBase.java)
+- [YieldableSelect.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/query/YieldableSelect.java)
+- [StatementBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/StatementBase.java)
+- [SessionStatus.java](https://github.com/lealone/Lealone/blob/master/lealone-sci/src/main/java/com/lealone/db/session/SessionStatus.java)
+- [UpDel.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java)
+- [ServerSession.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/session/ServerSession.java)
 </cite>
 
 ## 目录
@@ -30,7 +30,7 @@
 Lealone渐进式SQL引擎是一种创新的数据库执行架构，旨在解决传统SQL引擎在高并发场景下容易阻塞的问题。该引擎通过将SQL语句分解为可暂停的微任务单元，实现了在执行过程中主动让出CPU控制权的能力，从而确保系统在处理长时间运行的查询时仍能保持良好的响应性。这种设计特别适合OLTP工作负载，能够在保证事务处理性能的同时，支持复杂的分析查询。
 
 **Section sources**
-- [YieldableBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java#L1-L193)
+- [YieldableBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java#L1-L193)
 
 ## 可暂停执行机制
 
@@ -41,8 +41,8 @@ Lealone渐进式SQL引擎的核心是可暂停执行机制，该机制允许SQL�
 这种设计的关键优势在于它打破了传统SQL引擎的"全有或全无"执行模式，将长时间的SQL执行分解为多个短时间的执行片段，确保了系统的整体响应性和吞吐量。
 
 **Section sources**
-- [YieldableBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java#L26-L193)
-- [SessionStatus.java](file://lealone-sci/src/main/java/com/lealone/db/session/SessionStatus.java#L1-L22)
+- [YieldableBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java#L26-L193)
+- [SessionStatus.java](https://github.com/lealone/Lealone/blob/master/lealone-sci/src/main/java/com/lealone/db/session/SessionStatus.java#L1-L22)
 
 ## YieldableBase核心设计
 
@@ -85,15 +85,15 @@ YieldableLoopUpdateBase <|-- YieldableUpDel
 ```
 
 **Diagram sources**
-- [YieldableBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java#L26-L193)
-- [YieldableUpdateBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableUpdateBase.java#L11-L20)
-- [YieldableQueryBase.java](file://lealone-sql/src/main/java/com/lealone/sql/query/YieldableQueryBase.java#L13-L24)
+- [YieldableBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java#L26-L193)
+- [YieldableUpdateBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableUpdateBase.java#L11-L20)
+- [YieldableQueryBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/query/YieldableQueryBase.java#L13-L24)
 
 YieldableBase的核心方法是yieldIfNeeded，该方法在执行过程中定期检查是否需要让出CPU。当满足预设条件（如处理的行数达到阈值）时，该方法会返回true，指示调度器暂停当前任务。这种设计确保了长时间运行的SQL不会独占CPU资源，从而保证了系统的响应性。
 
 **Section sources**
-- [YieldableBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java#L26-L193)
-- [StatementBase.java](file://lealone-sql/src/main/java/com/lealone/sql/StatementBase.java#L388-L400)
+- [YieldableBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java#L26-L193)
+- [StatementBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/StatementBase.java#L388-L400)
 
 ## 查询操作的渐进式执行
 
@@ -122,14 +122,14 @@ Yieldable->>Client : 返回最终结果
 ```
 
 **Diagram sources**
-- [YieldableLocalQuery.java](file://lealone-sql/src/main/java/com/lealone/sql/query/YieldableLocalQuery.java#L13-L27)
-- [YieldableSelect.java](file://lealone-sql/src/main/java/com/lealone/sql/query/YieldableSelect.java#L20-L213)
+- [YieldableLocalQuery.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/query/YieldableLocalQuery.java#L13-L27)
+- [YieldableSelect.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/query/YieldableSelect.java#L20-L213)
 
 YieldableSelect的executeInternal方法采用循环执行模式，每次只处理一部分数据，然后检查是否需要让出CPU。如果需要让出，方法会立即返回，等待下一次调度。这种设计确保了即使在处理大量数据的查询时，系统也能及时响应其他请求。
 
 **Section sources**
-- [YieldableLocalQuery.java](file://lealone-sql/src/main/java/com/lealone/sql/query/YieldableLocalQuery.java#L13-L27)
-- [YieldableSelect.java](file://lealone-sql/src/main/java/com/lealone/sql/query/YieldableSelect.java#L89-L117)
+- [YieldableLocalQuery.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/query/YieldableLocalQuery.java#L13-L27)
+- [YieldableSelect.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/query/YieldableSelect.java#L89-L117)
 
 ## 更新操作的渐进式执行
 
@@ -156,16 +156,16 @@ Complete --> End
 ```
 
 **Diagram sources**
-- [YieldableUpdateBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableUpdateBase.java#L11-L20)
-- [YieldableLoopUpdateBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableLoopUpdateBase.java#L15-L87)
-- [UpDel.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L81-L183)
+- [YieldableUpdateBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableUpdateBase.java#L11-L20)
+- [YieldableLoopUpdateBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableLoopUpdateBase.java#L15-L87)
+- [UpDel.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L81-L183)
 
 YieldableLoopUpdateBase的executeInternal方法采用while循环模式，每次迭代处理一行数据，然后检查是否需要让出CPU。如果需要让出，方法会立即返回，等待下一次调度。这种设计确保了大规模更新操作不会阻塞其他事务。
 
 **Section sources**
-- [YieldableUpdateBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableUpdateBase.java#L11-L20)
-- [YieldableLoopUpdateBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableLoopUpdateBase.java#L27-L37)
-- [UpDel.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L159-L181)
+- [YieldableUpdateBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableUpdateBase.java#L11-L20)
+- [YieldableLoopUpdateBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableLoopUpdateBase.java#L27-L37)
+- [UpDel.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L159-L181)
 
 ## OLAP模式转换机制
 
@@ -186,14 +186,14 @@ OLAP模式 --> 完成查询
 ```
 
 **Diagram sources**
-- [YieldableSelect.java](file://lealone-sql/src/main/java/com/lealone/sql/query/YieldableSelect.java#L37-L48)
-- [ServerSession.java](file://lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L1592-L1600)
+- [YieldableSelect.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/query/YieldableSelect.java#L37-L48)
+- [ServerSession.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L1592-L1600)
 
 当查询处理的行数超过会话设置的olapThreshold时，系统会创建一个专门的OLAP操作符来处理剩余的数据。这种设计既保证了小查询的快速响应，又支持大规模数据分析的高效处理。
 
 **Section sources**
-- [YieldableSelect.java](file://lealone-sql/src/main/java/com/lealone/sql/query/YieldableSelect.java#L37-L48)
-- [ServerSession.java](file://lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L1592-L1600)
+- [YieldableSelect.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/query/YieldableSelect.java#L37-L48)
+- [ServerSession.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L1592-L1600)
 
 ## 高并发场景下的性能表现
 
@@ -204,8 +204,8 @@ OLAP模式 --> 完成查询
 此外，引擎还支持异步回调机制，允许客户端在查询暂停时进行其他操作，进一步提高了系统的整体吞吐量和响应性。
 
 **Section sources**
-- [YieldableBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java#L94-L115)
-- [YieldableLoopUpdateBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableLoopUpdateBase.java#L27-L37)
+- [YieldableBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java#L94-L115)
+- [YieldableLoopUpdateBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableLoopUpdateBase.java#L27-L37)
 
 ## 与传统SQL引擎的对比
 
@@ -221,14 +221,14 @@ OLAP模式 --> 完成查询
 | 错误恢复 | 失败需重试整个查询 | 可从断点恢复 |
 
 **Diagram sources**
-- [YieldableBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java#L26-L193)
-- [YieldableSelect.java](file://lealone-sql/src/main/java/com/lealone/sql/query/YieldableSelect.java#L20-L213)
+- [YieldableBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java#L26-L193)
+- [YieldableSelect.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/query/YieldableSelect.java#L20-L213)
 
 在极端负载下，传统引擎的性能会急剧下降，而渐进式引擎通过合理的任务调度和资源分配，能够保持相对稳定的性能表现。
 
 **Section sources**
-- [YieldableBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java#L26-L193)
-- [YieldableSelect.java](file://lealone-sql/src/main/java/com/lealone/sql/query/YieldableSelect.java#L89-L117)
+- [YieldableBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java#L26-L193)
+- [YieldableSelect.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/query/YieldableSelect.java#L89-L117)
 
 ## 开发者优化建议
 
@@ -243,8 +243,8 @@ OLAP模式 --> 完成查询
 通过这些优化策略，开发者可以充分发挥渐进式SQL引擎的优势，在保证系统响应性的同时，支持复杂的业务场景。
 
 **Section sources**
-- [ServerSession.java](file://lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L1592-L1600)
-- [YieldableBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java#L167-L172)
+- [ServerSession.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L1592-L1600)
+- [YieldableBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java#L167-L172)
 
 ## 总结
 
@@ -255,5 +255,5 @@ Lealone渐进式SQL引擎通过创新的可暂停执行机制，成功解决了�
 未来，随着硬件性能的不断提升和应用场景的日益复杂，渐进式执行模式将成为数据库系统的重要发展方向，为构建高性能、高可用的数据服务提供坚实的基础。
 
 **Section sources**
-- [YieldableBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java#L1-L193)
-- [YieldableSelect.java](file://lealone-sql/src/main/java/com/lealone/sql/query/YieldableSelect.java#L20-L213)
+- [YieldableBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java#L1-L193)
+- [YieldableSelect.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/query/YieldableSelect.java#L20-L213)

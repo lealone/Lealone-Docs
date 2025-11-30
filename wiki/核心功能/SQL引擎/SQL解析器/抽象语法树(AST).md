@@ -2,20 +2,20 @@
 
 <cite>
 **本文档引用的文件**   
-- [ParsedSQLStatement.java](file://lealone-sci\src\main\java\com\lealone\sql\ParsedSQLStatement.java)
-- [Expression.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\Expression.java)
-- [Condition.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\condition\Condition.java)
-- [Function.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\function\Function.java)
-- [SubQuery.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\subquery\SubQuery.java)
-- [ExpressionColumn.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\ExpressionColumn.java)
-- [Select.java](file://lealone-sql\src\main\java\com\lealone\sql\query\Select.java)
-- [ExpressionVisitor.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\visitor\ExpressionVisitor.java)
-- [DependenciesVisitor.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\visitor\DependenciesVisitor.java)
-- [OptimizableVisitor.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\visitor\OptimizableVisitor.java)
-- [ExpressionVisitorFactory.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\visitor\ExpressionVisitorFactory.java)
-- [Alias.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\Alias.java)
-- [ValueExpression.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\ValueExpression.java)
-- [ExpressionList.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\ExpressionList.java)
+- [ParsedSQLStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-sci\src\main\java\com\lealone\sql\ParsedSQLStatement.java)
+- [Expression.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\Expression.java)
+- [Condition.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\condition\Condition.java)
+- [Function.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\function\Function.java)
+- [SubQuery.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\subquery\SubQuery.java)
+- [ExpressionColumn.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\ExpressionColumn.java)
+- [Select.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\query\Select.java)
+- [ExpressionVisitor.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\visitor\ExpressionVisitor.java)
+- [DependenciesVisitor.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\visitor\DependenciesVisitor.java)
+- [OptimizableVisitor.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\visitor\OptimizableVisitor.java)
+- [ExpressionVisitorFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\visitor\ExpressionVisitorFactory.java)
+- [Alias.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\Alias.java)
+- [ValueExpression.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\ValueExpression.java)
+- [ExpressionList.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\ExpressionList.java)
 </cite>
 
 ## 目录
@@ -183,16 +183,16 @@ Expression <|-- Wildcard
 ```
 
 **图源**
-- [Expression.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\Expression.java)
-- [Condition.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\condition\Condition.java)
-- [Function.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\function\Function.java)
-- [SubQuery.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\subquery\SubQuery.java)
-- [ExpressionColumn.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\ExpressionColumn.java)
-- [ParsedSQLStatement.java](file://lealone-sci\src\main\java\com\lealone\sql\ParsedSQLStatement.java)
+- [Expression.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\Expression.java)
+- [Condition.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\condition\Condition.java)
+- [Function.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\function\Function.java)
+- [SubQuery.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\subquery\SubQuery.java)
+- [ExpressionColumn.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\ExpressionColumn.java)
+- [ParsedSQLStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-sci\src\main\java\com\lealone\sql\ParsedSQLStatement.java)
 
 **本节来源**
-- [Expression.java](file://lealone-sql\src\main\java\lealone\sql\expression\Expression.java)
-- [ParsedSQLStatement.java](file://lealone-sci\src\main\java\com\lealone\sql\ParsedSQLStatement.java)
+- [Expression.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\lealone\sql\expression\Expression.java)
+- [ParsedSQLStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-sci\src\main\java\com\lealone\sql\ParsedSQLStatement.java)
 
 ## 核心节点类型
 
@@ -343,14 +343,14 @@ ExpressionVisitor <|-- UpdateAggregateVisitor
 ```
 
 **图源**
-- [ExpressionVisitor.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\visitor\ExpressionVisitor.java)
-- [DependenciesVisitor.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\visitor\DependenciesVisitor.java)
-- [OptimizableVisitor.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\visitor\OptimizableVisitor.java)
+- [ExpressionVisitor.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\visitor\ExpressionVisitor.java)
+- [DependenciesVisitor.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\visitor\DependenciesVisitor.java)
+- [OptimizableVisitor.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\visitor\OptimizableVisitor.java)
 
 **本节来源**
-- [ExpressionVisitor.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\visitor\ExpressionVisitor.java)
-- [DependenciesVisitor.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\visitor\DependenciesVisitor.java)
-- [OptimizableVisitor.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\visitor\OptimizableVisitor.java)
+- [ExpressionVisitor.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\visitor\ExpressionVisitor.java)
+- [DependenciesVisitor.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\visitor\DependenciesVisitor.java)
+- [OptimizableVisitor.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\visitor\OptimizableVisitor.java)
 
 ### ExpressionVisitorFactory工厂
 
@@ -382,12 +382,12 @@ ExpressionVisitorFactory --> OptimizableVisitor : "creates"
 ```
 
 **图源**
-- [ExpressionVisitorFactory.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\visitor\ExpressionVisitorFactory.java)
-- [DependenciesVisitor.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\visitor\DependenciesVisitor.java)
-- [OptimizableVisitor.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\visitor\OptimizableVisitor.java)
+- [ExpressionVisitorFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\visitor\ExpressionVisitorFactory.java)
+- [DependenciesVisitor.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\visitor\DependenciesVisitor.java)
+- [OptimizableVisitor.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\visitor\OptimizableVisitor.java)
 
 **本节来源**
-- [ExpressionVisitorFactory.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\visitor\ExpressionVisitorFactory.java)
+- [ExpressionVisitorFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\visitor\ExpressionVisitorFactory.java)
 
 ## AST在查询优化中的作用
 
@@ -424,13 +424,13 @@ AST->>Parser : 返回优化后的AST
 ```
 
 **图源**
-- [ParsedSQLStatement.java](file://lealone-sci\src\main\java\com\lealone\sql\ParsedSQLStatement.java)
-- [Select.java](file://lealone-sql\src\main\java\com\lealone\sql\query\Select.java)
-- [ExpressionVisitor.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\visitor\ExpressionVisitor.java)
+- [ParsedSQLStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-sci\src\main\java\com\lealone\sql\ParsedSQLStatement.java)
+- [Select.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\query\Select.java)
+- [ExpressionVisitor.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\visitor\ExpressionVisitor.java)
 
 **本节来源**
-- [ParsedSQLStatement.java](file://lealone-sci\src\main\java\com\lealone\sql\ParsedSQLStatement.java)
-- [Select.java](file://lealone-sql\src\main\java\com\lealone\sql\query\Select.java)
+- [ParsedSQLStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-sci\src\main\java\com\lealone\sql\ParsedSQLStatement.java)
+- [Select.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\query\Select.java)
 
 ## AST结构示例
 
@@ -457,12 +457,12 @@ G --> I[ValueExpression: 18]
 ```
 
 **图源**
-- [Select.java](file://lealone-sql\src\main\java\com\lealone\sql\query\Select.java)
-- [ExpressionColumn.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\ExpressionColumn.java)
-- [ValueExpression.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\ValueExpression.java)
+- [Select.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\query\Select.java)
+- [ExpressionColumn.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\ExpressionColumn.java)
+- [ValueExpression.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\ValueExpression.java)
 
 **本节来源**
-- [Select.java](file://lealone-sql\src\main\java\com\lealone\sql\query\Select.java)
+- [Select.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\query\Select.java)
 
 ### INSERT语句的AST结构
 
@@ -488,11 +488,11 @@ G --> J[ValueExpression: 25]
 ```
 
 **图源**
-- [Insert.java](file://lealone-sql\src\main\java\com\lealone\sql\dml\Insert.java)
-- [ValueExpression.java](file://lealone-sql\src\main\java\com\lealone\sql\expression\ValueExpression.java)
+- [Insert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\dml\Insert.java)
+- [ValueExpression.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\ValueExpression.java)
 
 **本节来源**
-- [Insert.java](file://lealone-sql\src\main\java\com\lealone\sql\dml\Insert.java)
+- [Insert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\dml\Insert.java)
 
 ## 元数据支持
 

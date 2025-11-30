@@ -2,13 +2,13 @@
 
 <cite>
 **本文引用的文件**
-- [BTreeCursor.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java)
-- [BTreeMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java)
-- [LeafPage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LeafPage.java)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java)
-- [PageOperations.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java)
-- [BTreeGC.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeGC.java)
-- [BTreeMapTest.java](file://lealone-test/src/test/java/com/lealone/test/aose/BTreeMapTest.java)
+- [BTreeCursor.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java)
+- [BTreeMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java)
+- [LeafPage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LeafPage.java)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java)
+- [PageOperations.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java)
+- [BTreeGC.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeGC.java)
+- [BTreeMapTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/aose/BTreeMapTest.java)
 </cite>
 
 ## 目录
@@ -52,16 +52,16 @@ end
 ```
 
 图表来源
-- [BTreeCursor.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L1-L124)
-- [BTreeMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L1-L200)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L1-L120)
-- [LeafPage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LeafPage.java#L1-L80)
-- [PageOperations.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L160-L280)
-- [BTreeGC.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeGC.java#L44-L94)
+- [BTreeCursor.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L1-L124)
+- [BTreeMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L1-L200)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L1-L120)
+- [LeafPage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LeafPage.java#L1-L80)
+- [PageOperations.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L160-L280)
+- [BTreeGC.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeGC.java#L44-L94)
 
 章节来源
-- [BTreeCursor.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L1-L124)
-- [BTreeMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L1-L200)
+- [BTreeCursor.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L1-L124)
+- [BTreeMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L1-L200)
 
 ## 核心组件
 - BTreeCursor：实现升序遍历，维护当前位置指针（包含页、索引、父位置），支持 next() 获取下一个键值对；构造时根据 CursorParameters.from 定位到 >=from 的首个叶页。
@@ -70,11 +70,11 @@ end
 - PageOperations：统一的写操作基类与具体实现（Put/PutIfAbsent/Remove），负责定位叶页、执行页内修改、替换页引用、必要时触发异步移除或分裂。
 
 章节来源
-- [BTreeCursor.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L1-L124)
-- [BTreeMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L330-L336)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L120-L200)
-- [LeafPage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LeafPage.java#L1-L80)
-- [PageOperations.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L160-L280)
+- [BTreeCursor.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L1-L124)
+- [BTreeMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L330-L336)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L120-L200)
+- [LeafPage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LeafPage.java#L1-L80)
+- [PageOperations.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L160-L280)
 
 ## 架构总览
 BTreeCursor 与 BTreeMap/LeafPage 的交互流程如下：
@@ -97,10 +97,10 @@ Cursor-->>Client : 返回键值对
 ```
 
 图表来源
-- [BTreeMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L330-L336)
-- [BTreeCursor.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L30-L94)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L272-L280)
-- [LeafPage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LeafPage.java#L1-L80)
+- [BTreeMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L330-L336)
+- [BTreeCursor.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L30-L94)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L272-L280)
+- [LeafPage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LeafPage.java#L1-L80)
 
 ## 详细组件分析
 
@@ -126,12 +126,12 @@ Pos --> End(["完成定位"])
 ```
 
 图表来源
-- [BTreeCursor.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L85-L94)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L162-L174)
+- [BTreeCursor.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L85-L94)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L162-L174)
 
 章节来源
-- [BTreeCursor.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L30-L94)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L162-L174)
+- [BTreeCursor.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L30-L94)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L162-L174)
 
 ### 路径追踪与叶节点移动
 - 路径追踪：CursorPos 结构保存“当前页、当前索引、父位置”，用于回溯到父节点并尝试下一个兄弟子页。
@@ -158,10 +158,10 @@ BTreeCursor --> CursorPos : "维护路径栈"
 ```
 
 图表来源
-- [BTreeCursor.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L1-L124)
+- [BTreeCursor.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L1-L124)
 
 章节来源
-- [BTreeCursor.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L62-L94)
+- [BTreeCursor.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L62-L94)
 
 ### 范围查询优化
 - 起始定位：通过 min(root, from) 使用二分搜索快速定位 >=from 的起始叶页，避免全表扫描。
@@ -169,8 +169,8 @@ BTreeCursor --> CursorPos : "维护路径栈"
 - 注意：当前实现未显示叶节点之间的双向链指针，因此范围扫描依赖页内顺序与父节点回溯，而非跨页双向链接。
 
 章节来源
-- [BTreeCursor.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L30-L94)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L162-L174)
+- [BTreeCursor.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L30-L94)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L162-L174)
 
 ### 与 BTreeMap 的交互
 - 游标创建：BTreeMap.cursor(parameters) 返回 BTreeCursor 实例。
@@ -195,14 +195,14 @@ Map-->>Client : 返回旧值
 ```
 
 图表来源
-- [BTreeMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L330-L336)
-- [PageOperations.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L181-L210)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L272-L280)
+- [BTreeMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L330-L336)
+- [PageOperations.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L181-L210)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L272-L280)
 
 章节来源
-- [BTreeMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L330-L336)
-- [PageOperations.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L181-L281)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L272-L280)
+- [BTreeMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L330-L336)
+- [PageOperations.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L181-L281)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L272-L280)
 
 ### 与 LeafPage 的交互
 - 取值：BTreeCursor.next() 通过叶页的 getKey(index)/getValue(index, ...) 获取键值。
@@ -228,12 +228,12 @@ BTreeCursor --> LeafPage : "读取键值"
 ```
 
 图表来源
-- [LeafPage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LeafPage.java#L1-L120)
-- [BTreeCursor.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L38-L60)
+- [LeafPage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LeafPage.java#L1-L120)
+- [BTreeCursor.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L38-L60)
 
 章节来源
-- [LeafPage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LeafPage.java#L1-L120)
-- [BTreeCursor.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L38-L60)
+- [LeafPage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LeafPage.java#L1-L120)
+- [BTreeCursor.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L38-L60)
 
 ### 写操作细节（Put/PutIfAbsent/Remove）
 - Put：若二分查找 index<0 表示插入，调用 insertLeaf；否则 setValue 更新现有值。
@@ -241,7 +241,7 @@ BTreeCursor --> LeafPage : "读取键值"
 - Remove：复制叶页后删除指定索引项，若叶页为空且非根页则异步移除该页。
 
 章节来源
-- [PageOperations.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L181-L281)
+- [PageOperations.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L181-L281)
 
 ## 依赖关系分析
 - BTreeCursor 依赖 BTreeMap 提供根页与子页数量信息，依赖 Page 接口的二分查找与下钻能力。
@@ -258,11 +258,11 @@ Ops --> Leaf
 ```
 
 图表来源
-- [BTreeCursor.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L1-L124)
-- [BTreeMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L330-L336)
-- [PageOperations.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L160-L280)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L272-L280)
-- [LeafPage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LeafPage.java#L1-L80)
+- [BTreeCursor.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L1-L124)
+- [BTreeMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L330-L336)
+- [PageOperations.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L160-L280)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L272-L280)
+- [LeafPage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LeafPage.java#L1-L80)
 
 ## 性能考量
 - 时间复杂度
@@ -280,8 +280,8 @@ Ops --> Leaf
   - 写多读少：分裂与复制页可能导致临时内存峰值，需关注 BTreeGC 触发频率。
 
 章节来源
-- [BTreeGC.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeGC.java#L44-L94)
-- [BTreeMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L558-L701)
+- [BTreeGC.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeGC.java#L44-L94)
+- [BTreeMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L558-L701)
 
 ## 故障排查指南
 - 游标无法前进
@@ -295,9 +295,9 @@ Ops --> Leaf
   - 检查是否存在大量短生命周期的写操作导致脏页堆积。
 
 章节来源
-- [BTreeCursor.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L62-L94)
-- [PageOperations.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L580-L701)
-- [BTreeGC.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeGC.java#L44-L94)
+- [BTreeCursor.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeCursor.java#L62-L94)
+- [PageOperations.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L580-L701)
+- [BTreeGC.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeGC.java#L44-L94)
 
 ## 结论
 BTreeCursor 通过路径追踪与二分查找实现了高效的范围扫描，next() 以 O(1) 的代价推进页内索引，整体范围查询具备良好的顺序访问特性。与 BTreeMap/LeafPage 的协作清晰：游标负责遍历，映射容器负责定位与写操作，叶页负责键值存取与内存统计。对于长时间运行的查询，建议结合外部调度与 BTreeGC 策略，避免内存压力与锁争用。
@@ -306,4 +306,4 @@ BTreeCursor 通过路径追踪与二分查找实现了高效的范围扫描，ne
 - 使用示例参考：测试用例展示了游标创建、范围扫描与基本 CRUD 行为。
 
 章节来源
-- [BTreeMapTest.java](file://lealone-test/src/test/java/com/lealone/test/aose/BTreeMapTest.java#L76-L90)
+- [BTreeMapTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/aose/BTreeMapTest.java#L76-L90)

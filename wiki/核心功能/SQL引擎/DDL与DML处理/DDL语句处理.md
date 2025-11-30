@@ -2,24 +2,24 @@
 
 <cite>
 **本文引用的文件**
-- [CreateTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java)
-- [CreateIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java)
-- [AlterTableAddConstraint.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java)
-- [CreateSequence.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateSequence.java)
-- [CreateView.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateView.java)
-- [AlterTableAlterColumn.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAlterColumn.java)
-- [DropTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/DropTable.java)
-- [DropIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/DropIndex.java)
-- [SchemaStatement.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/SchemaStatement.java)
-- [StatementBase.java](file://lealone-sql/src/main/java/com/lealone/sql/StatementBase.java)
-- [Table.java](file://lealone-db/src/main/java/com/lealone/db/table/Table.java)
-- [StandardTable.java](file://lealone-db/src/main/java/com/lealone/db/table/StandardTable.java)
-- [Index.java](file://lealone-db/src/main/java/com/lealone/db/index/Index.java)
-- [DbObjectLock.java](file://lealone-db/src/main/java/com/lealone/db/lock/DbObjectLock.java)
-- [Database.java](file://lealone-db/src/main/java/com/lealone/db/Database.java)
-- [TableAlterHistory.java](file://lealone-db/src/main/java/com/lealone/db/table/TableAlterHistory.java)
-- [OnlineDDLTest.java](file://lealone-test/src/test/java/com/lealone/test/sql/onlineddl/OnlineDDLTest.java)
-- [TransactionalDDLTest.java](file://lealone-test/src/test/java/com/lealone/test/sql/transaction/TransactionalDDLTest.java)
+- [CreateTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java)
+- [CreateIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java)
+- [AlterTableAddConstraint.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java)
+- [CreateSequence.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateSequence.java)
+- [CreateView.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateView.java)
+- [AlterTableAlterColumn.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAlterColumn.java)
+- [DropTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/DropTable.java)
+- [DropIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/DropIndex.java)
+- [SchemaStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/SchemaStatement.java)
+- [StatementBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/StatementBase.java)
+- [Table.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/Table.java)
+- [StandardTable.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/StandardTable.java)
+- [Index.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/index/Index.java)
+- [DbObjectLock.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/lock/DbObjectLock.java)
+- [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java)
+- [TableAlterHistory.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/TableAlterHistory.java)
+- [OnlineDDLTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/sql/onlineddl/OnlineDDLTest.java)
+- [TransactionalDDLTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/sql/transaction/TransactionalDDLTest.java)
 </cite>
 
 ## 目录
@@ -95,27 +95,27 @@ K --> P
 ```
 
 图表来源
-- [StatementBase.java](file://lealone-sql/src/main/java/com/lealone/sql/StatementBase.java#L1-L200)
-- [SchemaStatement.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/SchemaStatement.java#L1-L47)
-- [CreateTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L1-L246)
-- [CreateIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L1-L120)
-- [AlterTableAddConstraint.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L1-L328)
-- [AlterTableAlterColumn.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAlterColumn.java#L1-L347)
-- [CreateSequence.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateSequence.java#L1-L123)
-- [CreateView.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateView.java#L1-L137)
-- [DropTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/DropTable.java#L1-L140)
-- [DropIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/DropIndex.java#L1-L89)
-- [Table.java](file://lealone-db/src/main/java/com/lealone/db/table/Table.java#L1-L200)
-- [StandardTable.java](file://lealone-db/src/main/java/com/lealone/db/table/StandardTable.java#L1-L200)
-- [Index.java](file://lealone-db/src/main/java/com/lealone/db/index/Index.java#L1-L200)
-- [DbObjectLock.java](file://lealone-db/src/main/java/com/lealone/db/lock/DbObjectLock.java#L1-L53)
-- [Database.java](file://lealone-db/src/main/java/com/lealone/db/Database.java#L787-L828)
-- [TableAlterHistory.java](file://lealone-db/src/main/java/com/lealone/db/table/TableAlterHistory.java#L1-L106)
+- [StatementBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/StatementBase.java#L1-L200)
+- [SchemaStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/SchemaStatement.java#L1-L47)
+- [CreateTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L1-L246)
+- [CreateIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L1-L120)
+- [AlterTableAddConstraint.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L1-L328)
+- [AlterTableAlterColumn.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAlterColumn.java#L1-L347)
+- [CreateSequence.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateSequence.java#L1-L123)
+- [CreateView.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateView.java#L1-L137)
+- [DropTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/DropTable.java#L1-L140)
+- [DropIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/DropIndex.java#L1-L89)
+- [Table.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/Table.java#L1-L200)
+- [StandardTable.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/StandardTable.java#L1-L200)
+- [Index.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/index/Index.java#L1-L200)
+- [DbObjectLock.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/lock/DbObjectLock.java#L1-L53)
+- [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L787-L828)
+- [TableAlterHistory.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/TableAlterHistory.java#L1-L106)
 
 章节来源
-- [StatementBase.java](file://lealone-sql/src/main/java/com/lealone/sql/StatementBase.java#L1-L200)
-- [SchemaStatement.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/SchemaStatement.java#L1-L47)
-- [Table.java](file://lealone-db/src/main/java/com/lealone/db/table/Table.java#L1-L200)
+- [StatementBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/StatementBase.java#L1-L200)
+- [SchemaStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/SchemaStatement.java#L1-L47)
+- [Table.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/Table.java#L1-L200)
 
 ## 核心组件总览
 - StatementBase：所有SQL语句的抽象基类，负责参数、优先级、重编译检测、元数据修改ID等通用逻辑。
@@ -127,14 +127,14 @@ K --> P
 - TableAlterHistory：记录表结构变更历史，用于运行时重放以保持旧页面与新页面一致。
 
 章节来源
-- [StatementBase.java](file://lealone-sql/src/main/java/com/lealone/sql/StatementBase.java#L1-L200)
-- [SchemaStatement.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/SchemaStatement.java#L1-L47)
-- [Table.java](file://lealone-db/src/main/java/com/lealone/db/table/Table.java#L1-L200)
-- [StandardTable.java](file://lealone-db/src/main/java/com/lealone/db/table/StandardTable.java#L1-L200)
-- [Index.java](file://lealone-db/src/main/java/com/lealone/db/index/Index.java#L1-L200)
-- [DbObjectLock.java](file://lealone-db/src/main/java/com/lealone/db/lock/DbObjectLock.java#L1-L53)
-- [Database.java](file://lealone-db/src/main/java/com/lealone/db/Database.java#L787-L828)
-- [TableAlterHistory.java](file://lealone-db/src/main/java/com/lealone/db/table/TableAlterHistory.java#L1-L106)
+- [StatementBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/StatementBase.java#L1-L200)
+- [SchemaStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/SchemaStatement.java#L1-L47)
+- [Table.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/Table.java#L1-L200)
+- [StandardTable.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/StandardTable.java#L1-L200)
+- [Index.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/index/Index.java#L1-L200)
+- [DbObjectLock.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/lock/DbObjectLock.java#L1-L53)
+- [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L787-L828)
+- [TableAlterHistory.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/TableAlterHistory.java#L1-L106)
 
 ## 架构概览
 DDL执行流程遵循“解析—权限与锁—执行—元数据持久化—清理”的闭环。SchemaStatement在进入具体DDL前先尝试Schema级排它锁，随后按需对目标对象（表、索引、序列、视图）申请对象级锁，最后通过Database.updateMeta持久化元数据。
@@ -169,16 +169,16 @@ end
 ```
 
 图表来源
-- [CreateTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L142-L246)
-- [CreateIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L78-L118)
-- [AlterTableAddConstraint.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L142-L327)
-- [AlterTableAlterColumn.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAlterColumn.java#L108-L347)
-- [DropTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/DropTable.java#L128-L139)
-- [DropIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/DropIndex.java#L51-L87)
-- [SchemaStatement.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/SchemaStatement.java#L42-L46)
-- [DbObjectLock.java](file://lealone-db/src/main/java/com/lealone/db/lock/DbObjectLock.java#L32-L51)
-- [Database.java](file://lealone-db/src/main/java/com/lealone/db/Database.java#L803-L828)
-- [TableAlterHistory.java](file://lealone-db/src/main/java/com/lealone/db/table/TableAlterHistory.java#L88-L106)
+- [CreateTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L142-L246)
+- [CreateIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L78-L118)
+- [AlterTableAddConstraint.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L142-L327)
+- [AlterTableAlterColumn.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAlterColumn.java#L108-L347)
+- [DropTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/DropTable.java#L128-L139)
+- [DropIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/DropIndex.java#L51-L87)
+- [SchemaStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/SchemaStatement.java#L42-L46)
+- [DbObjectLock.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/lock/DbObjectLock.java#L32-L51)
+- [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L803-L828)
+- [TableAlterHistory.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/TableAlterHistory.java#L88-L106)
 
 ## 详细组件分析
 
@@ -217,12 +217,12 @@ GenCode --> |否| End(["结束"])
 ```
 
 图表来源
-- [CreateTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L119-L246)
+- [CreateTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L119-L246)
 
 章节来源
-- [CreateTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L119-L246)
-- [SchemaStatement.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/SchemaStatement.java#L42-L46)
-- [Database.java](file://lealone-db/src/main/java/com/lealone/db/Database.java#L803-L828)
+- [CreateTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L119-L246)
+- [SchemaStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/SchemaStatement.java#L42-L46)
+- [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L803-L828)
 
 ### CreateIndex（创建索引）
 - 关键点
@@ -248,11 +248,11 @@ Stmt-->>Stmt : 返回0
 ```
 
 图表来源
-- [CreateIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L78-L118)
+- [CreateIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L78-L118)
 
 章节来源
-- [CreateIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L78-L118)
-- [Table.java](file://lealone-db/src/main/java/com/lealone/db/table/Table.java#L148-L171)
+- [CreateIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L78-L118)
+- [Table.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/Table.java#L148-L171)
 
 ### AlterTableAddConstraint（添加约束）
 - 关键点
@@ -280,10 +280,10 @@ I --> J["返回0"]
 ```
 
 图表来源
-- [AlterTableAddConstraint.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L142-L327)
+- [AlterTableAddConstraint.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L142-L327)
 
 章节来源
-- [AlterTableAddConstraint.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L142-L327)
+- [AlterTableAddConstraint.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L142-L327)
 
 ### AlterTableAlterColumn（修改列）
 - 关键点
@@ -312,13 +312,13 @@ N5 --> End
 ```
 
 图表来源
-- [AlterTableAlterColumn.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAlterColumn.java#L108-L347)
-- [Database.java](file://lealone-db/src/main/java/com/lealone/db/Database.java#L803-L828)
+- [AlterTableAlterColumn.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAlterColumn.java#L108-L347)
+- [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L803-L828)
 
 章节来源
-- [AlterTableAlterColumn.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAlterColumn.java#L108-L347)
-- [SchemaStatement.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/SchemaStatement.java#L42-L46)
-- [Database.java](file://lealone-db/src/main/java/com/lealone/db/Database.java#L803-L828)
+- [AlterTableAlterColumn.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAlterColumn.java#L108-L347)
+- [SchemaStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/SchemaStatement.java#L42-L46)
+- [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L803-L828)
 
 ### CreateSequence（创建序列）
 - 关键点
@@ -328,7 +328,7 @@ N5 --> End
   - Schema级序列锁；重复名检查。
 
 章节来源
-- [CreateSequence.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateSequence.java#L87-L110)
+- [CreateSequence.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateSequence.java#L87-L110)
 
 ### CreateView（创建视图）
 - 关键点
@@ -338,7 +338,7 @@ N5 --> End
   - Schema级表/视图锁；权限校验。
 
 章节来源
-- [CreateView.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateView.java#L84-L136)
+- [CreateView.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateView.java#L84-L136)
 
 ### DropTable（删除表）
 - 关键点
@@ -348,8 +348,8 @@ N5 --> End
   - Schema级表/视图锁；表对象级锁；逐个执行链式删除。
 
 章节来源
-- [DropTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/DropTable.java#L128-L139)
-- [TableAlterHistory.java](file://lealone-db/src/main/java/com/lealone/db/table/TableAlterHistory.java#L97-L106)
+- [DropTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/DropTable.java#L128-L139)
+- [TableAlterHistory.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/TableAlterHistory.java#L97-L106)
 
 ### DropIndex（删除索引）
 - 关键点
@@ -359,7 +359,7 @@ N5 --> End
   - Schema级索引锁；权限校验。
 
 章节来源
-- [DropIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/DropIndex.java#L51-L87)
+- [DropIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/DropIndex.java#L51-L87)
 
 ## 依赖关系分析
 - StatementBase与各DDL语句：所有DDL继承自StatementBase，共享参数、优先级、重编译检测与元数据修改ID。
@@ -392,18 +392,18 @@ TBL --> HIST["TableAlterHistory"]
 ```
 
 图表来源
-- [StatementBase.java](file://lealone-sql/src/main/java/com/lealone/sql/StatementBase.java#L1-L200)
-- [SchemaStatement.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/SchemaStatement.java#L1-L47)
-- [CreateTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L142-L246)
-- [CreateIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L78-L118)
-- [AlterTableAddConstraint.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L142-L327)
-- [AlterTableAlterColumn.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAlterColumn.java#L108-L347)
-- [CreateSequence.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateSequence.java#L87-L110)
-- [CreateView.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateView.java#L84-L136)
-- [DropTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/DropTable.java#L128-L139)
-- [DropIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/DropIndex.java#L51-L87)
-- [Database.java](file://lealone-db/src/main/java/com/lealone/db/Database.java#L803-L828)
-- [TableAlterHistory.java](file://lealone-db/src/main/java/com/lealone/db/table/TableAlterHistory.java#L88-L106)
+- [StatementBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/StatementBase.java#L1-L200)
+- [SchemaStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/SchemaStatement.java#L1-L47)
+- [CreateTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L142-L246)
+- [CreateIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L78-L118)
+- [AlterTableAddConstraint.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L142-L327)
+- [AlterTableAlterColumn.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAlterColumn.java#L108-L347)
+- [CreateSequence.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateSequence.java#L87-L110)
+- [CreateView.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateView.java#L84-L136)
+- [DropTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/DropTable.java#L128-L139)
+- [DropIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/DropIndex.java#L51-L87)
+- [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L803-L828)
+- [TableAlterHistory.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/TableAlterHistory.java#L88-L106)
 
 ## 性能与并发特性
 - 锁粒度
@@ -420,10 +420,10 @@ TBL --> HIST["TableAlterHistory"]
   - 支持READ UNCOMMITTED/READ COMMITTED/REPEATABLE READ/SERIALIZABLE等隔离级别，影响可见性与并发控制。
 
 章节来源
-- [DbObjectLock.java](file://lealone-db/src/main/java/com/lealone/db/lock/DbObjectLock.java#L32-L51)
-- [Database.java](file://lealone-db/src/main/java/com/lealone/db/Database.java#L803-L828)
-- [StandardTable.java](file://lealone-db/src/main/java/com/lealone/db/table/StandardTable.java#L805-L867)
-- [OnlineDDLTest.java](file://lealone-test/src/test/java/com/lealone/test/sql/onlineddl/OnlineDDLTest.java#L1-L31)
+- [DbObjectLock.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/lock/DbObjectLock.java#L32-L51)
+- [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L803-L828)
+- [StandardTable.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/StandardTable.java#L805-L867)
+- [OnlineDDLTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/sql/onlineddl/OnlineDDLTest.java#L1-L31)
 
 ## 故障排查指南
 - 常见错误与定位
@@ -442,12 +442,12 @@ TBL --> HIST["TableAlterHistory"]
   - 在事务DDL测试中验证回滚与一致性。
 
 章节来源
-- [CreateIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L104-L118)
-- [AlterTableAddConstraint.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L150-L158)
-- [AlterTableAlterColumn.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAlterColumn.java#L261-L269)
-- [DropIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/DropIndex.java#L63-L85)
-- [DropTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/DropTable.java#L112-L126)
-- [TransactionalDDLTest.java](file://lealone-test/src/test/java/com/lealone/test/sql/transaction/TransactionalDDLTest.java#L20-L42)
+- [CreateIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L104-L118)
+- [AlterTableAddConstraint.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L150-L158)
+- [AlterTableAlterColumn.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAlterColumn.java#L261-L269)
+- [DropIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/DropIndex.java#L63-L85)
+- [DropTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/DropTable.java#L112-L126)
+- [TransactionalDDLTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/sql/transaction/TransactionalDDLTest.java#L20-L42)
 
 ## 结论
 Lealone的DDL体系以SchemaStatement为统一入口，结合DbObjectLock与Database.updateMeta实现强一致的元数据持久化。StandardTable通过TableAlterHistory在页面访问时重放变更，达成在线DDL的效果。DDL语句覆盖了表、索引、约束、序列、视图等主要特性，并在并发与事务层面提供了完善的保护与回滚机制。对于扩展新的DDL语句，建议遵循SchemaStatement的锁与权限模型，使用Database.updateMeta进行元数据持久化，并在必要时记录TableAlterHistory以支持在线DDL。
@@ -459,11 +459,11 @@ Lealone的DDL体系以SchemaStatement为统一入口，结合DbObjectLock与Data
   - 通过schema.add或Database.updateMeta持久化元数据。
   - 若涉及表结构变更，考虑记录TableAlterHistory以支持在线重放。
 - 示例参考路径
-  - [CreateTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L142-L246)
-  - [CreateIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L78-L118)
-  - [AlterTableAddConstraint.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L142-L327)
-  - [AlterTableAlterColumn.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAlterColumn.java#L108-L347)
-  - [CreateSequence.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateSequence.java#L87-L110)
-  - [CreateView.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateView.java#L84-L136)
-  - [DropTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/DropTable.java#L128-L139)
-  - [DropIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/DropIndex.java#L51-L87)
+  - [CreateTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L142-L246)
+  - [CreateIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L78-L118)
+  - [AlterTableAddConstraint.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L142-L327)
+  - [AlterTableAlterColumn.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAlterColumn.java#L108-L347)
+  - [CreateSequence.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateSequence.java#L87-L110)
+  - [CreateView.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateView.java#L84-L136)
+  - [DropTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/DropTable.java#L128-L139)
+  - [DropIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/DropIndex.java#L51-L87)

@@ -2,20 +2,20 @@
 
 <cite>
 **本文引用的文件列表**
-- [BioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java)
-- [NioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java)
-- [NetFactory.java](file://lealone-net/src/main/java/com/lealone/net/NetFactory.java)
-- [NetFactoryBase.java](file://lealone-net/src/main/java/com/lealone/net/NetFactoryBase.java)
-- [NetServer.java](file://lealone-net/src/main/java/com/lealone/net/NetServer.java)
-- [NetServerBase.java](file://lealone-net/src/main/java/com/lealone/net/NetServerBase.java)
-- [NioNetServer.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java)
-- [BioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java)
-- [BioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java)
-- [NioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java)
-- [NetEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/NetEventLoop.java)
-- [NetClientBase.java](file://lealone-net/src/main/java/com/lealone/net/NetClientBase.java)
-- [Constants.java](file://lealone-common/src/main/java/com/lealone/db/Constants.java)
+- [BioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java)
+- [NioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java)
+- [NetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetFactory.java)
+- [NetFactoryBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetFactoryBase.java)
+- [NetServer.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetServer.java)
+- [NetServerBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetServerBase.java)
+- [NioNetServer.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java)
+- [BioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java)
+- [BioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java)
+- [NioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java)
+- [NetEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetEventLoop.java)
+- [NetClientBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetClientBase.java)
+- [Constants.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/db/Constants.java)
 </cite>
 
 ## 目录
@@ -78,20 +78,20 @@ NNS --> NWC
 ```
 
 图表来源
-- [NetFactory.java](file://lealone-net/src/main/java/com/lealone/net/NetFactory.java#L1-L56)
-- [NetFactoryBase.java](file://lealone-net/src/main/java/com/lealone/net/NetFactoryBase.java#L1-L22)
-- [BioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L1-L37)
-- [NioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L1-L38)
-- [BioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L1-L73)
-- [BioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L1-L160)
-- [NioNetServer.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L1-L77)
-- [NioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L1-L136)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L1-L569)
+- [NetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetFactory.java#L1-L56)
+- [NetFactoryBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetFactoryBase.java#L1-L22)
+- [BioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L1-L37)
+- [NioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L1-L38)
+- [BioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L1-L73)
+- [BioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L1-L160)
+- [NioNetServer.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L1-L77)
+- [NioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L1-L136)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L1-L569)
 
 章节来源
-- [NetFactory.java](file://lealone-net/src/main/java/com/lealone/net/NetFactory.java#L1-L56)
-- [NetFactoryBase.java](file://lealone-net/src/main/java/com/lealone/net/NetFactoryBase.java#L1-L22)
-- [NetServerBase.java](file://lealone-net/src/main/java/com/lealone/net/NetServerBase.java#L1-L60)
+- [NetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetFactory.java#L1-L56)
+- [NetFactoryBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetFactoryBase.java#L1-L22)
+- [NetServerBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetServerBase.java#L1-L60)
 
 ## 核心组件
 - NetFactory：网络工厂接口，负责创建 NetServer、NetClient，并可扩展事件循环创建
@@ -105,16 +105,16 @@ NNS --> NWC
 - NioEventLoop：NIO 事件循环，负责注册/选择/读写/异常处理与资源回收
 
 章节来源
-- [NetFactory.java](file://lealone-net/src/main/java/com/lealone/net/NetFactory.java#L1-L56)
-- [NetFactoryBase.java](file://lealone-net/src/main/java/com/lealone/net/NetFactoryBase.java#L1-L22)
-- [BioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L1-L37)
-- [NioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L1-L38)
-- [NetServerBase.java](file://lealone-net/src/main/java/com/lealone/net/NetServerBase.java#L1-L60)
-- [NioNetServer.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L1-L77)
-- [BioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L1-L73)
-- [BioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L1-L160)
-- [NioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L1-L136)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L1-L569)
+- [NetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetFactory.java#L1-L56)
+- [NetFactoryBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetFactoryBase.java#L1-L22)
+- [BioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L1-L37)
+- [NioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L1-L38)
+- [NetServerBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetServerBase.java#L1-L60)
+- [NioNetServer.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L1-L77)
+- [BioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L1-L73)
+- [BioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L1-L160)
+- [NioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L1-L136)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L1-L569)
 
 ## 架构总览
 BIO 与 NIO 的核心差异体现在“连接模型”和“事件驱动”两个维度：
@@ -142,12 +142,12 @@ EL-->>C : 连接建立
 ```
 
 图表来源
-- [NetFactory.java](file://lealone-net/src/main/java/com/lealone/net/NetFactory.java#L34-L55)
-- [NioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L1-L38)
-- [BioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L1-L37)
-- [NioNetServer.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L25-L77)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L134-L145)
-- [NioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L1-L136)
+- [NetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetFactory.java#L34-L55)
+- [NioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L1-L38)
+- [BioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L1-L37)
+- [NioNetServer.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L25-L77)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L134-L145)
+- [NioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L1-L136)
 
 ## 详细组件分析
 
@@ -158,10 +158,10 @@ EL-->>C : 连接建立
 - NioNetFactory：提供 NIO 客户端、服务端与事件循环创建
 
 章节来源
-- [NetFactory.java](file://lealone-net/src/main/java/com/lealone/net/NetFactory.java#L34-L55)
-- [BioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L1-L37)
-- [NioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L1-L38)
-- [Constants.java](file://lealone-common/src/main/java/com/lealone/db/Constants.java#L45-L50)
+- [NetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetFactory.java#L34-L55)
+- [BioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L1-L37)
+- [NioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L1-L38)
+- [Constants.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/db/Constants.java#L45-L50)
 
 ### NIO 事件循环 NioEventLoop
 NioEventLoop 是 NIO 的核心，负责：
@@ -197,15 +197,15 @@ Cancel --> Wait
 ```
 
 图表来源
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L105-L145)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L156-L276)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L307-L438)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L440-L487)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L489-L569)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L105-L145)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L156-L276)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L307-L438)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L440-L487)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L489-L569)
 
 章节来源
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L1-L569)
-- [NetEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/NetEventLoop.java#L1-L52)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L1-L569)
+- [NetEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetEventLoop.java#L1-L52)
 
 ### NIO 服务端 NioNetServer
 - 启动：打开非阻塞 ServerSocketChannel，绑定地址，注册到连接管理器
@@ -213,30 +213,30 @@ Cancel --> Wait
 - 接收：accept() 获取 SocketChannel，配置非阻塞，包装为 NioWritableChannel，创建 AsyncConnection
 
 章节来源
-- [NioNetServer.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L25-L77)
-- [NetServerBase.java](file://lealone-net/src/main/java/com/lealone/net/NetServerBase.java#L19-L38)
+- [NioNetServer.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L25-L77)
+- [NetServerBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetServerBase.java#L19-L38)
 
 ### BIO 客户端 BioNetClient 与通道 BioWritableChannel
 - 客户端：创建 Socket，设置超时与 TCP 参数，包装为 BioWritableChannel，加入连接池
 - 通道：基于 InputStream/OutputStream 顺序读写，严格校验包长，异常时交由连接处理
 
 章节来源
-- [BioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L33-L73)
-- [BioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L104-L148)
+- [BioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L33-L73)
+- [BioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L104-L148)
 
 ### NIO 通道 NioWritableChannel
 - 维护缓冲队列，写入委托给 NioEventLoop 批量写出
 - 保持 SelectionKey 与 SocketChannel，关闭时回收缓冲并取消键
 
 章节来源
-- [NioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L76-L136)
+- [NioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L76-L136)
 
 ### NetClientBase 与连接池
 - 统一连接生命周期管理、超时检查、Socket 参数初始化
 - 基于 InetSocketAddress 作为连接池键，避免同地址重复连接
 
 章节来源
-- [NetClientBase.java](file://lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L30-L143)
+- [NetClientBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L30-L143)
 
 ## 依赖关系分析
 - NetFactory.getFactory(config) 从配置读取 net.factory.name，若未找到则抛出配置异常
@@ -259,19 +259,19 @@ NEL --> NWC
 ```
 
 图表来源
-- [Constants.java](file://lealone-common/src/main/java/com/lealone/db/Constants.java#L45-L50)
-- [NetFactory.java](file://lealone-net/src/main/java/com/lealone/net/NetFactory.java#L34-L55)
-- [NioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L22-L37)
-- [BioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L22-L35)
-- [NioNetServer.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L25-L38)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L63-L75)
+- [Constants.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/db/Constants.java#L45-L50)
+- [NetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetFactory.java#L34-L55)
+- [NioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L22-L37)
+- [BioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L22-L35)
+- [NioNetServer.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L25-L38)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L63-L75)
 
 章节来源
-- [NetFactory.java](file://lealone-net/src/main/java/com/lealone/net/NetFactory.java#L34-L55)
-- [NioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L22-L37)
-- [BioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L22-L35)
-- [NioNetServer.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L25-L38)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L63-L75)
+- [NetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetFactory.java#L34-L55)
+- [NioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetFactory.java#L22-L37)
+- [BioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L22-L35)
+- [NioNetServer.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetServer.java#L25-L38)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L63-L75)
 
 ## 性能考量
 - BIO
@@ -289,10 +289,10 @@ NEL --> NWC
   - 包大小限制：防止过大包导致内存压力
 
 章节来源
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L63-L75)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L332-L365)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L372-L407)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L564-L569)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L63-L75)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L332-L365)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L372-L407)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L564-L569)
 
 ## 故障排查指南
 - 绑定异常
@@ -307,11 +307,11 @@ NEL --> NWC
   - NetClientBase.checkTimeout 驱动连接池超时检查
 
 章节来源
-- [NetServerBase.java](file://lealone-net/src/main/java/com/lealone/net/NetServerBase.java#L39-L59)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L531-L547)
-- [BioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L60-L71)
-- [NetClientBase.java](file://lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L131-L141)
-- [NetClientBase.java](file://lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L123-L129)
+- [NetServerBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetServerBase.java#L39-L59)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L531-L547)
+- [BioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L60-L71)
+- [NetClientBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L131-L141)
+- [NetClientBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L123-L129)
 
 ## 结论
 - 在低并发、小规模部署或开发调试场景，BIO 更易用、实现简单
@@ -338,8 +338,8 @@ NEL --> NWC
   - 异常监控：关注 NioEventLoop 的异常日志与连接关闭统计
 
 章节来源
-- [NetFactory.java](file://lealone-net/src/main/java/com/lealone/net/NetFactory.java#L45-L55)
-- [NioEventLoop.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L63-L75)
-- [BioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L33-L46)
-- [NetClientBase.java](file://lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L131-L141)
-- [Constants.java](file://lealone-common/src/main/java/com/lealone/db/Constants.java#L45-L50)
+- [NetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetFactory.java#L45-L55)
+- [NioEventLoop.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioEventLoop.java#L63-L75)
+- [BioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L33-L46)
+- [NetClientBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L131-L141)
+- [Constants.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/db/Constants.java#L45-L50)

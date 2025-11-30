@@ -2,22 +2,22 @@
 
 <cite>
 **本文档引用的文件**   
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java)
-- [NodePage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/NodePage.java)
-- [LeafPage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LeafPage.java)
-- [PageStorageMode.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageStorageMode.java)
-- [PageLock.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageLock.java)
-- [PageOperations.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java)
-- [PageReference.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java)
-- [PrettyPagePrinter.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PrettyPagePrinter.java)
-- [RowPage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/RowPage.java)
-- [ColumnPage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/ColumnPage.java)
-- [KeyPage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/KeyPage.java)
-- [KeyValuePage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/KeyValuePage.java)
-- [ColumnsPage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/ColumnsPage.java)
-- [KeyColumnsPage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/KeyColumnsPage.java)
-- [LocalPage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LocalPage.java)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java)
+- [NodePage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/NodePage.java)
+- [LeafPage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LeafPage.java)
+- [PageStorageMode.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageStorageMode.java)
+- [PageLock.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageLock.java)
+- [PageOperations.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java)
+- [PageReference.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java)
+- [PrettyPagePrinter.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PrettyPagePrinter.java)
+- [RowPage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/RowPage.java)
+- [ColumnPage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/ColumnPage.java)
+- [KeyPage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/KeyPage.java)
+- [KeyValuePage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/KeyValuePage.java)
+- [ColumnsPage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/ColumnsPage.java)
+- [KeyColumnsPage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/KeyColumnsPage.java)
+- [LocalPage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LocalPage.java)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java)
 </cite>
 
 ## 目录
@@ -82,20 +82,20 @@ PrettyPagePrinter --> Page
 ```
 
 **图源**
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java)
-- [NodePage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/NodePage.java)
-- [LeafPage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LeafPage.java)
-- [PageReference.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java)
+- [NodePage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/NodePage.java)
+- [LeafPage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LeafPage.java)
+- [PageReference.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java)
 
 ## 核心组件
 B-Tree存储结构的核心组件包括`BTreeStorage`、`BTreeMap`、`NodePage`、`LeafPage`和`PageReference`。`BTreeStorage`负责管理B-Tree的整体结构，包括页面的读写、压缩、垃圾回收等。`BTreeMap`是B-Tree的映射接口，提供了插入、删除、查找等操作。`NodePage`和`LeafPage`分别表示B-Tree的内部节点和叶子节点，它们在内存和磁盘上的布局设计直接影响到B-Tree的性能。`PageReference`用于引用页面，支持页面的缓存和并发访问。
 
 **组件源**
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L35-L414)
-- [BTreeMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L1-L100)
-- [NodePage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/NodePage.java#L19-L278)
-- [LeafPage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LeafPage.java#L19-L259)
-- [PageReference.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L21-L417)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L35-L414)
+- [BTreeMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L1-L100)
+- [NodePage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/NodePage.java#L19-L278)
+- [LeafPage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LeafPage.java#L19-L259)
+- [PageReference.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L21-L417)
 
 ## B-Tree存储结构概述
 B-Tree存储结构通过`BTreeStorage`类进行管理，该类负责B-Tree的整体结构维护，包括页面的读写、压缩、垃圾回收等。`BTreeStorage`通过`ChunkManager`管理数据块，每个数据块包含多个页面。页面的读写操作通过`PageReference`进行，`PageReference`支持页面的缓存和并发访问。`BTreeStorage`还支持页面的压缩，通过`Compressor`接口实现，支持LZF和DEFLATE两种压缩算法。
@@ -188,8 +188,8 @@ BTreeStorage --> Compressor : "uses"
 ```
 
 **图源**
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L35-L414)
-- [BTreeMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L1-L100)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L35-L414)
+- [BTreeMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L1-L100)
 
 ## 详细组件分析
 
@@ -295,9 +295,9 @@ LocalPage --> Page
 ```
 
 **图源**
-- [NodePage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/NodePage.java#L19-L278)
-- [LocalPage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LocalPage.java#L12-L168)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L20-L377)
+- [NodePage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/NodePage.java#L19-L278)
+- [LocalPage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LocalPage.java#L12-L168)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L20-L377)
 
 ### LeafPage分析
 `LeafPage`类表示B-Tree的叶子节点，它包含键值对或仅包含键。`LeafPage`的内存布局设计为两个数组，一个用于存储键，另一个用于存储值。当`LeafPage`需要分裂时，会创建一个新的`LeafPage`，并将一半的键值对移动到新节点中。`LeafPage`的分裂操作是B-Tree保持平衡的关键。
@@ -405,9 +405,9 @@ LocalPage --> Page
 ```
 
 **图源**
-- [LeafPage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LeafPage.java#L19-L259)
-- [LocalPage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LocalPage.java#L12-L168)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L20-L377)
+- [LeafPage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LeafPage.java#L19-L259)
+- [LocalPage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/LocalPage.java#L12-L168)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L20-L377)
 
 ### PageStorageMode分析
 `PageStorageMode`枚举定义了不同的存储模式，包括行存储（ROW_STORAGE）和列存储（COLUMN_STORAGE）。行存储模式将每行数据作为一个整体存储，适用于频繁的行级操作。列存储模式将每列数据分开存储，适用于频繁的列级操作。`PageStorageMode`的实现通过`Page`类的`create`方法根据存储模式创建相应的页面类型。
@@ -468,8 +468,8 @@ PageStorageMode --> Page : "uses"
 ```
 
 **图源**
-- [PageStorageMode.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageStorageMode.java#L8-L12)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L20-L377)
+- [PageStorageMode.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageStorageMode.java#L8-L12)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L20-L377)
 
 ### PageLock分析
 `PageLock`类用于实现页面级别的锁机制，支持高并发环境下的读写操作。`PageLock`通过`SchedulerLock`实现，支持非阻塞和阻塞两种模式。`PageLock`的实现确保了在多线程环境下对页面的并发访问是线程安全的。
@@ -494,8 +494,8 @@ PageLock --> Lock : "extends"
 ```
 
 **图源**
-- [PageLock.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageLock.java#L11-L34)
-- [Lock.java](file://lealone-common/src/main/java/com/lealone/db/lock/Lock.java#L1-L10)
+- [PageLock.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageLock.java#L11-L34)
+- [Lock.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/db/lock/Lock.java#L1-L10)
 
 ### PageOperations分析
 `PageOperations`类定义了页面操作的抽象基类，包括写操作（Put、PutIfAbsent、Remove、Append）和子操作（RemovePage、SplitPage）。`PageOperations`通过`PageReference`进行页面的读写操作，支持异步和同步两种模式。`PageOperations`的实现确保了在高并发环境下对页面的并发访问是线程安全的。
@@ -602,7 +602,7 @@ PageOperations --> TmpNodePage
 ```
 
 **图源**
-- [PageOperations.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L20-L520)
+- [PageOperations.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L20-L520)
 
 ### PageReference分析
 `PageReference`类用于引用页面，支持页面的缓存和并发访问。`PageReference`通过`AtomicReferenceFieldUpdater`实现线程安全的页面引用更新。`PageReference`的实现确保了在多线程环境下对页面的并发访问是线程安全的。
@@ -693,8 +693,8 @@ PageReference --> PageInfo : "uses"
 ```
 
 **图源**
-- [PageReference.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L21-L417)
-- [PageInfo.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageInfo.java#L1-L100)
+- [PageReference.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L21-L417)
+- [PageInfo.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageInfo.java#L1-L100)
 
 ### PrettyPagePrinter分析
 `PrettyPagePrinter`类用于打印出漂亮的由页面组成的B-Tree结构，支持在线和离线页面的打印。`PrettyPagePrinter`的实现通过递归遍历B-Tree的节点，生成详细的页面信息。
@@ -722,8 +722,8 @@ PrettyPagePrinter --> PrettyPageInfo : "uses"
 ```
 
 **图源**
-- [PrettyPagePrinter.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PrettyPagePrinter.java#L9-L118)
-- [PrettyPageInfo.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PrettyPageInfo.java#L1-L10)
+- [PrettyPagePrinter.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PrettyPagePrinter.java#L9-L118)
+- [PrettyPageInfo.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PrettyPageInfo.java#L1-L10)
 
 ## 依赖分析
 B-Tree存储结构的各个组件之间存在紧密的依赖关系。`BTreeStorage`依赖于`BTreeMap`、`ChunkManager`、`ChunkCompactor`和`BTreeGC`，`BTreeMap`依赖于`Page`和`PageReference`，`Page`依赖于`NodePage`和`LeafPage`，`PageReference`依赖于`PageInfo`和`PageLock`。这些依赖关系确保了B-Tree存储结构的各个组件能够协同工作，实现高效的插入、删除和查找操作。
@@ -746,14 +746,14 @@ PrettyPagePrinter --> Page
 ```
 
 **图源**
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L35-L414)
-- [BTreeMap.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L1-L100)
-- [Page.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L20-L377)
-- [PageReference.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L21-L417)
-- [PageInfo.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageInfo.java#L1-L100)
-- [PageLock.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageLock.java#L11-L34)
-- [PageOperations.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L20-L520)
-- [PrettyPagePrinter.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PrettyPagePrinter.java#L9-L118)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L35-L414)
+- [BTreeMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeMap.java#L1-L100)
+- [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java#L20-L377)
+- [PageReference.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java#L21-L417)
+- [PageInfo.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageInfo.java#L1-L100)
+- [PageLock.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageLock.java#L11-L34)
+- [PageOperations.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageOperations.java#L20-L520)
+- [PrettyPagePrinter.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PrettyPagePrinter.java#L9-L118)
 
 ## 性能考虑
 B-Tree存储结构在设计时充分考虑了性能优化。通过页面的压缩和缓存机制，减少了磁盘I/O操作，提高了读写性能。`BTreeStorage`支持页面的异步写入，减少了写操作的延迟。`PageReference`通过`AtomicReferenceFieldUpdater`实现线程安全的页面引用更新，确保了在高并发环境下的性能。`PageOperations`通过`SchedulerLock`实现非阻塞和阻塞两种模式，支持高并发环境下的读写操作。
@@ -762,7 +762,7 @@ B-Tree存储结构在设计时充分考虑了性能优化。通过页面的压�
 在使用B-Tree存储结构时，可能会遇到一些常见问题。例如，页面分裂失败、页面合并失败、页面读写失败等。这些问题通常可以通过检查日志文件、调试代码、优化配置等方式解决。`PrettyPagePrinter`类提供了详细的页面信息打印功能，有助于快速定位问题。
 
 **组件源**
-- [PrettyPagePrinter.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PrettyPagePrinter.java#L9-L118)
+- [PrettyPagePrinter.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PrettyPagePrinter.java#L9-L118)
 
 ## 结论
 本文档详细解析了Lealone数据库中B-Tree存储结构的实现。通过深入分析`BTreeStorage`、`BTreeMap`、`NodePage`、`LeafPage`、`PageReference`等核心组件，阐述了B-Tree的整体结构、页面的内存与磁盘布局设计、以及它们在读写操作中的协作机制。此外，还详细说明了`PageStorageMode`中定义的不同存储模式的实现原理和性能特征，结合代码示例展示了B-Tree的插入、查找、分裂和合并操作流程，分析了其在高并发环境下的锁机制和性能优化策略。希望本文档能帮助开发者更好地理解和使用B-Tree存储结构。

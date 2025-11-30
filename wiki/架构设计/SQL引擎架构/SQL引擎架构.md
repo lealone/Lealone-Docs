@@ -2,20 +2,20 @@
 
 <cite>
 **本文档引用的文件**   
-- [LealoneSQLParser.java](file://lealone-sql/src/main/java/com/lealone/sql/LealoneSQLParser.java)
-- [SQLParserBase.java](file://lealone-sql/src/main/java/com/lealone/sql/SQLParserBase.java)
-- [LealoneSQLEngine.java](file://lealone-sql/src/main/java/com/lealone/sql/LealoneSQLEngine.java)
-- [SQLEngineBase.java](file://lealone-sql/src/main/java/com/lealone/sql/SQLEngineBase.java)
-- [Optimizer.java](file://lealone-sql/src/main/java/com/lealone/sql/optimizer/Optimizer.java)
-- [TableFilter.java](file://lealone-sql/src/main/java/com/lealone/sql/optimizer/TableFilter.java)
-- [Select.java](file://lealone-sql/src/main/java/com/lealone/sql/query/Select.java)
-- [YieldableBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java)
-- [YieldableSelect.java](file://lealone-sql/src/main/java/com/lealone/sql/query/YieldableSelect.java)
-- [Database.java](file://lealone-db/src/main/java/com/lealone/db/Database.java)
-- [ServerSession.java](file://lealone-db/src/main/java/com/lealone/db/session/ServerSession.java)
-- [StatementBase.java](file://lealone-sql/src/main/java/com/lealone/sql/StatementBase.java)
-- [Function.java](file://lealone-sql/src/main/java/com/lealone/sql/expression/function/Function.java)
-- [BuiltInFunctionFactory.java](file://lealone-sql/src/main/java/com/lealone/sql/expression/function/BuiltInFunctionFactory.java)
+- [LealoneSQLParser.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/LealoneSQLParser.java)
+- [SQLParserBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/SQLParserBase.java)
+- [LealoneSQLEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/LealoneSQLEngine.java)
+- [SQLEngineBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/SQLEngineBase.java)
+- [Optimizer.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/optimizer/Optimizer.java)
+- [TableFilter.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/optimizer/TableFilter.java)
+- [Select.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/query/Select.java)
+- [YieldableBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java)
+- [YieldableSelect.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/query/YieldableSelect.java)
+- [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java)
+- [ServerSession.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/session/ServerSession.java)
+- [StatementBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/StatementBase.java)
+- [Function.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/expression/function/Function.java)
+- [BuiltInFunctionFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/expression/function/BuiltInFunctionFactory.java)
 </cite>
 
 ## 目录
@@ -32,8 +32,8 @@
 Lealone SQL引擎是数据库系统的核心组件，负责处理SQL语句的解析、优化和执行。该引擎采用分层架构设计，从词法分析到物理执行，每个阶段都有明确的职责划分。SQL引擎通过`LealoneSQLEngine`和`LealoneSQLParser`类提供SQL处理能力，支持标准SQL语法和自定义扩展。引擎的设计注重性能和可扩展性，通过优化器生成高效的执行计划，并利用渐进式执行机制支持长时间运行的查询。
 
 **Section sources**
-- [LealoneSQLEngine.java](file://lealone-sql/src/main/java/com/lealone/sql/LealoneSQLEngine.java#L1-L27)
-- [LealoneSQLParser.java](file://lealone-sql/src/main/java/com/lealone/sql/LealoneSQLParser.java#L1-L15)
+- [LealoneSQLEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/LealoneSQLEngine.java#L1-L27)
+- [LealoneSQLParser.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/LealoneSQLParser.java#L1-L15)
 
 ## SQL解析流程
 
@@ -54,7 +54,7 @@ F --> G[查询计划]
 ```
 
 **Diagram sources**
-- [SQLParserBase.java](file://lealone-sql/src/main/java/com/lealone/sql/SQLParserBase.java#L189-L197)
+- [SQLParserBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/SQLParserBase.java#L189-L197)
 
 ### 语法分析
 
@@ -85,17 +85,17 @@ SQLParserBase --> LealoneSQLEngine : 被调用
 ```
 
 **Diagram sources**
-- [LealoneSQLEngine.java](file://lealone-sql/src/main/java/com/lealone/sql/LealoneSQLEngine.java#L11-L26)
-- [LealoneSQLParser.java](file://lealone-sql/src/main/java/com/lealone/sql/LealoneSQLParser.java#L10-L14)
-- [SQLParserBase.java](file://lealone-sql/src/main/java/com/lealone/sql/SQLParserBase.java#L279-L311)
+- [LealoneSQLEngine.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/LealoneSQLEngine.java#L11-L26)
+- [LealoneSQLParser.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/LealoneSQLParser.java#L10-L14)
+- [SQLParserBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/SQLParserBase.java#L279-L311)
 
 ### 语义分析
 
 语义分析器验证SQL语句的语义正确性，包括表和列的存在性、数据类型兼容性、权限检查等。`TableFilter`类在语义分析阶段解析表引用，建立表与查询的关联。分析器还处理别名、自然连接等复杂语义，并为后续的优化阶段准备信息。
 
 **Section sources**
-- [SQLParserBase.java](file://lealone-sql/src/main/java/com/lealone/sql/SQLParserBase.java#L235-L311)
-- [TableFilter.java](file://lealone-sql/src/main/java/com/lealone/sql/optimizer/TableFilter.java#L122-L133)
+- [SQLParserBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/SQLParserBase.java#L235-L311)
+- [TableFilter.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/optimizer/TableFilter.java#L122-L133)
 
 ## 查询优化器
 
@@ -141,9 +141,9 @@ Plan --> TableFilter : 包含
 ```
 
 **Diagram sources**
-- [Optimizer.java](file://lealone-sql/src/main/java/com/lealone/sql/optimizer/Optimizer.java#L24-L282)
-- [Plan.java](file://lealone-sql/src/main/java/com/lealone/sql/optimizer/Plan.java#L21-L116)
-- [TableFilter.java](file://lealone-sql/src/main/java/com/lealone/sql/optimizer/TableFilter.java#L155-L204)
+- [Optimizer.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/optimizer/Optimizer.java#L24-L282)
+- [Plan.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/optimizer/Plan.java#L21-L116)
+- [TableFilter.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/optimizer/TableFilter.java#L155-L204)
 
 ### 索引选择
 
@@ -164,8 +164,8 @@ T->>O : 返回最佳PlanItem
 ```
 
 **Diagram sources**
-- [Optimizer.java](file://lealone-sql/src/main/java/com/lealone/sql/optimizer/Optimizer.java#L262-L280)
-- [TableFilter.java](file://lealone-sql/src/main/java/com/lealone/sql/optimizer/TableFilter.java#L155-L204)
+- [Optimizer.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/optimizer/Optimizer.java#L262-L280)
+- [TableFilter.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/optimizer/TableFilter.java#L155-L204)
 
 ### 连接顺序优化
 
@@ -178,7 +178,7 @@ T->>O : 返回最佳PlanItem
 优化器通过`calculateBruteForceAll`、`calculateBruteForceSome`和`calculateGenetic`方法实现这些策略，平衡优化时间和执行效率。
 
 **Section sources**
-- [Optimizer.java](file://lealone-sql/src/main/java/com/lealone/sql/optimizer/Optimizer.java#L87-L191)
+- [Optimizer.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/optimizer/Optimizer.java#L87-L191)
 
 ## 渐进式查询执行
 
@@ -219,8 +219,8 @@ YieldableBase --> ServerSession : 关联
 ```
 
 **Diagram sources**
-- [YieldableBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java#L26-L193)
-- [YieldableSelect.java](file://lealone-sql/src/main/java/com/lealone/sql/query/YieldableSelect.java#L20-L213)
+- [YieldableBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java#L26-L193)
+- [YieldableSelect.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/query/YieldableSelect.java#L20-L213)
 
 ### 执行流程
 
@@ -257,8 +257,8 @@ T --> Y[循环]
 ```
 
 **Diagram sources**
-- [YieldableSelect.java](file://lealone-sql/src/main/java/com/lealone/sql/query/YieldableSelect.java#L89-L117)
-- [TableFilter.java](file://lealone-sql/src/main/java/com/lealone/sql/optimizer/TableFilter.java#L308-L393)
+- [YieldableSelect.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/query/YieldableSelect.java#L89-L117)
+- [TableFilter.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/optimizer/TableFilter.java#L308-L393)
 
 ## 与事务和存储引擎的协同
 
@@ -288,8 +288,8 @@ S-->>C : 响应
 ```
 
 **Diagram sources**
-- [ServerSession.java](file://lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L500-L564)
-- [Database.java](file://lealone-db/src/main/java/com/lealone/db/Database.java#L596-L759)
+- [ServerSession.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L500-L564)
+- [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L596-L759)
 
 ### 存储协同
 
@@ -333,9 +333,9 @@ Index --> Storage : 访问
 ```
 
 **Diagram sources**
-- [Database.java](file://lealone-db/src/main/java/com/lealone/db/Database.java#L190-L192)
-- [ServerSession.java](file://lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L133-L151)
-- [Select.java](file://lealone-sql/src/main/java/com/lealone/sql/query/Select.java#L538-L557)
+- [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L190-L192)
+- [ServerSession.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/session/ServerSession.java#L133-L151)
+- [Select.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/query/Select.java#L538-L557)
 
 ## 扩展开发指南
 
@@ -367,7 +367,7 @@ public class CustomSQLParser extends SQLParserBase {
 ```
 
 **Section sources**
-- [SQLParserBase.java](file://lealone-sql/src/main/java/com/lealone/sql/SQLParserBase.java#L542-L544)
+- [SQLParserBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/SQLParserBase.java#L542-L544)
 
 ### 自定义函数开发
 
@@ -404,8 +404,8 @@ FunctionInfo --> Function : 配置
 ```
 
 **Diagram sources**
-- [Function.java](file://lealone-sql/src/main/java/com/lealone/sql/expression/function/Function.java#L26-L230)
-- [BuiltInFunctionFactory.java](file://lealone-sql/src/main/java/com/lealone/sql/expression/function/BuiltInFunctionFactory.java#L10-L40)
+- [Function.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/expression/function/Function.java#L26-L230)
+- [BuiltInFunctionFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/expression/function/BuiltInFunctionFactory.java#L10-L40)
 
 ### 查询性能分析
 
@@ -429,8 +429,8 @@ for (QueryStatisticsData.Entry entry : entries) {
 ```
 
 **Section sources**
-- [Database.java](file://lealone-db/src/main/java/com/lealone/db/Database.java#L183-L184)
-- [StatementBase.java](file://lealone-sql/src/main/java/com/lealone/sql/StatementBase.java#L348-L362)
+- [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java#L183-L184)
+- [StatementBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/StatementBase.java#L348-L362)
 
 ## 结论
 

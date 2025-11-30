@@ -2,28 +2,28 @@
 
 <cite>
 **本文引用的文件**
-- [CreateTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java)
-- [CreateIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java)
-- [AlterTableAddConstraint.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java)
-- [Insert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java)
-- [Update.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Update.java)
-- [Delete.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java)
-- [MerSert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java)
-- [UpDel.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java)
-- [YieldableUpdateBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableUpdateBase.java)
-- [Table.java](file://lealone-db/src/main/java/com/lealone/db/table/Table.java)
-- [Constraint.java](file://lealone-db/src/main/java/com/lealone/db/constraint/Constraint.java)
-- [ConstraintCheck.java](file://lealone-db/src/main/java/com/lealone/db/constraint/ConstraintCheck.java)
-- [ConstraintReferential.java](file://lealone-db/src/main/java/com/lealone/db/constraint/ConstraintReferential.java)
-- [TriggerObject.java](file://lealone-db/src/main/java/com/lealone/db/schema/TriggerObject.java)
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java)
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java)
-- [RedoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java)
-- [LogSyncService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java)
-- [RowType.java](file://lealone-db/src/main/java/com/lealone/db/row/RowType.java)
-- [TableAlterHistory.java](file://lealone-db/src/main/java/com/lealone/db/table/TableAlterHistory.java)
-- [StandardTable.java](file://lealone-db/src/main/java/com/lealone/db/table/StandardTable.java)
+- [CreateTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java)
+- [CreateIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java)
+- [AlterTableAddConstraint.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java)
+- [Insert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java)
+- [Update.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Update.java)
+- [Delete.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java)
+- [MerSert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java)
+- [UpDel.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java)
+- [YieldableUpdateBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableUpdateBase.java)
+- [Table.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/Table.java)
+- [Constraint.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/constraint/Constraint.java)
+- [ConstraintCheck.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/constraint/ConstraintCheck.java)
+- [ConstraintReferential.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/constraint/ConstraintReferential.java)
+- [TriggerObject.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/schema/TriggerObject.java)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java)
+- [RedoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java)
+- [LogSyncService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java)
+- [RowType.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/row/RowType.java)
+- [TableAlterHistory.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/TableAlterHistory.java)
+- [StandardTable.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/StandardTable.java)
 </cite>
 
 ## 目录
@@ -89,30 +89,30 @@ ROWT --> TBL
 ```
 
 图表来源
-- [CreateTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L1-L246)
-- [CreateIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L1-L118)
-- [AlterTableAddConstraint.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L1-L327)
-- [Insert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L1-L74)
-- [Update.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L1-L180)
-- [Delete.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L1-L97)
-- [YieldableUpdateBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableUpdateBase.java#L1-L21)
-- [Table.java](file://lealone-db/src/main/java/com/lealone/db/table/Table.java#L1-L200)
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L1-L35)
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L403-L452)
-- [RedoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L84-L160)
-- [LogSyncService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L298-L320)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
-- [RowType.java](file://lealone-db/src/main/java/com/lealone/db/row/RowType.java#L233-L264)
+- [CreateTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L1-L246)
+- [CreateIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L1-L118)
+- [AlterTableAddConstraint.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L1-L327)
+- [Insert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L1-L74)
+- [Update.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L1-L180)
+- [Delete.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L1-L97)
+- [YieldableUpdateBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableUpdateBase.java#L1-L21)
+- [Table.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/Table.java#L1-L200)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L1-L35)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L403-L452)
+- [RedoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L84-L160)
+- [LogSyncService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L298-L320)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
+- [RowType.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/row/RowType.java#L233-L264)
 
 章节来源
-- [CreateTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L1-L246)
-- [CreateIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L1-L118)
-- [AlterTableAddConstraint.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L1-L327)
-- [Insert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L1-L74)
-- [Update.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L1-L180)
-- [Delete.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L1-L97)
-- [YieldableUpdateBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableUpdateBase.java#L1-L21)
-- [Table.java](file://lealone-db/src/main/java/com/lealone/db/table/Table.java#L1-L200)
+- [CreateTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L1-L246)
+- [CreateIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L1-L118)
+- [AlterTableAddConstraint.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L1-L327)
+- [Insert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L1-L74)
+- [Update.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L1-L180)
+- [Delete.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L1-L97)
+- [YieldableUpdateBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableUpdateBase.java#L1-L21)
+- [Table.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/Table.java#L1-L200)
 
 ## 核心组件
 - DDL语句处理器
@@ -133,22 +133,22 @@ ROWT --> TBL
   - RowType：行元数据版本，配合表版本进行重放与索引重建
 
 章节来源
-- [CreateTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L1-L246)
-- [CreateIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L1-L118)
-- [AlterTableAddConstraint.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L1-L327)
-- [Insert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L1-L74)
-- [Update.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L1-L180)
-- [Delete.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L1-L97)
-- [MerSert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L1-L323)
-- [UpDel.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L1-L184)
-- [YieldableUpdateBase.java](file://lealone-sql/src/main/java/com/lealone/sql/executor/YieldableUpdateBase.java#L1-L21)
-- [Table.java](file://lealone-db/src/main/java/com/lealone/db/table/Table.java#L1-L200)
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L1-L35)
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L403-L452)
-- [RedoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L84-L160)
-- [LogSyncService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L298-L320)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
-- [RowType.java](file://lealone-db/src/main/java/com/lealone/db/row/RowType.java#L233-L264)
+- [CreateTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L1-L246)
+- [CreateIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L1-L118)
+- [AlterTableAddConstraint.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L1-L327)
+- [Insert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L1-L74)
+- [Update.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L1-L180)
+- [Delete.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L1-L97)
+- [MerSert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L1-L323)
+- [UpDel.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L1-L184)
+- [YieldableUpdateBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableUpdateBase.java#L1-L21)
+- [Table.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/Table.java#L1-L200)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L1-L35)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L403-L452)
+- [RedoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L84-L160)
+- [LogSyncService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L298-L320)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
+- [RowType.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/row/RowType.java#L233-L264)
 
 ## 架构总览
 DDL/DML处理贯穿SQL解析、权限与锁、表/索引/约束/触发器、事务日志与存储引擎。下图展示关键交互：
@@ -180,16 +180,16 @@ end
 ```
 
 图表来源
-- [CreateTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L142-L246)
-- [CreateIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L78-L118)
-- [AlterTableAddConstraint.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L142-L327)
-- [Insert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L45-L74)
-- [Update.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L104-L180)
-- [Delete.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L55-L97)
-- [Table.java](file://lealone-db/src/main/java/com/lealone/db/table/Table.java#L148-L206)
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L1-L35)
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L403-L452)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
+- [CreateTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L142-L246)
+- [CreateIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L78-L118)
+- [AlterTableAddConstraint.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L142-L327)
+- [Insert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L45-L74)
+- [Update.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L104-L180)
+- [Delete.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L55-L97)
+- [Table.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/Table.java#L148-L206)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L1-L35)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L403-L452)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
 
 ## 详细组件分析
 
@@ -229,10 +229,10 @@ CT->>CT : 生成代码可选
 ```
 
 图表来源
-- [CreateTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L142-L246)
+- [CreateTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L142-L246)
 
 章节来源
-- [CreateTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L1-L246)
+- [CreateTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L1-L246)
 
 ### DDL：CreateIndex
 - 关键职责
@@ -264,10 +264,10 @@ CI->>Tbl : addIndex(session, indexName, id, cols, type, create, comment, lock)
 ```
 
 图表来源
-- [CreateIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L78-L118)
+- [CreateIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L78-L118)
 
 章节来源
-- [CreateIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L1-L118)
+- [CreateIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L1-L118)
 
 ### DDL：AlterTableAddConstraint
 - 关键职责
@@ -303,10 +303,10 @@ ATAC->>Ref : 可选检查现有数据
 ```
 
 图表来源
-- [AlterTableAddConstraint.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L142-L327)
+- [AlterTableAddConstraint.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L142-L327)
 
 章节来源
-- [AlterTableAddConstraint.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L1-L327)
+- [AlterTableAddConstraint.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L1-L327)
 
 ### DML：Insert/Update/Delete
 - 继承关系与执行器
@@ -339,18 +339,18 @@ M->>T : fire(INSERT, before=false)
 ```
 
 图表来源
-- [Insert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L45-L74)
-- [MerSert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L168-L323)
-- [UpDel.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L81-L184)
-- [Table.java](file://lealone-db/src/main/java/com/lealone/db/table/Table.java#L818-L935)
+- [Insert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L45-L74)
+- [MerSert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L168-L323)
+- [UpDel.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L81-L184)
+- [Table.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/Table.java#L818-L935)
 
 章节来源
-- [Insert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L1-L74)
-- [Update.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L1-L180)
-- [Delete.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L1-L97)
-- [MerSert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L1-L323)
-- [UpDel.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L1-L184)
-- [Table.java](file://lealone-db/src/main/java/com/lealone/db/table/Table.java#L818-L935)
+- [Insert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L1-L74)
+- [Update.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L1-L180)
+- [Delete.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L1-L97)
+- [MerSert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/MerSert.java#L1-L323)
+- [UpDel.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L1-L184)
+- [Table.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/Table.java#L818-L935)
 
 ### 行锁管理与事务日志
 - 行锁
@@ -379,23 +379,23 @@ SyncWrite --> Done
 ```
 
 图表来源
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L1-L35)
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L403-L452)
-- [RedoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L84-L160)
-- [LogSyncService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L298-L320)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
-- [RowType.java](file://lealone-db/src/main/java/com/lealone/db/row/RowType.java#L233-L264)
-- [Table.java](file://lealone-db/src/main/java/com/lealone/db/table/Table.java#L112-L147)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L1-L35)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L403-L452)
+- [RedoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L84-L160)
+- [LogSyncService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L298-L320)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
+- [RowType.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/row/RowType.java#L233-L264)
+- [Table.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/Table.java#L112-L147)
 
 章节来源
-- [UpDel.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L120-L184)
-- [Table.java](file://lealone-db/src/main/java/com/lealone/db/table/Table.java#L148-L206)
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L1-L35)
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L403-L452)
-- [RedoLogRecord.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L84-L160)
-- [LogSyncService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L298-L320)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
-- [RowType.java](file://lealone-db/src/main/java/com/lealone/db/row/RowType.java#L233-L264)
+- [UpDel.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L120-L184)
+- [Table.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/Table.java#L148-L206)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L1-L35)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L403-L452)
+- [RedoLogRecord.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLogRecord.java#L84-L160)
+- [LogSyncService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L298-L320)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
+- [RowType.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/row/RowType.java#L233-L264)
 
 ### 约束检查与触发器执行
 - 约束
@@ -420,18 +420,18 @@ T->>C : checkRow(旧行, 新行)
 ```
 
 图表来源
-- [Constraint.java](file://lealone-db/src/main/java/com/lealone/db/constraint/Constraint.java#L1-L181)
-- [ConstraintCheck.java](file://lealone-db/src/main/java/com/lealone/db/constraint/ConstraintCheck.java#L43-L88)
-- [ConstraintReferential.java](file://lealone-db/src/main/java/com/lealone/db/constraint/ConstraintReferential.java#L313-L349)
-- [TriggerObject.java](file://lealone-db/src/main/java/com/lealone/db/schema/TriggerObject.java#L151-L183)
-- [Table.java](file://lealone-db/src/main/java/com/lealone/db/table/Table.java#L818-L935)
+- [Constraint.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/constraint/Constraint.java#L1-L181)
+- [ConstraintCheck.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/constraint/ConstraintCheck.java#L43-L88)
+- [ConstraintReferential.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/constraint/ConstraintReferential.java#L313-L349)
+- [TriggerObject.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/schema/TriggerObject.java#L151-L183)
+- [Table.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/Table.java#L818-L935)
 
 章节来源
-- [Constraint.java](file://lealone-db/src/main/java/com/lealone/db/constraint/Constraint.java#L1-L181)
-- [ConstraintCheck.java](file://lealone-db/src/main/java/com/lealone/db/constraint/ConstraintCheck.java#L1-L88)
-- [ConstraintReferential.java](file://lealone-db/src/main/java/com/lealone/db/constraint/ConstraintReferential.java#L1-L349)
-- [TriggerObject.java](file://lealone-db/src/main/java/com/lealone/db/schema/TriggerObject.java#L1-L183)
-- [Table.java](file://lealone-db/src/main/java/com/lealone/db/table/Table.java#L818-L935)
+- [Constraint.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/constraint/Constraint.java#L1-L181)
+- [ConstraintCheck.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/constraint/ConstraintCheck.java#L1-L88)
+- [ConstraintReferential.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/constraint/ConstraintReferential.java#L1-L349)
+- [TriggerObject.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/schema/TriggerObject.java#L1-L183)
+- [Table.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/Table.java#L818-L935)
 
 ### 在线DDL与可用性影响
 - 在线DDL能力体现
@@ -444,12 +444,12 @@ T->>C : checkRow(旧行, 新行)
   - 表结构变更历史记录（TableAlterHistory）便于后续重放与索引重建
 
 章节来源
-- [CreateTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L142-L246)
-- [CreateIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L78-L118)
-- [AlterTableAddConstraint.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L142-L327)
-- [Table.java](file://lealone-db/src/main/java/com/lealone/db/table/Table.java#L112-L147)
-- [TableAlterHistory.java](file://lealone-db/src/main/java/com/lealone/db/table/TableAlterHistory.java#L1-L106)
-- [StandardTable.java](file://lealone-db/src/main/java/com/lealone/db/table/StandardTable.java#L805-L837)
+- [CreateTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L142-L246)
+- [CreateIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L78-L118)
+- [AlterTableAddConstraint.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L142-L327)
+- [Table.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/Table.java#L112-L147)
+- [TableAlterHistory.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/TableAlterHistory.java#L1-L106)
+- [StandardTable.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/StandardTable.java#L805-L837)
 
 ## 依赖关系分析
 - 组件耦合
@@ -482,26 +482,26 @@ REDO --> BST["BTreeStorage"]
 ```
 
 图表来源
-- [CreateTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L142-L246)
-- [CreateIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L78-L118)
-- [AlterTableAddConstraint.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L142-L327)
-- [Insert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L45-L74)
-- [Update.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L104-L180)
-- [Delete.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L55-L97)
-- [Table.java](file://lealone-db/src/main/java/com/lealone/db/table/Table.java#L148-L206)
-- [UndoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L1-L35)
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L403-L452)
-- [LogSyncService.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L298-L320)
-- [BTreeStorage.java](file://lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
+- [CreateTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L142-L246)
+- [CreateIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L78-L118)
+- [AlterTableAddConstraint.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L142-L327)
+- [Insert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L45-L74)
+- [Update.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L104-L180)
+- [Delete.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L55-L97)
+- [Table.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/Table.java#L148-L206)
+- [UndoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/UndoLog.java#L1-L35)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L403-L452)
+- [LogSyncService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/LogSyncService.java#L298-L320)
+- [BTreeStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/BTreeStorage.java#L369-L414)
 
 章节来源
-- [CreateTable.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L1-L246)
-- [CreateIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L1-L118)
-- [AlterTableAddConstraint.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L1-L327)
-- [Insert.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L1-L74)
-- [Update.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L1-L180)
-- [Delete.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L1-L97)
-- [Table.java](file://lealone-db/src/main/java/com/lealone/db/table/Table.java#L1-L200)
+- [CreateTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java#L1-L246)
+- [CreateIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L1-L118)
+- [AlterTableAddConstraint.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L1-L327)
+- [Insert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java#L1-L74)
+- [Update.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Update.java#L1-L180)
+- [Delete.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Delete.java#L1-L97)
+- [Table.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/Table.java#L1-L200)
 
 ## 性能考量
 - 并发与锁
@@ -527,11 +527,11 @@ REDO --> BST["BTreeStorage"]
   - 使用表结构变更历史（TableAlterHistory）辅助定位
 
 章节来源
-- [AlterTableAddConstraint.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L142-L327)
-- [CreateIndex.java](file://lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L78-L118)
-- [UpDel.java](file://lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L120-L184)
-- [TriggerObject.java](file://lealone-db/src/main/java/com/lealone/db/schema/TriggerObject.java#L151-L183)
-- [RedoLog.java](file://lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L403-L452)
+- [AlterTableAddConstraint.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/AlterTableAddConstraint.java#L142-L327)
+- [CreateIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java#L78-L118)
+- [UpDel.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java#L120-L184)
+- [TriggerObject.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/schema/TriggerObject.java#L151-L183)
+- [RedoLog.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/log/RedoLog.java#L403-L452)
 
 ## 结论
 Lealone的DDL/DML处理在保证强一致性的前提下，通过排他锁、行级加锁、事务日志与版本控制实现了高并发与高可用：

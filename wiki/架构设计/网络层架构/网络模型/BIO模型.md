@@ -2,18 +2,18 @@
 
 <cite>
 **本文引用的文件列表**
-- [BioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java)
-- [BioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java)
-- [BioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java)
-- [NetFactory.java](file://lealone-net/src/main/java/com/lealone/net/NetFactory.java)
-- [NetClientBase.java](file://lealone-net/src/main/java/com/lealone/net/NetClientBase.java)
-- [WritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/WritableChannel.java)
-- [TcpClientConnection.java](file://lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java)
-- [NioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java)
-- [NioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java)
-- [ConnectionSetting.java](file://lealone-common/src/main/java/com/lealone/db/ConnectionSetting.java)
-- [Constants.java](file://lealone-common/src/main/java/com/lealone/db/Constants.java)
-- [CRUDExample.java](file://lealone-test/src/test/java/com/lealone/test/misc/CRUDExample.java)
+- [BioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java)
+- [BioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java)
+- [BioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java)
+- [NetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetFactory.java)
+- [NetClientBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetClientBase.java)
+- [WritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/WritableChannel.java)
+- [TcpClientConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java)
+- [NioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java)
+- [NioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java)
+- [ConnectionSetting.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/db/ConnectionSetting.java)
+- [Constants.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/db/Constants.java)
+- [CRUDExample.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/misc/CRUDExample.java)
 </cite>
 
 ## 目录
@@ -68,24 +68,24 @@ NF2 --> NW
 ```
 
 图表来源
-- [BioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L1-L36)
-- [BioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L1-L72)
-- [BioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L1-L160)
-- [TcpClientConnection.java](file://lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java#L1-L191)
-- [NetClientBase.java](file://lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L1-L143)
-- [WritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/WritableChannel.java#L1-L58)
-- [NioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java#L1-L101)
-- [NioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L1-L136)
+- [BioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L1-L36)
+- [BioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L1-L72)
+- [BioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L1-L160)
+- [TcpClientConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java#L1-L191)
+- [NetClientBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L1-L143)
+- [WritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/WritableChannel.java#L1-L58)
+- [NioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java#L1-L101)
+- [NioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L1-L136)
 
 章节来源
-- [BioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L1-L36)
-- [BioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L1-L72)
-- [BioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L1-L160)
-- [NetClientBase.java](file://lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L1-L143)
-- [WritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/WritableChannel.java#L1-L58)
-- [TcpClientConnection.java](file://lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java#L1-L191)
-- [NioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java#L1-L101)
-- [NioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L1-L136)
+- [BioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L1-L36)
+- [BioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L1-L72)
+- [BioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L1-L160)
+- [NetClientBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L1-L143)
+- [WritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/WritableChannel.java#L1-L58)
+- [TcpClientConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java#L1-L191)
+- [NioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java#L1-L101)
+- [NioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L1-L136)
 
 ## 核心组件
 - BioNetFactory：BIO网络工厂，负责创建BioNetClient实例，并声明自身为BIO类型。
@@ -97,14 +97,14 @@ NF2 --> NW
 - NIO模型对比：NioNetClient与NioWritableChannel用于对比BIO的阻塞式读写与NIO的事件驱动写入。
 
 章节来源
-- [BioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L1-L36)
-- [BioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L1-L72)
-- [BioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L1-L160)
-- [NetClientBase.java](file://lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L1-L143)
-- [WritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/WritableChannel.java#L1-L58)
-- [TcpClientConnection.java](file://lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java#L1-L191)
-- [NioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java#L1-L101)
-- [NioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L1-L136)
+- [BioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L1-L36)
+- [BioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L1-L72)
+- [BioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L1-L160)
+- [NetClientBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L1-L143)
+- [WritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/WritableChannel.java#L1-L58)
+- [TcpClientConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java#L1-L191)
+- [NioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java#L1-L101)
+- [NioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L1-L136)
 
 ## 架构总览
 BIO网络模型采用“每个连接一个线程”的阻塞I/O方式。客户端通过BioNetFactory创建BioNetClient，后者基于Socket阻塞I/O建立连接，使用BioWritableChannel进行读写，TcpClientConnection负责协议层面的请求/响应处理与回调管理。
@@ -130,10 +130,10 @@ App-->>Client : 获取连接完成
 ```
 
 图表来源
-- [BioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L1-L36)
-- [BioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L1-L72)
-- [BioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L1-L160)
-- [TcpClientConnection.java](file://lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java#L1-L191)
+- [BioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L1-L36)
+- [BioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L1-L72)
+- [BioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L1-L160)
+- [TcpClientConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java#L1-L191)
 
 ## 详细组件分析
 
@@ -142,8 +142,8 @@ App-->>Client : 获取连接完成
 - 关键点：createNetClient返回BioNetClient；createNetServer抛出内部错误（BIO不支持服务端）；isBio返回true。
 
 章节来源
-- [BioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L1-L36)
-- [NetFactory.java](file://lealone-net/src/main/java/com/lealone/net/NetFactory.java#L1-L56)
+- [BioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L1-L36)
+- [NetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetFactory.java#L1-L56)
 
 ### BioNetClient连接管理机制
 - 连接创建流程：
@@ -171,12 +171,12 @@ CloseSock --> Done
 ```
 
 图表来源
-- [BioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L1-L72)
-- [NetClientBase.java](file://lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L1-L143)
+- [BioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L1-L72)
+- [NetClientBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L1-L143)
 
 章节来源
-- [BioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L1-L72)
-- [NetClientBase.java](file://lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L1-L143)
+- [BioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L1-L72)
+- [NetClientBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L1-L143)
 
 ### BioWritableChannel写操作实现
 - 写入流程：
@@ -212,10 +212,10 @@ end
 ```
 
 图表来源
-- [BioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L1-L160)
+- [BioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L1-L160)
 
 章节来源
-- [BioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L1-L160)
+- [BioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L1-L160)
 
 ### TcpClientConnection回调与异常处理
 - 回调管理：根据packetId维护AsyncCallback映射，处理响应状态并触发回调。
@@ -223,7 +223,7 @@ end
 - 会话管理：维护会话集合，支持共享连接与最大共享数控制。
 
 章节来源
-- [TcpClientConnection.java](file://lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java#L1-L191)
+- [TcpClientConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java#L1-L191)
 
 ### 与NIO模型的对比
 - NIO写入策略：NioWritableChannel将待写缓冲放入队列，通过NetEventLoop批量写入，减少系统调用次数。
@@ -231,8 +231,8 @@ end
 - 连接模型：NIO使用SocketChannel+Selector事件循环；BIO使用阻塞Socket，每个连接占用一个线程。
 
 章节来源
-- [NioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L1-L136)
-- [NioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java#L1-L101)
+- [NioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioWritableChannel.java#L1-L136)
+- [NioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/nio/NioNetClient.java#L1-L101)
 
 ## 依赖关系分析
 - BioNetFactory依赖NetFactoryBase，实现NetFactory接口，提供BIO客户端与类型标识。
@@ -288,13 +288,13 @@ BioNetClient --> TcpClientConnection : "创建"
 ```
 
 图表来源
-- [NetFactory.java](file://lealone-net/src/main/java/com/lealone/net/NetFactory.java#L1-L56)
-- [BioNetFactory.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L1-L36)
-- [NetClientBase.java](file://lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L1-L143)
-- [BioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L1-L72)
-- [WritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/WritableChannel.java#L1-L58)
-- [BioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L1-L160)
-- [TcpClientConnection.java](file://lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java#L1-L191)
+- [NetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetFactory.java#L1-L56)
+- [BioNetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetFactory.java#L1-L36)
+- [NetClientBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L1-L143)
+- [BioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L1-L72)
+- [WritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/WritableChannel.java#L1-L58)
+- [BioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L1-L160)
+- [TcpClientConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java#L1-L191)
 
 ## 性能考量
 - 低并发优势：
@@ -325,10 +325,10 @@ BioNetClient --> TcpClientConnection : "创建"
   - 定期执行超时检查，及时清理失效连接。
 
 章节来源
-- [BioNetClient.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L1-L72)
-- [BioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L1-L160)
-- [TcpClientConnection.java](file://lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java#L1-L191)
-- [NetClientBase.java](file://lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L1-L143)
+- [BioNetClient.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioNetClient.java#L1-L72)
+- [BioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L1-L160)
+- [TcpClientConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/TcpClientConnection.java#L1-L191)
+- [NetClientBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L1-L143)
 
 ## 结论
 BIO网络模型在低并发、低延迟要求的场景下具有实现简单、延迟低的优势；但在高并发场景下，其阻塞式I/O与频繁系统调用会成为性能瓶颈。开发者应根据业务并发量、延迟与稳定性需求选择合适的网络模型。如需高并发，建议优先考虑NIO模型；若追求实现简洁与易调试，可在小规模场景使用BIO。
@@ -346,11 +346,11 @@ BIO网络模型在低并发、低延迟要求的场景下具有实现简单、�
 - 调度器数量：影响事件循环与任务调度的并发度。
 
 章节来源
-- [NetFactory.java](file://lealone-net/src/main/java/com/lealone/net/NetFactory.java#L1-L56)
-- [ConnectionSetting.java](file://lealone-common/src/main/java/com/lealone/db/ConnectionSetting.java#L1-L28)
-- [Constants.java](file://lealone-common/src/main/java/com/lealone/db/Constants.java#L1-L393)
-- [NetClientBase.java](file://lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L1-L143)
-- [BioWritableChannel.java](file://lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L1-L160)
+- [NetFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetFactory.java#L1-L56)
+- [ConnectionSetting.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/db/ConnectionSetting.java#L1-L28)
+- [Constants.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/db/Constants.java#L1-L393)
+- [NetClientBase.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/NetClientBase.java#L1-L143)
+- [BioWritableChannel.java](https://github.com/lealone/Lealone/blob/master/lealone-net/src/main/java/com/lealone/net/bio/BioWritableChannel.java#L1-L160)
 
 ### 使用示例
 - 切换到BIO模型：
@@ -359,4 +359,4 @@ BIO网络模型在低并发、低延迟要求的场景下具有实现简单、�
   - 测试示例展示了如何分别获取BIO与NIO连接，便于对比验证。
 
 章节来源
-- [CRUDExample.java](file://lealone-test/src/test/java/com/lealone/test/misc/CRUDExample.java#L1-L81)
+- [CRUDExample.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/misc/CRUDExample.java#L1-L81)

@@ -2,18 +2,18 @@
 
 <cite>
 **本文引用的文件**
-- [JdbcDriver.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java)
-- [JdbcConnection.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java)
-- [JdbcStatement.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcStatement.java)
-- [JdbcPreparedStatement.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcPreparedStatement.java)
-- [JdbcResultSet.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSet.java)
-- [JdbcFuture.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcFuture.java)
-- [JdbcDatabaseMetaData.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDatabaseMetaData.java)
-- [JdbcParameterMetaData.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcParameterMetaData.java)
-- [JdbcResultSetMetaData.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSetMetaData.java)
-- [JdbcConnectionTest.java](file://lealone-test/src/test/java/com/lealone/test/client/JdbcConnectionTest.java)
-- [JdbcStatementTest.java](file://lealone-test/src/test/java/com/lealone/test/client/JdbcStatementTest.java)
-- [JdbcPreparedStatementTest.java](file://lealone-test/src/test/java/com/lealone/test/client/JdbcPreparedStatementTest.java)
+- [JdbcDriver.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java)
+- [JdbcConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java)
+- [JdbcStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcStatement.java)
+- [JdbcPreparedStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcPreparedStatement.java)
+- [JdbcResultSet.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSet.java)
+- [JdbcFuture.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcFuture.java)
+- [JdbcDatabaseMetaData.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDatabaseMetaData.java)
+- [JdbcParameterMetaData.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcParameterMetaData.java)
+- [JdbcResultSetMetaData.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSetMetaData.java)
+- [JdbcConnectionTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/client/JdbcConnectionTest.java)
+- [JdbcStatementTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/client/JdbcStatementTest.java)
+- [JdbcPreparedStatementTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/client/JdbcPreparedStatementTest.java)
 </cite>
 
 ## 目录
@@ -64,19 +64,19 @@ PS --> FM
 ```
 
 图表来源
-- [JdbcDriver.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java#L1-L198)
-- [JdbcConnection.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java#L1-L800)
-- [JdbcStatement.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcStatement.java#L1-L800)
-- [JdbcPreparedStatement.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcPreparedStatement.java#L1-L800)
-- [JdbcResultSet.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSet.java#L1-L800)
-- [JdbcFuture.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcFuture.java#L1-L39)
-- [JdbcDatabaseMetaData.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDatabaseMetaData.java#L1-L800)
-- [JdbcParameterMetaData.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcParameterMetaData.java#L1-L230)
-- [JdbcResultSetMetaData.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSetMetaData.java#L1-L464)
+- [JdbcDriver.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java#L1-L198)
+- [JdbcConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java#L1-L800)
+- [JdbcStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcStatement.java#L1-L800)
+- [JdbcPreparedStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcPreparedStatement.java#L1-L800)
+- [JdbcResultSet.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSet.java#L1-L800)
+- [JdbcFuture.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcFuture.java#L1-L39)
+- [JdbcDatabaseMetaData.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDatabaseMetaData.java#L1-L800)
+- [JdbcParameterMetaData.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcParameterMetaData.java#L1-L230)
+- [JdbcResultSetMetaData.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSetMetaData.java#L1-L464)
 
 章节来源
-- [JdbcDriver.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java#L1-L198)
-- [JdbcConnection.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java#L1-L800)
+- [JdbcDriver.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java#L1-L198)
+- [JdbcConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java#L1-L800)
 
 ## 核心组件
 - 驱动器 JdbcDriver：负责注册、URL 检测、版本信息、属性信息、日志记录器支持、以及异步连接获取入口（静态方法 getConnection 返回 Future<JdbcConnection>）。
@@ -88,15 +88,15 @@ PS --> FM
 - 元数据 JdbcDatabaseMetaData、JdbcParameterMetaData、JdbcResultSetMetaData：分别提供数据库、参数、结果集的元信息查询。
 
 章节来源
-- [JdbcDriver.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java#L1-L198)
-- [JdbcConnection.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java#L1-L800)
-- [JdbcStatement.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcStatement.java#L1-L800)
-- [JdbcPreparedStatement.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcPreparedStatement.java#L1-L800)
-- [JdbcResultSet.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSet.java#L1-L800)
-- [JdbcFuture.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcFuture.java#L1-L39)
-- [JdbcDatabaseMetaData.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDatabaseMetaData.java#L1-L800)
-- [JdbcParameterMetaData.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcParameterMetaData.java#L1-L230)
-- [JdbcResultSetMetaData.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSetMetaData.java#L1-L464)
+- [JdbcDriver.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java#L1-L198)
+- [JdbcConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java#L1-L800)
+- [JdbcStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcStatement.java#L1-L800)
+- [JdbcPreparedStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcPreparedStatement.java#L1-L800)
+- [JdbcResultSet.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSet.java#L1-L800)
+- [JdbcFuture.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcFuture.java#L1-L39)
+- [JdbcDatabaseMetaData.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDatabaseMetaData.java#L1-L800)
+- [JdbcParameterMetaData.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcParameterMetaData.java#L1-L230)
+- [JdbcResultSetMetaData.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSetMetaData.java#L1-L464)
 
 ## 架构总览
 下面的序列图展示了异步连接获取的流程，从 JdbcDriver 的静态 getConnection 到最终返回 Future<JdbcConnection>，并在连接建立后创建 JdbcConnection 对象。
@@ -121,12 +121,12 @@ Driver-->>App : 返回 JdbcConnection 或异常
 ```
 
 图表来源
-- [JdbcDriver.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java#L153-L196)
-- [JdbcConnection.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java#L86-L101)
+- [JdbcDriver.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java#L153-L196)
+- [JdbcConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java#L86-L101)
 
 章节来源
-- [JdbcDriver.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java#L153-L196)
-- [JdbcConnection.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java#L86-L101)
+- [JdbcDriver.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java#L153-L196)
+- [JdbcConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java#L86-L101)
 
 ## 详细组件分析
 
@@ -149,7 +149,7 @@ Driver-->>App : 返回 JdbcConnection 或异常
   - 静态 getConnection 返回 Future，与标准 JDBC 的阻塞式 DriverManager.getConnection 不同，需使用 Future.get()/onComplete()
 
 章节来源
-- [JdbcDriver.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java#L1-L198)
+- [JdbcDriver.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java#L1-L198)
 
 ### JdbcConnection：连接与事务管理
 - 主要职责
@@ -172,7 +172,7 @@ Driver-->>App : 返回 JdbcConnection 或异常
   - executeAsyncTask(task)：将任务提交到 Session 执行，内部使用 AsyncCallback/Future，返回 JdbcFuture 封装
 
 章节来源
-- [JdbcConnection.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java#L1-L800)
+- [JdbcConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java#L1-L800)
 
 ### JdbcStatement：语句执行与批处理
 - 主要职责
@@ -192,7 +192,7 @@ Driver-->>App : 返回 JdbcConnection 或异常
   - executeQueryAsync()/executeUpdateAsync() 返回 Future，内部通过 executeAsyncTask 统一调度
 
 章节来源
-- [JdbcStatement.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcStatement.java#L1-L800)
+- [JdbcStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcStatement.java#L1-L800)
 
 ### JdbcPreparedStatement：参数化执行与批量
 - 主要职责
@@ -211,7 +211,7 @@ Driver-->>App : 返回 JdbcConnection 或异常
   - executeQueryAsync()/executeUpdateAsync() 返回 Future
 
 章节来源
-- [JdbcPreparedStatement.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcPreparedStatement.java#L1-L800)
+- [JdbcPreparedStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcPreparedStatement.java#L1-L800)
 
 ### JdbcResultSet：结果集访问与元数据
 - 主要职责
@@ -229,7 +229,7 @@ Driver-->>App : 返回 JdbcConnection 或异常
   - 多处注释或行为表明部分 JDBC 特性未完全实现或不支持（如某些警告、特定行为）
 
 章节来源
-- [JdbcResultSet.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSet.java#L1-L800)
+- [JdbcResultSet.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSet.java#L1-L800)
 
 ### JdbcFuture：Future 封装与异常转换
 - 主要职责
@@ -239,7 +239,7 @@ Driver-->>App : 返回 JdbcConnection 或异常
   - JdbcStatement/JdbcPreparedStatement 的异步方法返回 JdbcFuture，内部持有 Future 并在 get() 时进行异常转换
 
 章节来源
-- [JdbcFuture.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcFuture.java#L1-L39)
+- [JdbcFuture.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcFuture.java#L1-L39)
 
 ### 元数据组件
 - JdbcDatabaseMetaData：提供数据库产品名、版本、驱动名、驱动版本、表/列/索引/权限等查询
@@ -247,9 +247,9 @@ Driver-->>App : 返回 JdbcConnection 或异常
 - JdbcResultSetMetaData：提供列数、列名/别名、类型、精度、显示大小、可写性等
 
 章节来源
-- [JdbcDatabaseMetaData.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDatabaseMetaData.java#L1-L800)
-- [JdbcParameterMetaData.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcParameterMetaData.java#L1-L230)
-- [JdbcResultSetMetaData.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSetMetaData.java#L1-L464)
+- [JdbcDatabaseMetaData.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDatabaseMetaData.java#L1-L800)
+- [JdbcParameterMetaData.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcParameterMetaData.java#L1-L230)
+- [JdbcResultSetMetaData.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSetMetaData.java#L1-L464)
 
 ## 依赖关系分析
 - JdbcDriver 依赖 ConnectionInfo、SessionFactory、Session、JdbcConnection
@@ -273,15 +273,15 @@ PStmt --> FM
 ```
 
 图表来源
-- [JdbcDriver.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java#L1-L198)
-- [JdbcConnection.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java#L1-L800)
-- [JdbcStatement.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcStatement.java#L1-L800)
-- [JdbcPreparedStatement.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcPreparedStatement.java#L1-L800)
-- [JdbcResultSet.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSet.java#L1-L800)
-- [JdbcFuture.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcFuture.java#L1-L39)
-- [JdbcDatabaseMetaData.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDatabaseMetaData.java#L1-L800)
-- [JdbcParameterMetaData.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcParameterMetaData.java#L1-L230)
-- [JdbcResultSetMetaData.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSetMetaData.java#L1-L464)
+- [JdbcDriver.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java#L1-L198)
+- [JdbcConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java#L1-L800)
+- [JdbcStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcStatement.java#L1-L800)
+- [JdbcPreparedStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcPreparedStatement.java#L1-L800)
+- [JdbcResultSet.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSet.java#L1-L800)
+- [JdbcFuture.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcFuture.java#L1-L39)
+- [JdbcDatabaseMetaData.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDatabaseMetaData.java#L1-L800)
+- [JdbcParameterMetaData.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcParameterMetaData.java#L1-L230)
+- [JdbcResultSetMetaData.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSetMetaData.java#L1-L464)
 
 ## 性能考量
 - 异步执行：executeQueryAsync/executeUpdateAsync/executeBatch 等异步方法通过 Future 提交至 Session 执行，避免阻塞线程，适合高并发场景
@@ -303,9 +303,9 @@ PStmt --> FM
   - 连接关闭后操作抛异常：确认连接生命周期与关闭时机
 
 章节来源
-- [JdbcStatement.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcStatement.java#L1-L800)
-- [JdbcPreparedStatement.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcPreparedStatement.java#L1-L800)
-- [JdbcConnection.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java#L1-L800)
+- [JdbcStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcStatement.java#L1-L800)
+- [JdbcPreparedStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcPreparedStatement.java#L1-L800)
+- [JdbcConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java#L1-L800)
 
 ## 结论
 Lealone 的 JDBC 实现遵循标准 JDBC 接口，同时引入异步 Future 模式提升并发性能与可扩展性。JdbcDriver 的静态 getConnection 提供了 Future 形式的连接获取方式，与传统 DriverManager.getConnection 的阻塞模型存在差异。通过 JdbcStatement/JdbcPreparedStatement 的异步执行、批处理与 fetchSize 控制，开发者可在高并发场景下获得更好的吞吐与响应时间。需要注意的兼容性差异包括 getParentLogger() 不支持、部分 JDBC 特性的行为差异等。
@@ -317,56 +317,56 @@ Lealone 的 JDBC 实现遵循标准 JDBC 接口，同时引入异步 Future 模�
 ### 1. 异步连接获取与基本使用
 - 使用 JdbcDriver 的静态 getConnection 获取 Future<JdbcConnection>，随后通过 onComplete 或 get() 获取连接
 - 示例路径
-  - [JdbcConnectionTest.java](file://lealone-test/src/test/java/com/lealone/test/client/JdbcConnectionTest.java#L114-L127)
-  - [JdbcConnectionTest.java](file://lealone-test/src/test/java/com/lealone/test/client/JdbcConnectionTest.java#L134-L177)
+  - [JdbcConnectionTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/client/JdbcConnectionTest.java#L114-L127)
+  - [JdbcConnectionTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/client/JdbcConnectionTest.java#L134-L177)
 
 章节来源
-- [JdbcConnectionTest.java](file://lealone-test/src/test/java/com/lealone/test/client/JdbcConnectionTest.java#L114-L177)
-- [JdbcDriver.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java#L153-L196)
+- [JdbcConnectionTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/client/JdbcConnectionTest.java#L114-L177)
+- [JdbcDriver.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java#L153-L196)
 
 ### 2. 执行 SQL 与处理结果集
 - 使用 JdbcStatement/JdbcPreparedStatement 执行查询与更新，支持同步与异步
 - 示例路径
-  - [JdbcStatementTest.java](file://lealone-test/src/test/java/com/lealone/test/client/JdbcStatementTest.java#L150-L163)
-  - [JdbcStatementTest.java](file://lealone-test/src/test/java/com/lealone/test/client/JdbcStatementTest.java#L184-L233)
-  - [JdbcPreparedStatementTest.java](file://lealone-test/src/test/java/com/lealone/test/client/JdbcPreparedStatementTest.java#L280-L322)
+  - [JdbcStatementTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/client/JdbcStatementTest.java#L150-L163)
+  - [JdbcStatementTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/client/JdbcStatementTest.java#L184-L233)
+  - [JdbcPreparedStatementTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/client/JdbcPreparedStatementTest.java#L280-L322)
 
 章节来源
-- [JdbcStatementTest.java](file://lealone-test/src/test/java/com/lealone/test/client/JdbcStatementTest.java#L150-L233)
-- [JdbcPreparedStatementTest.java](file://lealone-test/src/test/java/com/lealone/test/client/JdbcPreparedStatementTest.java#L280-L322)
+- [JdbcStatementTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/client/JdbcStatementTest.java#L150-L233)
+- [JdbcPreparedStatementTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/client/JdbcPreparedStatementTest.java#L280-L322)
 
 ### 3. 事务管理（同步与异步）
 - 设置自动提交、提交与回滚，支持异步 commitAsync/rollbackAsync
 - 示例路径
-  - [JdbcConnectionTest.java](file://lealone-test/src/test/java/com/lealone/test/client/JdbcConnectionTest.java#L75-L108)
+  - [JdbcConnectionTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/client/JdbcConnectionTest.java#L75-L108)
 
 章节来源
-- [JdbcConnectionTest.java](file://lealone-test/src/test/java/com/lealone/test/client/JdbcConnectionTest.java#L75-L108)
-- [JdbcConnection.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java#L518-L586)
+- [JdbcConnectionTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/client/JdbcConnectionTest.java#L75-L108)
+- [JdbcConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java#L518-L586)
 
 ### 4. 批处理与异步执行
 - 使用 addBatch/executeBatch 与 executeUpdateAsync/executeQueryAsync 提升吞吐
 - 示例路径
-  - [JdbcStatementTest.java](file://lealone-test/src/test/java/com/lealone/test/client/JdbcStatementTest.java#L175-L183)
-  - [JdbcStatementTest.java](file://lealone-test/src/test/java/com/lealone/test/client/JdbcStatementTest.java#L235-L268)
-  - [JdbcPreparedStatementTest.java](file://lealone-test/src/test/java/com/lealone/test/client/JdbcPreparedStatementTest.java#L263-L277)
-  - [JdbcPreparedStatementTest.java](file://lealone-test/src/test/java/com/lealone/test/client/JdbcPreparedStatementTest.java#L324-L364)
+  - [JdbcStatementTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/client/JdbcStatementTest.java#L175-L183)
+  - [JdbcStatementTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/client/JdbcStatementTest.java#L235-L268)
+  - [JdbcPreparedStatementTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/client/JdbcPreparedStatementTest.java#L263-L277)
+  - [JdbcPreparedStatementTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/client/JdbcPreparedStatementTest.java#L324-L364)
 
 章节来源
-- [JdbcStatementTest.java](file://lealone-test/src/test/java/com/lealone/test/client/JdbcStatementTest.java#L175-L268)
-- [JdbcPreparedStatementTest.java](file://lealone-test/src/test/java/com/lealone/test/client/JdbcPreparedStatementTest.java#L263-L364)
+- [JdbcStatementTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/client/JdbcStatementTest.java#L175-L268)
+- [JdbcPreparedStatementTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/client/JdbcPreparedStatementTest.java#L263-L364)
 
 ### 5. 结果集元数据与参数元数据
 - 获取 ResultSetMetaData 与 ParameterMetaData，验证列数、类型、精度等
 - 示例路径
-  - [JdbcPreparedStatementTest.java](file://lealone-test/src/test/java/com/lealone/test/client/JdbcPreparedStatementTest.java#L158-L202)
-  - [JdbcParameterMetaData.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcParameterMetaData.java#L1-L230)
-  - [JdbcResultSetMetaData.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSetMetaData.java#L1-L464)
+  - [JdbcPreparedStatementTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/client/JdbcPreparedStatementTest.java#L158-L202)
+  - [JdbcParameterMetaData.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcParameterMetaData.java#L1-L230)
+  - [JdbcResultSetMetaData.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSetMetaData.java#L1-L464)
 
 章节来源
-- [JdbcPreparedStatementTest.java](file://lealone-test/src/test/java/com/lealone/test/client/JdbcPreparedStatementTest.java#L158-L202)
-- [JdbcParameterMetaData.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcParameterMetaData.java#L1-L230)
-- [JdbcResultSetMetaData.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSetMetaData.java#L1-L464)
+- [JdbcPreparedStatementTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/client/JdbcPreparedStatementTest.java#L158-L202)
+- [JdbcParameterMetaData.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcParameterMetaData.java#L1-L230)
+- [JdbcResultSetMetaData.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcResultSetMetaData.java#L1-L464)
 
 ### 6. 兼容性差异与注意事项
 - getParentLogger() 不支持：调用将抛出 Unsupported
@@ -375,6 +375,6 @@ Lealone 的 JDBC 实现遵循标准 JDBC 接口，同时引入异步 Future 模�
 - 部分 JDBC 特性未完全实现或行为与期望不同，详见各组件注释与测试
 
 章节来源
-- [JdbcDriver.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java#L115-L123)
-- [JdbcStatement.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcStatement.java#L694-L737)
-- [JdbcPreparedStatement.java](file://lealone-client/src/main/java/com/lealone/client/jdbc/JdbcPreparedStatement.java#L78-L83)
+- [JdbcDriver.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java#L115-L123)
+- [JdbcStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcStatement.java#L694-L737)
+- [JdbcPreparedStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcPreparedStatement.java#L78-L83)
