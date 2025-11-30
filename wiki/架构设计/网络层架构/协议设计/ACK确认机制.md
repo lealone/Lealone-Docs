@@ -1,6 +1,6 @@
 # ACK确认机制
 
-<cite>
+
 **本文档引用的文件**
 - [AckPacket.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/AckPacket.java)
 - [NoAckPacket.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/NoAckPacket.java)
@@ -12,7 +12,7 @@
 - [StatementUpdateAck.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/statement/StatementUpdateAck.java)
 - [SessionInitAck.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/session/SessionInitAck.java)
 - [BatchStatementUpdateAck.java](https://github.com/lealone/Lealone/blob/master/lealone-common/src/main/java/com/lealone/server/protocol/batch/BatchStatementUpdateAck.java)
-</cite>
+
 
 ## 目录
 1. [引言](#引言)

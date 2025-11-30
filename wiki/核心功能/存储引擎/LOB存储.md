@@ -1,6 +1,6 @@
 # LOB存储
 
-<cite>
+
 **本文引用的文件列表**
 - [LobStreamStorage.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamStorage.java)
 - [LobStreamMap.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/lob/LobStreamMap.java)
@@ -15,7 +15,7 @@
 - [Page.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/Page.java)
 - [ChunkManager.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/ChunkManager.java)
 - [Chunk.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/chunk/Chunk.java)
-</cite>
+
 
 ## 目录
 1. [简介](#简介)

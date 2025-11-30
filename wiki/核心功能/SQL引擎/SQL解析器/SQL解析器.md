@@ -1,6 +1,6 @@
 # SQL解析器
 
-<cite>
+
 **本文档引用的文件**   
 - [LealoneSQLParser.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/LealoneSQLParser.java)
 - [SQLParserBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/SQLParserBase.java)
@@ -11,7 +11,7 @@
 - [BuiltInFunction.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/expression/function/BuiltInFunction.java)
 - [Condition.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/expression/condition/Condition.java)
 - [Query.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/query/Query.java)
-</cite>
+
 
 ## 目录
 1. [引言](#引言)

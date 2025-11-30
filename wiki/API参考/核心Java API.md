@@ -1,6 +1,6 @@
 # 核心Java API
 
-<cite>
+
 **本文引用的文件列表**
 - [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java)
 - [LealoneDatabase.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java)
@@ -12,7 +12,7 @@
 - [DbObject.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/DbObject.java)
 - [EmbeddedExample.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/misc/EmbeddedExample.java)
 - [CRUDExample.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/misc/CRUDExample.java)
-</cite>
+
 
 ## 目录
 1. [简介](#简介)

@@ -1,6 +1,6 @@
 # DML语句处理
 
-<cite>
+
 **本文档引用的文件**   
 - [Insert.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Insert.java)
 - [Update.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/Update.java)
@@ -20,7 +20,7 @@
 - [PageReference.java](https://github.com/lealone/Lealone/blob/master/lealone-aose/src/main/java/com/lealone/storage/aose/btree/page/PageReference.java)
 - [CheckpointService.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/CheckpointService.java)
 - [TransactionalDbObjects.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/TransactionalDbObjects.java)
-</cite>
+
 
 ## 目录
 1. [简介](#简介)

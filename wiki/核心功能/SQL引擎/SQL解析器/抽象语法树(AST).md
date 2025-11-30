@@ -1,6 +1,6 @@
 # 抽象语法树(AST)
 
-<cite>
+
 **本文档引用的文件**   
 - [ParsedSQLStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-sci\src\main\java\com\lealone\sql\ParsedSQLStatement.java)
 - [Expression.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\Expression.java)
@@ -16,7 +16,7 @@
 - [Alias.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\Alias.java)
 - [ValueExpression.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\ValueExpression.java)
 - [ExpressionList.java](https://github.com/lealone/Lealone/blob/master/lealone-sql\src\main\java\com\lealone\sql\expression\ExpressionList.java)
-</cite>
+
 
 ## 目录
 1. [引言](#引言)

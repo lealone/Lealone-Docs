@@ -1,6 +1,6 @@
 # DDL语句处理
 
-<cite>
+
 **本文引用的文件**
 - [CreateTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java)
 - [CreateIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java)
@@ -20,7 +20,7 @@
 - [TableAlterHistory.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/TableAlterHistory.java)
 - [OnlineDDLTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/sql/onlineddl/OnlineDDLTest.java)
 - [TransactionalDDLTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/sql/transaction/TransactionalDDLTest.java)
-</cite>
+
 
 ## 目录
 1. [简介](#简介)

@@ -1,6 +1,6 @@
 # DDL与DML处理
 
-<cite>
+
 **本文引用的文件**
 - [CreateTable.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateTable.java)
 - [CreateIndex.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/ddl/CreateIndex.java)
@@ -24,7 +24,7 @@
 - [RowType.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/row/RowType.java)
 - [TableAlterHistory.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/TableAlterHistory.java)
 - [StandardTable.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/table/StandardTable.java)
-</cite>
+
 
 ## 目录
 1. [简介](#简介)

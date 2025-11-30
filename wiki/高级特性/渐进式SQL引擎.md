@@ -1,6 +1,6 @@
 # 渐进式SQL引擎
 
-<cite>
+
 **本文档引用的文件**  
 - [YieldableBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/executor/YieldableBase.java)
 - [YieldableLocalQuery.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/query/YieldableLocalQuery.java)
@@ -11,7 +11,7 @@
 - [SessionStatus.java](https://github.com/lealone/Lealone/blob/master/lealone-sci/src/main/java/com/lealone/db/session/SessionStatus.java)
 - [UpDel.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/dml/UpDel.java)
 - [ServerSession.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/session/ServerSession.java)
-</cite>
+
 
 ## 目录
 1. [引言](#引言)

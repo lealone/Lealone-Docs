@@ -1,6 +1,6 @@
 # SQL引擎架构
 
-<cite>
+
 **本文档引用的文件**   
 - [LealoneSQLParser.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/LealoneSQLParser.java)
 - [SQLParserBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/SQLParserBase.java)
@@ -16,7 +16,7 @@
 - [StatementBase.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/StatementBase.java)
 - [Function.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/expression/function/Function.java)
 - [BuiltInFunctionFactory.java](https://github.com/lealone/Lealone/blob/master/lealone-sql/src/main/java/com/lealone/sql/expression/function/BuiltInFunctionFactory.java)
-</cite>
+
 
 ## 目录
 1. [引言](#引言)

@@ -1,6 +1,6 @@
 # API参考
 
-<cite>
+
 **本文档引用的文件**
 - [JdbcDriver.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcDriver.java)
 - [JdbcConnection.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcConnection.java)
@@ -11,7 +11,7 @@
 - [JdbcCallableStatement.java](https://github.com/lealone/Lealone/blob/master/lealone-client/src/main/java/com/lealone/client/jdbc/JdbcCallableStatement.java)
 - [Database.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/Database.java)
 - [LealoneDatabase.java](https://github.com/lealone/Lealone/blob/master/lealone-db/src/main/java/com/lealone/db/LealoneDatabase.java)
-</cite>
+
 
 ## 目录
 1. [JDBC API](#jdbc-api)

@@ -1,6 +1,6 @@
 # MVCC实现机制
 
-<cite>
+
 **本文引用的文件**
 - [TransactionalValue.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/TransactionalValue.java)
 - [AOTransaction.java](https://github.com/lealone/Lealone/blob/master/lealone-aote/src/main/java/com/lealone/transaction/aote/AOTransaction.java)
@@ -13,7 +13,7 @@
 - [ReaCommittedTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/sql/transaction/ReaCommittedTest.java)
 - [RepeatableReadTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/sql/transaction/RepeatableReadTest.java)
 - [TransactionalValueTest.java](https://github.com/lealone/Lealone/blob/master/lealone-test/src/test/java/com/lealone/test/aote/TransactionalValueTest.java)
-</cite>
+
 
 ## 目录
 1. [简介](#简介)
