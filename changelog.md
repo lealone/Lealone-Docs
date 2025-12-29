@@ -29,6 +29,8 @@
 
 * 不再使用全局 redo log，每个表的 redo log 单独存放，支持并行写 redo log
 
+* 新增 SessionTransactionStatement 协议包，commit 和 rollback 这种常用的命令可以直接通过协议包快速发送并执行，不再需要通过 sql 命令的方式执行
+
 
 ## improvement
 
