@@ -40,12 +40,13 @@
 
 * 自动根据 jdbc api 动态智能切换 io 模型
 
+* 优化 java.sql.Statement.execute 的性能，内部实现不再需要多余的 prepare 阶段
+
 * 索引的创建已经异步化了，为大表创建索引无需再等待很久
 
 * 对索引进行 update/delete/insert 时不再需要写 redo log，索引的写操作异步化和并行化了
 
 * 并发更新完记录后释放行锁对象，减少内存占用
-
 
 * 不再使用 buffer pool，所有的 tcp 连接都统一使用调度线程的输入输出 buffer
 
