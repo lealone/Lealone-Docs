@@ -33,6 +33,8 @@
 
 * 新增 SessionTransactionStatement 协议包，commit 和 rollback 这种常用的命令可以直接通过协议包快速发送并执行，不再需要通过 sql 命令的方式执行
 
+* lealone.yaml 变成 lealone.sql，不再需要 yaml 配置文件
+
 
 ## improvement
 
