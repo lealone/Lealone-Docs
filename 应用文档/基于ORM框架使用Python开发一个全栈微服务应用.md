@@ -1,3 +1,7 @@
+## 运行需要
+
+* JDK 21+
+
 
 这里介绍如何使用 Python 开发一个简单的全栈微服务应用。
 
@@ -256,30 +260,7 @@ public class PythonDemo {
 ```
 
 
-### 7. 安装 GraalVM
-
-运行 Python 应用需要事先安装 GraalVM，目前不支持 Windows
-
-安装 GraalVM 请参考 https://www.graalvm.org/22.0/docs/getting-started/
-
-GraalVM 可以直接替换 JDK
-
-这里假设安装后的目录是 /home/test/graalvm-ee-java17-22.0.0.2
-
-接着配置一下 JAVA_HOME 和 PATH 环境变量
-
-export JAVA_HOME=/home/test/graalvm-ee-java17-22.0.0.2
-
-export PATH=$JAVA_HOME/bin:$PATH
-
-最后还需要安装 Python 组件
-
-gu install python
-
-更多信息参考 https://www.graalvm.org/22.0/reference-manual/python/
-
-
-### 8. 测试服务
+### 7. 测试服务
 
 需要先用 GraalVM 替换 IDE 中的 JVM，然后在 IDE 中直接运行 PythonDemo
 
@@ -293,7 +274,7 @@ http://localhost:9000/fullStack.html
 
 
 
-### 9. 完整例子
+### 8. 完整例子
 
 下载项目 [python-fullstack-demo](https://github.com/lealone/Lealone-Examples/tree/main/python-demo)
 
