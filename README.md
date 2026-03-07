@@ -43,7 +43,7 @@
 
 
 
-# [Lealone 微服务和 ORM 框架文档](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/微服务和ORM框架文档.md)
+# [Lealone 技术平台文档](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/Lealone技术平台.md)
 
 # [Lealone 集群版(商业版)文档](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/集群版文档.md)
 
