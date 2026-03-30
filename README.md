@@ -29,7 +29,7 @@
 
   * [设计文档](https://github.com/lealone/Lealone-Docs/blob/master/设计文档/README.md)
 
-  * [Wiki](https://github.com/lealone/Lealone-Docs/tree/master/wiki)
+  * [Wiki](https://github.com/lealone/Lealone-Docs/tree/master/设计文档/wiki)
 
   * [Change Log](https://github.com/lealone/Lealone-Docs/blob/master/changelog.md)
 
