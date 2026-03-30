@@ -1,4 +1,5 @@
-# Lealone 数据库
+
+# Lealone 应用开发平台
   
 ### 下载
 
@@ -10,23 +11,21 @@
 
   * [lealone-client-6.0.1.jar](https://github.com/lealone/Lealone/releases/download/lealone-6.0.1/lealone-client-6.0.1.jar)
 
+
+### AI 应用
+
+  * [简单 AI 应用快速入门](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/简单AI应用快速入门.md)
+
+  * [全栈 AI 应用快速入门](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/全栈AI应用快速入门.md)
+
+
 ### 用户文档
 
-  * [快速入门](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/Lealone数据库快速入门.md)
+  * [数据库快速入门](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/Lealone数据库快速入门.md)
 
-  * [从源码构建 Lealone 数据库](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/从源码构建Lealone.md)
+  * [从源码构建 Lealone 平台](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/从源码构建Lealone.md)
  
-  * [通过嵌入模式使用 Lealone 数据库](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/通过嵌入模式使用Lealone数据库.md)
-
-  * [使用 MongoDB 的客户端和命令访问 Lealone 数据库](https://github.com/lealone-plugins/lealone-mongo/blob/main/README.md)
-
-  * [使用 MySQL 的客户端和 SQL 语法访问 Lealone 数据库](https://github.com/lealone-plugins/lealone-mysql/blob/main/README.md)
-   
-  * [使用 PostgreSQL 的客户端和 SQL 语法访问 Lealone 数据库](https://github.com/lealone-plugins/lealone-postgresql/blob/main/README.md)
-  
-  * [存储引擎快速入门](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/存储引擎快速入门.md)
-
-  * [使用 DBeaver 访问 Lealone 数据库](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/使用DBeaver访问Lealone数据库.md)
+  * [使用 DBeaver 访问 Lealone 平台](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/使用DBeaver访问Lealone数据库.md)
 
   * [Change Log](https://github.com/lealone/Lealone-Docs/blob/master/changelog.md)
 
@@ -40,12 +39,6 @@
   * [Functions](http://lealone-plugins.github.io/lealone.github.io/functions.html)
 
   * [Data Types](http://lealone-plugins.github.io/lealone.github.io/datatypes.html)
-
-
-
-# [Lealone 技术平台文档](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/Lealone技术平台.md)
-
-# [Lealone 集群版(商业版)文档](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/集群版文档.md)
 
 
 # Lealone 设计文档

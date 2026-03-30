@@ -1,0 +1,40 @@
+<div id="nav">
+<table cellpadding="0" cellspacing="0" width="100%" border="0">
+<tr valign="bottom">
+  <td class="shortcut">
+    <a href="/" @click.prevent="lealone.route('user', 'register')">注册</a>
+  </td>
+  <td class="shortcut">
+    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  </td>
+  <td class="shortcut">
+    <template v-if="lealone.currentUser">
+      <a href="/" @click.prevent="logout"><span>退出 {{ lealone.currentUser }}</span></a>
+    </template>
+    <template v-else>
+      <a href="/" @click.prevent="lealone.route('user', 'login')">登录</a>
+    </template>
+  </td>
+  <td class="shortcut">
+    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  </td>
+  <td class="shortcut">
+    <a href="/" @click.prevent="lealone.route('user', 'account')">用户信息</a>
+  </td>
+  <td class="shortcut">
+    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  </td>
+  <td class="shortcut">
+    <a href="/" @click.prevent="lealone.route('home', 'view-cart')">
+      <img src="/home/img/cart.png"/>我的购物车
+    </a>
+  </td>
+  <td class="shortcut">
+    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  </td>
+  <td class="shortcut">
+    <a href="/" @click.prevent="lealone.route('store', 'category-list')">库存管理</a>
+  </td>
+</tr>
+</table>
+</div>

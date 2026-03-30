@@ -1,0 +1,45 @@
+<div id="item-list">
+<table width="100%" border="0" cellspacing="0" cellpadding="10">
+  <tr>
+    <td rowspan="2" width="1%"><template v-if="category.logo"><img v-bind:src="'/store/img/' + category.logo"></template></td>
+    <td class="categoryName">{{ category.name }}</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="subcategoryName">{{ product.name }} - {{ product.descn }}
+        <template v-if="itemAdded">
+            | <span class="errorMessage">已加入购物车，您可以 [<a href="/" @click.prevent="lealone.route('home', 'category-list')">继续购物</a>]</span>
+        </template>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+        <table width="100%" border="0" cellspacing="1" cellpadding="10">
+            <tr bgcolor="#DDDDDD">
+                <th>ID</th>
+                <th>单价</th>
+                <th>描述</th>
+                <th>库存数量</th>
+                <th>&nbsp;</th>
+            </tr>
+            <template v-for="item in items">
+            <tr onmouseenter="this.style.backgroundColor='powderblue'" onmouseleave="this.style.backgroundColor=''">
+                <td>{{ item.itemid }}</td>
+                <td>{{ item.listprice }}</td>
+                <td>{{ item.attr }}1</td>
+                <td>{{ item.quantity }}</td>
+                <td align="right">
+                  <input type="button" value="放到购物车" @click.prevent="addCartItem(item.itemid)"/>
+                </td>
+            </tr>
+            </template>
+
+            <tr bgcolor="#DDDDDD">
+                <td colspan="10" align="right">
+                    <input type="button" value="继 续 购 物" @click.prevent="lealone.route('home', 'category-list')"/>
+                </td>
+            </tr>
+        </table>
+    </td>
+  </tr>
+</table>
+</div>

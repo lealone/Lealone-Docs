@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="axios.min-0.21.1.js"></script>
+    <script src="lealone-rpc-5.0.0.js"></script>
+    <script src="vue.min-2.3.3.js"></script>
+</head>
+
+<body lang="en">
+    <h1>full stack test</h1>
+
+    <div id="add">
+        name: <input v-model="name">
+        age <input v-model="age">
+        <button v-on:click="addUser">add</button>
+        <p>{{ message }}</p>
+    </div>
+
+    <div id="find"> 
+        name: <input v-model="name">
+        <button v-on:click="findByName">find</button>
+        <p>{{ message }}</p>
+    </div>
+
+    <script>
+    //获得一个服务代理
+    var userService = lealone.getService("user_service");
+
+    new Vue({
+        el: '#add',
+        data: {
+            name: "zhh",
+            age: "18",
+            message: ""
+        },
+        methods: {
+            addUser: function() {
+                var that = this;
+                //调用服务
+                userService.addUser(this.name, this.age, function(id) {
+                    that.message = "add user: " + that.name + ", return id: " + id;
+                });
+            }
+        }
+    });
+    new Vue({
+        el: '#find',
+        data: {
+            name: "zhh",
+            message: ""
+        },
+        methods: {
+            findByName: function() {
+                var that = this;
+                //调用服务
+                userService.findByName(this.name, function(user) {
+                    that.message = "user: " + JSON.stringify(user);
+                });
+            }
+        }
+    })
+    </script>
+</body>
+</html>

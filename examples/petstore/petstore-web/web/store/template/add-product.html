@@ -1,0 +1,58 @@
+<div id="add-product">
+<form action="/" method="post" enctype="multipart/form-data">
+  <table border="0" cellpadding="0" cellspacing="10" width="100%" class="box">
+    <tr align="center">
+      <td><strong>添加产品</strong><br />
+        <hr/>
+      </td>
+    </tr>
+    <tr align="center">
+      <td><table border="0" cellpadding="0" cellspacing="10" width="10">
+        <tr>
+          <td nowrap="nowrap">产品类别：</td>
+          <td width="100%" colspan="2">
+            {{ product.categoryid }}
+          </td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">产品ID：</td>
+          <td width="100%">
+            <input type="text" v-model="product.productid"/>
+          </td>
+          <td class="errorMessage">{{ errorMessage }}</td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">产品名称：</td>
+          <td width="100%">
+            <input type="text" v-model="product.name"/>
+          </td>
+          <td class="errorMessage"></td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">产品描述： </td>
+          <td>
+            <textarea v-model="product.descn"></textarea>
+          </td>
+          <td class="errorMessage"></td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">产品图片： </td>
+          <td>
+            <input type="file" @change="getFile($event)"/>
+          </td>
+          <td class="errorMessage"></td>
+        </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td><hr/></td>
+    </tr>
+    <tr align="center">
+      <td>
+        <input type="submit" value="添加" @click.prevent="addProduct()"/>&nbsp;
+        <input type="button" value="返回" onclick="window.history.back()"/>
+      </td>
+    </tr>
+  </table>
+</form>
+</div>

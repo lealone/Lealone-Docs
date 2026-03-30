@@ -1,0 +1,35 @@
+<div id="item-list">
+    <table width="100%" border="0" cellspacing="0" cellpadding="10">
+      <tr>
+        <td rowspan="2" width="1%"><template v-if="category.logo">
+          <img v-bind:src="'/store/img/' + category.logo"></template></td>
+        <td class="categoryName">{{ category.name }}</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="subcategoryName">{{ product.name }} - {{ product.descn }}</td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <table width="100%" border="0" cellspacing="1" cellpadding="10">
+            <tr bgcolor="#DDDDDD">
+              <th>ID</th>
+              <th>单价</th>
+              <th>描述</th>
+              <th>库存数量</th>
+              <th>&nbsp;</th>
+            </tr>
+            <template v-for="item in items">
+            <tr onmouseenter="this.style.backgroundColor='powderblue'" onmouseleave="this.style.backgroundColor=''">
+              <td>{{ item.itemid }}</td>
+              <td>{{ item.listprice }}</td>
+              <td>{{ item.attr }}1</td>
+              <td>{{ item.quantity }}</td>
+              <td align="right">[<a href="#" onclick="alert('未实现')">修改</a>]
+              </td>
+            </tr>
+            </template>
+          </table>
+        </td>
+      </tr>
+    </table>
+</div>

@@ -1,0 +1,43 @@
+<div id="register">
+<form action="/" method="post">
+  <table border="0" cellpadding="0" cellspacing="10" width="100%" class="box">
+    <tr align="center">
+      <td><strong>用户注册</strong><br />
+        <hr/>
+        <div class="errorMessage">{{ errorMessage }}</div>
+      </td>
+    </tr>
+    <tr align="center">
+      <td><table border="0" cellpadding="0" cellspacing="10" width="10">
+        <tr>
+          <td nowrap="nowrap">用户名：</td>
+          <td width="100%">
+            <input type="text" v-model="userId"/>
+          </td>
+          <td class="errorMessage"></td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">密码： </td>
+          <td>
+            <input type="password" v-model="password"/>
+          </td>
+          <td class="errorMessage"></td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">再输一遍密码： </td>
+          <td>
+            <input type="password" v-model="password2"/>
+          </td>
+          <td class="errorMessage"></td>
+        </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td><hr/></td>
+    </tr>
+    <tr align="center">
+      <td><input type="submit" value="立即注册！" @click.prevent="register"/></td>
+    </tr>
+  </table>
+</form>
+</div>

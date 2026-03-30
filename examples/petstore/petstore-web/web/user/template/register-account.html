@@ -1,0 +1,419 @@
+<div id="register-account">
+<form action="/" method="post">
+  <table border="0" cellpadding="0" cellspacing="10" width="100%" class="box">
+    <tr align="center">
+      <td><strong>用户信息</strong><br />
+        <hr/>
+      </td>
+    </tr>
+    <tr align="center">
+      <td><table border="0" cellpadding="0" cellspacing="10" width="10">
+        <tr>
+          <td colspan="3" class="subtitle">基本信息</td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">用户名：</td>
+          <td width="100%">{{ lealone.currentUser }}</td>
+          <td class="errorMessage">&nbsp;</td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">密码：</td>
+          <td width="100%">********</td>
+          <td class="errorMessage">&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="3" class="subtitle">联系信息</td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">姓氏：</td>
+          <td width="100%">
+            <input type="text" v-model="account.lastName" size="30"/>
+          </td>
+          <td class="errorMessage"></td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">名字：</td>
+          <td width="100%">
+            <input type="text" v-model="account.firstName" size="30"/>
+          </td>
+          <td class="errorMessage"></td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">地址： </td>
+          <td>
+            <input type="text" v-model="account.address1" size="60"/>
+          </td>
+          <td class="errorMessage"></td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">&nbsp;</td>
+          <td>
+            <input type="text" v-model="account.address2" size="60"/>
+          </td>
+          <td class="errorMessage"></td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">邮编： </td>
+          <td>
+            <input type="text" v-model="account.zip" size="20"/>
+          </td>
+          <td class="errorMessage"></td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">城市： </td>
+          <td>
+            <input type="text" v-model="account.city" size="30"/>
+          </td>
+          <td class="errorMessage"></td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">省份： </td>
+          <td>
+            <input type="text" v-model="account.state" size="30"/>
+          </td>
+          <td class="errorMessage"></td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">国家： </td>
+          <td>
+            <select v-model="account.country">
+              <option value="">-- 请选择国家 --</option>
+              <option value="AL" >阿尔巴尼亚</option>
+              <option value="DZ" >阿尔及利亚</option>
+              <option value="AF" >阿富汗</option>
+              <option value="AR" >阿根廷</option>
+              <option value="AE" >阿拉伯联合酋长国</option>
+              <option value="OM" >阿曼</option>
+              <option value="AZ" >阿塞拜疆</option>
+              <option value="EG" >埃及</option>
+              <option value="ET" >埃塞俄比亚</option>
+              <option value="IE" >爱尔兰</option>
+              <option value="EE" >爱沙尼亚</option>
+              <option value="AD" >安道尔共和国</option>
+              <option value="AO" >安哥拉</option>
+              <option value="AI" >安圭拉岛</option>
+              <option value="AG" >安提瓜和巴布达</option>
+              <option value="AT" >奥地利</option>
+              <option value="AU" >澳大利亚</option>
+              <option value="MO" >澳门</option>
+              <option value="BB" >巴巴多斯</option>
+              <option value="PG" >巴布亚新几内亚</option>
+              <option value="BS" >巴哈马</option>
+              <option value="PK" >巴基斯坦</option>
+              <option value="PY" >巴拉圭</option>
+              <option value="BL" >巴勒斯坦</option>
+              <option value="BH" >巴林</option>
+              <option value="PA" >巴拿马</option>
+              <option value="BR" >巴西</option>
+              <option value="BY" >白俄罗斯</option>
+              <option value="BM" >百慕大群岛</option>
+              <option value="BG" >保加利亚</option>
+              <option value="BJ" >贝宁</option>
+              <option value="BE" >比利时</option>
+              <option value="IS" >冰岛</option>
+              <option value="PR" >波多黎各</option>
+              <option value="PL" >波兰</option>
+              <option value="BO" >玻利维亚</option>
+              <option value="BZ" >伯利兹</option>
+              <option value="BW" >博茨瓦纳</option>
+              <option value="BF" >布基纳法索</option>
+              <option value="BI" >布隆迪</option>
+              <option value="KP" >朝鲜</option>
+              <option value="DK" >丹麦</option>
+              <option value="DE" >德国</option>
+              <option value="TG" >多哥</option>
+              <option value="DO" >多米尼加共和国</option>
+              <option value="RU" >俄罗斯</option>
+              <option value="EC" >厄瓜多尔</option>
+              <option value="FR" >法国</option>
+              <option value="PF" >法属玻利尼西亚</option>
+              <option value="GF" >法属圭亚那</option>
+              <option value="PH" >菲律宾</option>
+              <option value="FJ" >斐济</option>
+              <option value="FI" >芬兰</option>
+              <option value="GM" >冈比亚</option>
+              <option value="CG" >刚果</option>
+              <option value="CO" >哥伦比亚</option>
+              <option value="CR" >哥斯达黎加</option>
+              <option value="GD" >格林纳达</option>
+              <option value="GE" >格鲁吉亚</option>
+              <option value="CU" >古巴</option>
+              <option value="GU" >关岛</option>
+              <option value="GY" >圭亚那</option>
+              <option value="KZ" >哈萨克斯坦</option>
+              <option value="HT" >海地</option>
+              <option value="KR" >韩国</option>
+              <option value="NL" >荷兰</option>
+              <option value="HN" >洪都拉斯</option>
+              <option value="DJ" >吉布提</option>
+              <option value="KG" >吉尔吉斯坦</option>
+              <option value="GN" >几内亚</option>
+              <option value="CA" >加拿大</option>
+              <option value="GH" >加纳</option>
+              <option value="GA" >加蓬</option>
+              <option value="KH" >柬埔寨</option>
+              <option value="CS" >捷克</option>
+              <option value="CZ" >捷克</option>
+              <option value="ZW" >津巴布韦</option>
+              <option value="CM" >喀麦隆</option>
+              <option value="QA" >卡塔尔</option>
+              <option value="KT" >科特迪瓦共和国</option>
+              <option value="KW" >科威特</option>
+              <option value="KE" >肯尼亚</option>
+              <option value="CK" >库克群岛</option>
+              <option value="LV" >拉脱维亚</option>
+              <option value="LS" >莱索托</option>
+              <option value="LA" >老挝</option>
+              <option value="LB" >黎巴嫩</option>
+              <option value="LT" >立陶宛</option>
+              <option value="LR" >利比里亚</option>
+              <option value="LY" >利比亚</option>
+              <option value="LI" >列支敦士登</option>
+              <option value="LU" >卢森堡</option>
+              <option value="RO" >罗马尼亚</option>
+              <option value="MG" >马达加斯加</option>
+              <option value="MV" >马尔代夫</option>
+              <option value="MT" >马耳他</option>
+              <option value="MW" >马拉维</option>
+              <option value="MY" >马来西亚</option>
+              <option value="ML" >马里</option>
+              <option value="MU" >毛里求斯</option>
+              <option value="US" >美国</option>
+              <option value="MN" >蒙古</option>
+              <option value="MS" >蒙特塞拉特岛</option>
+              <option value="BD" >孟加拉国</option>
+              <option value="PE" >秘鲁</option>
+              <option value="MM" >缅甸</option>
+              <option value="MD" >摩尔多瓦</option>
+              <option value="MA" >摩洛哥</option>
+              <option value="MC" >摩纳哥</option>
+              <option value="MZ" >莫桑比克</option>
+              <option value="MX" >墨西哥</option>
+              <option value="NA" >纳米比亚</option>
+              <option value="ZA" >南非</option>
+              <option value="YU" >南斯拉夫</option>
+              <option value="NR" >瑙鲁</option>
+              <option value="NP" >尼泊尔</option>
+              <option value="NI" >尼加拉瓜</option>
+              <option value="NE" >尼日尔</option>
+              <option value="NG" >尼日利亚</option>
+              <option value="NO" >挪威</option>
+              <option value="PT" >葡萄牙</option>
+              <option value="JP" >日本</option>
+              <option value="SE" >瑞典</option>
+              <option value="CH" >瑞士</option>
+              <option value="SV" >萨尔瓦多</option>
+              <option value="SL" >塞拉利昂</option>
+              <option value="SN" >塞内加尔</option>
+              <option value="CY" >塞浦路斯</option>
+              <option value="SC" >塞舌尔</option>
+              <option value="SA" >沙特阿拉伯</option>
+              <option value="ST" >圣多美和普林西比</option>
+              <option value="LC" >圣卢西亚</option>
+              <option value="SM" >圣马力诺</option>
+              <option value="VC" >圣文森特岛</option>
+              <option value="LK" >斯里兰卡</option>
+              <option value="SK" >斯洛伐克</option>
+              <option value="SI" >斯洛文尼亚</option>
+              <option value="SZ" >斯威士兰</option>
+              <option value="SD" >苏丹</option>
+              <option value="SR" >苏里南</option>
+              <option value="SB" >所罗门群岛</option>
+              <option value="SO" >索马里</option>
+              <option value="TJ" >塔吉克斯坦</option>
+              <option value="TW" >台湾省</option>
+              <option value="TH" >泰国</option>
+              <option value="TZ" >坦桑尼亚</option>
+              <option value="TO" >汤加</option>
+              <option value="TT" >特立尼达和多巴哥</option>
+              <option value="TN" >突尼斯</option>
+              <option value="TR" >土耳其</option>
+              <option value="TM" >土库曼斯坦</option>
+              <option value="GT" >危地马拉</option>
+              <option value="VE" >委内瑞拉</option>
+              <option value="BN" >文莱</option>
+              <option value="UG" >乌干达</option>
+              <option value="UA" >乌克兰</option>
+              <option value="UY" >乌拉圭</option>
+              <option value="UZ" >乌兹别克斯坦</option>
+              <option value="ES" >西班牙</option>
+              <option value="GR" >希腊</option>
+              <option value="HK" >香港特别行政区</option>
+              <option value="SG" >新加坡</option>
+              <option value="NZ" >新西兰</option>
+              <option value="HU" >匈牙利</option>
+              <option value="SY" >叙利亚</option>
+              <option value="JM" >牙买加</option>
+              <option value="AM" >亚美尼亚</option>
+              <option value="YE" >也门</option>
+              <option value="IQ" >伊拉克</option>
+              <option value="IR" >伊朗</option>
+              <option value="IL" >以色列</option>
+              <option value="IT" >意大利</option>
+              <option value="IN" >印度</option>
+              <option value="ID" >印度尼西亚</option>
+              <option value="GB" >英国</option>
+              <option value="JO" >约旦</option>
+              <option value="VN" >越南</option>
+              <option value="ZM" >赞比亚</option>
+              <option value="ZR" >扎伊尔</option>
+              <option value="TD" >乍得</option>
+              <option value="GI" >直布罗陀</option>
+              <option value="CL" >智利</option>
+              <option value="CF" >中非共和国</option>
+              <option value="CN" >中国</option>
+            </select>
+          </td>
+          <td class="errorMessage"></td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">电话： </td>
+          <td>
+            <input type="text" v-model="account.phone" size="30"/>
+          </td>
+          <td class="errorMessage"></td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">电子邮件： </td>
+          <td>
+            <input type="text" v-model="account.email" size="60"/>
+          </td>
+          <td class="errorMessage"></td>
+        </tr>
+        <tr>
+          <td colspan="3" class="subtitle">信用卡信息</td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">信用卡号：</td>
+          <td width="100%">
+            <input type="text" v-model="account.creditCardNumber" size="30"/>
+          </td>
+          <td class="errorMessage"></td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">信用卡类型：</td>
+          <td width="100%">
+            <select v-model="account.creditCardType">
+              <option value="">-- 请选择信用卡类型 --</option>
+              <option value="MasterCard" >MasterCard</option>
+              <option value="Visa" >Visa</option>
+            </select>
+          </td>
+          <td class="errorMessage"></td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">信用卡过期时间：</td>
+          <td width="100%" nowrap>
+            <select v-model="account.creditCardExpiryMonth">
+              <option value="">-- 请选择月份 --</option>
+              <option value="1"  selected >1月</option>
+              <option value="2" >2月</option>
+              <option value="3" >3月</option>
+              <option value="4" >4月</option>
+              <option value="5" >5月</option>
+              <option value="6" >6月</option>
+              <option value="7" >7月</option>
+              <option value="8" >8月</option>
+              <option value="9" >9月</option>
+              <option value="10" >10月</option>
+              <option value="11" >11月</option>
+              <option value="12" >12月</option>
+            </select>
+            /
+            <select v-model="account.creditCardExpiryYear">
+              <option value="">-- 请选择年份 --</option>
+              <option value="1975" >1975</option>
+              <option value="1976" >1976</option>
+              <option value="1977" >1977</option>
+              <option value="1978" >1978</option>
+              <option value="1979" >1979</option>
+              <option value="1980" >1980</option>
+              <option value="1981" >1981</option>
+              <option value="1982" >1982</option>
+              <option value="1983" >1983</option>
+              <option value="1984" >1984</option>
+              <option value="1985" >1985</option>
+              <option value="1986" >1986</option>
+              <option value="1987" >1987</option>
+              <option value="1988" >1988</option>
+              <option value="1989" >1989</option>
+              <option value="1990" >1990</option>
+              <option value="1991" >1991</option>
+              <option value="1992" >1992</option>
+              <option value="1993" >1993</option>
+              <option value="1994" >1994</option>
+              <option value="1995" >1995</option>
+              <option value="1996" >1996</option>
+              <option value="1997" >1997</option>
+              <option value="1998" >1998</option>
+              <option value="1999" >1999</option>
+              <option value="2000" >2000</option>
+              <option value="2001" >2001</option>
+              <option value="2002" >2002</option>
+              <option value="2003" >2003</option>
+              <option value="2004" >2004</option>
+              <option value="2005" >2005</option>
+              <option value="2006" >2006</option>
+              <option value="2007" >2007</option>
+              <option value="2008" >2008</option>
+              <option value="2009" >2009</option>
+              <option value="2010" >2010</option>
+              <option value="2011" >2011</option>
+              <option value="2012" >2012</option>
+              <option value="2013" >2013</option>
+              <option value="2014" >2014</option>
+              <option value="2015" >2015</option>
+              <option value="2016" >2016</option>
+              <option value="2017" >2017</option>
+              <option value="2018" >2018</option>
+              <option value="2019" >2019</option>
+              <option value="2020" >2020</option>
+              <option value="2021" >2021</option>
+              <option value="2022" >2022</option>
+              <option value="2023" >2023</option>
+              <option value="2024" >2024</option>
+              <option value="2025" >2025</option>
+              <option value="2026" >2026</option>
+              <option value="2027" >2027</option>
+              <option value="2028" >2028</option>
+              <option value="2029" >2029</option>
+              <option value="2030" >2030</option>
+              <option value="2031" >2031</option>
+              <option value="2032" >2032</option>
+              <option value="2033" >2033</option>
+              <option value="2034" >2034</option>
+              <option value="2035" >2035</option>
+              <option value="2036" >2036</option>
+              <option value="2037" >2037</option>
+              <option value="2038" >2038</option>
+              <option value="2039" >2039</option>
+              <option value="2040" >2040</option>
+              <option value="2041" >2041</option>
+              <option value="2042" >2042</option>
+              <option value="2043" >2043</option>
+              <option value="2044" >2044</option>
+              <option value="2045" >2045</option>
+              <option value="2046" >2046</option>
+              <option value="2047" >2047</option>
+              <option value="2048" >2048</option>
+              <option value="2049" >2049</option>
+              <option value="2050" >2050</option>
+              <option value="2051" >2051</option>
+              <option value="2052" >2052</option>
+              <option value="2053" >2053</option>
+            </select>
+          </td>
+          <td class="errorMessage"><br></td>
+        </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td><hr/></td>
+    </tr>
+    <tr align="center">
+      <td><input type="submit" value="保存上面的信息" @click.prevent="update"/></td>
+    </tr>
+  </table>
+
+</form>
+</div>

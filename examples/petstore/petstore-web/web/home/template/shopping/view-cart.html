@@ -1,0 +1,61 @@
+<div id="view-cart">
+<table width="100%" border="0" cellspacing="0" cellpadding="10">
+  <tr>
+    <td class="subcategoryName"><img src="/home/img/cart.png"/> 我的购物车</td>
+  </tr>
+  <tr>
+    <td>
+    <form action="/" method="post">
+        <table width="100%" border="0" cellspacing="1" cellpadding="10">
+            <tr bgcolor="#DDDDDD">
+                <th width="1%">图片</th>
+                <th>ID</th>
+                <th>名称</th>
+                <th>描述</th>
+                <th>单价</th>
+                <th>数量</th>
+                <th align="right">小计</th>
+                <th>&nbsp;</th>
+            </tr>
+            <template v-if="items.length == 0">
+            <tr>
+                <td colspan="10">购物车是空的。</td>
+            </tr>
+            </template>
+            <template v-else>
+            <template v-for="(item, index) in items">
+            <tr onmouseenter="this.style.backgroundColor='powderblue'" onmouseleave="this.style.backgroundColor=''">
+                <td width="1%"><img src="/store/img/bird4.jpg"></td>
+                <td>{{ item.itemid }}</td>
+                <td>Birds，Great companion for up to 75 years</td>
+                <td>{{ item.attr1 }}</td>
+                <td>{{ item.listprice }}</td>
+                <td>
+                  <input type="text" name="_fm.ca.EST-18.q" value="1" size="5" maxlength="5"/>
+                </td>
+                <td align="right">193.5</td>
+                <td align="right">
+                  <input type="button" value="删除" @click.prevent="removeItem(cartId, item.itemid)"/>
+                </td>
+            </tr>
+            </template>
+            </template>
+            <tr>
+                <td colspan="6">&nbsp;</td>
+                <td align="right"><hr size="1"/><br/>总计：{{ items.length }}</td>
+                <td>&nbsp;</td>
+            </tr>
+        
+            <tr bgcolor="#DDDDDD">
+                <td colspan="10" align="right">
+                    <input type="button" value="继续购物" @click.prevent="lealone.route('home', 'category-list')"/>&nbsp;
+                    <input type="button" value="更新购物车" onclick="alert('未实现')"/>&nbsp;
+                    <input type="button" value="马上去付款" onclick="alert('支付宝，网上支付，安全快速！'); alert('支付宝，让天下无贼！'); alert('该功能尚未实现！')"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+    </td>
+  </tr>
+</table>
+</div>

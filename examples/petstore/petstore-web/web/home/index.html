@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to PetStore!</title>
+  <script src="/common/js/plugins/vue-2.6.12.js"></script>
+  <script src="/common/js/plugins/axios-0.21.1.js"></script>
+  <script src="/common/js/plugins/lealone-rpc-5.0.0.js"></script>
+  <script src="/common/js/plugins/lealone-vue-5.0.0.js"></script>
+  <script src="/common/js/petstore.js"></script>
+  <link rel="stylesheet" href="/common/css/petstore-common.css">
+  <link rel="stylesheet" href="/store/css/petstore-store.css">
+  <link rel="stylesheet" href="/home/css/petstore-homepage.css" media="screen">
+</head>
+
+<body>
+<div id="homeApp">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td height="258" valign="top">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td><a href="/home/index.html"><img src="/home/img/logo_petstore_big.png"/></a></td>
+      </tr>
+      <tr>
+        <td valign="top">&nbsp;</td>
+      </tr>
+      <tr>
+        <td valign="top"> 
+          <login/>
+        </td>
+      </tr>
+    </table>
+    </td>
+    <td><img src="/home/img/dot_transparent.png" width="30"/></td>
+    <td width="100%" valign="top">
+      <template v-replace="/home/template/layout/top-no-logo.html"/>
+      <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+        <tr valign="bottom">
+          <td width="10" align="left"><template v-replace="/home/template/layout/tabs.html"/></td>
+        </tr>
+        <tr>
+          <td>
+            <table border="0" cellpadding="0" cellspacing="10" width="100%" class="box">
+              <tr align="left">
+                <td width="100%">
+                  <keep-alive>
+                    <component :is="currentComponent"/>
+                  </keep-alive>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3" valign="top">
+      <template v-replace="/home/template/layout/footer.html"/>
+    </td>
+  </tr>
+</table>
+</div>
+
+<template id="category-list" v-insert="/home/template/shopping/category-list.html"/>
+<template id="item-list" v-insert="/home/template/shopping/item-list.html"/>
+<template id="view-cart" v-insert="/home/template/shopping/view-cart.html"/>
+<template id="login" v-insert="/user/template/login.html"/>
+
+<script src="/home/js/item-list.js"></script>
+<script src="/home/js/view-cart.js"></script>
+<script src="/user/js/hooks.js"></script>
+<script>
+    const app = Lealone.createVueApp("home", "category-list"); 
+
+    app.component('login', UserService, 'login');
+    app.component('category-list', StoreService, {initMethod: 'getAllCategories'});
+    app.component('item-list', [itemlist, StoreService], {initMethod: 'getAllProductItems'});
+    app.component('view-cart', [viewCart, ViewCartService], {bindMethod: '*', initMethod: 'getItems'}); 
+
+    mount(app, '#homeApp');
+</script>
+
+</body>
+</html>

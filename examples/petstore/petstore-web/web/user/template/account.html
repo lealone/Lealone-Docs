@@ -1,0 +1,95 @@
+<div id="account">
+<table border="0" cellpadding="0" cellspacing="10" width="100%" class="box">
+  <tr align="center">
+    <td><strong>用户信息</strong><br />
+      <hr/>
+    </td>
+  </tr>
+  <tr align="center">
+    <td><table border="0" cellpadding="0" cellspacing="10" width="10">
+      <tr>
+        <td colspan="3" class="subtitle">基本信息</td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap">用户名：</td>
+        <td width="100%">{{ user.userId }}</td>
+        <td class="errorMessage">&nbsp;</td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap">密码：</td>
+        <td width="100%">********</td>
+        <td class="errorMessage">&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="subtitle">联系信息</td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap">姓氏：</td>
+        <td width="100%">{{ account.lastName }}</td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap">名字：</td>
+        <td>{{ account.firstName }}</td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap">地址： </td>
+        <td>{{ account.address1 }}</td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap">&nbsp;</td>
+        <td>{{ account.address2 }}</td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap">邮编： </td>
+        <td>{{ account.zip }}</td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap">城市： </td>
+        <td>{{ account.city }}</td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap">省份： </td>
+        <td>{{ account.state }}</td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap">国家： </td>
+        <td>{{ account.country }}</td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap">电话： </td>
+        <td>{{ account.phone }}</td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap">电子邮件： </td>
+        <td>{{ account.email }}</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="subtitle">信用卡信息</td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap">信用卡号：</td>
+        <td width="100%">{{ account.creditCardNumber }}</td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap">信用卡类型：</td>
+        <td width="100%">{{ account.creditCardType }}</td>
+      </tr>
+      <tr>
+        <td nowrap="nowrap">信用卡过期时间：</td>
+        <td width="100%" nowrap> 
+          /
+        </td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><hr/></td>
+  </tr>
+  <tr align="center">
+    <td>
+      <input type="button" value="返回" onclick="location='/'"/>&nbsp;
+      <input type="button" value="修改用户信息" @click.prevent="lealone.route('user', 'register-account')"/>
+    </td>
+  </tr>
+</table>
+</div>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>PetStore Sample</title>
+  <script src="/common/js/plugins/vue-2.6.12.js"></script>
+  <script src="/common/js/plugins/axios-0.21.1.js"></script>
+  <script src="/common/js/plugins/lealone-rpc-5.0.0.js"></script>
+  <script src="/common/js/plugins/lealone-vue-5.0.0.js"></script>
+  <script src="/common/js/petstore.js"></script>
+  <link rel="stylesheet" href="/common/css/petstore-common.css">
+  <link rel="stylesheet" href="/home/css/petstore-homepage.css">
+  <link rel="stylesheet" href="/user/css/petstore-user.css" media="screen">
+</head>
+
+<body>
+<div id="userApp">
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><template v-replace="/home/template/layout/top.html"></template></td>
+  </tr>
+  <tr>
+    <td>
+      <keep-alive>
+        <component :is="currentComponent"/>
+      </keep-alive>
+    </td>
+  </tr>
+  <tr>
+    <td><template v-replace="/home/template/layout/footer.html"/></td>
+  </tr>
+</table>
+</div>
+
+<template id="login" v-insert="/user/template/login.html"/>
+<template id="account" v-insert="/user/template/account.html"/>
+<template id="register" v-insert="/user/template/register.html"/>
+<template id="register-account" v-insert="/user/template/register-account.html"/>
+
+<script src="/user/js/hooks.js"></script>
+<script>
+    const app = Lealone.createVueApp("user", "login"); //打开user子应用时，默认显示login页
+    
+    app.component('login', UserService, 'login');
+    app.component('account', UserService, {initMethod: 'getUser'});
+    app.component('register', UserService, 'register');
+    app.component('register-account', UserService, 'update');
+
+    mount(app, '#userApp')
+</script>
+
+</body>
+</html>
