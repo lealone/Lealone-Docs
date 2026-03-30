@@ -1,8 +1,7 @@
--- 删除服务
-drop service if exists hello_service;
+set @llm_provider 'doubao'; --目前只支持doubao
+set @llm_model 'doubao-seed-2-0-pro-260215';
+set @llm_api_key '替换成你的apikey';
 
--- 创建服务: hello_service
 create service if not exists hello_service (
-  say_hello(name varchar) varchar -- HelloService 方法定义
+  say_hello(name varchar) varchar
 )
-implement by 'com.lealone.examples.rpc.HelloService' -- HelloService 默认实现类

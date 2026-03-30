@@ -1,155 +1,17 @@
-## Lealone 微服务框架快速入门
 
-Lealone 微服务框架的学习成本极低，下文只有启动 Lealone 的代码需要引入 Lealone 的类，
+### 简单 AI 应用快速入门
 
-其他应用开发人员负责编写的代码无需导入 Lealone 的任何东西(比如类、接口、注解)。
+构建: `mvn package -Dmaven.test.skip=true -P ai`
 
-文章最后有完整的项目代码，可直接下载到本机上尝试。
+运行: `java -jar target/lealone-8.0.0-SNAPSHOT.jar ./services.sql`
 
-### 1. 在 pom.xml 中增加依赖
-
-```xml
-    <dependencies>
-        <!--引入 Lealone 微服务框架 -->
-        <dependency>
-            <groupId>com.lealone.plugins</groupId>
-            <artifactId>lealone-service</artifactId>
-            <version>6.0.1</version>
-        </dependency>
-
-        <!-- 使用 Vertx 作为 HTTP Server -->
-        <dependency>
-            <groupId>com.lealone.plugins</groupId>
-            <artifactId>lealone-vertx</artifactId>
-            <version>6.0.1</version>
-        </dependency>
-    </dependencies>
-```
-
-
-### 2. 创建后端服务
-
-放在 sql/services.sql 文件中
-
+services.sql: 
 ```sql
--- 创建服务: hello_service
+set @llm_provider 'doubao'; --目前只支持doubao
+set @llm_model 'doubao-seed-2-0-pro-260215';
+set @llm_api_key '替换成你的apikey';
+
 create service if not exists hello_service (
-  say_hello(name varchar) varchar -- HelloService 方法定义
+  say_hello(name varchar) varchar
 )
-implement by 'com.lealone.examples.rpc.HelloService' -- HelloService 默认实现类
 ```
-
-这一步用于描述一个服务的相关信息，比如它有哪些可调用的方法。
-
-通过 create service 语句创建的服务在内部会被托管，
-服务的注册与发现功能已经内置在框架当中，不需要再依赖其他第三方组件。
-
-执行 create service 语句时，如果服务实现类不存在会自动创建一个空的实现类。
-
-
-### 3. 实现后端服务
-
-```java
-package com.lealone.examples.rpc;
-
-public class HelloService {
-    public String sayHello(String name) {
-        return "Hello " + name;
-    }
-}
-```
-
-服务实现类就是一个最普通的类，框架对服务实现类是无侵入的。
-
-
-### 4. 启动 Lealone 并执行 sql 脚本
-
-```java
-package com.lealone.examples.rpc;
-
-import com.lealone.main.Lealone;
-
-// 请在浏览器中打开下面的 URL 进行测试:
-// http://localhost:9000/service/hello_service/say_hello?name=zhh
-// http://localhost:9000/hello.html
-public class RpcDemo {
-
-    public static void main(String[] args) {
-        Lealone.main(args, () -> runScript());
-    }
-
-    public static void runScript() {
-        String url = "jdbc:lealone:tcp://localhost:9210/lealone?user=root";
-        // 执行 services.sql 脚本，创建服务
-        Lealone.runScript(url, "./sql/services.sql");
-    }
-}
-```
-
-
-### 5. 在前端浏览器中打开下面的 URL 调用后端服务:
-
-http://localhost:9000/service/hello_service/say_hello?name=zhh
-
-
-### 6. 在前端结合 Vue 框架调用后端服务
-
-```html
-<!doctype html>
-<html>
-
-<head>
-    <script src="axios.min-0.21.1.js"></script>
-    <script src="lealone-rpc-5.0.0.js"></script>
-    <script src="vue.min-2.3.3.js"></script>
-</head>
-
-<body lang="en">
-    <h1>rpc client test</h1>
-
-    <div id="test">
-        say hello: <input v-model="name">
-        <button v-on:click="sayHello">submit</button>
-        <p>{{ message }}</p>
-    </div>
-
-    <script> 
-    new Vue({
-        el: '#test',
-        data: {
-            name: "zhh",
-            message: ""
-        },
-        methods: {
-            sayHello: function() {
-                //获得一个服务代理
-                var s = lealone.getService("hello_service");
-                //调用服务
-                s.sayHello(this.name, message => {
-                    this.message = message;
-                });
-            }
-        }
-    })
-    </script>
-</body>
-</html>
-```
-
-lealone-rpc-5.0.0.js 相当于一个 RPC 框架的客户端，通过 axios 与后端 RPC 框架通信，
-通过 lealone.getService() 方法获得一个服务代理后就可以直接调用后端服务了。
-
-
-
-### 7. 完整例子
-
-下载项目 [lealone-rpc-demo](https://github.com/lealone/Lealone-Examples/tree/main/rpc-demo)
-
-打包 build -p
-
-运行 build -r
-
-启动成功后，在浏览器中打开下面这个 URL 进行测试:
-
-http://localhost:9000/hello.html
-
