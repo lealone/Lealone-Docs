@@ -1,7 +1,7 @@
 create config lealone (
     base_dir: '../data',
     protocol_server_engine: (
-        name: 'tomcat',
+        name: 'http',
         enabled: true,
         port: 8080,
         web_root: '../web',

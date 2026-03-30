@@ -1,0 +1,9 @@
+*.class
+*.jar
+
+.settings
+.classpath
+.project
+target
+.idea
+.dbeaver
