@@ -1,39 +1,28 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-    <script src="axios.min-0.21.1.js"></script>
-    <script src="lealone-rpc-5.0.0.js"></script>
-    <script src="vue.min-2.3.3.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Service</title>
 </head>
-
-<body lang="en">
-    <h1>rpc client test</h1>
-
-    <div id="test">
-        say hello: <input v-model="name">
-        <button v-on:click="sayHello">submit</button>
-        <p>{{ message }}</p>
+<body>
+    <div>
+        say hello: <input type="text" id="nameInput" value="zhh">
+        <button onclick="callSayHello()">submit</button>
+        <div id="result"></div>
     </div>
 
-    <script> 
-    new Vue({
-        el: '#test',
-        data: {
-            name: "zhh",
-            message: ""
-        },
-        methods: {
-            sayHello: function() {
-                //获得一个服务代理
-                var s = lealone.getService("hello_service");
-                //调用服务
-                s.sayHello(this.name, message => {
-                    this.message = message;
-                });
+    <script>
+        async function callSayHello() {
+            const name = document.getElementById('nameInput').value;
+            try {
+                const response = await fetch(`/service/hello_service/say_hello?name=${encodeURIComponent(name)}`);
+                const data = await response.text();
+                document.getElementById('result').innerText = data;
+            } catch (error) {
+                document.getElementById('result').innerText = '请求失败：' + error.message;
             }
         }
-    })
     </script>
 </body>
 </html>
