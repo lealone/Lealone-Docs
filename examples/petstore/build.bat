@@ -37,8 +37,8 @@ echo    options:
 echo    -e            mvn eclipse:eclipse
 echo    -ec           mvn eclipse:clean
 echo    -es           mvn eclipse:eclipse -DdownloadSources=true
-echo    -p            mvn package assembly:assembly -Dmaven.test.skip=true
-echo    -pc           mvn clean package assembly:assembly -Dmaven.test.skip=true
+echo    -p            mvn package -Dmaven.test.skip=true
+echo    -pc           mvn clean package -Dmaven.test.skip=true
 echo    -i            mvn install -Dmaven.test.skip=true
 echo    -c            mvn clean
 echo    -dt           mvn dependency:tree
@@ -57,17 +57,18 @@ call mvn eclipse:eclipse -DdownloadSources=true
 goto end
 
 :p
-REM call mvn package assembly:assembly -Dmaven.test.skip=true
+REM call mvn package -Dmaven.test.skip=true
 
 call mvn package -Dmaven.test.skip=true
-java -cp petstore-main/target/petstore-1.0.0.jar^
-     com.lealone.plugins.service.template.TemplateCompiler^
-     -webRoot petstore-web/web -targetDir petstore-web/target
-call mvn assembly:assembly -Dmaven.test.skip=true
+java -cp ./bin/petstore-1.0.0.jar^
+     com.lealone.service.template.TemplateCompiler^
+     -webRoot src/web -targetDir ./bin
+xcopy "./src/sql" "./bin/sql" /E /H /C /I /Y
+call mvn clean
 goto end
 
 :pc
-mvn clean package assembly:assembly -Dmaven.test.skip=true
+mvn clean package -Dmaven.test.skip=true
 goto p
 
 :c
