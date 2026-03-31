@@ -1,11 +1,11 @@
 create config lealone (
-    base_dir: '../data',
+    base_dir: './data',
     protocol_server_engine: (
         name: 'http',
         enabled: true,
         port: 8080,
-        web_root: '../web',
+        web_root: './web',
         jdbc_url: 'jdbc:lealone:embed:petstore?user=root',
-        router: 'com.lealone.examples.petstore.web.PetStoreRouter'
+        router: 'com.lealone.examples.petstore.PetStoreRouter'
     )
 )

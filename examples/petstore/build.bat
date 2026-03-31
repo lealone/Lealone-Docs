@@ -62,8 +62,8 @@ REM call mvn package -Dmaven.test.skip=true
 call mvn package -Dmaven.test.skip=true
 java -cp ./bin/petstore-1.0.0.jar^
      com.lealone.service.template.TemplateCompiler^
-     -webRoot src/web -targetDir ./bin
-xcopy "./src/sql" "./bin/sql" /E /H /C /I /Y
+     -webRoot ./web -targetDir ./bin
+xcopy "./sql" "./bin/sql" /E /H /C /I /Y
 call mvn clean
 goto end
 

@@ -61,7 +61,7 @@
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <manifestEntries>
-                                        <Main-Class>com.lealone.examples.petstore.main.PetStore</Main-Class>
+                                        <Main-Class>com.lealone.examples.petstore.PetStore</Main-Class>
                                         <!-- 让log4j2选择合适的jdk，避免启动时出现WARNING: sun.reflect.Reflection.getCallerClass is not supported -->
                                         <Multi-Release>true</Multi-Release>
                                         <Built-By>Lealone Database Group</Built-By>

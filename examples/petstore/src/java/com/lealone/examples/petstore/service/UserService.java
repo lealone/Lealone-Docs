@@ -17,6 +17,7 @@
  */
 package com.lealone.examples.petstore.service;
 
+import com.lealone.examples.petstore.JwtUtils;
 import com.lealone.examples.petstore.model.Account;
 import com.lealone.examples.petstore.model.User;
 import com.lealone.orm.json.JsonObject;

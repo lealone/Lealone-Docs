@@ -15,14 +15,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.lealone.examples.petstore.main;
-
-import com.lealone.main.LealoneApplication;
+package com.lealone.examples.petstore;
 
 public class PetStore {
+
     public static void main(String[] args) {
-        // 请在浏览器中打开下面这个URL进行测试:
-        // http://localhost:8080/
-        LealoneApplication.start(args);
+        args = new String[] {
+                "-database",
+                "petstore",
+                "-config",
+                "sql/lealone.sql",
+                "sql/llm.sql",
+                "sql/tables.sql",
+                "sql/init-data.sql",
+                "sql/services.sql" };
+        com.lealone.main.Lealone.main(args);
     }
 }
