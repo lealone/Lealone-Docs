@@ -7,6 +7,14 @@ create config lealone (
         web_root: './web',
         environment: 'dev',
         jdbc_url: 'jdbc:lealone:embed:petstore?user=root',
-        router: 'com.lealone.examples.petstore.PetStore$Router'
+
+        redirect_filter: '/:/home/index.html, /user:/user/index.html,'|| 
+                         '/store:/store/index.html, /redirect.do:@location',
+                         
+        file_upload_filter: '/service/store_service/add_product',
+        
+        filters: 'com.lealone.services.jwt.JwtFilter: /service/user_service/update,'
+                                              || '/service/user_service/get_user,'
+                                              || '/service/view_cart_service/*'
     )
 )
