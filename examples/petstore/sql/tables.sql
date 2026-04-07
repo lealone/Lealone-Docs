@@ -19,7 +19,6 @@ drop table if exists sequence;
 
 
 set @packageName 'com.lealone.examples.petstore.model'; -- 生成的模型类所在的包名
-set @srcPath './src/java'; -- 生成的模型类对应的源文件所在的根目录
 
 
 create table if not exists user (
@@ -28,7 +27,7 @@ create table if not exists user (
     roles varchar(100),
 
     constraint pk_user primary key (user_id)
-) package @packageName generate code @srcPath;
+) package @packageName;
 
 create table if not exists account (
     user_id varchar(25) not null,
@@ -48,7 +47,7 @@ create table if not exists account (
     credit_card_expiry date,
 
     constraint pk_account primary key (user_id)
-) package @packageName generate code @srcPath;
+) package @packageName;
 
 create table if not exists profile (
     user_id varchar(25) not null,
@@ -58,7 +57,7 @@ create table if not exists profile (
     banner_opttion int,
 
     constraint pk_profile primary key (user_id)
-) package @packageName generate code @srcPath;
+) package @packageName;
 
 create table if not exists supplier (
     suppid int not null,
@@ -71,13 +70,13 @@ create table if not exists supplier (
     zip varchar(5) null,
     phone varchar(80) null,
     constraint pk_supplier primary key (suppid)
-) package @packageName generate code @srcPath;
+) package @packageName;
 
 create table if not exists banner_data (
     favcategory varchar(80) not null,
     banner_name varchar(255)  null,
     constraint pk_banner_data primary key (favcategory)
-) package @packageName generate code @srcPath;
+) package @packageName;
 
 create table if not exists orders (
     orderid int not null,
@@ -106,7 +105,7 @@ create table if not exists orders (
     cardtype varchar(80) not null,
     locale varchar(80) not null,
     constraint pk_orders primary key (orderid)
-) package @packageName generate code @srcPath;
+) package @packageName;
 
 create table if not exists order_status (
     orderid int not null,
@@ -114,7 +113,7 @@ create table if not exists order_status (
     timestamp date not null,
     status varchar(2) not null,
     constraint pk_order_status primary key (orderid, order_itemid)
-) package @packageName generate code @srcPath;
+) package @packageName;
 
 create table if not exists order_item (
     orderid int not null,
@@ -123,7 +122,7 @@ create table if not exists order_item (
     quantity int not null,
     unitprice decimal(10,2) not null,
     constraint pk_order_item primary key (orderid, order_itemid)
-) package @packageName generate code @srcPath;
+) package @packageName;
 
 create table if not exists category (
 	catid varchar(10) not null,
@@ -131,7 +130,7 @@ create table if not exists category (
 	logo varchar(80) null,
 	descn varchar(255) null,
 	constraint pk_category primary key (catid)
-) package @packageName generate code @srcPath;
+) package @packageName;
 
 create table if not exists product (
     productid varchar(10) not null,
@@ -141,7 +140,7 @@ create table if not exists product (
     descn varchar(255) null,
     constraint pk_product primary key (productid),
     constraint fk_product_1 foreign key (categoryid) references category (catid)
-) package @packageName generate code @srcPath;
+) package @packageName;
 
 create index if not exists product_cat on product (categoryid);
 create index if not exists product_name on product (name);
@@ -161,7 +160,7 @@ create table if not exists item (
     constraint pk_item primary key (itemid),
     constraint fk_item_1 foreign key (productid) references product (productid),
     constraint fk_item_2 foreign key (supplierid) references supplier (suppid)
-) package @packageName generate code @srcPath;
+) package @packageName;
 
 create index if not exists item_prod on item (productid);
 
@@ -169,11 +168,11 @@ create table if not exists inventory (
     itemid varchar(10) not null,
     qty int not null,
     constraint pk_inventory primary key (itemid)
-) package @packageName generate code @srcPath;
+) package @packageName;
 
 create table if not exists sequence (
     name varchar(30) not null,
     nextid int not null,
     constraint pk_sequence primary key (name)
-) package @packageName generate code @srcPath;
+) package @packageName;
 
