@@ -9,3 +9,5 @@ target
 .dbeaver
 bin
 data
+file_uploads
+model

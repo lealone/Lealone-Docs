@@ -5,6 +5,7 @@ create config lealone (
         enabled: true,
         port: 8080,
         web_root: './web',
+        environment: 'dev',
         jdbc_url: 'jdbc:lealone:embed:petstore?user=root',
         router: 'com.lealone.examples.petstore.PetStore$Router'
     )
