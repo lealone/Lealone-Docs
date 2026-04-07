@@ -1,0 +1,14 @@
+*.class
+*.jar
+
+.settings
+.classpath
+.project
+target
+.idea
+.dbeaver
+bin
+data
+file_uploads
+model
+lealone_data
