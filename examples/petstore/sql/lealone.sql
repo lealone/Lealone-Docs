@@ -1,4 +1,4 @@
-create config lealone ( 
+set lealone ( 
     protocol_server_engine: (
         name: 'http',
         enabled: true,
