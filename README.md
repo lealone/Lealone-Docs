@@ -1,22 +1,14 @@
 
-# Lealone 平台
+# Lealone AI
   
 ### 下载
 
-  * [lealone-6.0.1.jar](https://github.com/lealone/Lealone/releases/download/lealone-6.0.1/lealone-6.0.1.jar)
-
-  * [lealone-6.0.1.zip](https://github.com/lealone/Lealone/releases/download/lealone-6.0.1/lealone-6.0.1.zip)
-
-  * [lealone-6.0.1.tar.gz](https://github.com/lealone/Lealone/releases/download/lealone-6.0.1/lealone-6.0.1.tar.gz)
-
-  * [lealone-client-6.0.1.jar](https://github.com/lealone/Lealone/releases/download/lealone-6.0.1/lealone-client-6.0.1.jar)
+  * [lealone-8.0.0-SNAPSHOT.jar](https://lealone-plugins.github.io/lealone.github.io/lealone/lealone-8.0.0-SNAPSHOT.jar)
 
 
 ### AI
 
-  * [简单 AI 应用快速入门](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/简单AI应用快速入门.md)
-
-  * [全栈 AI 应用快速入门](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/全栈AI应用快速入门.md)
+  * [AI 应用快速入门](https://github.com/lealone/Lealone-Docs/tree/master/examples)
 
 
 ### 文档

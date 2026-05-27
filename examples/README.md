@@ -1,9 +1,31 @@
+### 运行需要
 
-直接运行应用：
+* [JDK 21+](https://www.oracle.com/java/technologies/downloads/)
 
-java -jar lealone-8.0.0.jar hello
 
-java -jar lealone-8.0.0.jar crud
+### 下载
 
-java -jar lealone-8.0.0.jar petstore
+  * [lealone-8.0.0-SNAPSHOT.jar](https://lealone-plugins.github.io/lealone.github.io/lealone/lealone-8.0.0-SNAPSHOT.jar)
+
+
+### 简单 AI 应用
+
+java -Dllm_api_key=your_api_key -jar lealone-8.0.0-SNAPSHOT.jar hello
+
+在浏览器中打开: http://localhost:8080/hello.html
+
+
+### 全栈 AI 应用
+
+java -Dllm_api_key=your_api_key -jar lealone-8.0.0-SNAPSHOT.jar crud
+
+在浏览器中打开: http://localhost:8080/crud.html
+
+
+### 经典的 petstore 应用
+
+java -Dllm_api_key=your_api_key -jar lealone-8.0.0-SNAPSHOT.jar petstore
+
+在浏览器中打开: http://localhost:8080/
+
 
