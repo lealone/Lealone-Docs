@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>PetStore Sample</title>
+  <script src="/common/js/plugins/vue-2.6.12.js"></script>
+  <script src="/common/js/plugins/axios-0.21.1.js"></script>
+  <script src="/common/js/plugins/lealone-rpc-5.0.0.js"></script>
+  <script src="/common/js/plugins/lealone-vue-5.0.0.js"></script>
+  <script src="/common/js/petstore.js"></script>
+  <link rel="stylesheet" href="/common/css/petstore-common.css">
+  <link rel="stylesheet" href="/home/css/petstore-homepage.css">
+  <link rel="stylesheet" href="/store/css/petstore-store.css" media="screen">
+</head>
+
+<body>
+<div id="storeApp">
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><template v-replace="/home/template/layout/top.html"></template></td>
+  </tr>
+  <tr>
+    <td align="center">
+      <table width="80%" border="0" cellspacing="0" cellpadding="0" class="box">
+         <tr>
+          <td>
+            <keep-alive>
+              <component :is="currentComponent"/>
+            </keep-alive>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td><template v-replace="/home/template/layout/footer.html"/></td>
+  </tr>
+</table>
+</div>
+
+<template id="category-list" v-insert="/store/template/category-list.html"/>
+<template id="item-list" v-insert="/store/template/item-list.html"/>
+<template id="add-product" v-insert="/store/template/add-product.html"/> 
+
+<script src="/store/js/add-product.js"></script>
+<script>
+    const app = Lealone.createVueApp("store", "category-list"); //打开store子应用时，默认显示category-list页
+
+    app.component('category-list', StoreService, {initMethod: 'getAllCategories'});
+    app.component('item-list', StoreService, {initMethod: 'getAllProductItems'});
+    app.component('add-product', storeAddProduct); 
+
+    mount(app, '#storeApp')
+</script>
+
+</body>
+</html>

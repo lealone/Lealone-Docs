@@ -17,7 +17,63 @@
 <div id="storeApp">
 <table width="100%"  border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td><template v-replace="/home/template/layout/top.html"></template></td>
+    <td><div id="top">
+<table cellpadding="0" cellspacing="0" width="100%" border="0">
+  <tr valign="bottom">
+    <td width="321" rowspan="2"><a href="/home/index.html"><img src="/home/img/logo_petstore_small.png"></a> </td>
+    <td width="321" rowspan="2"><img src="/home/img/dot_transparent.png" width="10" height="10"></td>
+    <td width="100%" align="left"><a href="/home/index.html"><img src="/home/img/petstore_title.png"></a></td>
+    <td width="1" align="right"><div id="nav">
+<table cellpadding="0" cellspacing="0" width="100%" border="0">
+<tr valign="bottom">
+  <td class="shortcut">
+    <a href="/" @click.prevent="lealone.route('user', 'register')">注册</a>
+  </td>
+  <td class="shortcut">
+    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  </td>
+  <td class="shortcut">
+    <template v-if="lealone.currentUser">
+      <a href="/" @click.prevent="logout"><span>退出 {{ lealone.currentUser }}</span></a>
+    </template>
+    <template v-else>
+      <a href="/" @click.prevent="lealone.route('user', 'login')">登录</a>
+    </template>
+  </td>
+  <td class="shortcut">
+    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  </td>
+  <td class="shortcut">
+    <a href="/" @click.prevent="lealone.route('user', 'account')">用户信息</a>
+  </td>
+  <td class="shortcut">
+    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  </td>
+  <td class="shortcut">
+    <a href="/" @click.prevent="lealone.route('home', 'view-cart')">
+      <img src="/home/img/cart.png"/>我的购物车
+    </a>
+  </td>
+  <td class="shortcut">
+    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  </td>
+  <td class="shortcut">
+    <a href="/" @click.prevent="lealone.route('store', 'category-list')">库存管理</a>
+  </td>
+</tr>
+</table>
+</div>
+</td>
+  </tr>
+  <tr>
+    <td colspan=2><hr></td>
+  </tr>
+  <tr>
+    <td colspan=4>&nbsp;</td>
+  </tr>
+</table>
+</div>
+</td>
   </tr>
   <tr>
     <td align="center">
@@ -33,14 +89,160 @@
     </td>
   </tr>
   <tr>
-    <td><template v-replace="/home/template/layout/footer.html"/></td>
+    <td><div id="footer">
+<hr/>
+<div align="center">
+<table width="1" border="0" cellspacing="0" cellpadding="0">
+  <tr valign="middle">
+    <td nowrap="true" align="center">
+    <p>
+      <strong>网上贸易 尽在阿里巴巴： <A href="http://china.alibaba.com/" target=_blank>中国站</A> | <A href="http://www.alibaba.com/" target=_blank>国际站</A> | <A href="http://japan.alibaba.com/" target=_blank>日文站</A> | <A href="http://www.taobao.com" target=_blank>淘宝站</A> | <A href="http://www.alipay.com" target=_blank>支付宝</A></strong>
+    </p>
+    <p>
+      Copyright &copy; 1999-2005 Alibaba.com Corporation and its licensors. All rights reserved.
+    </p>
+    </td>
+    <td><img src="/home/img/dot_transparent.png" width="30"/></td>
+    <td><a href="/redirect.do?location=http%3A%2F%2Fchina.alibaba.com%2F" target=_blank><img src="/home/img/logo_alibaba.gif"></a></td>
+    <td><img src="/home/img/dot_transparent.png" width="30"/></td>
+    <td><a href="/redirect.do?location=http%3A%2F%2Ftoolkit.alibaba-inc.com%2Farch%2Fbigpicture.html" target=_blank><img src="/home/img/logo_webx_small.png"></a></td>
+  </tr>
+</table>
+</div>
+</div>
+</td>
   </tr>
 </table>
 </div>
 
-<template id="category-list" v-insert="/store/template/category-list.html"/>
-<template id="item-list" v-insert="/store/template/item-list.html"/>
-<template id="add-product" v-insert="/store/template/add-product.html"/> 
+<template id="category-list">
+<div id="category-list">
+    <template v-for="category in categories">
+    <table width="100%" border="0" cellspacing="0" cellpadding="10">
+      <tr>
+        <td><template v-if="category.logo"><img v-bind:src="'/store/img/' + category.logo"></template></td>
+        <td width="100%">
+          <table width="100%"  border="0" cellspacing="0" cellpadding="5">
+            <tr>
+              <td colspan="2" class="categoryName">{{ category.name }}</td>
+            </tr>
+            <tr>
+              <td class="subcategoryName">
+              <template v-for="(product, index) in category.ProductList">
+                <template v-if="index != 0"> | </template>
+                <a href="/" v-bind:title="product.descn" @click.prevent="lealone.route('store', 'item-list', [product.productid], 'getAllProductItems')">
+                  {{ product.name }}
+                </a>
+              </template>
+              </td>
+              <td align="right">
+                <input type="button" value="添加产品" @click.prevent="lealone.route('store', 'add-product', {categoryid:category.catid})"/>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    </template>
+</div>
+</template>
+<template id="item-list">
+<div id="item-list">
+    <table width="100%" border="0" cellspacing="0" cellpadding="10">
+      <tr>
+        <td rowspan="2" width="1%"><template v-if="category.logo">
+          <img v-bind:src="'/store/img/' + category.logo"></template></td>
+        <td class="categoryName">{{ category.name }}</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="subcategoryName">{{ product.name }} - {{ product.descn }}</td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <table width="100%" border="0" cellspacing="1" cellpadding="10">
+            <tr bgcolor="#DDDDDD">
+              <th>ID</th>
+              <th>单价</th>
+              <th>描述</th>
+              <th>库存数量</th>
+              <th>&nbsp;</th>
+            </tr>
+            <template v-for="item in items">
+            <tr onmouseenter="this.style.backgroundColor='powderblue'" onmouseleave="this.style.backgroundColor=''">
+              <td>{{ item.itemid }}</td>
+              <td>{{ item.listprice }}</td>
+              <td>{{ item.attr }}1</td>
+              <td>{{ item.quantity }}</td>
+              <td align="right">[<a href="#" onclick="alert('未实现')">修改</a>]
+              </td>
+            </tr>
+            </template>
+          </table>
+        </td>
+      </tr>
+    </table>
+</div>
+</template>
+<template id="add-product">
+<div id="add-product">
+<form action="/" method="post" enctype="multipart/form-data">
+  <table border="0" cellpadding="0" cellspacing="10" width="100%" class="box">
+    <tr align="center">
+      <td><strong>添加产品</strong><br />
+        <hr/>
+      </td>
+    </tr>
+    <tr align="center">
+      <td><table border="0" cellpadding="0" cellspacing="10" width="10">
+        <tr>
+          <td nowrap="nowrap">产品类别：</td>
+          <td width="100%" colspan="2">
+            {{ product.categoryid }}
+          </td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">产品ID：</td>
+          <td width="100%">
+            <input type="text" v-model="product.productid"/>
+          </td>
+          <td class="errorMessage">{{ errorMessage }}</td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">产品名称：</td>
+          <td width="100%">
+            <input type="text" v-model="product.name"/>
+          </td>
+          <td class="errorMessage"></td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">产品描述： </td>
+          <td>
+            <textarea v-model="product.descn"></textarea>
+          </td>
+          <td class="errorMessage"></td>
+        </tr>
+        <tr>
+          <td nowrap="nowrap">产品图片： </td>
+          <td>
+            <input type="file" @change="getFile($event)"/>
+          </td>
+          <td class="errorMessage"></td>
+        </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td><hr/></td>
+    </tr>
+    <tr align="center">
+      <td>
+        <input type="submit" value="添加" @click.prevent="addProduct()"/>&nbsp;
+        <input type="button" value="返回" onclick="window.history.back()"/>
+      </td>
+    </tr>
+  </table>
+</form>
+</div>
+</template> 
 
 <script src="/store/js/add-product.js"></script>
 <script>
