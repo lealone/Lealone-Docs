@@ -3,7 +3,6 @@ set lealone (
         name: 'http',
         enabled: true,
         port: 8080,
-        environment: 'dev',
 
         redirect_filter: '/:/home/index.html, /user:/user/index.html,'|| 
                          '/store:/store/index.html, /redirect.do:@location',
