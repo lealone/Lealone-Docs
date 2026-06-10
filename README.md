@@ -8,7 +8,9 @@
 
 ### AI
 
-  * [AI 应用快速入门](https://github.com/lealone/Lealone-Docs/tree/master/examples)
+  * [快速入门](https://github.com/lealone/Lealone/blob/master/README.md)
+
+  * [AI 应用演示](https://github.com/lealone/Lealone-Docs/tree/master/examples)
 
 
 ### 文档
