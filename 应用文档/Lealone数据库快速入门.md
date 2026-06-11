@@ -3,7 +3,7 @@
 
 ### 1.1. 运行需要
 
-* [JDK 1.8+](https://www.oracle.com/java/technologies/downloads/)
+* [JDK 21+](https://www.oracle.com/java/technologies/downloads/)
 
 
 ### 1.2. 下载 Lealone
