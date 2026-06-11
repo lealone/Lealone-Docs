@@ -17,9 +17,9 @@
 
   * [数据库快速入门](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/Lealone数据库快速入门.md)
 
-  * [从源码构建 Lealone 平台](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/从源码构建Lealone.md)
+  * [从源码构建 Lealone](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/从源码构建Lealone.md)
  
-  * [使用 DBeaver 访问 Lealone 平台](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/使用DBeaver访问Lealone数据库.md)
+  * [使用 DBeaver 访问 Lealone](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/使用DBeaver访问Lealone数据库.md)
 
   * [设计文档](https://github.com/lealone/Lealone-Docs/blob/master/设计文档/README.md)
 
