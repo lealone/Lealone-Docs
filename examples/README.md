@@ -1,16 +1,13 @@
 ### 运行需要
 
-* [JDK 21+](https://www.oracle.com/java/technologies/downloads/)
+[JDK 21+](https://www.oracle.com/java/technologies/downloads/)
 
 
 ### 下载
 
-* [lealone-8.0.0-SNAPSHOT.jar](https://lealone-plugins.github.io/lealone.github.io/lealone/lealone-8.0.0-SNAPSHOT.jar)
+[lealone-8.0.0-SNAPSHOT.jar](https://lealone-plugins.github.io/lealone.github.io/lealone/lealone-8.0.0-SNAPSHOT.jar)
 
-
-## 下载 AI 应用
-
-`git clone https://github.com/lealone/Lealone-Docs.git lealone-examples`
+AI 应用 `git clone https://github.com/lealone/Lealone-Docs.git lealone-examples`
 
 
 ### 简单 AI 应用
