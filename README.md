@@ -1,19 +1,13 @@
 
-# Lealone AI
-  
 ### 下载
 
   * [lealone-8.0.0-SNAPSHOT.jar](https://lealone-plugins.github.io/lealone.github.io/lealone/lealone-8.0.0-SNAPSHOT.jar)
 
+### 文档
 
-### AI
-
-  * [快速入门](https://github.com/lealone/Lealone/blob/master/README.md)
+  * [AI 快速入门](https://github.com/lealone/Lealone/blob/master/README.md)
 
   * [AI 应用演示](https://github.com/lealone/Lealone-Docs/tree/master/examples)
-
-
-### 文档
 
   * [数据库快速入门](https://github.com/lealone/Lealone-Docs/blob/master/应用文档/Lealone数据库快速入门.md)
 
