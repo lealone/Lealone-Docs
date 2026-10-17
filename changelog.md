@@ -35,6 +35,13 @@
 
 * lealone.yaml 变成 lealone.sql，不再需要 yaml 配置文件
 
+* 不再需要 log4j 了，直接在 lealone.sql 中配置日志参数
+
+* 新增 lealone-http、lealone-service、lealone-orm 模块
+
+* 新增 lealone-agent 模块用于支持 ai agent 使用 llm 生成应用代码
+
+
 
 ## improvement
 
